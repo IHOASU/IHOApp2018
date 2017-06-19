@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/customConnectBackButtonll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#003366"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:onClick="onClick" >
+
+        <ImageButton
+            android:id="@+id/customConnectBackButton"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/arrow"
+            android:onClick="onClick" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Becoming Human"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:id="@+id/becomingHumanLayout"
+        android:background="@drawable/border"
+        android:layout_below="@+id/customConnectBackButtonll">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/becomingHuman"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textSize="5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white"/>
+        <Button
+            android:id="@+id/visitBecomingHumanBtn"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+            android:background="@drawable/shape"
+            android:text="Visit BecomingHuman.org"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:onClick="onClick"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

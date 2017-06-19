@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/field_layout"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:id="@+id/customBackButtonll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#003366"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:onClick="onClick" >
+
+        <ImageButton
+            android:id="@+id/customBackButton"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/arrow"
+            android:onClick="onClick" />
+
+        <LinearLayout
+
+            android:layout_width="345dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Field Notes"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/customBackButtonll"
+        android:id="@+id/scrollView2"
+        android:background="@android:color/background_light">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/customBackButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1.30"
+            android:paddingTop="@dimen/activity_horizontal_margin">
+
+            <Button
+                android:id="@+id/fn1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shape"
+                android:text="Scientists                                                 >"
+                android:textColor="@android:color/background_light"
+                android:onClick="onClick"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\n"
+                android:id="@+id/textView4"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+            <Button
+                android:id="@+id/fn2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shape"
+                android:text="New Science                                           >"
+                android:textColor="@android:color/background_light"
+                android:onClick="onClick"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\n"
+                android:id="@+id/textView2"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:clickable="false" />
+
+            <Button
+                android:id="@+id/fn3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shape"
+                android:textColor="@android:color/background_light"
+                android:text="Who is Lucy?                                           >"
+                android:onClick="onClick"
+                android:visibility="visible"
+                android:layout_below="@+id/linearLayout"
+                android:layout_alignParentLeft="true"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\n"
+                android:id="@+id/textView3"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:clickable="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/shape2"
+                android:id="@+id/studentBlogLayout"
+                android:onClick="onClick"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="10dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blog—Notes from the Field                   >"
+                    android:id="@+id/blogTextView"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/background_light"
+                    android:onClick="onClick"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <Button
+                    android:id="@+id/fn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/background_light"
+                    android:text="Follow IHO faculty and students at research        \nand field sites around the globe! Visit Now!          "
+                    android:onClick="onClick"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="16dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

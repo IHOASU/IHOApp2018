@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/customConnectBackButtonll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#003366"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:onClick="onClick" >
+
+        <ImageButton
+            android:id="@+id/customConnectBackButton"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/arrow"
+            android:onClick="onClick" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Institute of Human Origins"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:id="@+id/iholayout"
+        android:baselineAligned="false"
+        android:background="@drawable/border"
+        android:visibility="visible"
+        android:layout_below="@+id/customConnectBackButtonll">
+        <Button
+            android:id="@+id/website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:text="Offical Website"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:onClick="onClick" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:id="@+id/textView"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="false"
+            android:textSize="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/locationInfo"
+            android:textIsSelectable="false"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="false"
+            android:textSize="10dp" />
+        <Button
+            android:layout_height="wrap_content"
+            android:text="IHO Location Page"
+            android:id="@+id/linkToLocation"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            android:onClick="onClick"
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape"
+            android:layout_width="175dp"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            android:id="@+id/textView2"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="false"
+            android:textSize="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:text="Phone 480.727.6580 \nFax 480.727.6570 \nEmail iho@asu.edu\n"
+            android:textIsSelectable="false"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="false"
+            android:textSize="10dp" />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:text="IHO Contact Page"
+            android:id="@+id/linkToContact"
+            android:textStyle="bold"
+            android:onClick="onClick"
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape"
+            android:layout_width="175dp"
+            android:textSize="18dp"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

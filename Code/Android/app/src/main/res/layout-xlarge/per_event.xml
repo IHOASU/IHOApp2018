@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/per_event"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:id="@+id/customEventsBackbuttonll"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#003366"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:onClick="onClick" >
+
+        <ImageButton
+            android:id="@+id/customEventsBackbutton"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/arrow"
+            android:onClick="onClick" />
+
+        <LinearLayout
+
+            android:layout_width="345dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Events"
+                android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/customEventsBackbuttonll"
+        android:background="@android:color/background_light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.30"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="56"
+                android:maxLines="2"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/space1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="56"
+                android:maxLines="1"
+                android:text="                                                                   "
+                android:textAlignment="center"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/when"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/space2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="56"
+                android:maxLines="1"
+                android:text="                                                                   "
+                android:textAlignment="center"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/where"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="left"
+                        android:text="@string/locationInfo"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/eventsLink"
+                    android:layout_width="0dp"
+                    android:layout_height="107dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/location"
+                    android:onClick="onClick"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/space3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="56"
+                android:maxLines="1"
+                android:text="                                                                   "
+                android:textAlignment="center"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="740"
+                android:maxLines="13"
+                android:textAlignment="center"
+                android:textSize="22dp" />
+
+
+            <TextView
+                android:id="@+id/space4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="104"
+                android:maxLines="2"
+                android:text="                                                                                                                 "
+                android:textAlignment="center"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/registerEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:onClick="onClick"
+                android:text="Click here to read more"
+                android:textColor="@android:color/background_light"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
