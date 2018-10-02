@@ -1,0 +1,3 @@
+1 October 2018
+Researched about what a Droplet in a Digital Ocean is. Understood how to operate configure and operate a droplet. The services in a droplet are active only when currently logged in. Researched ways on how to keep services active by pushing them to background process status. The droplet that is being used here in this project is an Ubuntu Virtual machine that is hosted in the Digital Ocean cloud.
+
