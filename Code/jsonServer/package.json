@@ -1,0 +1,16 @@
+{
+  "name": "jsonserver",
+  "version": "1.0.0",
+  "description": "REST APIs to fetch data from JsonStore",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json",
+    "start:dev": "json-server db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.14.0"
+  }
+}
