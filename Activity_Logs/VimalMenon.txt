@@ -1,5 +1,26 @@
-1 October 2018
+Vimal Menon
+
+Sprint 1 – Sept 27th to Oct 11th
+
+Oct 1: Task #15
 Researched about what a Droplet in a Digital Ocean is. Understood how to operate configure and operate a droplet. The services in a droplet are active only when currently logged in. Researched ways on how to keep services active by pushing them to background process status. The droplet that is being used here in this project is an Ubuntu Virtual machine that is hosted in the Digital Ocean cloud.
 
-2 October 2018
-Currently, IHO is paying $20 per month for the droplet that is being for hosting the database. A suitable alternative will be explored in the next sprint since currently, our main goal is to kick start this project after rectifying the errors. Currently, I am researching about nginx web server. We need a light weight web server for this project and so need to see how nginx stacks up against apache web server.
+
+Oct 2: Task #15, #32
+The Droplet has been made available online. Currently, IHO is paying $20 per month for the droplet that is being for hosting the database. A suitable alternative will be explored in the next sprint since currently, our main goal is to kick start this project after rectifying the errors. 
+Currently, I am researching about nginx web server. We need a light-weight web server for this project and so need to see how nginx stacks up against apache web server.
+
+
+Oct 3: Task #34, #35
+Collect project requirements from Julie in order to plug in the correct info for the Project Plan document. Started my share of work on the Project plan document preparation. 
+
+
+Oct 4: Task #34, #35, #32
+Project plan document initial draft preparation has been completed. Proof-reading by team members is pending.
+Completed the comparison of Nginx with Apache web server. Here, since the project involved does not involve a large number of users at the moment, an Apache web server would suffice. However, to make this project scalable thus making it future proof, it has been decided to use the Nginx web server for this project.
+
+
+Oct 5: Task #34
+Completed the Project plan document. Has been uploaded to blackboard.
+Nginx server has been deployed in the Droplet. Since the droplet is now available online, the Android and iOS apps are now able to communicate with the database and fetch the data as intended.
+
