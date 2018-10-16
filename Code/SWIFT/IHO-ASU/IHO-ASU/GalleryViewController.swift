@@ -48,6 +48,7 @@ class GalleryViewController: UIViewController {
         self.toolbarItems = [flexible,toolbarTitle]
     }
     
+    // top and bottom of gallery
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         

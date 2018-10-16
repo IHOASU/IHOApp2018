@@ -14,7 +14,11 @@ class GalleryTableViewCell: UITableViewCell {
     @IBOutlet weak var imageview: UIImageView!
     
     @IBOutlet weak var textlabel: UITextView!
+    
+    
 }
+
+
 
 class GalleryTableViewController: UITableViewController {
     @IBOutlet var galleryTableView: UITableView!
@@ -127,6 +131,7 @@ class GalleryTableViewController: UITableViewController {
             }
         }
         
+//        self.view.backgroundColor = UIColor(red: CGFloat((233 / 255.0)), green: CGFloat((233 / 255.0)), blue: CGFloat((233 / 255.0)), alpha: CGFloat(1))
         
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
@@ -257,9 +262,18 @@ class GalleryTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = galleryTableView.dequeueReusableCell(withIdentifier: "imageCell", for: indexPath)as! GalleryTableViewCell
+        
+        cell.imageview.backgroundColor = UIColor(red: CGFloat((233 / 255.0)), green: CGFloat((233 / 255.0)), blue: CGFloat((233 / 255.0)), alpha: CGFloat(1))
+        
+        cell.textlabel.backgroundColor = UIColor(red: CGFloat((233 / 255.0)), green: CGFloat((233 / 255.0)), blue: CGFloat((233 / 255.0)), alpha: CGFloat(1))
+        
+        cell.textlabel?.textColor = UIColor.black
+        
         if(self.names != nil){
         cell.textlabel?.text = self.names[indexPath.row]
         }
+        
+        self.tableView.backgroundColor = UIColor(red: CGFloat((233 / 255.0)), green: CGFloat((233 / 255.0)), blue: CGFloat((233 / 255.0)), alpha: CGFloat(1))
         
         let title = self.names[(indexPath.row)]
         let imageObject = imageList[title]! as Image
