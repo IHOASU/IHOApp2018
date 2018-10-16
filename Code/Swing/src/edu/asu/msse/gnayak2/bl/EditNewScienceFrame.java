@@ -1,20 +1,13 @@
 package edu.asu.msse.gnayak2.bl;
 
-import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-
 import edu.asu.msse.gnayak2.delegates.NewSciencesDelegate;
 import edu.asu.msse.gnayak2.models.NewScience;
 import net.miginfocom.swing.MigLayout;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class EditNewScienceFrame extends JFrame {
 
@@ -82,7 +75,6 @@ public class EditNewScienceFrame extends JFrame {
 		tfLink.setText(newScience.getLink());
 		String order_value = Integer.toString(newScience.getOrder());
 		tfOrder.setText(order_value);
-		
 	}
  	
 	public EditNewScienceFrame(NewSciencesDelegate newSciencedelegate) {
@@ -96,7 +88,9 @@ public class EditNewScienceFrame extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				 int ord = Integer.parseInt(tfOrder.getText());
-				NewScience newNewScience = new NewScience(tfTitle.getText(), ord,tfLink.getText());
+				NewScience newNewScience = new NewScience(tfTitle.getText(),
+						ord,
+						tfLink.getText());
 				// delete old newScience
 				newScienceDelegate.addNewScience(newNewScience);
 				if (newScience != null){
