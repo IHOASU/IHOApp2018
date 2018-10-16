@@ -13,13 +13,11 @@ public class EditNewScienceFrame extends JFrame {
 
 	private JPanel panel;
 	private JTextField tfTitle;
-	private JTextField tfOrder;
 	private JTextArea taDescription;
 	private JTextField tfLink;
 	private JLabel lblReadMore;
 	private JLabel lblTitle;
 	private JLabel lblDesc;
-	private JLabel lblOrder;
 	private JScrollPane scrollPane;
 	private NewScience newScience;
 	private JButton btnSubmit;
@@ -45,8 +43,6 @@ public class EditNewScienceFrame extends JFrame {
 		//taDescription = new JTextArea("",120,120);
 		lblReadMore = new JLabel("Link");
 		tfLink = new JTextField("",120);
-		lblOrder = new JLabel("Order");
-		tfOrder = new JTextField("",120);
 	//	scrollPane = new JScrollPane(taDescription);
 		btnSubmit = new JButton("Submit");
 		
@@ -57,9 +53,7 @@ public class EditNewScienceFrame extends JFrame {
 		panel.add(tfTitle, "wrap");
 		panel.add(lblReadMore);
 		panel.add(tfLink, "wrap");
-	 	panel.add(lblOrder);
-	    panel.add(tfOrder,"wrap");	
-		
+
 		panel.add(btnSubmit,"wrap");
 
 		add(panel);
@@ -71,10 +65,7 @@ public class EditNewScienceFrame extends JFrame {
 	
 	public void populateFileds(NewScience newScience) {
 		tfTitle.setText(newScience.getTitle());
-	//	taDescription.setText(newScience.getDesc());
 		tfLink.setText(newScience.getLink());
-		String order_value = Integer.toString(newScience.getOrder());
-		tfOrder.setText(order_value);
 	}
  	
 	public EditNewScienceFrame(NewSciencesDelegate newSciencedelegate) {
@@ -87,10 +78,7 @@ public class EditNewScienceFrame extends JFrame {
 		btnSubmit.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				 int ord = Integer.parseInt(tfOrder.getText());
-				NewScience newNewScience = new NewScience(tfTitle.getText(),
-						ord,
-						tfLink.getText());
+				NewScience newNewScience = new NewScience(tfTitle.getText(), tfLink.getText());
 				// delete old newScience
 				newScienceDelegate.addNewScience(newNewScience);
 				if (newScience != null){

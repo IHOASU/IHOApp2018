@@ -8,14 +8,12 @@ import java.util.UUID;
 public class NewScience {
 	private String id;
 	private String title;
-	private int order;
 	private String link;
 	private Timestamp timestamp;
 
-	public NewScience(String newsTitle, int order, String linkMore) {
+	public NewScience(String newsTitle, String linkMore) {
 		id = UUID.randomUUID().toString().replace("-", "");
 		title = newsTitle;
-		this.order = order;
 		link = linkMore;
 		timestamp = new Timestamp(System.currentTimeMillis());
 	}
@@ -31,7 +29,6 @@ public class NewScience {
 	public NewScience(JSONObject object) {
 		id = object.getString("id");
 		title = object.getString("title");
-		order = object.getInt("order");
 		link = object.getString("link");
 	}
 
@@ -49,14 +46,6 @@ public class NewScience {
 
 	public void setTitle(String title) {
 		this.title = title;
-	}
-
-	public int getOrder() {
-		return order;
-	}
-
-	public void setOrder(int order) {
-		this.order = order;
 	}
 
 	public String getLink() {
