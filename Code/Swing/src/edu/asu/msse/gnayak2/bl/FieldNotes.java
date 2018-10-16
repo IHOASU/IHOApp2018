@@ -1,22 +1,5 @@
 package edu.asu.msse.gnayak2.bl;
 
-import java.awt.CardLayout;
-import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.Set;
-
-import javax.swing.DefaultListModel;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JList;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
-
-import org.json.JSONObject;
-
 import edu.asu.msse.gnayak2.delegates.LecturesDelegate;
 import edu.asu.msse.gnayak2.delegates.NewSciencesDelegate;
 import edu.asu.msse.gnayak2.library.LecturesLibrary;
@@ -26,6 +9,15 @@ import edu.asu.msse.gnayak2.models.Lecture;
 import edu.asu.msse.gnayak2.models.NewScience;
 import edu.asu.msse.gnayak2.networking.HTTPConnectionHelper;
 import net.miginfocom.swing.MigLayout;
+import org.json.JSONObject;
+
+import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Set;
 
 public class FieldNotes extends JFrame implements LecturesDelegate, NewSciencesDelegate {
 		
@@ -223,42 +215,23 @@ public class FieldNotes extends JFrame implements LecturesDelegate, NewSciencesD
 			newSciencesModel.addElement(newSciencesLibrary.getNewScience(id));
 		}
 		
-		newSciencesBackButton.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				cardLayout.show(containerPanel, "1");
-			}
-		});
+		newSciencesBackButton.addActionListener(e -> cardLayout.show(containerPanel, "1"));
 		
 		
 		
-		newSciencesBackButton.addActionListener(new ActionListener() {
+		newSciencesBackButton.addActionListener(e -> cardLayout.show(containerPanel, "1"));
 
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				cardLayout.show(containerPanel, "1");
-			}
-		});
-
-		newSciencesList.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
-
-			@Override
-			public void valueChanged(ListSelectionEvent e) {
-				selectedNewScience = newSciencesList.getSelectedValue();
+		newSciencesList.getSelectionModel().addListSelectionListener(e -> {
+            selectedNewScience = newSciencesList.getSelectedValue();
 //				System.out.println(selectedNewScience.getDesc());
-			}
-		});
+        });
 		
-		viewNewSciencesButton.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				if (selectedNewScience != null) {
-					EditNewScienceFrame editFrame = new EditNewScienceFrame(selectedNewScience, newSciencesDelegate);
-					editFrame.setVisible(true);
-				}
-			}
-		});
+		viewNewSciencesButton.addActionListener(e -> {
+            if (selectedNewScience != null) {
+                EditNewScienceFrame editFrame = new EditNewScienceFrame(selectedNewScience, newSciencesDelegate);
+                editFrame.setVisible(true);
+            }
+        });
 		
 		deleteNewSciencesButton.addActionListener(new ActionListener() {
 
