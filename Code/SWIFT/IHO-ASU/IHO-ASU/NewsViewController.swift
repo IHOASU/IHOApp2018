@@ -302,3 +302,4 @@ class NewsViewController: UITableViewController {
     }
 
 }
+

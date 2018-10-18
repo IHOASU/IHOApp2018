@@ -183,4 +183,35 @@ class NewsEventsViewController: UITableViewController {
         }
     }
     
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tableView.deselectRow(at: self.tableView.indexPathForSelectedRow!, animated: true)
+        
+        // For navigating "News" to IHO News page.
+        if indexPath.section == 1 {
+
+            let url = URL(string: "https://iho.asu.edu/news")!
+            
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+            
+        }
+        
+        // For navigating "In the Media" to IHO Media page.
+        if indexPath.section == 2 {
+            
+            let url = URL(string: "https://iho.asu.edu/media")!
+            
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+            
+        }
+    }
+    
 }
