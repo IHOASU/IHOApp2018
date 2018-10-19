@@ -20,8 +20,8 @@ import Foundation
 import UIKit
 
 class TravelViewControlller: UITableViewController {
-    @IBOutlet var featuredNewsTableView: UITableView!
-    @IBAction func readMoreLink(_ sender: Any) {
+    @IBOutlet var travelTableView: UITableView!
+    @IBAction func travelMoreLink(_ sender: Any) {
         
         newsLink = "https://iho.asu.edu/outreach/travel"
         
@@ -37,7 +37,8 @@ class TravelViewControlller: UITableViewController {
     @IBOutlet weak var nTitle: UILabel!
     @IBOutlet weak var nDesc: UILabel!
     @IBOutlet weak var nImage: UIImageView!
-    @IBOutlet weak var readMoreButton: UIButton!
+    @IBOutlet weak var travelMoreButton: UIButton!
+    
     var newsTitle: String?
     var newsDesc: String?
     var newsId: String?
@@ -48,9 +49,7 @@ class TravelViewControlller: UITableViewController {
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
-        self.navigationItem.title = "Travel+Learn"
-        self.readMoreButton.layer.cornerRadius = 15
-        
+        self.navigationItem.title = "Travel + Learn"
         self.nTitle.text = "Travel + Learn"
         self.nTitle.lineBreakMode = NSLineBreakMode.byWordWrapping
         self.nTitle.numberOfLines = 0
@@ -95,7 +94,4 @@ class TravelViewControlller: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
- 
 }
-
-

@@ -175,6 +175,7 @@ class NewsEventsViewController: UITableViewController {
             let title = self.names[(indexPath.row)]
             let newsObjectToBeSend = newsList[title]! as News
             
+            //print("title = ",title)
             viewController.newsTitle = title
             viewController.newsDesc = newsObjectToBeSend.desc
             viewController.newsId = newsObjectToBeSend.id
