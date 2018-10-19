@@ -23,7 +23,7 @@ public class EditNewScienceFrame extends JFrame {
 	private JButton btnSubmit;
 	private JButton addButton;
 	NewSciencesDelegate newScienceDelegate;
-	
+
 	/**
 	 * Create the frame.
 	 */
@@ -33,7 +33,7 @@ public class EditNewScienceFrame extends JFrame {
 		setUpFrame();
 		populateFileds(newScience);
 	}
-	
+
 	public void setUpFrame() {
 		setResizable(false);
 		setPreferredSize(new Dimension(Constants.WIDTH,Constants.HEIGHT));
@@ -45,7 +45,7 @@ public class EditNewScienceFrame extends JFrame {
 		tfLink = new JTextField("",120);
 	//	scrollPane = new JScrollPane(taDescription);
 		btnSubmit = new JButton("Submit");
-		
+
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		panel = new JPanel();
 		panel.setLayout(new MigLayout());
@@ -62,17 +62,17 @@ public class EditNewScienceFrame extends JFrame {
 		setVisible(true);
 		setActionListenerForButton();
 	}
-	
+
 	public void populateFileds(NewScience newScience) {
 		tfTitle.setText(newScience.getTitle());
 		tfLink.setText(newScience.getLink());
 	}
- 	
+
 	public EditNewScienceFrame(NewSciencesDelegate newSciencedelegate) {
 		this.newScienceDelegate = newSciencedelegate;
 		setUpFrame();
 	}
-	
+
 	public void setActionListenerForButton() {
 		// delete old newScience
 		btnSubmit.addActionListener(new ActionListener() {
