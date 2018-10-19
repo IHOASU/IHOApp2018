@@ -2032,7 +2032,7 @@ If you would like to send donation by check, please make your donation payable t
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XHh-2B-vA4">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="341" id="XHh-2B-vA4">
                                                     <rect key="frame" x="16" y="0.0" width="343" height="299.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
@@ -2049,15 +2049,10 @@ If you would like to send donation by check, please make your donation payable t
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uko-1p-dPq">
-                                                    <rect key="frame" x="0.0" y="11" width="375" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uko-1p-dPq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.0039215686269999999" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="2fb-9D-aRM"/>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="TOy-rU-rAN"/>
-                                                        <constraint firstAttribute="height" constant="30" id="ums-WS-yCx"/>
-                                                        <constraint firstAttribute="width" constant="375" id="yxC-Cp-Of6"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
                                                     <state key="normal" title="More About Travel">
                                                         <color key="titleShadowColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2068,18 +2063,6 @@ If you would like to send donation by check, please make your donation payable t
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="uko-1p-dPq" firstAttribute="leading" secondItem="gZ3-3t-MmV" secondAttribute="leadingMargin" id="BIu-xW-JEm"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="uko-1p-dPq" secondAttribute="trailing" id="CLp-bl-sfE"/>
-                                                <constraint firstItem="uko-1p-dPq" firstAttribute="top" secondItem="gZ3-3t-MmV" secondAttribute="topMargin" id="D9H-zT-ybI"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="uko-1p-dPq" secondAttribute="bottom" constant="4" id="FfY-7V-Y0V"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="uko-1p-dPq" secondAttribute="trailing" id="Nqr-F3-FrZ"/>
-                                                <constraint firstItem="uko-1p-dPq" firstAttribute="top" secondItem="gZ3-3t-MmV" secondAttribute="topMargin" id="U5I-6N-pxP"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="uko-1p-dPq" secondAttribute="bottom" constant="3" id="XTz-rJ-feS"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="uko-1p-dPq" secondAttribute="bottom" constant="3" id="cXo-wR-QqX"/>
-                                                <constraint firstItem="uko-1p-dPq" firstAttribute="top" secondItem="gZ3-3t-MmV" secondAttribute="topMargin" id="p8D-QK-Jf8"/>
-                                                <constraint firstItem="uko-1p-dPq" firstAttribute="leading" secondItem="gZ3-3t-MmV" secondAttribute="leadingMargin" id="sUE-cG-E6E"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
