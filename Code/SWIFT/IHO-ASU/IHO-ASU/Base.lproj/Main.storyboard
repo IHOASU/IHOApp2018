@@ -2042,24 +2042,45 @@ If you would like to send donation by check, please make your donation payable t
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="moreTravelCell" id="7ro-j9-P7B">
-                                        <rect key="frame" x="0.0" y="598" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="iTI-ME-x62">
+                                        <rect key="frame" x="0.0" y="598" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7ro-j9-P7B" id="D9l-R0-64q">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iTI-ME-x62" id="gZ3-3t-MmV">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More About Travel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0b-C2-q1d">
-                                                    <rect key="frame" x="16" y="10" width="331" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uko-1p-dPq">
+                                                    <rect key="frame" x="0.0" y="11" width="375" height="30"/>
+                                                    <color key="backgroundColor" red="0.0039215686269999999" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="2fb-9D-aRM"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="TOy-rU-rAN"/>
+                                                        <constraint firstAttribute="height" constant="30" id="ums-WS-yCx"/>
+                                                        <constraint firstAttribute="width" constant="165" id="yxC-Cp-Of6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                                    <state key="normal" title="More About Travel">
+                                                        <color key="titleShadowColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="readMoreLink:" destination="LVX-Zr-YQb" eventType="touchUpInside" id="Fpt-Tb-2xO"/>
+                                                        <action selector="travelMoreLink:" destination="7Fx-uN-iA1" eventType="touchUpInside" id="Ujb-oh-VdN"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uko-1p-dPq" firstAttribute="leading" secondItem="gZ3-3t-MmV" secondAttribute="leadingMargin" constant="97" id="BIu-xW-JEm"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="uko-1p-dPq" secondAttribute="trailing" constant="97" id="CLp-bl-sfE"/>
+                                                <constraint firstItem="uko-1p-dPq" firstAttribute="top" secondItem="gZ3-3t-MmV" secondAttribute="topMargin" id="D9H-zT-ybI"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="uko-1p-dPq" secondAttribute="bottom" constant="4" id="FfY-7V-Y0V"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="uko-1p-dPq" secondAttribute="trailing" constant="97" id="Nqr-F3-FrZ"/>
+                                                <constraint firstItem="uko-1p-dPq" firstAttribute="top" secondItem="gZ3-3t-MmV" secondAttribute="topMargin" id="U5I-6N-pxP"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="uko-1p-dPq" secondAttribute="bottom" constant="3" id="XTz-rJ-feS"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="uko-1p-dPq" secondAttribute="bottom" constant="3" id="cXo-wR-QqX"/>
+                                                <constraint firstItem="uko-1p-dPq" firstAttribute="top" secondItem="gZ3-3t-MmV" secondAttribute="topMargin" id="p8D-QK-Jf8"/>
+                                                <constraint firstItem="uko-1p-dPq" firstAttribute="leading" secondItem="gZ3-3t-MmV" secondAttribute="leadingMargin" constant="97" id="sUE-cG-E6E"/>
+                                            </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.00094848225129999996" green="0.19472143049999999" blue="0.39827531579999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -2074,6 +2095,7 @@ If you would like to send donation by check, please make your donation payable t
                         <outlet property="nDesc" destination="XHh-2B-vA4" id="HMa-bX-cVr"/>
                         <outlet property="nImage" destination="4I8-pT-zmC" id="yKW-mV-P5x"/>
                         <outlet property="nTitle" destination="biz-PV-ZfL" id="ftn-fK-5V4"/>
+                        <outlet property="travelMoreButton" destination="uko-1p-dPq" id="cjB-8v-qyr"/>
                         <outlet property="travelTableView" destination="Rg3-VG-L1c" id="5A5-WM-uur"/>
                     </connections>
                 </tableViewController>

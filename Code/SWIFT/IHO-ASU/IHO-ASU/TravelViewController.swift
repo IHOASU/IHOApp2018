@@ -10,22 +10,24 @@ import UIKit
 
 class TravelViewControlller: UITableViewController {
     @IBOutlet var travelTableView: UITableView!
-//    @IBAction func readMoreLink(_ sender: Any) {
-//
-//        newsLink = "https://iho.asu.edu/outreach/travel"
-//
-//        let url = URL(string: newsLink!)!
-//
-//        if #available(iOS 10.0, *) {
-//            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-//        } else {
-//            UIApplication.shared.openURL(url)
-//        }
-//
-//    }
+    @IBAction func travelMoreLink(_ sender: Any) {
+        
+        newsLink = "https://iho.asu.edu/outreach/travel"
+        
+        let url = URL(string: newsLink!)!
+        
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+        
+    }
     @IBOutlet weak var nTitle: UILabel!
     @IBOutlet weak var nDesc: UILabel!
     @IBOutlet weak var nImage: UIImageView!
+    @IBOutlet weak var travelMoreButton: UIButton!
+    
     var newsTitle: String?
     var newsDesc: String?
     var newsId: String?
@@ -36,8 +38,7 @@ class TravelViewControlller: UITableViewController {
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
-        self.navigationItem.title = "Travel+Learn"
-        
+        self.navigationItem.title = "Travel + Learn"
         self.nTitle.text = "Travel + Learn"
         self.nTitle.lineBreakMode = NSLineBreakMode.byWordWrapping
         self.nTitle.numberOfLines = 0
@@ -56,7 +57,7 @@ class TravelViewControlller: UITableViewController {
         
         //toolbar
         let label = UILabel(frame: CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(350), height: CGFloat(21)))
-        label.text = "ASU IHO 2017"
+        label.text = "ASU IHO 2018"
         label.center = CGPoint(x: view.frame.midX, y: view.frame.height)
         label.textAlignment = NSTextAlignment.center
         label.textColor = UIColor.white
@@ -64,23 +65,7 @@ class TravelViewControlller: UITableViewController {
         let flexible = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         self.toolbarItems = [flexible,toolbarTitle]
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
-      
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.tableView.deselectRow(at: self.tableView.indexPathForSelectedRow!, animated: true)
         
-        // For navigating "More about Travel" to IHO Travel page.
-        if indexPath.section == 0 {
-            
-            let travelURL = URL(string: "https://iho.asu.edu/outreach/travel")!
-            
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(travelURL, options: [:], completionHandler: nil)
-            } else {
-                UIApplication.shared.openURL(travelURL)
-            }
-        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -98,7 +83,5 @@ class TravelViewControlller: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
- 
 }
-
 
