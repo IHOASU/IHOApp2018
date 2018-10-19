@@ -2042,36 +2042,24 @@ If you would like to send donation by check, please make your donation payable t
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="YP0-XV-oLw">
-                                        <rect key="frame" x="0.0" y="598" width="375" height="60"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="moreTravelCell" id="7ro-j9-P7B">
+                                        <rect key="frame" x="0.0" y="598" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="YP0-XV-oLw" id="0tG-t0-J4s">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7ro-j9-P7B" id="D9l-R0-64q">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVb-rG-NwC">
-                                                    <rect key="frame" x="103" y="11" width="185" height="30"/>
-                                                    <color key="backgroundColor" red="0.0039215686269999999" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="185" id="NzT-fD-NfS"/>
-                                                        <constraint firstAttribute="height" constant="30" id="lAY-by-cNd"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
-                                                    <state key="normal" title="Click to read more">
-                                                        <color key="titleShadowColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="readMoreLink:" destination="7Fx-uN-iA1" eventType="touchUpInside" id="1wY-Pe-WiO"/>
-                                                    </connections>
-                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More About Travel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0b-C2-q1d">
+                                                    <rect key="frame" x="16" y="10" width="331" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="rVb-rG-NwC" firstAttribute="leading" secondItem="0tG-t0-J4s" secondAttribute="leadingMargin" constant="87" id="Ibe-8T-LBz"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="rVb-rG-NwC" secondAttribute="bottom" constant="14" id="K8Y-gh-nIq"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="rVb-rG-NwC" secondAttribute="trailing" constant="87" id="bfy-49-51N"/>
-                                                <constraint firstItem="rVb-rG-NwC" firstAttribute="top" secondItem="0tG-t0-J4s" secondAttribute="topMargin" id="mOn-sB-zv9"/>
-                                            </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.00094848225129999996" green="0.19472143049999999" blue="0.39827531579999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -2086,7 +2074,7 @@ If you would like to send donation by check, please make your donation payable t
                         <outlet property="nDesc" destination="XHh-2B-vA4" id="HMa-bX-cVr"/>
                         <outlet property="nImage" destination="4I8-pT-zmC" id="yKW-mV-P5x"/>
                         <outlet property="nTitle" destination="biz-PV-ZfL" id="ftn-fK-5V4"/>
-                        <outlet property="readMoreButton" destination="rVb-rG-NwC" id="43T-tB-Jdq"/>
+                        <outlet property="travelTableView" destination="Rg3-VG-L1c" id="5A5-WM-uur"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YMy-gM-9q1" userLabel="First Responder" sceneMemberID="firstResponder"/>

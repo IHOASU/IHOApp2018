@@ -9,24 +9,23 @@ import Foundation
 import UIKit
 
 class TravelViewControlller: UITableViewController {
-    @IBOutlet var featuredNewsTableView: UITableView!
-    @IBAction func readMoreLink(_ sender: Any) {
-        
-        newsLink = "https://iho.asu.edu/outreach/travel"
-        
-        let url = URL(string: newsLink!)!
-        
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.openURL(url)
-        }
-        
-    }
+    @IBOutlet var travelTableView: UITableView!
+//    @IBAction func readMoreLink(_ sender: Any) {
+//
+//        newsLink = "https://iho.asu.edu/outreach/travel"
+//
+//        let url = URL(string: newsLink!)!
+//
+//        if #available(iOS 10.0, *) {
+//            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+//        } else {
+//            UIApplication.shared.openURL(url)
+//        }
+//
+//    }
     @IBOutlet weak var nTitle: UILabel!
     @IBOutlet weak var nDesc: UILabel!
     @IBOutlet weak var nImage: UIImageView!
-    @IBOutlet weak var readMoreButton: UIButton!
     var newsTitle: String?
     var newsDesc: String?
     var newsId: String?
@@ -38,7 +37,6 @@ class TravelViewControlller: UITableViewController {
         
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationItem.title = "Travel+Learn"
-        self.readMoreButton.layer.cornerRadius = 15
         
         self.nTitle.text = "Travel + Learn"
         self.nTitle.lineBreakMode = NSLineBreakMode.byWordWrapping
@@ -67,6 +65,22 @@ class TravelViewControlller: UITableViewController {
         self.toolbarItems = [flexible,toolbarTitle]
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
       
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tableView.deselectRow(at: self.tableView.indexPathForSelectedRow!, animated: true)
+        
+        // For navigating "More about Travel" to IHO Travel page.
+        if indexPath.section == 0 {
+            
+            let travelURL = URL(string: "https://iho.asu.edu/outreach/travel")!
+            
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(travelURL, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(travelURL)
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
