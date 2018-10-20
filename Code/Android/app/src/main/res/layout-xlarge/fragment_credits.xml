@@ -103,6 +103,28 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="ASU Team—Version 3"
+                    android:textStyle="bold"
+                    android:textSize="26dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/asuTeamInfo3"
+                    android:layout_gravity="center"
+
+                    android:textSize="24dp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center_horizontal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="ASU Team—Version 2"
                     android:textStyle="bold"
                     android:textSize="26dp" />
