@@ -14,13 +14,15 @@ open class Science{
     var desc: String
     var link: String
     var scienceOrder: Double
+    var scienceTimestamp: Date
     
-    init(title: String, id: String,desc: String,image: String,link: String, scienceOrder:Double){
+    init(title: String, id: String, desc: String, image: String, link: String, scienceOrder: Double, scienceTimestamp: Date){
         self.title = title
         self.id = id
         self.desc = desc
         self.link = link
         self.scienceOrder = scienceOrder
+        self.scienceTimestamp = scienceTimestamp
     }
     init() {
         self.title = "unknown"
@@ -28,6 +30,7 @@ open class Science{
         self.desc = "unknown"
         self.link = "unknown"
         self.scienceOrder = 0
+        self.scienceTimestamp = Date.init()
     }
     
     init (jsonStr: String){
@@ -36,6 +39,7 @@ open class Science{
         self.desc = ""
         self.link = ""
         self.scienceOrder = 0
+        self.scienceTimestamp = Date.init()
         if let data: Data = jsonStr.data(using: String.Encoding.utf8){
             do{
                 let dict = try JSONSerialization.jsonObject(with: data, options:.mutableContainers) as?[String:AnyObject]
@@ -55,6 +59,7 @@ open class Science{
         self.desc = dict["desc"] as! String
         self.link = dict["link"] as! String
         self.scienceOrder = dict["order"] as! Double
+        self.scienceTimestamp = dict["timestamp"] as! Date
     }
     
     func toJsonString () ->String{
