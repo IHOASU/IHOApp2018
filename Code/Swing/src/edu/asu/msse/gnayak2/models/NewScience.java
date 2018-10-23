@@ -2,27 +2,28 @@ package edu.asu.msse.gnayak2.models;
 
 import org.json.JSONObject;
 
-import java.sql.Timestamp;
+import java.util.Date;
 import java.util.UUID;
 
 public class NewScience {
 	private String id;
 	private String title;
 	private String link;
-	private Timestamp timestamp;
+	// String Type instead of TimeStamp for easy serailization/deserialization
+	private String timestamp;
 
 	public NewScience(String newsTitle, String linkMore) {
 		id = UUID.randomUUID().toString().replace("-", "");
 		title = newsTitle;
 		link = linkMore;
-		timestamp = new Timestamp(System.currentTimeMillis());
+		timestamp = String.valueOf(new Date().toInstant().toEpochMilli());
 	}
 
-	public Timestamp getTimestamp() {
+	public String getTimestamp() {
 		return timestamp;
 	}
 
-	public void setTimestamp(Timestamp timestamp) {
+	public void setTimestamp(String timestamp) {
 		this.timestamp = timestamp;
 	}
 
