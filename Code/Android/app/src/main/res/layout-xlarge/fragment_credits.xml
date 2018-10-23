@@ -171,7 +171,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Mobile App Team"
+                    android:text="Mobile App Website Team"
                     android:textStyle="bold"
                     android:textSize="26dp" />
 
