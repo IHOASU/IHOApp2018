@@ -1,10 +1,21 @@
-//
-//  TravelViewController.swift
-//  IHO-ASU
-//
-//  Created by Sweta Singhal on 3/30/17.
-//  Copyright © 2017 Sweta Singhal. All rights reserved.
-//
+/******************************************************************************************************************
+ # Name of Program  :   TravelViewController.swift
+ #
+ # Description      :   Travel page
+ #
+ # Created By       :   Masters SE Team (app version 2)
+ #
+ # Created On       :   13 February 2017
+ #
+ # Version          :   1.0
+ #*****************************************************************************************************************
+ # Revised By       :   Masters SE Team-3 (app version 3)
+ #
+ # Revised On       :   16 October 2018
+ #
+ # Version          :   1.1
+ #*****************************************************************************************************************/
+
 import Foundation
 import UIKit
 
@@ -84,4 +95,3 @@ class TravelViewControlller: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 }
-

@@ -89,6 +89,9 @@
 		9FFC3B721EA840FF004A0597 /* ask_ananthropologist_v2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FFC3B6F1EA840FF004A0597 /* ask_ananthropologist_v2.jpg */; };
 		9FFC3B731EA840FF004A0597 /* ASU-IHO-About.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FFC3B701EA840FF004A0597 /* ASU-IHO-About.jpg */; };
 		9FFC3B741EA840FF004A0597 /* IHO_Gallery_main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FFC3B711EA840FF004A0597 /* IHO_Gallery_main.jpg */; };
+		F81D6F61217900A800AA11A7 /* trvl_learn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F81D6F60217900A700AA11A7 /* trvl_learn.jpg */; };
+		F81D6F62217900A800AA11A7 /* trvl_learn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F81D6F60217900A700AA11A7 /* trvl_learn.jpg */; };
+		F81D6F63217900A800AA11A7 /* trvl_learn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F81D6F60217900A700AA11A7 /* trvl_learn.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +200,7 @@
 		9FFC3B6F1EA840FF004A0597 /* ask_ananthropologist_v2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ask_ananthropologist_v2.jpg; sourceTree = "<group>"; };
 		9FFC3B701EA840FF004A0597 /* ASU-IHO-About.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ASU-IHO-About.jpg"; sourceTree = "<group>"; };
 		9FFC3B711EA840FF004A0597 /* IHO_Gallery_main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IHO_Gallery_main.jpg; sourceTree = "<group>"; };
+		F81D6F60217900A700AA11A7 /* trvl_learn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trvl_learn.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +279,7 @@
 				9F30DE9C1E8EC79E00F40E06 /* newLogo.jpg */,
 				9F30DEA41E8EC79E00F40E06 /* sediments.jpg */,
 				9F30DEA61E8EC79E00F40E06 /* travellearnimge.jpg */,
+				F81D6F60217900A700AA11A7 /* trvl_learn.jpg */,
 				9F30DE8C1E8EC79E00F40E06 /* index.js */,
 				9F30DE8F1E8EC79E00F40E06 /* jquery-1.10.2.min.js */,
 				9F30DE901E8EC79E00F40E06 /* jquery-1.11.0.min.js */,
@@ -504,6 +509,7 @@
 				230EE90A1E4E147100B4F9F9 /* invest.png in Resources */,
 				9F30DED41E8EC79E00F40E06 /* sediments.jpg in Resources */,
 				9F30DED51E8EC79E00F40E06 /* skull.html in Resources */,
+				F81D6F61217900A800AA11A7 /* trvl_learn.jpg in Resources */,
 				9F30DED21E8EC79E00F40E06 /* rsz_iho_h_mg.png in Resources */,
 				9FB7C5821E4AAA5900B88166 /* Main.storyboard in Resources */,
 				9FFC3B741EA840FF004A0597 /* IHO_Gallery_main.jpg in Resources */,
@@ -520,6 +526,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81D6F62217900A800AA11A7 /* trvl_learn.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +534,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81D6F63217900A800AA11A7 /* trvl_learn.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
