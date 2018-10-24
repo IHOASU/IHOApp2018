@@ -19,6 +19,9 @@
             android:id="@+id/customBackButton"
             android:layout_width="30dp"
             android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
             android:layout_gravity="center_vertical"
             android:background="@drawable/arrow"
             android:onClick="onClick" />
@@ -28,7 +31,7 @@
             android:layout_width="345dp"
             android:layout_height="40dp"
             android:orientation="horizontal"
-            android:paddingStart="10dp">
+            android:paddingLeft="10dp">
 
             <TextView
                 android:id="@+id/txt"
@@ -47,45 +50,21 @@
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:layout_below="@+id/customBackButtonll"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="0dp"
-        android:background="@android:color/background_light"
-        android:scrollbarStyle="insideOverlay">
+        android:background="@android:color/background_light">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.30"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/ne4"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:background="@drawable/shape"
-                android:onClick="onClick"
-                android:text="  Featured News                                       >"
-                android:textColor="@android:color/background_light"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:text="\n"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
@@ -100,28 +79,28 @@
                 android:textSize="20dp" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:clickable="false"
                 android:text="\n"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/ne5"
+                android:id="@+id/ne4"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:background="@drawable/shape"
                 android:onClick="onClick"
-                android:text="  In the Media                                           >"
+                android:text="  Featured News                                       >"
                 android:textColor="@android:color/background_light"
-                android:textSize="20sp" />
+                android:textSize="20dp" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:clickable="false"
                 android:text="\n"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -134,11 +113,11 @@
                 android:onClick="onClick"
                 android:text="  Events                                                     >"
                 android:textColor="@android:color/background_light"
-                android:textSize="20sp" />
+                android:textSize="20dp" />
 
             <TextView
-                android:id="@+id/textView7"
-                android:layout_width="match_parent"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="false"
                 android:text="\n"
@@ -148,7 +127,9 @@
             <Button
                 android:id="@+id/ne3"
                 android:layout_width="match_parent"
-                android:layout_height="59dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linearLayout"
                 android:background="@drawable/shape"
                 android:onClick="onClick"
                 android:text="  Travel + Learn                                       >"

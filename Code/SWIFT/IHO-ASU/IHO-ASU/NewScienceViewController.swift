@@ -1,20 +1,10 @@
-/******************************************************************************************************************
- # Name of Program  :   NewScienceViewController.swift
- #
- # Description      :   New Science page
- #
- # Created By       :   Masters SE Team (app version 2)
- #
- # Created On       :   30 March 2017
- #
- # Version          :   1.0
- #*****************************************************************************************************************
- # Revised By       :   Masters SE Team-3 (app version 3)
- #
- # Revised On       :   16 October 2018
- #
- # Version          :   1.1
- #*****************************************************************************************************************/
+//
+//  NewScienceViewController.swift
+//  IHO-ASU
+//
+//  Created by Sweta Singhal on 3/30/17.
+//  Copyright © 2017 Sweta Singhal. All rights reserved.
+//
 
 import Foundation
 import UIKit
@@ -61,17 +51,17 @@ class NewScienceViewController: UITableViewController {
                             if let newsFromJSON = myJSON as? [[String: AnyObject]]{
                                 for news in newsFromJSON{
                                     let newsObject = Science()
-                                    if let title = news["title"] as? String,let id = news["id"] as? String,let link = news["link"] as? String, let scienceOrder = news["order"] as? Double{
+                                    if let title = news["title"] as? String,let id = news["id"] as? String,let link = news["link"] as? String, let scienceTimestamp = news["timestamp"] as? String{
                                         newsObject.id = id
                                         newsObject.title = title
-                                        newsObject.scienceOrder = scienceOrder
                                         newsObject.link = link
+                                        newsObject.scienceTimestamp = scienceTimestamp
                                         self.names.append(newsObject.title)
                                     }
                                     self.newsList[newsObject.title] = newsObject
                                 }
                             }
-                            let sortedArray = self.newsList.sorted { $0.value.scienceOrder < $1.value.scienceOrder }
+                            let sortedArray = self.newsList.sorted { $0.value.scienceTimestamp > $1.value.scienceTimestamp }
                             self.names = sortedArray.map {$0.0 }
                             self.newScienceTableView.reloadData()
                         }
@@ -95,11 +85,12 @@ class NewScienceViewController: UITableViewController {
                     if let newsFromJSON = myJSON as? [[String: AnyObject]]{
                         for news in newsFromJSON{
                             let newsObject = Science()
-                            if let title = news["title"] as? String,let desc = news["desc"] as? String,let id = news["id"] as? String,let link = news["link"] as? String{
+                            if let title = news["title"] as? String,let desc = news["desc"] as? String,let id = news["id"] as? String,let link = news["link"] as? String, let scienceTimestamp = news["timestamp"] as? String{
                                 newsObject.id = id
                                 newsObject.title = title
                                 newsObject.desc = desc
                                 newsObject.link = link
+                                newsObject.scienceTimestamp = scienceTimestamp
                                 self.names.append(newsObject.title)
                             }
                             self.newsList[newsObject.title] = newsObject
@@ -127,7 +118,7 @@ class NewScienceViewController: UITableViewController {
         
         //toolbar
         let label = UILabel(frame: CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(350), height: CGFloat(21)))
-        label.text = "ASU IHO 2018"
+        label.text = "ASU IHO 2017"
         label.center = CGPoint(x: view.frame.midX, y: view.frame.height)
         label.textAlignment = NSTextAlignment.center
         label.textColor = UIColor.white

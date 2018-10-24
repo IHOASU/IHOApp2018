@@ -1,20 +1,10 @@
-/******************************************************************************************************************
- # Name of Program  :   DonationController.swift
- #
- # Description      :   Donation page
- #
- # Created By       :   Masters SE Team (app version 2)
- #
- # Created On       :   8 February 2017
- #
- # Version          :   1.0
- #*****************************************************************************************************************
- # Revised By       :   Masters SE Team-3 (app version 3)
- #
- # Revised On       :   16 October 2018
- #
- # Version          :   1.1
- #*****************************************************************************************************************/
+//
+//  DonationController.swift
+//  IHO-ASU
+//
+//  Created by Arpit Jaiswal on 2/8/17.
+//  Copyright © 2017 Sweta Singhal. All rights reserved.
+//
 
 import UIKit
 
@@ -30,7 +20,7 @@ class DonationController: UIViewController {
         
         //toolbar
         let label = UILabel(frame: CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(350), height: CGFloat(21)))
-        label.text = "ASU IHO 2018"
+        label.text = "ASU IHO 2017"
         label.center = CGPoint(x: view.frame.midX, y: view.frame.height)
         label.textAlignment = NSTextAlignment.center
         label.textColor = UIColor.white

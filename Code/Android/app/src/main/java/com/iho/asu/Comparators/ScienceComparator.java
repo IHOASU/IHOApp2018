@@ -12,8 +12,6 @@ public class ScienceComparator implements Comparator<Science> {
 
     @Override
     public int compare(Science lhs, Science rhs) {
-
-        return lhs.getOrder() - rhs.getOrder();
-
+        return rhs.getTimestamp().compareTo(lhs.getTimestamp());
     }
 }

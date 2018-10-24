@@ -1,26 +1,35 @@
 package edu.asu.msse.gnayak2.models;
 
-import java.util.UUID;
-
 import org.json.JSONObject;
 
-public class NewScience {
-	String id;
-	String title;
-	int order;
-	String link;
+import java.util.Date;
+import java.util.UUID;
 
-	public NewScience(String newsTitle, int order, String linkMore) {
+public class NewScience {
+	private String id;
+	private String title;
+	private String link;
+	// String Type instead of TimeStamp for easy serailization/deserialization
+	private String timestamp;
+
+	public NewScience(String newsTitle, String linkMore) {
 		id = UUID.randomUUID().toString().replace("-", "");
 		title = newsTitle;
-		this.order = order;
 		link = linkMore;
+		timestamp = String.valueOf(new Date().toInstant().toEpochMilli());
 	}
-	
+
+	public String getTimestamp() {
+		return timestamp;
+	}
+
+	public void setTimestamp(String timestamp) {
+		this.timestamp = timestamp;
+	}
+
 	public NewScience(JSONObject object) {
 		id = object.getString("id");
 		title = object.getString("title");
-		order = object.getInt("order");
 		link = object.getString("link");
 	}
 
@@ -38,14 +47,6 @@ public class NewScience {
 
 	public void setTitle(String title) {
 		this.title = title;
-	}
-
-	public int getOrder() {
-		return order;
-	}
-
-	public void setOrder(int order) {
-		this.order = order;
 	}
 
 	public String getLink() {

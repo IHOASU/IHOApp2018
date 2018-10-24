@@ -1,14 +1,10 @@
-/******************************************************************************************************************
- # Name of Program  :   Lecturer.swift
- #
- # Description      :   Lecturer page
- #
- # Created By       :   Masters SE Team (app version 2)
- #
- # Created On       :   30 March 2017
- #
- # Version          :   1.0
- #*****************************************************************************************************************/
+//
+//  Lecturer.swift
+//  IHO-ASU
+//
+//  Created by Sweta Singhal on 3/30/17.
+//  Copyright © 2017 Sweta Singhal. All rights reserved.
+//
 
 import Foundation
 
