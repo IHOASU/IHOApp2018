@@ -3,30 +3,15 @@ buildscript {
     repositories {
         mavenCentral()
         jcenter()
-<<<<<<< HEAD
         google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.4'
-=======
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
-        google()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
->>>>>>> VimalMenon
     }
 }
 allprojects {
     repositories {
         mavenCentral()
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
     }
 }
 dependencies {

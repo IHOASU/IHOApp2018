@@ -1,20 +1,10 @@
-/******************************************************************************************************************
- # Name of Program  :   NewsEventsViewController.swift
- #
- # Description      :   News + Events page
- #
- # Created By       :   Masters SE Team (app version 2)
- #
- # Created On       :   9 February 2017
- #
- # Version          :   1.0
- #*****************************************************************************************************************
- # Revised By       :   Masters SE Team-3 (app version 3)
- #
- # Revised On       :   16 October 2018
- #
- # Version          :   1.1
- #*****************************************************************************************************************/
+//
+//  NewsEventsViewController.swift
+//  IHO-ASU
+//
+//  Created by Sweta Singhal on 2/9/17.
+//  Copyright © 2017 Sweta Singhal. All rights reserved.
+//
 
 import UIKit
 
@@ -41,7 +31,7 @@ class NewsEventsViewController: UITableViewController {
         
         //toolbar
         let label = UILabel(frame: CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(350), height: CGFloat(21)))
-        label.text = "ASU IHO 2018"
+        label.text = "ASU IHO 2017"
         label.center = CGPoint(x: view.frame.midX, y: view.frame.height)
         label.textAlignment = NSTextAlignment.center
         label.textColor = UIColor.white
@@ -175,43 +165,11 @@ class NewsEventsViewController: UITableViewController {
             let title = self.names[(indexPath.row)]
             let newsObjectToBeSend = newsList[title]! as News
             
-            //print("title = ",title)
             viewController.newsTitle = title
             viewController.newsDesc = newsObjectToBeSend.desc
             viewController.newsId = newsObjectToBeSend.id
             viewController.newsImage = newsObjectToBeSend.image
             viewController.newsLink = newsObjectToBeSend.link
-        }
-    }
-    
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.tableView.deselectRow(at: self.tableView.indexPathForSelectedRow!, animated: true)
-        
-        // For navigating "News" to IHO News page.
-        if indexPath.section == 1 {
-
-            let url = URL(string: "https://iho.asu.edu/news")!
-            
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            } else {
-                UIApplication.shared.openURL(url)
-            }
-            
-        }
-        
-        // For navigating "In the Media" to IHO Media page.
-        if indexPath.section == 2 {
-            
-            let url = URL(string: "https://iho.asu.edu/media")!
-            
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            } else {
-                UIApplication.shared.openURL(url)
-            }
-            
         }
     }
     
