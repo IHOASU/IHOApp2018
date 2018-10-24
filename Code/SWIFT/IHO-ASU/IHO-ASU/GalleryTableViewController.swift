@@ -26,6 +26,8 @@ class GalleryTableViewCell: UITableViewCell {
     @IBOutlet weak var textlabel: UITextView!
 }
 
+
+
 class GalleryTableViewController: UITableViewController {
     @IBOutlet var galleryTableView: UITableView!
     
@@ -36,6 +38,7 @@ class GalleryTableViewController: UITableViewController {
     var reachability: Reachability = Reachability();
     let dispatch_group = DispatchGroup()
     
+
     func loadImageList(){
         
                 let url = URL(string:urlString + "galleryobjects" )
@@ -137,6 +140,7 @@ class GalleryTableViewController: UITableViewController {
             }
         }
         
+        self.galleryTableView.backgroundColor = UIColor(red: CGFloat((233 / 255.0)), green: CGFloat((233 / 255.0)), blue: CGFloat((233 / 255.0)), alpha: CGFloat(1))
         
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
@@ -152,6 +156,7 @@ class GalleryTableViewController: UITableViewController {
         let flexible = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         self.toolbarItems = [flexible,toolbarTitle]
         
+        //self.view.backgroundColor = UIColor(red: CGFloat((233 / 255.0)), green: CGFloat((233 / 255.0)), blue: CGFloat((233 / 255.0)), alpha: CGFloat(1))
         
         let flag = reachability.connectedToNetwork();
         if flag
@@ -232,6 +237,7 @@ class GalleryTableViewController: UITableViewController {
                 }
             }
         }
+        
         self.galleryTableView.reloadData()
         
     }
@@ -267,6 +273,9 @@ class GalleryTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = galleryTableView.dequeueReusableCell(withIdentifier: "imageCell", for: indexPath)as! GalleryTableViewCell
+        
+        cell.textlabel?.textColor = UIColor.black
+        
         if(self.names != nil){
         cell.textlabel?.text = self.names[indexPath.row]
         }

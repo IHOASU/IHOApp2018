@@ -76,7 +76,7 @@ class TravelViewControlller: UITableViewController {
         let flexible = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         self.toolbarItems = [flexible,toolbarTitle]
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
-      
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

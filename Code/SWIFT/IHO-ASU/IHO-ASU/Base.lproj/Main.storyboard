@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z1m-dx-aeW">
+
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -246,7 +249,9 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="mediaCell" textLabel="ayc-oO-IUM" style="IBUITableViewCellStyleDefault" id="rTY-cK-WEg">
                                         <rect key="frame" x="0.0" y="195" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
+
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rTY-cK-WEg" id="p3Q-48-c7c">
+
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -727,19 +732,25 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nip-Ju-Q90">
                                             <rect key="frame" x="20" y="10" width="335" height="300"/>
+                                            <color key="backgroundColor" white="0.91763864436619713" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" white="0.86438160211267601" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="300" id="whB-zt-yNQ"/>
                                             </constraints>
                                         </imageView>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="text goes here" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIj-3o-5V8">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="text goes here" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIj-3o-5V8">
                                             <rect key="frame" x="20" y="320" width="335" height="153.5"/>
-                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+
+                                            <color key="backgroundColor" white="0.92029782863849763" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+
                                             <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+
+                                    <color key="backgroundColor" white="0.91691424589201875" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+
                                     <constraints>
                                         <constraint firstItem="aIj-3o-5V8" firstAttribute="top" secondItem="nip-Ju-Q90" secondAttribute="bottom" constant="10" id="8w6-JY-Coz"/>
                                         <constraint firstAttribute="trailing" secondItem="nip-Ju-Q90" secondAttribute="trailing" constant="20" id="JdN-2q-Gm4"/>
@@ -1578,6 +1589,7 @@ If you would like to send donation by check, please make your donation payable t
                                     <constraint firstAttribute="width" constant="339" id="igm-2T-Dqp"/>
                                 </constraints>
                             </imageView>
+
                             <webView opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZHq-XI-Azy">
                                 <rect key="frame" x="20" y="287" width="339" height="181"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1993,6 +2005,7 @@ If you would like to send donation by check, please make your donation payable t
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="46.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="FJ0-PL-dyn">
                                                     <rect key="frame" x="26" y="0.0" width="333" height="46.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
@@ -2007,6 +2020,7 @@ If you would like to send donation by check, please make your donation payable t
                                     <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="travelBannerCell" rowHeight="178" id="lWX-Bc-lZh">
                                         <rect key="frame" x="0.0" y="47" width="375" height="178"/>
                                         <autoresizingMask key="autoresizingMask"/>
+
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" layoutMarginsFollowReadableWidth="YES" tableViewCell="lWX-Bc-lZh" id="wnP-8l-fWE">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="177.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
@@ -2029,8 +2043,9 @@ If you would like to send donation by check, please make your donation payable t
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="320.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XHh-2B-vA4">
-                                                    <rect key="frame" x="16" y="0.0" width="343" height="320.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="341" id="XHh-2B-vA4">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="299.5"/>
+
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -2039,25 +2054,27 @@ If you would like to send donation by check, please make your donation payable t
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="F7X-Gt-Uii" userLabel="moreTravelInfoCell">
-                                        <rect key="frame" x="0.0" y="546" width="375" height="50"/>
+
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="iTI-ME-x62">
+                                        <rect key="frame" x="0.0" y="598" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F7X-Gt-Uii" id="V1N-U1-ZDc">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iTI-ME-x62" id="gZ3-3t-MmV">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtK-9y-mye">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uko-1p-dPq">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.0039215686269999999" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <viewLayoutGuide key="safeArea" id="Ocq-TW-msL"/>
+
                                                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
                                                     <state key="normal" title="More About Travel">
                                                         <color key="titleShadowColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="readMoreLink:" destination="LVX-Zr-YQb" eventType="touchUpInside" id="BZu-gi-sTU"/>
-                                                        <action selector="travelMoreLink:" destination="7Fx-uN-iA1" eventType="touchUpInside" id="Xgc-h0-rja"/>
+                                                        <action selector="readMoreLink:" destination="LVX-Zr-YQb" eventType="touchUpInside" id="Fpt-Tb-2xO"/>
+                                                        <action selector="travelMoreLink:" destination="7Fx-uN-iA1" eventType="touchUpInside" id="Ujb-oh-VdN"/>
+
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -2076,9 +2093,10 @@ If you would like to send donation by check, please make your donation payable t
                     <connections>
                         <outlet property="nDesc" destination="XHh-2B-vA4" id="HMa-bX-cVr"/>
                         <outlet property="nImage" destination="4I8-pT-zmC" id="yKW-mV-P5x"/>
-                        <outlet property="nTitle" destination="FJ0-PL-dyn" id="Keo-kW-Z7t"/>
-                        <outlet property="travelMoreButton" destination="wtK-9y-mye" id="ylY-HO-z7X"/>
-                        <outlet property="travelTableView" destination="Rg3-VG-L1c" id="YtZ-2H-tPD"/>
+                        <outlet property="nTitle" destination="biz-PV-ZfL" id="ftn-fK-5V4"/>
+                        <outlet property="travelMoreButton" destination="uko-1p-dPq" id="cjB-8v-qyr"/>
+                        <outlet property="travelTableView" destination="Rg3-VG-L1c" id="5A5-WM-uur"/>
+
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YMy-gM-9q1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2333,7 +2351,8 @@ If you would like to send donation by check, please make your donation payable t
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kG4-oq-6OV">
+                            <webView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="kG4-oq-6OV">
+
                                 <rect key="frame" x="20" y="23" width="335" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
