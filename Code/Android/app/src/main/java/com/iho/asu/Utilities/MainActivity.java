@@ -273,13 +273,10 @@ public class MainActivity extends Activity implements OnClickListener{
                 startActivity(intent);
                 break;
             case R.id.ne1:
-<<<<<<< HEAD
-=======
                 /*fragmentTransaction.remove(fragment);
                 fragment = new NewsFragment();
                 fragmentTransaction.replace(R.id.main_layout, fragment);
                 fragmentTransaction.commit();*/
->>>>>>> VimalMenon
                 uri = Uri.parse("https://iho.asu.edu/news");
                 intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
