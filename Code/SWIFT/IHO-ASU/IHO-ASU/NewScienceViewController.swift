@@ -51,10 +51,9 @@ class NewScienceViewController: UITableViewController {
                             if let newsFromJSON = myJSON as? [[String: AnyObject]]{
                                 for news in newsFromJSON{
                                     let newsObject = Science()
-                                    if let title = news["title"] as? String,let id = news["id"] as? String,let link = news["link"] as? String, let scienceOrder = news["order"] as? Double, let scienceTimestamp = news["timestamp"] as? Date{
+                                    if let title = news["title"] as? String,let id = news["id"] as? String,let link = news["link"] as? String, let scienceTimestamp = news["timestamp"] as? String{
                                         newsObject.id = id
                                         newsObject.title = title
-                                        newsObject.scienceOrder = scienceOrder
                                         newsObject.link = link
                                         newsObject.scienceTimestamp = scienceTimestamp
                                         self.names.append(newsObject.title)
@@ -62,7 +61,7 @@ class NewScienceViewController: UITableViewController {
                                     self.newsList[newsObject.title] = newsObject
                                 }
                             }
-                            let sortedArray = self.newsList.sorted { $0.value.scienceTimestamp < $1.value.scienceTimestamp }
+                            let sortedArray = self.newsList.sorted { $0.value.scienceTimestamp > $1.value.scienceTimestamp }
                             self.names = sortedArray.map {$0.0 }
                             self.newScienceTableView.reloadData()
                         }
@@ -86,11 +85,12 @@ class NewScienceViewController: UITableViewController {
                     if let newsFromJSON = myJSON as? [[String: AnyObject]]{
                         for news in newsFromJSON{
                             let newsObject = Science()
-                            if let title = news["title"] as? String,let desc = news["desc"] as? String,let id = news["id"] as? String,let link = news["link"] as? String{
+                            if let title = news["title"] as? String,let desc = news["desc"] as? String,let id = news["id"] as? String,let link = news["link"] as? String, let scienceTimestamp = news["timestamp"] as? String{
                                 newsObject.id = id
                                 newsObject.title = title
                                 newsObject.desc = desc
                                 newsObject.link = link
+                                newsObject.scienceTimestamp = scienceTimestamp
                                 self.names.append(newsObject.title)
                             }
                             self.newsList[newsObject.title] = newsObject
