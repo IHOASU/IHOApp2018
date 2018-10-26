@@ -13,21 +13,21 @@ open class Science{
     var id: String
     var desc: String
     var link: String
-    var scienceOrder: Double
+    var scienceTimestamp: String
     
-    init(title: String, id: String,desc: String,image: String,link: String, scienceOrder:Double){
+    init(title: String, id: String, desc: String, image: String, link: String, scienceTimestamp: String){
         self.title = title
         self.id = id
         self.desc = desc
         self.link = link
-        self.scienceOrder = scienceOrder
+        self.scienceTimestamp = scienceTimestamp
     }
     init() {
         self.title = "unknown"
         self.id = "unknown"
         self.desc = "unknown"
         self.link = "unknown"
-        self.scienceOrder = 0
+        self.scienceTimestamp = "0"
     }
     
     init (jsonStr: String){
@@ -35,7 +35,7 @@ open class Science{
         self.id = ""
         self.desc = ""
         self.link = ""
-        self.scienceOrder = 0
+        self.scienceTimestamp = "0"
         if let data: Data = jsonStr.data(using: String.Encoding.utf8){
             do{
                 let dict = try JSONSerialization.jsonObject(with: data, options:.mutableContainers) as?[String:AnyObject]
@@ -43,6 +43,7 @@ open class Science{
                 self.id = (dict!["id"] as? String)!
                 self.desc = (dict!["desc"] as? String)!
                 self.link = (dict!["link"] as? String)!
+                self.scienceTimestamp = (dict!["link"] as? String)!
             }catch {
                 print("unable to convert to dictionary")
             }
@@ -54,12 +55,12 @@ open class Science{
         self.id = dict["id"] as! String
         self.desc = dict["desc"] as! String
         self.link = dict["link"] as! String
-        self.scienceOrder = dict["order"] as! Double
+        self.scienceTimestamp = dict["timestamp"] as! String
     }
     
     func toJsonString () ->String{
         var jsonStr = "";
-        let dict = ["title": title,"id": id,"desc": desc, "link": link]
+        let dict : [String:Any] = ["title": title,"id": id,"desc": desc, "link": link, "timestamp": scienceTimestamp]
         do {
             let jsonData = try JSONSerialization.data(withJSONObject: dict, options: JSONSerialization.WritingOptions.prettyPrinted)
             jsonStr = NSString(data: jsonData, encoding: String.Encoding.utf8.rawValue)! as String
