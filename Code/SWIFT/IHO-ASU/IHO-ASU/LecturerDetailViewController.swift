@@ -72,9 +72,9 @@ class LecturerDetailViewController: UITableViewController, MFMailComposeViewCont
         
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         
-        buttonReadMore.layer.cornerRadius = 15
-        gallery.layer.cornerRadius = 15
-        lecEmail.layer.cornerRadius = 15
+        buttonReadMore.layer.cornerRadius = 0
+        gallery.layer.cornerRadius = 0
+        lecEmail.layer.cornerRadius = 0
         
         if(newsName != nil){
             nTitle.text = newsName
