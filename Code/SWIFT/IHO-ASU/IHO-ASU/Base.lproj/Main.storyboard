@@ -2231,19 +2231,14 @@ If you would like to send donation by check, please make your donation payable t
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="222" id="5Ei-N1-2GD">
                                         <rect key="frame" x="0.0" y="526" width="375" height="222"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="5Ei-N1-2GD" id="ceN-ev-lL2">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Ei-N1-2GD" id="ceN-ev-lL2">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="221.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NX2-YT-Gvm">
-                                                    <rect key="frame" x="98" y="44" width="164" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NX2-YT-Gvm">
+                                                    <rect key="frame" x="0.0" y="44" width="375" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                     <color key="backgroundColor" red="0.0039215686269999999" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="DlT-hO-6c0"/>
-                                                        <constraint firstAttribute="width" constant="164" id="FVC-GS-AgW"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164" id="XP5-vM-pw7"/>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="haD-Cz-4Nl"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
                                                     <state key="normal" title="Ask a question">
                                                         <color key="titleShadowColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2252,17 +2247,10 @@ If you would like to send donation by check, please make your donation payable t
                                                         <action selector="lEmail:" destination="rWH-Fv-tLx" eventType="touchUpInside" id="6Su-9f-GXZ"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jl-be-reC">
-                                                    <rect key="frame" x="98" y="0.0" width="164" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jl-be-reC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                     <color key="backgroundColor" red="0.0039215686269999999" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="0Ya-zr-I1d"/>
-                                                        <constraint firstAttribute="width" constant="164" id="CbW-1N-WQd"/>
-                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="Cg5-Mp-H6j"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164" id="bJ8-Vr-rRq"/>
-                                                        <constraint firstAttribute="height" constant="30" id="gKU-M5-l4I"/>
-                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="164" id="hKu-mZ-KTO"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
                                                     <state key="normal" title="View Gallery">
                                                         <color key="titleShadowColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2272,15 +2260,10 @@ If you would like to send donation by check, please make your donation payable t
                                                         <segue destination="Gii-Qf-P16" kind="show" identifier="LecturerGallery" id="hkT-Su-wSa"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hh-Yt-xMD">
-                                                    <rect key="frame" x="55" y="89" width="280" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hh-Yt-xMD">
+                                                    <rect key="frame" x="0.0" y="87" width="375" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                                     <color key="backgroundColor" red="0.0039215686269999999" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="280" id="RhW-mq-Ze2"/>
-                                                        <constraint firstAttribute="height" constant="30" id="VxB-mW-cpv"/>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="l9Q-A3-Z3A"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="uSO-QB-0vF"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
                                                     <state key="normal" title="Learn more about this scientist">
                                                         <color key="titleShadowColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2290,19 +2273,6 @@ If you would like to send donation by check, please make your donation payable t
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="5hh-Yt-xMD" firstAttribute="top" secondItem="NX2-YT-Gvm" secondAttribute="bottom" constant="15" id="0nX-qO-nug"/>
-                                                <constraint firstItem="8Jl-be-reC" firstAttribute="leading" secondItem="ceN-ev-lL2" secondAttribute="leading" constant="98" id="8RZ-Gj-ADU"/>
-                                                <constraint firstItem="NX2-YT-Gvm" firstAttribute="leading" secondItem="ceN-ev-lL2" secondAttribute="leadingMargin" constant="90" id="Prq-NU-bZj"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="5hh-Yt-xMD" secondAttribute="bottom" constant="94" id="RX1-xS-vRd"/>
-                                                <constraint firstItem="NX2-YT-Gvm" firstAttribute="top" secondItem="8Jl-be-reC" secondAttribute="bottom" constant="14" id="UfF-q0-N7O"/>
-                                                <constraint firstItem="8Jl-be-reC" firstAttribute="top" secondItem="ceN-ev-lL2" secondAttribute="top" id="Wfv-CX-Q5C"/>
-                                                <constraint firstItem="NX2-YT-Gvm" firstAttribute="leading" secondItem="8Jl-be-reC" secondAttribute="leading" id="Zh6-Xc-gx6"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="5hh-Yt-xMD" secondAttribute="trailing" constant="40" id="dSL-nb-qVm"/>
-                                                <constraint firstItem="5hh-Yt-xMD" firstAttribute="leading" secondItem="ceN-ev-lL2" secondAttribute="leadingMargin" constant="39" id="df2-5G-muE"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="NX2-YT-Gvm" secondAttribute="trailing" constant="105" id="lDf-oL-k6R"/>
-                                                <constraint firstAttribute="trailing" secondItem="8Jl-be-reC" secondAttribute="trailing" constant="113" id="tp8-Zf-nNr"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -2328,7 +2298,7 @@ If you would like to send donation by check, please make your donation payable t
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hcO-UA-1af" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3081" y="-1260"/>
+            <point key="canvasLocation" x="3080.8000000000002" y="-1260.7196401799101"/>
         </scene>
         <!--Lucy View Controller-->
         <scene sceneID="MlJ-aH-qT6">
