@@ -45,7 +45,7 @@ class AskAnAnthropologistViewController: UIViewController, UITextViewDelegate, U
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationItem.title = "Ask An Anthropologist"
         
-        askButton.layer.cornerRadius = 15
+        askButton.layer.cornerRadius = 0
         
 
         //toolbar

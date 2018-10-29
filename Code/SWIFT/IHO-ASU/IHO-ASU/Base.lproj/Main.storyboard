@@ -1160,7 +1160,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XT7-XU-Uv6">
-                                                    <rect key="frame" x="0.0" y="91.5" width="375" height="40"/>
+                                                    <rect key="frame" x="0.0" y="91" width="375" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.0037125688977539539" green="0.17571765184402466" blue="0.35848188400268555" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
@@ -1550,7 +1550,7 @@ If you would like to send donation by check, please make your donation payable t
         <scene sceneID="Opy-1b-5Nb">
             <objects>
                 <viewController id="md1-mR-nm6" customClass="AskAnAnthropologistViewController" customModule="IHO_ASU" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="3ld-8D-FAX">
+                    <view key="view" contentMode="scaleToFill" id="3ld-8D-FAX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1561,8 +1561,8 @@ If you would like to send donation by check, please make your donation payable t
                                     <constraint firstAttribute="width" constant="339" id="igm-2T-Dqp"/>
                                 </constraints>
                             </imageView>
-                            <webView opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZHq-XI-Azy">
-                                <rect key="frame" x="20" y="287" width="339" height="181"/>
+                            <webView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="ZHq-XI-Azy">
+                                <rect key="frame" x="20" y="287" width="339" height="201"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1570,13 +1570,10 @@ If you would like to send donation by check, please make your donation payable t
                                     <constraint firstAttribute="height" constant="201" id="be8-zF-BfC"/>
                                 </constraints>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SD-oF-ywV">
-                                <rect key="frame" x="87" y="482" width="201" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SD-oF-ywV">
+                                <rect key="frame" x="0.0" y="510" width="375" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
                                 <color key="backgroundColor" red="0.0037125688980000002" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="201" id="QGZ-C7-Cyd"/>
-                                    <constraint firstAttribute="height" constant="30" id="oXb-gv-0Sz"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
                                 <state key="normal" title="Visit AskAnAnthropologist">
                                     <color key="titleShadowColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1590,15 +1587,10 @@ If you would like to send donation by check, please make your donation payable t
                         <constraints>
                             <constraint firstItem="ZHq-XI-Azy" firstAttribute="leading" secondItem="3ld-8D-FAX" secondAttribute="leadingMargin" constant="4" id="Afw-jy-Bsq"/>
                             <constraint firstItem="mp9-9U-Miy" firstAttribute="leading" secondItem="3ld-8D-FAX" secondAttribute="leadingMargin" constant="4" id="DHN-iP-2dB"/>
-                            <constraint firstItem="7SD-oF-ywV" firstAttribute="top" secondItem="ZHq-XI-Azy" secondAttribute="bottom" constant="14" id="Kga-TL-Ikn"/>
-                            <constraint firstItem="piR-eD-WIg" firstAttribute="bottom" secondItem="7SD-oF-ywV" secondAttribute="bottom" constant="111" id="N7Z-n0-Yyq"/>
                             <constraint firstItem="ZHq-XI-Azy" firstAttribute="trailing" secondItem="3ld-8D-FAX" secondAttribute="trailingMargin" id="dro-hd-an1"/>
                             <constraint firstItem="ZHq-XI-Azy" firstAttribute="top" secondItem="mp9-9U-Miy" secondAttribute="bottom" constant="28" id="eKP-E0-s2z"/>
                             <constraint firstItem="mp9-9U-Miy" firstAttribute="top" secondItem="piR-eD-WIg" secondAttribute="top" constant="28" id="lsX-LY-bxY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7SD-oF-ywV" secondAttribute="trailing" constant="71" id="raY-Gs-OFd"/>
                             <constraint firstItem="ZHq-XI-Azy" firstAttribute="top" secondItem="mp9-9U-Miy" secondAttribute="bottom" constant="28" id="uBq-ja-JRu"/>
-                            <constraint firstItem="7SD-oF-ywV" firstAttribute="leading" secondItem="3ld-8D-FAX" secondAttribute="leadingMargin" constant="71" id="vOy-By-82o"/>
-                            <constraint firstItem="7SD-oF-ywV" firstAttribute="top" secondItem="ZHq-XI-Azy" secondAttribute="bottom" constant="14" id="zf7-Dv-key"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="piR-eD-WIg"/>
                     </view>
@@ -2281,11 +2273,11 @@ If you would like to send donation by check, please make your donation payable t
         <scene sceneID="MlJ-aH-qT6">
             <objects>
                 <viewController id="eW5-JW-aZC" customClass="LucyViewController" customModule="IHO_ASU" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="ng3-bq-QH2">
+                    <view key="view" contentMode="scaleToFill" id="ng3-bq-QH2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kG4-oq-6OV">
+                            <webView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="kG4-oq-6OV">
                                 <rect key="frame" x="20" y="23" width="335" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
