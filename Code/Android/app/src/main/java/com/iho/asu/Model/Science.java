@@ -1,5 +1,8 @@
 package com.iho.asu.Model;
 
+import java.sql.Timestamp;
+import java.util.Date;
+
 /**
  * Created by Barathi on 7/4/2014.
  */
@@ -7,10 +10,18 @@ public class Science {
     private String id;
     private String title;
     private String link;
-    private Integer order;
+    private Long timestamp;
 
     public String getId() {
         return id;
+    }
+
+    public Long getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(Long timestamp) {
+        this.timestamp = timestamp;
     }
 
     public void setId(String id) {
@@ -38,11 +49,4 @@ public class Science {
         return title;
     }
 
-    public Integer getOrder() {
-        return order;
-    }
-
-    public void setOrder(Integer order) {
-        this.order = order;
-    }
 }

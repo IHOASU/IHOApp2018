@@ -34,9 +34,11 @@ import org.json.JSONObject;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
@@ -44,6 +46,7 @@ import static com.iho.asu.Constants.IHOConstants.SCIENCE_ID;
 import static com.iho.asu.Constants.IHOConstants.SCIENCE_IDS;
 import static com.iho.asu.Constants.IHOConstants.SCIENCE_LINK;
 import static com.iho.asu.Constants.IHOConstants.SCIENCE_ORDER;
+import static com.iho.asu.Constants.IHOConstants.SCIENCE_TIMESTAMP;
 import static com.iho.asu.Constants.IHOConstants.SCIENCE_TITLE;
 import static com.iho.asu.Constants.IHOConstants.SCIENCE_URL;
 
@@ -151,7 +154,7 @@ public class ScienceFragment extends ListFragment {
         try {
 
             Log.i(TAG, "parseJSONResult");
-            String id = null, title = null, link = null, order = null;
+            String id = null, title = null, link = null, order = null, timeStamp = null;
 
             Log.i(TAG, "Writing json Array string to file");
             Files.write(jsonArray.toString().getBytes(), file);
@@ -162,7 +165,7 @@ public class ScienceFragment extends ListFragment {
             scienceTitle.clear();
             scienceIds.clear();
             scienceItems.clear();
-            List<Science> scienceList = new ArrayList<Science>();
+            List<Science> scienceList = new ArrayList<>();
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject sciences = jsonArray.getJSONObject(i);
 
@@ -178,15 +181,17 @@ public class ScienceFragment extends ListFragment {
                     link = sciences.getString(SCIENCE_LINK);
                 }
 
-                if (!sciences.isNull(SCIENCE_ORDER)) {
-                    order = sciences.getString(SCIENCE_ORDER);
+                if (!sciences.isNull(SCIENCE_TIMESTAMP)) {
+                    timeStamp = sciences.getString(SCIENCE_TIMESTAMP);
                 }
 
                 Science s = new Science();
                 s.setId(id);
                 s.setTitle(title);
                 s.setLink(link);
-                s.setOrder(Integer.parseInt(order));
+//                s.setOrder(Integer.parseInt(order));
+                s.setTimestamp(Long.parseLong(timeStamp));
+
 
                 Log.i(TAG, i + ": " + s.toString());
                 scienceList.add(s);

@@ -14,7 +14,7 @@ private final String USER_AGENT = "Mozilla/5.0";
 
 public String sendGet(String section) throws Exception {
 
-		String url = "http://107.170.239.62/" + section ;
+	String url = HTTPConstants.url + section ;
 
 	URL obj = new URL(url);
 	HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -48,7 +48,7 @@ public String sendGet(String section) throws Exception {
 // HTTP POST request
 	public void post(String section, JSONObject object)  throws Exception {
 
-		String url = "http://107.170.239.62/" + section;
+		String url = HTTPConstants.url + section;
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
@@ -87,7 +87,7 @@ public String sendGet(String section) throws Exception {
 	}
 	
 	public void delete(String section)  throws Exception {
-		String url = "http://107.170.239.62/" + section ;
+		String url = HTTPConstants.url + section ;
 
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -117,7 +117,7 @@ public String sendGet(String section) throws Exception {
 	
 	
 	public void put(String lectureId,JSONObject object)  throws Exception {
-		String url = "http://107.170.239.62/lectureimages/" + lectureId;
+		String url = HTTPConstants.url + "lectureimages/" + lectureId;
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
