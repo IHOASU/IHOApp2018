@@ -1,26 +1,35 @@
 package edu.asu.msse.gnayak2.models;
 
-import java.util.UUID;
-
 import org.json.JSONObject;
 
-public class Lecture {
-	String id;
-	String name;
-	String bio;
-	String link;
-	String title;
-	String email;
-	String image;
-	int order;
+import java.util.UUID;
 
-	public Lecture(String newsTitle, String bio, String linkMore,String title, String image, String email, int order) {
+public class Lecture {
+	private String id;
+	private String name;
+	private String bio;
+	private String link;
+	private String title;
+	private String email;
+	private String image;
+	private String imageUrl;
+	private int order;
+
+	public Lecture(String newsTitle,
+				   String bio,
+				   String linkMore,
+				   String title,
+				   String image,
+				   String imageUrl,
+				   String email,
+				   int order) {
 		id = UUID.randomUUID().toString().replace("-", "");
 		name = newsTitle;
 		this.bio = bio;
 		link = linkMore;
 		this.title = title;
 		this.image = image;
+		this.imageUrl = imageUrl;
 		this.email = email;
 		this.order = order;
 	}
@@ -32,6 +41,7 @@ public class Lecture {
 		link = object.getString("link");
 		title = object.getString("title");
 		image = object.getString("image");
+//		imageUrl = object.getString("imageUrl");
 		email = object.getString("email");
 		order = object.getInt("order");
 	}
@@ -99,7 +109,15 @@ public class Lecture {
 	public void setLink(String link) {
 		this.link = link;
 	}
-	
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
+
 	public String toString() {
 		return name;
 	}
