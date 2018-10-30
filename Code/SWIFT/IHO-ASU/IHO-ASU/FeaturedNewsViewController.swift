@@ -22,9 +22,9 @@ import UIKit
 class FeaturedNewsViewController: UITableViewController {
     @IBOutlet var featuredNewsTableView: UITableView!
     @IBAction func readMoreLink(_ sender: Any) {
-        
+
         let url = URL(string: newsLink!)!
-        
+
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {
@@ -48,7 +48,7 @@ class FeaturedNewsViewController: UITableViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
         self.navigationItem.title = "Featured News"
-        self.readMoreButton.layer.cornerRadius = 15
+        //self.readMoreButton.layer.cornerRadius = 15
         
         if(newsTitle != nil){
         self.nTitle.text = self.newsTitle

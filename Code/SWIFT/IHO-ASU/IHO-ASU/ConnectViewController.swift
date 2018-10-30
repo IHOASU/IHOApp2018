@@ -14,7 +14,13 @@
  # Revised On       :   16 October 2018
  #
  # Version          :   1.1
- #*****************************************************************************************************************/
+ #*****************************************************************************************************************
+# Revised By       :   Masters SE Team-3 (app version 3)
+#
+# Revised On       :   19 October 2018
+#
+# Version          :   1.2
+#*****************************************************************************************************************/
 
 import UIKit
 import MessageUI
@@ -47,6 +53,26 @@ class ConnectViewController: UITableViewController, MFMailComposeViewControllerD
         } else {
             UIApplication.shared.openURL(url)
         }
+    }
+    
+    @IBAction func youtube(_ sender: Any) {
+        let url = URL(string: "http://www.youtube.com/user/LucyASUIHO")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+        
+    }
+    
+    @IBAction func vimeo(_ sender: Any) {
+        let url = URL(string: "http://vimeo.com/user5956652")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+        
     }
     
     override func viewDidLoad() {
