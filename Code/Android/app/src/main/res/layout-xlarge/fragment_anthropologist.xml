@@ -94,7 +94,7 @@
             android:layout_gravity="center_horizontal" />
         <Button
             android:id="@+id/visitAskAnAnthropologist"
-            android:layout_width="374dp"
+            android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_weight="0.00"
             android:background="@drawable/shape"

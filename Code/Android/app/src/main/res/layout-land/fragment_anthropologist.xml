@@ -107,7 +107,7 @@
 
         <Button
             android:id="@+id/visitAskAnAnthropologist"
-            android:layout_width="334dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.00"
             android:background="@drawable/shape"
