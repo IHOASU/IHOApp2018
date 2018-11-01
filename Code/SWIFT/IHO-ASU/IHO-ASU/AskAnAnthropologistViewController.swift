@@ -37,15 +37,13 @@ class AskAnAnthropologistViewController: UIViewController, UITextViewDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        anthro.scrollView.isScrollEnabled = false
+
+        anthro.scrollView.isScrollEnabled = true
         self.anthro.delegate = self
         anthro.loadRequest(URLRequest(url: URL(fileURLWithPath: Bundle.main.path(forResource: "askAnthro", ofType: "html")!)))
         
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationItem.title = "Ask An Anthropologist"
-        
-        askButton.layer.cornerRadius = 15
         
 
         //toolbar
@@ -86,7 +84,4 @@ class AskAnAnthropologistViewController: UIViewController, UITextViewDelegate, U
         // Dispose of any resources that can be recreated.
     }
     
-    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
-        return true
-    }
 }

@@ -21,7 +21,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var skullLogo: UIWebView!
-    
+
     @IBOutlet weak var donate: UIButton!
     @IBOutlet weak var about: UIButton!
     @IBOutlet weak var gallery: UIButton!
@@ -32,16 +32,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         UINavigationBar.appearance().barTintColor = UIColor(red: CGFloat((255.0 / 255.0)), green: CGFloat((255.0 / 255.0)), blue: CGFloat((255.0 / 255.0)), alpha: CGFloat(1))
-        
-        // button sytle
-        news.layer.cornerRadius = 15
-        about.layer.cornerRadius = 15
-        donate.layer.cornerRadius = 15
-        gallery.layer.cornerRadius = 15
-        connect.layer.cornerRadius = 15
-        field.layer.cornerRadius = 15
+
         
         // ASU LOGO at navigation bar
         self.navigationController?.navigationBar.frame.size.height=50;
@@ -101,10 +94,6 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    
-    
-    
-    
+
 }
 

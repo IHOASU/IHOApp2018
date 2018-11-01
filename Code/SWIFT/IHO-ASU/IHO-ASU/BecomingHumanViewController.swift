@@ -36,7 +36,6 @@ class BecomingHumanViewController: UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
         self.navigationItem.title = "Becoming Human"
-        beacomingButton.layer.cornerRadius = 15
     
     
         //toolbar

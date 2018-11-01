@@ -41,9 +41,12 @@ class FeaturedNewsViewController: UITableViewController {
     var newsId: String?
     var newsImage: String?
     var newsLink: String?
+    var textView : UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        textView = UITextView()
+        textView.sizeThatFits(CGSize(width: textView.frame.size.width, height:textView.frame.size.height))
         
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
@@ -80,6 +83,7 @@ class FeaturedNewsViewController: UITableViewController {
         let flexible = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         self.toolbarItems = [flexible,toolbarTitle]
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -96,7 +100,6 @@ class FeaturedNewsViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
 
     
 }

@@ -14,6 +14,13 @@
  # Revised On       :   16 October 2018
  #
  # Version          :   1.1
+ #*****************************************************************************************************************
+ *****************************************************************************************************************
+ # Revised By       :   Masters SE Team-3 (app version 3)
+ #
+ # Revised On       :   31 October 2018
+ #
+ # Version          :   1.2
  #*****************************************************************************************************************/
 
 import UIKit
@@ -205,6 +212,19 @@ class NewsEventsViewController: UITableViewController {
         if indexPath.section == 2 {
             
             let url = URL(string: "https://iho.asu.edu/media")!
+            
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+            
+        }
+        
+        // For navigating "Events" to IHO Events page.
+        if indexPath.section == 3 {
+            
+            let url = URL(string: "https://iho.asu.edu/upcoming-events")!
             
             if #available(iOS 10.0, *) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)

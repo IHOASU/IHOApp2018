@@ -146,6 +146,9 @@
 		F8AA1A9E2187EE2F00867C8D /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8AA1A6A2187EE2E00867C8D /* RobotoCondensed-Light.ttf */; };
 		F8AA1A9F2187EE2F00867C8D /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8AA1A6A2187EE2E00867C8D /* RobotoCondensed-Light.ttf */; };
 		F8AA1AA02187EE2F00867C8D /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8AA1A6A2187EE2E00867C8D /* RobotoCondensed-Light.ttf */; };
+		F8AA1AA2218ADF1A00867C8D /* becomingHuman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8AA1AA1218ADF1900867C8D /* becomingHuman.jpg */; };
+		F8AA1AA3218ADF1A00867C8D /* becomingHuman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8AA1AA1218ADF1900867C8D /* becomingHuman.jpg */; };
+		F8AA1AA4218ADF1A00867C8D /* becomingHuman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8AA1AA1218ADF1900867C8D /* becomingHuman.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -273,6 +276,7 @@
 		F8AA1A682187EE2E00867C8D /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
 		F8AA1A692187EE2E00867C8D /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
 		F8AA1A6A2187EE2E00867C8D /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		F8AA1AA1218ADF1900867C8D /* becomingHuman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = becomingHuman.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +366,7 @@
 				9F30DEA51E8EC79E00F40E06 /* skull.html */,
 				9FFC3B6F1EA840FF004A0597 /* ask_ananthropologist_v2.jpg */,
 				9F30DE7B1E8EC79E00F40E06 /* askananthropologist.jpg */,
+				F8AA1AA1218ADF1900867C8D /* becomingHuman.jpg */,
 				230EE9001E4E147100B4F9F9 /* ASU IHO vertical.jpg */,
 				9FFC3B701EA840FF004A0597 /* ASU-IHO-About.jpg */,
 				9FFC3B711EA840FF004A0597 /* IHO_Gallery_main.jpg */,
@@ -621,6 +626,7 @@
 				9FB7C5821E4AAA5900B88166 /* Main.storyboard in Resources */,
 				F8AA1A862187EE2F00867C8D /* Roboto-Thin.ttf in Resources */,
 				9FFC3B741EA840FF004A0597 /* IHO_Gallery_main.jpg in Resources */,
+				F8AA1AA2218ADF1A00867C8D /* becomingHuman.jpg in Resources */,
 				9FFC3B731EA840FF004A0597 /* ASU-IHO-About.jpg in Resources */,
 				9F30DECA1E8EC79E00F40E06 /* lucy.png in Resources */,
 				9F30DED81E8EC79E00F40E06 /* twitter.png in Resources */,
@@ -647,6 +653,7 @@
 				F8AA1A812187EE2F00867C8D /* Roboto-BlackItalic.ttf in Resources */,
 				F8AA1A8A2187EE2F00867C8D /* Roboto-Regular.ttf in Resources */,
 				F8AA1A752187EE2F00867C8D /* Roboto-Light.ttf in Resources */,
+				F8AA1AA3218ADF1A00867C8D /* becomingHuman.jpg in Resources */,
 				F8AA1A7B2187EE2F00867C8D /* Roboto-Italic.ttf in Resources */,
 				F8AA1A842187EE2F00867C8D /* Roboto-Black.ttf in Resources */,
 				F8AA1A962187EE2F00867C8D /* Roboto-ThinItalic.ttf in Resources */,
@@ -673,6 +680,7 @@
 				F8AA1A822187EE2F00867C8D /* Roboto-BlackItalic.ttf in Resources */,
 				F8AA1A8B2187EE2F00867C8D /* Roboto-Regular.ttf in Resources */,
 				F8AA1A762187EE2F00867C8D /* Roboto-Light.ttf in Resources */,
+				F8AA1AA4218ADF1A00867C8D /* becomingHuman.jpg in Resources */,
 				F8AA1A7C2187EE2F00867C8D /* Roboto-Italic.ttf in Resources */,
 				F8AA1A852187EE2F00867C8D /* Roboto-Black.ttf in Resources */,
 				F8AA1A972187EE2F00867C8D /* Roboto-ThinItalic.ttf in Resources */,

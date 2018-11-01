@@ -29,7 +29,7 @@ class AboutViewController: UIViewController , UIWebViewDelegate {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        aboutView.scrollView.isScrollEnabled = false
+        aboutView.scrollView.isScrollEnabled = true
         self.aboutView.delegate = self
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationItem.title = "About"
