@@ -18,6 +18,170 @@
         </array>
     </customFonts>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="8zL-52-APA">
+            <objects>
+                <viewController id="kct-q4-1ER" customClass="ViewController" customModule="IHO_ASU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H0m-yq-83U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0wk-LP-xGw">
+                                <rect key="frame" x="0.0" y="44" width="375" height="720"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHb-XJ-8rt" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="665"/>
+                                        <subviews>
+                                            <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLv-IM-Raw">
+                                                <rect key="frame" x="5" y="92" width="180" height="45"/>
+                                                <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="qXA-l7-wU0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
+                                                <state key="normal" title="News + Events"/>
+                                                <connections>
+                                                    <segue destination="J1M-pD-BPV" kind="show" id="8Qv-ul-qiB"/>
+                                                </connections>
+                                            </button>
+                                            <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHS-Hd-fSW">
+                                                <rect key="frame" x="190" y="92" width="180" height="45"/>
+                                                <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
+                                                <state key="normal" title="Field Notes">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="xSh-24-DFx" kind="show" id="apn-rh-gnA"/>
+                                                </connections>
+                                            </button>
+                                            <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTl-dA-fvZ">
+                                                <rect key="frame" x="5" y="162" width="180" height="45"/>
+                                                <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
+                                                <state key="normal" title="Connect">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Er3-BS-xiQ" kind="show" id="ipr-kP-mg4"/>
+                                                </connections>
+                                            </button>
+                                            <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjh-05-WLb">
+                                                <rect key="frame" x="190" y="162" width="180" height="45"/>
+                                                <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
+                                                <state key="normal" title="Gallery">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="8f3-qw-v1I" kind="show" id="eo3-mr-lD5"/>
+                                                </connections>
+                                            </button>
+                                            <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqh-rj-7tK">
+                                                <rect key="frame" x="5" y="234" width="180" height="45"/>
+                                                <color key="backgroundColor" red="0.01176470588" green="0.14117647059999999" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
+                                                <state key="normal" title="About">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="I6U-N2-aoQ" kind="show" id="3gd-ao-mqb"/>
+                                                </connections>
+                                            </button>
+                                            <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lv2-mD-Nr4">
+                                                <rect key="frame" x="190" y="234" width="180" height="45"/>
+                                                <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
+                                                <state key="normal" title="Donate">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="pkK-07-KNm" kind="show" id="iSE-oO-Fmt"/>
+                                                </connections>
+                                            </button>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="newLogo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DOI-sC-2lC">
+                                                <rect key="frame" x="0.0" y="-6" width="375" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="kXu-NG-wDq"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="iho-skullmark.png" translatesAutoresizingMaskIntoConstraints="NO" id="l8A-cr-nOS">
+                                                <rect key="frame" x="5" y="301" width="365" height="370"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="BfF-1r-Vsb"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Eqh-rj-7tK" firstAttribute="leading" secondItem="VTl-dA-fvZ" secondAttribute="leading" id="6l1-1O-EaO"/>
+                                            <constraint firstItem="Lv2-mD-Nr4" firstAttribute="leading" secondItem="Zjh-05-WLb" secondAttribute="leading" id="7Zu-Ft-ugH"/>
+                                            <constraint firstItem="nLv-IM-Raw" firstAttribute="leading" secondItem="VHb-XJ-8rt" secondAttribute="leading" constant="5" id="8Ae-Gj-st6"/>
+                                            <constraint firstItem="NHS-Hd-fSW" firstAttribute="leading" secondItem="nLv-IM-Raw" secondAttribute="trailing" constant="5" id="AQV-gN-6b7"/>
+                                            <constraint firstItem="NHS-Hd-fSW" firstAttribute="top" secondItem="nLv-IM-Raw" secondAttribute="top" id="ArY-tr-pip"/>
+                                            <constraint firstItem="l8A-cr-nOS" firstAttribute="leading" secondItem="VHb-XJ-8rt" secondAttribute="leading" constant="5" id="Cf7-lL-R81"/>
+                                            <constraint firstAttribute="trailing" secondItem="NHS-Hd-fSW" secondAttribute="trailing" constant="5" id="Jah-OR-c02"/>
+                                            <constraint firstItem="VTl-dA-fvZ" firstAttribute="top" secondItem="nLv-IM-Raw" secondAttribute="bottom" constant="25" id="Kjj-yw-I6W"/>
+                                            <constraint firstItem="Lv2-mD-Nr4" firstAttribute="top" secondItem="Zjh-05-WLb" secondAttribute="bottom" constant="25" id="NgA-fU-Xc1"/>
+                                            <constraint firstItem="NHS-Hd-fSW" firstAttribute="height" secondItem="nLv-IM-Raw" secondAttribute="height" id="O0q-Da-f8x"/>
+                                            <constraint firstItem="l8A-cr-nOS" firstAttribute="top" secondItem="Eqh-rj-7tK" secondAttribute="bottom" constant="40" id="Ox6-sx-Cfk"/>
+                                            <constraint firstAttribute="trailing" secondItem="l8A-cr-nOS" secondAttribute="trailing" constant="5" id="SRm-Es-eav"/>
+                                            <constraint firstItem="DOI-sC-2lC" firstAttribute="trailing" secondItem="VHb-XJ-8rt" secondAttribute="trailing" id="XEE-gx-21q"/>
+                                            <constraint firstItem="nLv-IM-Raw" firstAttribute="top" secondItem="DOI-sC-2lC" secondAttribute="bottom" constant="50" id="YGW-a3-mnm"/>
+                                            <constraint firstItem="Zjh-05-WLb" firstAttribute="top" secondItem="NHS-Hd-fSW" secondAttribute="bottom" constant="25" id="cqH-gK-d3W"/>
+                                            <constraint firstItem="Zjh-05-WLb" firstAttribute="leading" secondItem="NHS-Hd-fSW" secondAttribute="leading" id="eG8-sH-Ddw"/>
+                                            <constraint firstItem="Zjh-05-WLb" firstAttribute="height" secondItem="NHS-Hd-fSW" secondAttribute="height" id="eLc-Zs-jnt"/>
+                                            <constraint firstItem="Zjh-05-WLb" firstAttribute="trailing" secondItem="NHS-Hd-fSW" secondAttribute="trailing" id="f2A-BB-5da"/>
+                                            <constraint firstItem="DOI-sC-2lC" firstAttribute="leading" secondItem="VHb-XJ-8rt" secondAttribute="leading" id="hBj-Rg-pgh"/>
+                                            <constraint firstItem="Eqh-rj-7tK" firstAttribute="trailing" secondItem="VTl-dA-fvZ" secondAttribute="trailing" id="j2O-UM-Oyf"/>
+                                            <constraint firstItem="VTl-dA-fvZ" firstAttribute="leading" secondItem="nLv-IM-Raw" secondAttribute="leading" id="jo0-oF-jaM"/>
+                                            <constraint firstItem="NHS-Hd-fSW" firstAttribute="width" secondItem="nLv-IM-Raw" secondAttribute="width" id="kit-cv-WXr"/>
+                                            <constraint firstItem="Lv2-mD-Nr4" firstAttribute="trailing" secondItem="Zjh-05-WLb" secondAttribute="trailing" id="nsO-jJ-mQl"/>
+                                            <constraint firstItem="Eqh-rj-7tK" firstAttribute="top" secondItem="VTl-dA-fvZ" secondAttribute="bottom" constant="25" id="p1F-vf-TtE"/>
+                                            <constraint firstItem="VTl-dA-fvZ" firstAttribute="height" secondItem="nLv-IM-Raw" secondAttribute="height" id="rKy-Uz-GPO"/>
+                                            <constraint firstAttribute="bottom" secondItem="l8A-cr-nOS" secondAttribute="bottom" id="uQl-ns-Fgc"/>
+                                            <constraint firstItem="VTl-dA-fvZ" firstAttribute="trailing" secondItem="nLv-IM-Raw" secondAttribute="trailing" id="vmV-yM-tCY"/>
+                                            <constraint firstItem="Lv2-mD-Nr4" firstAttribute="height" secondItem="Zjh-05-WLb" secondAttribute="height" id="yXI-Ns-bPy"/>
+                                            <constraint firstItem="Eqh-rj-7tK" firstAttribute="height" secondItem="VTl-dA-fvZ" secondAttribute="height" id="z7D-ll-oSz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="VHb-XJ-8rt" firstAttribute="leading" secondItem="0wk-LP-xGw" secondAttribute="leading" id="7gj-tR-kEc"/>
+                                    <constraint firstItem="DOI-sC-2lC" firstAttribute="top" secondItem="0wk-LP-xGw" secondAttribute="top" constant="50" id="9yH-NJ-3bq"/>
+                                    <constraint firstAttribute="trailing" secondItem="VHb-XJ-8rt" secondAttribute="trailing" id="YM9-IJ-fWC"/>
+                                    <constraint firstItem="VHb-XJ-8rt" firstAttribute="top" secondItem="0wk-LP-xGw" secondAttribute="top" id="eP1-KG-YzU"/>
+                                    <constraint firstItem="VHb-XJ-8rt" firstAttribute="height" secondItem="0wk-LP-xGw" secondAttribute="height" priority="250" id="fb1-Zf-SYS"/>
+                                    <constraint firstItem="VHb-XJ-8rt" firstAttribute="width" secondItem="0wk-LP-xGw" secondAttribute="width" id="i1i-F2-kga"/>
+                                    <constraint firstAttribute="bottom" secondItem="VHb-XJ-8rt" secondAttribute="bottom" id="iZK-YV-7Sa"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yUk-n3-aHW" firstAttribute="top" secondItem="0wk-LP-xGw" secondAttribute="top" constant="44" id="LRZ-j5-s0U"/>
+                            <constraint firstItem="yUk-n3-aHW" firstAttribute="trailing" secondItem="0wk-LP-xGw" secondAttribute="trailing" id="b9V-CS-8QU"/>
+                            <constraint firstItem="0wk-LP-xGw" firstAttribute="leading" secondItem="yUk-n3-aHW" secondAttribute="leading" id="uMl-mr-rjv"/>
+                            <constraint firstItem="0wk-LP-xGw" firstAttribute="bottom" secondItem="yUk-n3-aHW" secondAttribute="bottom" constant="34" id="vZP-Rw-75K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yUk-n3-aHW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="t7w-2A-yzR"/>
+                    <size key="freeformSize" width="375" height="813"/>
+                    <connections>
+                        <outlet property="about" destination="Eqh-rj-7tK" id="6sf-eo-uzv"/>
+                        <outlet property="connect" destination="VTl-dA-fvZ" id="6cF-ZX-v67"/>
+                        <outlet property="donate" destination="Lv2-mD-Nr4" id="WD9-la-ZcZ"/>
+                        <outlet property="field" destination="NHS-Hd-fSW" id="rJP-bH-quq"/>
+                        <outlet property="gallery" destination="Zjh-05-WLb" id="Q3P-HX-hFw"/>
+                        <outlet property="news" destination="nLv-IM-Raw" id="37U-uK-5OJ"/>
+                        <segue destination="QOq-nB-mxO" kind="show" identifier="CreditsSeque" id="3Ek-ek-UaG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fyk-we-l1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3383.1999999999998" y="135.59113300492612"/>
+        </scene>
         <!--News+Events-->
         <scene sceneID="jBj-dM-BFB">
             <objects>
@@ -162,7 +326,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L1G-QV-Sld" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1074.4000000000001" y="-563.56821589205401"/>
+            <point key="canvasLocation" x="-2532" y="-854"/>
         </scene>
         <!--Field View Controller-->
         <scene sceneID="5IH-3l-Pni">
@@ -292,171 +456,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mSt-ev-UxX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3856.8000000000002" y="-562.66866566716647"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IHO_ASU" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIScrollView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3w-Cl-238" customClass="UIImageView">
-                                <rect key="frame" x="0.0" y="88" width="375" height="80"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K9E-eT-KMv">
-                                        <rect key="frame" x="0.0" y="79.666666666666657" width="375" height="0.3333333333333286"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="0.5" id="PyX-ik-ccR"/>
-                                        </constraints>
-                                    </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newLogo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="atX-jh-DUK">
-                                        <rect key="frame" x="67.666666666666686" y="10" width="240" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="HW8-Id-Lpx"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="atX-jh-DUK" secondAttribute="bottom" constant="10" id="UP5-f6-h87"/>
-                                    <constraint firstItem="atX-jh-DUK" firstAttribute="centerX" secondItem="M3w-Cl-238" secondAttribute="centerX" id="Zpd-oO-1aD"/>
-                                    <constraint firstAttribute="height" constant="80" id="cKh-S4-Gqy"/>
-                                    <constraint firstAttribute="bottom" secondItem="K9E-eT-KMv" secondAttribute="bottom" id="nYW-zL-BSf"/>
-                                    <constraint firstItem="atX-jh-DUK" firstAttribute="top" secondItem="M3w-Cl-238" secondAttribute="top" constant="10" id="pBK-SZ-pWS"/>
-                                    <constraint firstItem="K9E-eT-KMv" firstAttribute="leading" secondItem="M3w-Cl-238" secondAttribute="leading" id="phu-wp-4G6"/>
-                                    <constraint firstAttribute="trailing" secondItem="K9E-eT-KMv" secondAttribute="trailing" id="tgi-2S-kwK"/>
-                                </constraints>
-                            </view>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peH-He-idK">
-                                <rect key="frame" x="20" y="198" width="151.66666666666666" height="40"/>
-                                <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="4hu-TX-fK2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
-                                <state key="normal" title="News + Events"/>
-                                <connections>
-                                    <segue destination="J1M-pD-BPV" kind="show" id="HUx-30-1ob"/>
-                                </connections>
-                            </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJF-5h-qNF">
-                                <rect key="frame" x="203.66666666666663" y="198" width="151.33333333333337" height="40"/>
-                                <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
-                                <state key="normal" title="Field Notes">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="xSh-24-DFx" kind="show" id="mNC-NT-oau"/>
-                                </connections>
-                            </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKO-IG-6uA">
-                                <rect key="frame" x="20" y="263" width="151.66666666666666" height="40"/>
-                                <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
-                                <state key="normal" title="Connect">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Er3-BS-xiQ" kind="show" id="sy3-DE-apS"/>
-                                </connections>
-                            </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwJ-h9-CK2">
-                                <rect key="frame" x="203.66666666666663" y="263" width="151.33333333333337" height="40"/>
-                                <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
-                                <state key="normal" title="Gallery">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="8f3-qw-v1I" kind="show" id="oDv-QC-OGw"/>
-                                </connections>
-                            </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raX-Ib-gok">
-                                <rect key="frame" x="20" y="330" width="151.66666666666666" height="40"/>
-                                <color key="backgroundColor" red="0.011764705882352941" green="0.14117647058823529" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
-                                <state key="normal" title="About">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="I6U-N2-aoQ" kind="show" id="GBK-Hj-3cC"/>
-                                </connections>
-                            </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JX5-0C-Mdc">
-                                <rect key="frame" x="203.66666666666663" y="330" width="151.33333333333337" height="40"/>
-                                <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
-                                <state key="normal" title="Donate">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="pkK-07-KNm" kind="show" id="v7k-HM-r9L"/>
-                                </connections>
-                            </button>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hyw-aF-BoJ">
-                                <rect key="frame" x="15" y="385" width="345" height="329"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="JX5-0C-Mdc" firstAttribute="height" secondItem="BwJ-h9-CK2" secondAttribute="height" id="0vN-tj-936"/>
-                            <constraint firstItem="0Da-jU-SBN" firstAttribute="trailing" secondItem="M3w-Cl-238" secondAttribute="trailing" id="4K5-mb-hVl"/>
-                            <constraint firstItem="raX-Ib-gok" firstAttribute="trailing" secondItem="vKO-IG-6uA" secondAttribute="trailing" id="5Ji-eL-pvH"/>
-                            <constraint firstItem="OJF-5h-qNF" firstAttribute="height" secondItem="peH-He-idK" secondAttribute="height" id="B5z-Xd-JGY"/>
-                            <constraint firstItem="0Da-jU-SBN" firstAttribute="trailing" secondItem="Hyw-aF-BoJ" secondAttribute="trailing" constant="15" id="BZF-oS-0iW"/>
-                            <constraint firstItem="BwJ-h9-CK2" firstAttribute="leading" secondItem="OJF-5h-qNF" secondAttribute="leading" id="Brx-Ch-PvT"/>
-                            <constraint firstItem="raX-Ib-gok" firstAttribute="top" secondItem="vKO-IG-6uA" secondAttribute="bottom" constant="27" id="Et4-qp-fdp"/>
-                            <constraint firstItem="BwJ-h9-CK2" firstAttribute="height" secondItem="OJF-5h-qNF" secondAttribute="height" id="Fko-87-76I"/>
-                            <constraint firstItem="vKO-IG-6uA" firstAttribute="height" secondItem="peH-He-idK" secondAttribute="height" id="IBF-cB-IVK"/>
-                            <constraint firstItem="vKO-IG-6uA" firstAttribute="leading" secondItem="peH-He-idK" secondAttribute="leading" id="IEm-0m-t1c"/>
-                            <constraint firstItem="OJF-5h-qNF" firstAttribute="top" secondItem="peH-He-idK" secondAttribute="top" id="O4X-QH-oq4"/>
-                            <constraint firstItem="0Da-jU-SBN" firstAttribute="trailing" secondItem="OJF-5h-qNF" secondAttribute="trailing" constant="20" id="TXG-jb-zhi"/>
-                            <constraint firstItem="Hyw-aF-BoJ" firstAttribute="leading" secondItem="0Da-jU-SBN" secondAttribute="leading" constant="15" id="U3N-Mt-p9V"/>
-                            <constraint firstItem="JX5-0C-Mdc" firstAttribute="top" secondItem="BwJ-h9-CK2" secondAttribute="bottom" constant="27" id="ZFm-8a-znw"/>
-                            <constraint firstItem="peH-He-idK" firstAttribute="top" secondItem="M3w-Cl-238" secondAttribute="bottom" constant="30" id="aFD-VC-maN"/>
-                            <constraint firstItem="OJF-5h-qNF" firstAttribute="width" secondItem="peH-He-idK" secondAttribute="width" id="bA3-tz-0aW"/>
-                            <constraint firstItem="JX5-0C-Mdc" firstAttribute="leading" secondItem="BwJ-h9-CK2" secondAttribute="leading" id="cDL-9b-MXc"/>
-                            <constraint firstItem="M3w-Cl-238" firstAttribute="leading" secondItem="0Da-jU-SBN" secondAttribute="leading" id="die-pm-g8I"/>
-                            <constraint firstItem="M3w-Cl-238" firstAttribute="top" secondItem="0Da-jU-SBN" secondAttribute="top" id="egp-Gf-hmE"/>
-                            <constraint firstItem="vKO-IG-6uA" firstAttribute="top" secondItem="peH-He-idK" secondAttribute="bottom" constant="25" id="f61-ej-sST"/>
-                            <constraint firstItem="Hyw-aF-BoJ" firstAttribute="top" secondItem="raX-Ib-gok" secondAttribute="bottom" constant="15" id="gvV-lq-kb3"/>
-                            <constraint firstItem="0Da-jU-SBN" firstAttribute="bottom" secondItem="Hyw-aF-BoJ" secondAttribute="bottom" constant="15" id="jHE-jd-0xN"/>
-                            <constraint firstItem="BwJ-h9-CK2" firstAttribute="top" secondItem="OJF-5h-qNF" secondAttribute="bottom" constant="25" id="lbr-rq-nhU"/>
-                            <constraint firstItem="vKO-IG-6uA" firstAttribute="trailing" secondItem="peH-He-idK" secondAttribute="trailing" id="m4c-1I-VrU"/>
-                            <constraint firstItem="BwJ-h9-CK2" firstAttribute="trailing" secondItem="OJF-5h-qNF" secondAttribute="trailing" id="mMl-3h-cXJ"/>
-                            <constraint firstItem="raX-Ib-gok" firstAttribute="leading" secondItem="vKO-IG-6uA" secondAttribute="leading" id="ohF-5Y-O4y"/>
-                            <constraint firstItem="OJF-5h-qNF" firstAttribute="leading" secondItem="peH-He-idK" secondAttribute="trailing" constant="32" id="p3i-JO-aaE"/>
-                            <constraint firstItem="JX5-0C-Mdc" firstAttribute="trailing" secondItem="BwJ-h9-CK2" secondAttribute="trailing" id="pze-d5-sv2"/>
-                            <constraint firstItem="raX-Ib-gok" firstAttribute="height" secondItem="vKO-IG-6uA" secondAttribute="height" id="rBK-Z0-tND"/>
-                            <constraint firstItem="peH-He-idK" firstAttribute="leading" secondItem="0Da-jU-SBN" secondAttribute="leading" constant="20" id="uWM-4d-V1h"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="0Da-jU-SBN"/>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="YL6-DB-Zkc">
-                        <nil key="title"/>
-                    </navigationItem>
-                    <value key="contentSizeForViewInPopover" type="size" width="375" height="812"/>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <size key="freeformSize" width="375" height="812"/>
-                    <connections>
-                        <outlet property="about" destination="raX-Ib-gok" id="wWc-mF-WKV"/>
-                        <outlet property="connect" destination="vKO-IG-6uA" id="Ckq-Ew-pOi"/>
-                        <outlet property="donate" destination="JX5-0C-Mdc" id="jvz-bM-Y0h"/>
-                        <outlet property="field" destination="OJF-5h-qNF" id="fpS-Gp-wUo"/>
-                        <outlet property="gallery" destination="BwJ-h9-CK2" id="Thy-NF-rx3"/>
-                        <outlet property="news" destination="peH-He-idK" id="moI-yn-Oha"/>
-                        <outlet property="skullLogo" destination="Hyw-aF-BoJ" id="GA2-il-NhY"/>
-                        <segue destination="QOq-nB-mxO" kind="show" identifier="CreditsSeque" id="9Sp-kt-87Z"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1073.913043478261" y="135.9375"/>
+            <point key="canvasLocation" x="-2199" y="172"/>
         </scene>
         <!--Gallery View Controller-->
         <scene sceneID="gKD-J7-NlI">
@@ -550,7 +550,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7z-FP-Edb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3855.1999999999998" y="816.34182908545733"/>
+            <point key="canvasLocation" x="-5698" y="-826"/>
         </scene>
         <!--Gallery Table View Controller-->
         <scene sceneID="zMO-Nv-TsH">
@@ -613,7 +613,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TJ3-aQ-UhY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3857" y="1799"/>
+            <point key="canvasLocation" x="-5698" y="-72"/>
         </scene>
         <!--Lecturer Gallery View Controller-->
         <scene sceneID="ltO-ab-6N9">
@@ -674,7 +674,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dC-4B-nDG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3081" y="-1991"/>
+            <point key="canvasLocation" x="706" y="-417"/>
         </scene>
         <!--Connect View Controller-->
         <scene sceneID="XYL-mQ-PHS">
@@ -881,7 +881,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N6G-1H-jl2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3856.8000000000002" y="135.96059113300493"/>
+            <point key="canvasLocation" x="-5441" y="875"/>
         </scene>
         <!--Becoming Human View Controller-->
         <scene sceneID="aXk-G4-dxW">
@@ -942,7 +942,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9LX-SX-ECc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4866.3999999999996" y="242.36453201970446"/>
+            <point key="canvasLocation" x="-6046" y="1623"/>
         </scene>
         <!--Connect Info View Controller-->
         <scene sceneID="zCk-vd-LVp">
@@ -1135,7 +1135,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1o-U9-xy3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4868" y="-424.13793103448279"/>
+            <point key="canvasLocation" x="-5228" y="1623"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kYW-xn-oZH">
@@ -1154,7 +1154,7 @@
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </toolbar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SfX-oj-iQ7"/>
+                        <segue destination="kct-q4-1ER" kind="relationship" relationship="rootViewController" id="Mwr-M8-7sD"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUq-dz-Xg4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1162,7 +1162,7 @@
                     <color key="tintColor" red="0.011764705882352941" green="0.14117647058823529" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                 </barButtonItem>
             </objects>
-            <point key="canvasLocation" x="114" y="137"/>
+            <point key="canvasLocation" x="-4409" y="136"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="bGP-sf-2dF">
@@ -1312,7 +1312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EZU-1c-DpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="644" y="909.89505247376314"/>
+            <point key="canvasLocation" x="-3810" y="927"/>
         </scene>
         <!--Donation-->
         <scene sceneID="yqe-qx-pXC">
@@ -1394,7 +1394,7 @@ If you would like to send donation by check, please make your donation payable t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ZY-dY-FCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1364" y="1107.7961019490256"/>
+            <point key="canvasLocation" x="-2911" y="927"/>
         </scene>
         <!--Donation Web Controller-->
         <scene sceneID="m4F-0E-TbV">
@@ -1425,7 +1425,7 @@ If you would like to send donation by check, please make your donation payable t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0sa-I9-syz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2151" y="1146"/>
+            <point key="canvasLocation" x="-2911" y="1691"/>
         </scene>
         <!--Ask An Anthropologist View Controller-->
         <scene sceneID="Opy-1b-5Nb">
@@ -1486,7 +1486,7 @@ If you would like to send donation by check, please make your donation payable t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7fe-4Z-h0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4866.3999999999996" y="920.68965517241384"/>
+            <point key="canvasLocation" x="-4410" y="1623"/>
         </scene>
         <!--Featured News View Controller-->
         <scene sceneID="owd-dr-X6y">
@@ -1586,7 +1586,7 @@ If you would like to send donation by check, please make your donation payable t
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J0A-Pr-CZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1846.4000000000001" y="-566.00985221674875"/>
+            <point key="canvasLocation" x="-1778" y="-1771"/>
         </scene>
         <!--Travel View Controlller-->
         <scene sceneID="N6x-So-Qq5">
@@ -1624,8 +1624,8 @@ If you would like to send donation by check, please make your donation payable t
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="177.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="trvl_learn.jpg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4I8-pT-zmC">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="trvl_learn.jpg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4I8-pT-zmC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250.33333333333334"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="250" id="ksf-M3-yxj"/>
                                                     </constraints>
@@ -1660,11 +1660,11 @@ If you would like to send donation by check, please make your donation payable t
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="iTI-ME-x62">
                                         <rect key="frame" x="0.0" y="742" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iTI-ME-x62" id="gZ3-3t-MmV">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="iTI-ME-x62" id="gZ3-3t-MmV">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="49.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uko-1p-dPq">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uko-1p-dPq">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                                     <color key="backgroundColor" red="0.0039215686269999999" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -1709,7 +1709,7 @@ If you would like to send donation by check, please make your donation payable t
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YMy-gM-9q1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1848.8" y="-1247.2906403940888"/>
+            <point key="canvasLocation" x="-1596" y="-1112"/>
         </scene>
         <!--Lecturer List View Controller-->
         <scene sceneID="xSe-V6-scX">
@@ -1754,7 +1754,7 @@ If you would like to send donation by check, please make your donation payable t
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="evw-id-6y6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3857" y="-1237"/>
+            <point key="canvasLocation" x="-1327" y="-417"/>
         </scene>
         <!--Lecturer Detail View Controller-->
         <scene sceneID="rGc-qq-UTD">
@@ -1950,7 +1950,7 @@ If you would like to send donation by check, please make your donation payable t
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hcO-UA-1af" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3081" y="-1260"/>
+            <point key="canvasLocation" x="-418" y="-417"/>
         </scene>
         <!--Lucy View Controller-->
         <scene sceneID="MlJ-aH-qT6">
@@ -1988,7 +1988,7 @@ If you would like to send donation by check, please make your donation payable t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sxK-Tt-7Ps" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4864.8000000000002" y="-1905.697151424288"/>
+            <point key="canvasLocation" x="-1326" y="307"/>
         </scene>
         <!--New Science View Controller-->
         <scene sceneID="47N-Rt-7qm">
@@ -2026,7 +2026,7 @@ If you would like to send donation by check, please make your donation payable t
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1QV-BL-VAU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4866" y="-1237"/>
+            <point key="canvasLocation" x="-1326" y="1076"/>
         </scene>
         <!--Credits View Controller-->
         <scene sceneID="H0f-KS-6e1">
@@ -2036,8 +2036,8 @@ If you would like to send donation by check, please make your donation payable t
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LoN-Qs-kBi">
-                                <rect key="frame" x="10" y="28" width="355" height="701"/>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LoN-Qs-kBi">
+                                <rect key="frame" x="10" y="44" width="355" height="734"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <dataDetectorType key="dataDetectorTypes"/>
@@ -2054,12 +2054,12 @@ If you would like to send donation by check, please make your donation payable t
                     </view>
                     <size key="freeformSize" width="375" height="812"/>
                     <connections>
-                        <outlet property="creditsView" destination="LoN-Qs-kBi" id="Z9S-d4-Ost"/>
+                        <outlet property="creditsView" destination="LoN-Qs-kBi" id="Cd6-xh-0Ld"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3y0-op-ZQE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-113" y="910"/>
+            <point key="canvasLocation" x="-4111.1999999999998" y="-826.10837438423653"/>
         </scene>
     </scenes>
     <resources>
@@ -2068,6 +2068,7 @@ If you would like to send donation by check, please make your donation payable t
         <image name="IHO_Gallery_main.jpg" width="349" height="299"/>
         <image name="ask_ananthropologist_v2.jpg" width="600" height="248"/>
         <image name="becomingHuman.jpg" width="1170" height="700"/>
+        <image name="iho-skullmark.png" width="600" height="370"/>
         <image name="instagram.png" width="1500" height="1500"/>
         <image name="invest.png" width="145" height="36"/>
         <image name="newLogo.jpg" width="384" height="96"/>

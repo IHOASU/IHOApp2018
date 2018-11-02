@@ -92,6 +92,7 @@
 		F81D6F61217900A800AA11A7 /* trvl_learn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F81D6F60217900A700AA11A7 /* trvl_learn.jpg */; };
 		F81D6F62217900A800AA11A7 /* trvl_learn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F81D6F60217900A700AA11A7 /* trvl_learn.jpg */; };
 		F81D6F63217900A800AA11A7 /* trvl_learn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F81D6F60217900A700AA11A7 /* trvl_learn.jpg */; };
+		F83D936D218BFC71004A5A91 /* iho-skullmark.png in Resources */ = {isa = PBXBuildFile; fileRef = F83D936C218BFC71004A5A91 /* iho-skullmark.png */; };
 		F8AA1A6B2187EE2F00867C8D /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8AA1A592187EE2E00867C8D /* Roboto-Medium.ttf */; };
 		F8AA1A6C2187EE2F00867C8D /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8AA1A592187EE2E00867C8D /* Roboto-Medium.ttf */; };
 		F8AA1A6D2187EE2F00867C8D /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8AA1A592187EE2E00867C8D /* Roboto-Medium.ttf */; };
@@ -258,6 +259,7 @@
 		9FFC3B701EA840FF004A0597 /* ASU-IHO-About.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ASU-IHO-About.jpg"; sourceTree = "<group>"; };
 		9FFC3B711EA840FF004A0597 /* IHO_Gallery_main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IHO_Gallery_main.jpg; sourceTree = "<group>"; };
 		F81D6F60217900A700AA11A7 /* trvl_learn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trvl_learn.jpg; sourceTree = "<group>"; };
+		F83D936C218BFC71004A5A91 /* iho-skullmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iho-skullmark.png"; sourceTree = "<group>"; };
 		F8AA1A592187EE2E00867C8D /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		F8AA1A5A2187EE2E00867C8D /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
 		F8AA1A5B2187EE2E00867C8D /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -400,6 +402,7 @@
 				9F30DEA91E8EC79E00F40E06 /* vimeo.png */,
 				9F30DEAA1E8EC79E00F40E06 /* youtube.png */,
 				230EE8FF1E4E147100B4F9F9 /* AboutViewController.swift */,
+				F83D936C218BFC71004A5A91 /* iho-skullmark.png */,
 				9FB7C57C1E4AAA5900B88166 /* AppDelegate.swift */,
 				9F30DE7C1E8EC79E00F40E06 /* AskAnAnthropologistViewController.swift */,
 				9F30DE7D1E8EC79E00F40E06 /* BecomingHumanViewController.swift */,
@@ -585,6 +588,7 @@
 				9F30DEB61E8EC79E00F40E06 /* FB.png in Resources */,
 				9FFC3B721EA840FF004A0597 /* ask_ananthropologist_v2.jpg in Resources */,
 				F8AA1A8C2187EE2F00867C8D /* RobotoCondensed-Regular.ttf in Resources */,
+				F83D936D218BFC71004A5A91 /* iho-skullmark.png in Resources */,
 				9F30DEB21E8EC79E00F40E06 /* custom.css in Resources */,
 				9F30DEC61E8EC79E00F40E06 /* lucy_chin.png in Resources */,
 				F8AA1A6B2187EE2F00867C8D /* Roboto-Medium.ttf in Resources */,

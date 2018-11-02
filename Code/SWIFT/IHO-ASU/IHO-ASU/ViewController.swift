@@ -20,8 +20,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var skullLogo: UIWebView!
-
     @IBOutlet weak var donate: UIButton!
     @IBOutlet weak var about: UIButton!
     @IBOutlet weak var gallery: UIButton!
@@ -32,7 +30,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         UINavigationBar.appearance().barTintColor = UIColor(red: CGFloat((255.0 / 255.0)), green: CGFloat((255.0 / 255.0)), blue: CGFloat((255.0 / 255.0)), alpha: CGFloat(1))
 
         
@@ -45,8 +43,6 @@ class ViewController: UIViewController {
         htmlpath = Bundle.main.path(forResource: "skull", ofType: "html")
         var html = try? String(contentsOfFile: htmlpath!, encoding: String.Encoding.utf8)
         var baseURL = URL(fileURLWithPath: "\(Bundle.main.bundlePath)")
-        self.skullLogo.loadHTMLString(html!, baseURL: baseURL)
-        skullLogo.scrollView.isScrollEnabled = false
         
         //toolbar
         let label = UILabel(frame: CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(200), height: CGFloat(21)))
@@ -94,6 +90,7 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+
 
 }
 
