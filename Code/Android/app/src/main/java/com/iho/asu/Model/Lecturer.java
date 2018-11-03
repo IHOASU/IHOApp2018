@@ -11,7 +11,7 @@ public class Lecturer {
     private String bio;
     private String link;
     private byte[] img;
-
+    private String imageUrl;
     private String image;
     private String email;
     private Integer order;
@@ -66,6 +66,14 @@ public class Lecturer {
 
     public byte[] getImg() {
         return img;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public void setImg(byte[] image) {
