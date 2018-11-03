@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z1m-dx-aeW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z1m-dx-aeW">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +27,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0wk-LP-xGw">
-                                <rect key="frame" x="0.0" y="44" width="375" height="720"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="642"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHb-XJ-8rt" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="665"/>
@@ -159,10 +159,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="yUk-n3-aHW" firstAttribute="top" secondItem="0wk-LP-xGw" secondAttribute="top" constant="44" id="LRZ-j5-s0U"/>
+                            <constraint firstItem="yUk-n3-aHW" firstAttribute="top" secondItem="0wk-LP-xGw" secondAttribute="top" id="LRZ-j5-s0U"/>
                             <constraint firstItem="yUk-n3-aHW" firstAttribute="trailing" secondItem="0wk-LP-xGw" secondAttribute="trailing" id="b9V-CS-8QU"/>
                             <constraint firstItem="0wk-LP-xGw" firstAttribute="leading" secondItem="yUk-n3-aHW" secondAttribute="leading" id="uMl-mr-rjv"/>
-                            <constraint firstItem="0wk-LP-xGw" firstAttribute="bottom" secondItem="yUk-n3-aHW" secondAttribute="bottom" constant="34" id="vZP-Rw-75K"/>
+                            <constraint firstItem="0wk-LP-xGw" firstAttribute="bottom" secondItem="yUk-n3-aHW" secondAttribute="bottom" id="vZP-Rw-75K"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yUk-n3-aHW"/>
                     </view>
@@ -733,7 +733,7 @@
                                         <color key="backgroundColor" red="0.0037125688980000002" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <segue destination="md1-mR-nm6" kind="show" id="jDS-8A-UkS"/>
+                                            <segue destination="AUD-I6-Pnl" kind="show" id="LAF-dt-A7I"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -891,47 +891,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="becomingHuman.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AJ4-BD-IuX">
-                                <rect key="frame" x="0.0" y="128" width="375" height="250"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMu-Rl-qk9">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IBS-Bg-bG7" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="10" width="375" height="615"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="becomingHuman.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AJ4-BD-IuX">
+                                                <rect key="frame" x="0.0" y="20" width="375" height="250"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="S5K-S0-8xF"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="6" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVO-AP-2Bg">
+                                                <rect key="frame" x="10" y="290" width="355" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="f8K-zR-mft"/>
+                                                </constraints>
+                                                <string key="text">The "Webby"-award winning BecomingHuman.org brings together interactive multimedia, research, and scholarship to promote greater understanding of the course of human evolution.</string>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwp-lI-alz">
+                                                <rect key="frame" x="0.0" y="520" width="375" height="45"/>
+                                                <color key="backgroundColor" red="0.0037125688977539539" green="0.17571765184402466" blue="0.35848188400268555" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="qIK-e8-17r"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="19"/>
+                                                <state key="normal" title="Visit BecomingHuman.org">
+                                                    <color key="titleShadowColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="becomingHuman:" destination="jVw-S6-Api" eventType="touchUpInside" id="stz-IY-RNs"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="AJ4-BD-IuX" firstAttribute="top" secondItem="IBS-Bg-bG7" secondAttribute="top" constant="20" id="4BA-dq-u5a"/>
+                                            <constraint firstItem="Wwp-lI-alz" firstAttribute="top" secondItem="iVO-AP-2Bg" secondAttribute="bottom" constant="30" id="D4y-1s-ZhB"/>
+                                            <constraint firstItem="Wwp-lI-alz" firstAttribute="leading" secondItem="IBS-Bg-bG7" secondAttribute="leading" id="FxX-lr-KkY"/>
+                                            <constraint firstAttribute="trailing" secondItem="Wwp-lI-alz" secondAttribute="trailing" id="K3r-na-J25"/>
+                                            <constraint firstAttribute="trailing" secondItem="iVO-AP-2Bg" secondAttribute="trailing" constant="10" id="MZI-Hw-KJk"/>
+                                            <constraint firstAttribute="bottom" secondItem="Wwp-lI-alz" secondAttribute="bottom" constant="50" id="U3s-vg-ACK"/>
+                                            <constraint firstItem="AJ4-BD-IuX" firstAttribute="leading" secondItem="IBS-Bg-bG7" secondAttribute="leading" id="UJA-Vm-DE4"/>
+                                            <constraint firstItem="iVO-AP-2Bg" firstAttribute="leading" secondItem="IBS-Bg-bG7" secondAttribute="leading" constant="10" id="W9l-ie-npc"/>
+                                            <constraint firstAttribute="trailing" secondItem="AJ4-BD-IuX" secondAttribute="trailing" id="p7c-AQ-tpn"/>
+                                            <constraint firstItem="iVO-AP-2Bg" firstAttribute="top" secondItem="AJ4-BD-IuX" secondAttribute="bottom" constant="20" id="sBM-dB-EIq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="S5K-S0-8xF"/>
+                                    <constraint firstItem="IBS-Bg-bG7" firstAttribute="height" secondItem="nMu-Rl-qk9" secondAttribute="height" priority="250" id="5TP-iw-dE7"/>
+                                    <constraint firstItem="IBS-Bg-bG7" firstAttribute="top" secondItem="nMu-Rl-qk9" secondAttribute="top" constant="10" id="O6t-S3-ATQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="IBS-Bg-bG7" secondAttribute="trailing" id="Piv-Ni-PIe"/>
+                                    <constraint firstItem="IBS-Bg-bG7" firstAttribute="width" secondItem="nMu-Rl-qk9" secondAttribute="width" id="Qal-0t-x06"/>
+                                    <constraint firstAttribute="bottom" secondItem="IBS-Bg-bG7" secondAttribute="bottom" id="Xy1-fZ-Fvw"/>
+                                    <constraint firstItem="IBS-Bg-bG7" firstAttribute="leading" secondItem="nMu-Rl-qk9" secondAttribute="leading" id="xKj-NS-woi"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="wordWrap" numberOfLines="6" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="290" translatesAutoresizingMaskIntoConstraints="NO" id="iVO-AP-2Bg">
-                                <rect key="frame" x="20" y="426" width="335" height="135"/>
-                                <string key="text">The "Webby"-award winning BecomingHuman.org brings together interactive multimedia, research, and scholarship to promote greater understanding of the course of human evolution.</string>
-                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwp-lI-alz">
-                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
-                                <color key="backgroundColor" red="0.0037125688977539539" green="0.17571765184402466" blue="0.35848188400268555" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="qIK-e8-17r"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="19"/>
-                                <state key="normal" title="Visit BecomingHuman.org">
-                                    <color key="titleShadowColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="becomingHuman:" destination="jVw-S6-Api" eventType="touchUpInside" id="stz-IY-RNs"/>
-                                </connections>
-                            </button>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="AJ4-BD-IuX" firstAttribute="top" secondItem="do3-QD-nc3" secondAttribute="top" constant="40" id="224-Vm-qHL"/>
-                            <constraint firstItem="iVO-AP-2Bg" firstAttribute="top" secondItem="AJ4-BD-IuX" secondAttribute="bottom" constant="40" id="KJU-JD-7yS"/>
-                            <constraint firstItem="iVO-AP-2Bg" firstAttribute="leading" secondItem="do3-QD-nc3" secondAttribute="leading" constant="20" id="LNX-Aw-Eev"/>
-                            <constraint firstItem="do3-QD-nc3" firstAttribute="trailing" secondItem="iVO-AP-2Bg" secondAttribute="trailing" constant="20" id="YjW-s2-xWM"/>
-                            <constraint firstItem="do3-QD-nc3" firstAttribute="trailing" secondItem="Wwp-lI-alz" secondAttribute="trailing" id="eDw-Hr-zlw"/>
-                            <constraint firstItem="Wwp-lI-alz" firstAttribute="leading" secondItem="do3-QD-nc3" secondAttribute="leading" id="gLT-vK-Q3L"/>
-                            <constraint firstItem="do3-QD-nc3" firstAttribute="trailing" secondItem="AJ4-BD-IuX" secondAttribute="trailing" id="ngS-Rl-KCT"/>
-                            <constraint firstItem="Wwp-lI-alz" firstAttribute="top" secondItem="iVO-AP-2Bg" secondAttribute="bottom" constant="40" id="nkC-Ug-Vau"/>
-                            <constraint firstItem="AJ4-BD-IuX" firstAttribute="leading" secondItem="do3-QD-nc3" secondAttribute="leading" id="sue-Zs-TZc"/>
+                            <constraint firstItem="do3-QD-nc3" firstAttribute="trailing" secondItem="nMu-Rl-qk9" secondAttribute="trailing" id="LUe-uc-qgU"/>
+                            <constraint firstItem="do3-QD-nc3" firstAttribute="top" secondItem="nMu-Rl-qk9" secondAttribute="top" id="aJM-kf-JZ9"/>
+                            <constraint firstItem="nMu-Rl-qk9" firstAttribute="bottom" secondItem="do3-QD-nc3" secondAttribute="bottom" id="bww-FN-1CD"/>
+                            <constraint firstItem="nMu-Rl-qk9" firstAttribute="leading" secondItem="do3-QD-nc3" secondAttribute="leading" id="yxv-J9-mMJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="do3-QD-nc3"/>
                     </view>
@@ -942,7 +971,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9LX-SX-ECc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6046" y="1623"/>
+            <point key="canvasLocation" x="-6047.1999999999998" y="1622.6600985221676"/>
         </scene>
         <!--Connect Info View Controller-->
         <scene sceneID="zCk-vd-LVp">
@@ -1428,65 +1457,100 @@ If you would like to send donation by check, please make your donation payable t
             <point key="canvasLocation" x="-2911" y="1691"/>
         </scene>
         <!--Ask An Anthropologist View Controller-->
-        <scene sceneID="Opy-1b-5Nb">
+        <scene sceneID="sck-Zy-vrk">
             <objects>
-                <viewController id="md1-mR-nm6" customClass="AskAnAnthropologistViewController" customModule="IHO_ASU" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3ld-8D-FAX">
+                <viewController id="AUD-I6-Pnl" customClass="AskAnAnthropologistViewController" customModule="IHO_ASU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sv6-a8-n1E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ask_ananthropologist_v2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mp9-9U-Miy">
-                                <rect key="frame" x="0.0" y="128" width="375" height="200"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h33-Rp-bMe">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ru-CO-ySW" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="595"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ask_ananthropologist_v2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fI9-u0-owo">
+                                                <rect key="frame" x="0.0" y="20" width="375" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="sQf-by-J3a"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="250" editable="NO" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bva-aM-sZS">
+                                                <rect key="frame" x="10" y="240" width="355" height="240"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="240" id="XWc-xw-Q9V"/>
+                                                </constraints>
+                                                <string key="text">AskAnAnthropologist, inspired by the "wildly" successful AskABiologist.asu.edu, is a resource where students and teachers can access information about the science of anthropology. 
+
+Aimed primarily at the middle school level, the articles and activities are challenging and may be used for higher school levels as well.</string>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="XWc-xw-Q9V"/>
+                                                    </mask>
+                                                </variation>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7V-Ox-m5N" userLabel="Ask_anthropologist">
+                                                <rect key="frame" x="0.0" y="500" width="375" height="45"/>
+                                                <color key="backgroundColor" red="0.0037125688980000002" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="Dz3-Kj-Mje"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="19"/>
+                                                <state key="normal" title="Visit AskAnAnthropologist">
+                                                    <color key="titleShadowColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="visitAnthropologist:" destination="AUD-I6-Pnl" eventType="touchUpInside" id="i9R-pu-VYO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Bva-aM-sZS" secondAttribute="trailing" constant="10" id="8sH-5h-8tV"/>
+                                            <constraint firstAttribute="trailing" secondItem="G7V-Ox-m5N" secondAttribute="trailing" id="91n-Hj-3hA"/>
+                                            <constraint firstItem="G7V-Ox-m5N" firstAttribute="leading" secondItem="3ru-CO-ySW" secondAttribute="leading" id="PDb-tk-Zve"/>
+                                            <constraint firstAttribute="trailing" secondItem="fI9-u0-owo" secondAttribute="trailing" id="USX-MS-P66"/>
+                                            <constraint firstItem="fI9-u0-owo" firstAttribute="top" secondItem="3ru-CO-ySW" secondAttribute="top" constant="20" id="Zin-89-5XI"/>
+                                            <constraint firstItem="Bva-aM-sZS" firstAttribute="leading" secondItem="3ru-CO-ySW" secondAttribute="leading" constant="10" id="mL3-Wg-VIw"/>
+                                            <constraint firstItem="Bva-aM-sZS" firstAttribute="top" secondItem="fI9-u0-owo" secondAttribute="bottom" constant="20" id="ove-XK-xrd"/>
+                                            <constraint firstItem="fI9-u0-owo" firstAttribute="leading" secondItem="3ru-CO-ySW" secondAttribute="leading" id="q7b-6N-GNg"/>
+                                            <constraint firstItem="G7V-Ox-m5N" firstAttribute="top" secondItem="Bva-aM-sZS" secondAttribute="bottom" constant="20" id="rw3-b1-qf3"/>
+                                            <constraint firstAttribute="bottom" secondItem="G7V-Ox-m5N" secondAttribute="bottom" constant="50" id="yX2-Td-jB8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="eXg-5a-7sq"/>
+                                    <constraint firstAttribute="trailing" secondItem="3ru-CO-ySW" secondAttribute="trailing" id="KeB-y1-TrO"/>
+                                    <constraint firstAttribute="bottom" secondItem="3ru-CO-ySW" secondAttribute="bottom" id="OC7-2A-E3H"/>
+                                    <constraint firstItem="3ru-CO-ySW" firstAttribute="width" secondItem="h33-Rp-bMe" secondAttribute="width" id="e79-AX-YfE"/>
+                                    <constraint firstItem="3ru-CO-ySW" firstAttribute="leading" secondItem="h33-Rp-bMe" secondAttribute="leading" id="g6L-hf-VZa"/>
+                                    <constraint firstItem="3ru-CO-ySW" firstAttribute="height" secondItem="h33-Rp-bMe" secondAttribute="height" priority="250" id="hJL-8c-EMn"/>
+                                    <constraint firstItem="3ru-CO-ySW" firstAttribute="top" secondItem="h33-Rp-bMe" secondAttribute="top" id="zVj-8D-WMl"/>
                                 </constraints>
-                            </imageView>
-                            <webView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHq-XI-Azy">
-                                <rect key="frame" x="20" y="368" width="335" height="201"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="201" id="be8-zF-BfC"/>
-                                </constraints>
-                            </webView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SD-oF-ywV">
-                                <rect key="frame" x="0.0" y="609" width="375" height="45"/>
-                                <color key="backgroundColor" red="0.0037125688980000002" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="oXb-gv-0Sz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="19"/>
-                                <state key="normal" title="Visit AskAnAnthropologist">
-                                    <color key="titleShadowColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="visitAnthropologist:" destination="md1-mR-nm6" eventType="touchUpInside" id="bLI-EJ-i2h"/>
-                                </connections>
-                            </button>
+                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="7SD-oF-ywV" firstAttribute="top" secondItem="ZHq-XI-Azy" secondAttribute="bottom" constant="40" id="Kga-TL-Ikn"/>
-                            <constraint firstItem="mp9-9U-Miy" firstAttribute="leading" secondItem="piR-eD-WIg" secondAttribute="leading" id="Lhc-5x-c7c"/>
-                            <constraint firstItem="piR-eD-WIg" firstAttribute="trailing" secondItem="7SD-oF-ywV" secondAttribute="trailing" id="NQX-Qq-1cz"/>
-                            <constraint firstItem="ZHq-XI-Azy" firstAttribute="top" secondItem="mp9-9U-Miy" secondAttribute="bottom" constant="40" id="eKP-E0-s2z"/>
-                            <constraint firstItem="mp9-9U-Miy" firstAttribute="trailing" secondItem="piR-eD-WIg" secondAttribute="trailing" id="lpM-2A-3y9"/>
-                            <constraint firstItem="mp9-9U-Miy" firstAttribute="top" secondItem="piR-eD-WIg" secondAttribute="top" constant="40" id="lsX-LY-bxY"/>
-                            <constraint firstItem="piR-eD-WIg" firstAttribute="trailing" secondItem="ZHq-XI-Azy" secondAttribute="trailing" constant="20" id="yMr-hO-na4"/>
-                            <constraint firstItem="ZHq-XI-Azy" firstAttribute="leading" secondItem="piR-eD-WIg" secondAttribute="leading" constant="20" id="yeL-Zc-ZsD"/>
-                            <constraint firstItem="7SD-oF-ywV" firstAttribute="leading" secondItem="piR-eD-WIg" secondAttribute="leading" id="zFB-2j-DEh"/>
+                            <constraint firstItem="h33-Rp-bMe" firstAttribute="bottom" secondItem="O2s-D3-NaY" secondAttribute="bottom" id="0qn-j2-woH"/>
+                            <constraint firstItem="O2s-D3-NaY" firstAttribute="top" secondItem="h33-Rp-bMe" secondAttribute="top" id="4eM-jW-t22"/>
+                            <constraint firstItem="h33-Rp-bMe" firstAttribute="leading" secondItem="O2s-D3-NaY" secondAttribute="leading" id="NI2-5w-U6h"/>
+                            <constraint firstItem="O2s-D3-NaY" firstAttribute="trailing" secondItem="h33-Rp-bMe" secondAttribute="trailing" id="Oc5-WY-87F"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="piR-eD-WIg"/>
+                        <viewLayoutGuide key="safeArea" id="O2s-D3-NaY"/>
                     </view>
                     <size key="freeformSize" width="375" height="812"/>
                     <connections>
-                        <outlet property="anthro" destination="ZHq-XI-Azy" id="q5S-d8-lmm"/>
-                        <outlet property="askButton" destination="7SD-oF-ywV" id="dmw-gn-zgu"/>
+                        <outlet property="askButton" destination="G7V-Ox-m5N" id="y8O-3V-Lv1"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7fe-4Z-h0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="APg-4l-GPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4410" y="1623"/>
+            <point key="canvasLocation" x="-4359.1999999999998" y="1622.6600985221676"/>
         </scene>
         <!--Featured News View Controller-->
         <scene sceneID="owd-dr-X6y">
