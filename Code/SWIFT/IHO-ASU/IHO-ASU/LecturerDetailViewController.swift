@@ -38,11 +38,13 @@ class LecturerDetailViewController: UITableViewController, MFMailComposeViewCont
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
+            //mail.delegate = self as! UINavigationControllerDelegate
             mail.setToRecipients([newsEmail!])
             mail.setSubject("Ask a question")
             mail.setMessageBody("<p>Enter your question here</p>" ,isHTML: true)
-            present(mail, animated: true)
+            present(mail, animated: true, completion: nil)
         } else {
+            print("Error in mail compose")
             // show failure alert
         }
     }
@@ -137,6 +139,16 @@ class LecturerDetailViewController: UITableViewController, MFMailComposeViewCont
             viewController.lecEmail  = self.newsEmail!
             }
         }
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
     }
     
 }
