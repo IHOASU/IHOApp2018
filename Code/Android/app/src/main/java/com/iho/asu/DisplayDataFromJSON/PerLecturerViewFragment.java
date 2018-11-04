@@ -42,10 +42,7 @@ public class PerLecturerViewFragment extends Fragment {
         TextView textView1 = (TextView)v.findViewById(R.id.title);
         TextView textView2 = (TextView)v.findViewById(R.id.bio);
         Intent i = getActivity().getIntent();
-
-        ByteArrayInputStream img = new ByteArrayInputStream(i.getByteArrayExtra(FragmentFieldsMapping.KEY_LECTURER_IMAGE.getColumnName()));
-
-        Glide.with(this).load("https://dl.dropboxusercontent.com/s/d0duvt4a5lq17yl/boyd.jpg").into(imageView);
+        Glide.with(this).load(i.getStringExtra(FragmentFieldsMapping.KEY_LECTURER_IMAGE_URL.getColumnName())).into(imageView);
         textView.setText(i.getStringExtra(FragmentFieldsMapping.KEY_LECTURER_NAME.getColumnName()));
         textView1.setText(i.getStringExtra(FragmentFieldsMapping.KEY_LECTURE_TITLE.getColumnName()));
         textView1.setTypeface(textView.getTypeface(), Typeface.BOLD);

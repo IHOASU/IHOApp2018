@@ -13,7 +13,6 @@ public enum FragmentFieldsMapping {
     KEY_EVENT_MAP("mapLink"),
     KEY_EVENT_REG("EventReg"),
     KEY_EVENT_DESC("EventDesc"),
-    KEY_LECTURER_IMAGE("Image"),
     KEY_LECTURER_IMAGE_URL("ImageUrl"),
     KEY_LECTURER_NAME("Name"),
     KEY_LECTURER_BIO("Bio"),

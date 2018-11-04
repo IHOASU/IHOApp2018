@@ -10,7 +10,6 @@ public class Lecturer {
     private String title;
     private String bio;
     private String link;
-    private byte[] img;
     private String imageUrl;
     private String image;
     private String email;
@@ -64,20 +63,12 @@ public class Lecturer {
         this.link = link;
     }
 
-    public byte[] getImg() {
-        return img;
-    }
-
     public String getImageUrl() {
         return imageUrl;
     }
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
-    }
-
-    public void setImg(byte[] image) {
-        this.img = image;
     }
 
     @Override
