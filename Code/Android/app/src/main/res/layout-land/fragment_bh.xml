@@ -55,6 +55,15 @@
         android:background="@drawable/border"
         android:layout_below="@+id/customConnectBackButtonll"
         android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="600dp"
+            android:layout_height="230dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/lucyhand" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
