@@ -150,6 +150,7 @@
 		F8AA1AA2218ADF1A00867C8D /* becomingHuman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8AA1AA1218ADF1900867C8D /* becomingHuman.jpg */; };
 		F8AA1AA3218ADF1A00867C8D /* becomingHuman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8AA1AA1218ADF1900867C8D /* becomingHuman.jpg */; };
 		F8AA1AA4218ADF1A00867C8D /* becomingHuman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8AA1AA1218ADF1900867C8D /* becomingHuman.jpg */; };
+		F8B1F1CA21911F120030BCF9 /* location_maps.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B1F1C921911F110030BCF9 /* location_maps.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -279,6 +280,7 @@
 		F8AA1A692187EE2E00867C8D /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
 		F8AA1A6A2187EE2E00867C8D /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
 		F8AA1AA1218ADF1900867C8D /* becomingHuman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = becomingHuman.jpg; sourceTree = "<group>"; };
+		F8B1F1C921911F110030BCF9 /* location_maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_maps.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -394,6 +396,7 @@
 				9F30DE8D1E8EC79E00F40E06 /* instagram.png */,
 				230EE9031E4E147100B4F9F9 /* invest.png */,
 				9F30DE961E8EC79E00F40E06 /* lucy_chin.png */,
+				F8B1F1C921911F110030BCF9 /* location_maps.png */,
 				9F30DE981E8EC79E00F40E06 /* lucy_skull.png */,
 				9F30DE9A1E8EC79E00F40E06 /* lucy.png */,
 				9F30DEA21E8EC79E00F40E06 /* rsz_iho_h_mg.png */,
@@ -627,6 +630,7 @@
 				F81D6F61217900A800AA11A7 /* trvl_learn.jpg in Resources */,
 				9F30DED21E8EC79E00F40E06 /* rsz_iho_h_mg.png in Resources */,
 				F8AA1A922187EE2F00867C8D /* RobotoCondensed-Bold.ttf in Resources */,
+				F8B1F1CA21911F120030BCF9 /* location_maps.png in Resources */,
 				9FB7C5821E4AAA5900B88166 /* Main.storyboard in Resources */,
 				F8AA1A862187EE2F00867C8D /* Roboto-Thin.ttf in Resources */,
 				9FFC3B741EA840FF004A0597 /* IHO_Gallery_main.jpg in Resources */,
