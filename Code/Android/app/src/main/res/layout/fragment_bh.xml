@@ -50,7 +50,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:visibility="visible"
-        android:padding="@dimen/activity_horizontal_margin"
         android:id="@+id/becomingHumanLayout"
         android:background="@drawable/border"
         android:layout_below="@+id/customConnectBackButtonll">
@@ -59,6 +58,7 @@
             android:id="@+id/imageView"
             android:layout_width="379dp"
             android:layout_height="230dp"
+            android:layout_margin="17dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:background="@drawable/lucyhand" />
@@ -66,6 +66,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="17dp"
             android:text="@string/becomingHuman"
             android:textSize="16dp" />
         <TextView
