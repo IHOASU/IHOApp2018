@@ -430,7 +430,7 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 								 tfLink.getText(),
 								 tfDesc.getText(),
 								 encodedImage,
-								 tfImageUrl.getText().trim(),
+								 convertToStaticDropBoxUrl(tfImageUrl.getText().trim()),
 								 tfEmail.getText(),
 								 ord);
 						 lectureDelegate.addLecture(newLecture);
@@ -444,7 +444,7 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 								 tfLink.getText(),
 								 tfDesc.getText(),
 								 imageFileButton.getText(),
-								 tfImageUrl.getText().trim(),
+								 convertToStaticDropBoxUrl(tfImageUrl.getText().trim()),
 								 tfEmail.getText(),
 								 ord);
 						 lectureDelegate.addLecture(newLecture);
@@ -480,6 +480,13 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 				}
 			});
 	}
+
+	//https://www.dropbox.com/s/d0duvt4a5lq17yl/boyd.jpg?dl=0 is converted to
+	//https://dl.dropboxusercontent.com/s/d0duvt4a5lq17yl/boyd.jpg
+	private String convertToStaticDropBoxUrl(String urlWithMetaData) {
+		return urlWithMetaData.replace("www.dropbox.com", "dl.dropboxusercontent.com").replace("?dl=0", "");
+	}
+
 	public class ImageListRenderer extends JLabel implements ListCellRenderer<GalleryModel> {
 		 
 	    public ImageListRenderer() {

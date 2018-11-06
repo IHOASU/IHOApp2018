@@ -40,8 +40,8 @@ public class Lecture {
 		bio = object.getString("bio");
 		link = object.getString("link");
 		title = object.getString("title");
-		image = object.getString("image");
-//		imageUrl = object.getString("imageUrl");
+//		image = object.getString("image");
+		imageUrl = object.getString("imageUrl");
 		email = object.getString("email");
 		order = object.getInt("order");
 	}
