@@ -41,24 +41,7 @@ class AboutViewController: UIViewController , UIWebViewDelegate {
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationItem.title = "About"
         aboutView.loadRequest(URLRequest(url: URL(fileURLWithPath: Bundle.main.path(forResource: "About", ofType: "html")!)))
-        
-        // to be used later --
-//        let attributedString = NSMutableAttributedString(string: "Just click here to register")
-//        let url = URL(string: "https://www.apple.com")!
-//
-//        // Set the 'click here' substring to be the link
-//        attributedString.setAttributes([NSLinkAttributeName: url], range: NSMakeRange(5, 9))
-//
-//        contactText.attributedText = attributedString
-//        contactText.isUserInteractionEnabled = true
-//        contactText.isEditable = false
-//
-//        // Set how links should appear: blue and underlined
-//        contactText.linkTextAttributes = [
-//            NSForegroundColorAttributeName: UIColor.blue,
-//            NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue
-//        ]
-        
+
         
         //toolbar
         let label = UILabel(frame: CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(350), height: CGFloat(21)))

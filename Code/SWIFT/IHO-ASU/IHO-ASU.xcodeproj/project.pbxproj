@@ -150,7 +150,19 @@
 		F8AA1AA2218ADF1A00867C8D /* becomingHuman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8AA1AA1218ADF1900867C8D /* becomingHuman.jpg */; };
 		F8AA1AA3218ADF1A00867C8D /* becomingHuman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8AA1AA1218ADF1900867C8D /* becomingHuman.jpg */; };
 		F8AA1AA4218ADF1A00867C8D /* becomingHuman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8AA1AA1218ADF1900867C8D /* becomingHuman.jpg */; };
-		F8B1F1CA21911F120030BCF9 /* location_maps.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B1F1C921911F110030BCF9 /* location_maps.png */; };
+		F8B1F1D0219243260030BCF9 /* ENewsWebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1F1CF219243260030BCF9 /* ENewsWebController.swift */; };
+		F8B1F1D2219247800030BCF9 /* WebViewNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1F1D1219247800030BCF9 /* WebViewNewsController.swift */; };
+		F8B1F1D421924C4C0030BCF9 /* WebViewMediaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1F1D321924C4C0030BCF9 /* WebViewMediaController.swift */; };
+		F8B1F1D621924C9C0030BCF9 /* WebViewEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1F1D521924C9C0030BCF9 /* WebViewEventsController.swift */; };
+		F8B1F1D821924D4C0030BCF9 /* WebViewTravelMoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1F1D721924D4C0030BCF9 /* WebViewTravelMoreController.swift */; };
+		F8B1F1DA21924F9C0030BCF9 /* WebViewBlogNotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1F1D921924F9C0030BCF9 /* WebViewBlogNotesController.swift */; };
+		F8B1F1DC219255DC0030BCF9 /* WebViewBecomingHumanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1F1DB219255DC0030BCF9 /* WebViewBecomingHumanController.swift */; };
+		F8B1F1DE219256660030BCF9 /* WebViewAskAnthroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1F1DD219256660030BCF9 /* WebViewAskAnthroController.swift */; };
+		F8B1F1E221925C7A0030BCF9 /* location_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B1F1E121925C790030BCF9 /* location_pin.png */; };
+		F8B1F1E4219263CB0030BCF9 /* contact-us.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B1F1E3219263C90030BCF9 /* contact-us.png */; };
+		F8B1F1E6219265F10030BCF9 /* WebViewWebsiteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1F1E5219265F10030BCF9 /* WebViewWebsiteController.swift */; };
+		F8B1F1E8219266780030BCF9 /* WebViewContactUsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1F1E7219266780030BCF9 /* WebViewContactUsController.swift */; };
+		F8B1F1EA21926DD90030BCF9 /* location-map.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B1F1E921926DD80030BCF9 /* location-map.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -280,7 +292,19 @@
 		F8AA1A692187EE2E00867C8D /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
 		F8AA1A6A2187EE2E00867C8D /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
 		F8AA1AA1218ADF1900867C8D /* becomingHuman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = becomingHuman.jpg; sourceTree = "<group>"; };
-		F8B1F1C921911F110030BCF9 /* location_maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_maps.png; sourceTree = "<group>"; };
+		F8B1F1CF219243260030BCF9 /* ENewsWebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENewsWebController.swift; sourceTree = "<group>"; };
+		F8B1F1D1219247800030BCF9 /* WebViewNewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewNewsController.swift; sourceTree = "<group>"; };
+		F8B1F1D321924C4C0030BCF9 /* WebViewMediaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewMediaController.swift; sourceTree = "<group>"; };
+		F8B1F1D521924C9C0030BCF9 /* WebViewEventsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewEventsController.swift; sourceTree = "<group>"; };
+		F8B1F1D721924D4C0030BCF9 /* WebViewTravelMoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewTravelMoreController.swift; sourceTree = "<group>"; };
+		F8B1F1D921924F9C0030BCF9 /* WebViewBlogNotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewBlogNotesController.swift; sourceTree = "<group>"; };
+		F8B1F1DB219255DC0030BCF9 /* WebViewBecomingHumanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewBecomingHumanController.swift; sourceTree = "<group>"; };
+		F8B1F1DD219256660030BCF9 /* WebViewAskAnthroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewAskAnthroController.swift; sourceTree = "<group>"; };
+		F8B1F1E121925C790030BCF9 /* location_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = location_pin.png; path = ../../../../../../../../../../Downloads/location_pin.png; sourceTree = "<group>"; };
+		F8B1F1E3219263C90030BCF9 /* contact-us.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact-us.png"; sourceTree = "<group>"; };
+		F8B1F1E5219265F10030BCF9 /* WebViewWebsiteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewWebsiteController.swift; sourceTree = "<group>"; };
+		F8B1F1E7219266780030BCF9 /* WebViewContactUsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewContactUsController.swift; sourceTree = "<group>"; };
+		F8B1F1E921926DD80030BCF9 /* location-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location-map.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,9 +394,9 @@
 				9F30DEA51E8EC79E00F40E06 /* skull.html */,
 				9FFC3B6F1EA840FF004A0597 /* ask_ananthropologist_v2.jpg */,
 				9F30DE7B1E8EC79E00F40E06 /* askananthropologist.jpg */,
-				F8AA1AA1218ADF1900867C8D /* becomingHuman.jpg */,
 				230EE9001E4E147100B4F9F9 /* ASU IHO vertical.jpg */,
 				9FFC3B701EA840FF004A0597 /* ASU-IHO-About.jpg */,
+				F8AA1AA1218ADF1900867C8D /* becomingHuman.jpg */,
 				9FFC3B711EA840FF004A0597 /* IHO_Gallery_main.jpg */,
 				9F30DE8A1E8EC79E00F40E06 /* IHOlogoforapp.jpg */,
 				9F30DE9C1E8EC79E00F40E06 /* newLogo.jpg */,
@@ -391,12 +415,15 @@
 				9F84B6511EAF06A5007F74CB /* newscience.json */,
 				230EE90C1E4E149800B4F9F9 /* Info.plist */,
 				9F30DE7E1E8EC79E00F40E06 /* claszen_logo_maroon.png */,
+				F8B1F1E3219263C90030BCF9 /* contact-us.png */,
 				9F30DE861E8EC79E00F40E06 /* FB.png */,
 				9F30DE891E8EC79E00F40E06 /* IHO_h_mg.png */,
+				F83D936C218BFC71004A5A91 /* iho-skullmark.png */,
 				9F30DE8D1E8EC79E00F40E06 /* instagram.png */,
 				230EE9031E4E147100B4F9F9 /* invest.png */,
+				F8B1F1E121925C790030BCF9 /* location_pin.png */,
+				F8B1F1E921926DD80030BCF9 /* location-map.png */,
 				9F30DE961E8EC79E00F40E06 /* lucy_chin.png */,
-				F8B1F1C921911F110030BCF9 /* location_maps.png */,
 				9F30DE981E8EC79E00F40E06 /* lucy_skull.png */,
 				9F30DE9A1E8EC79E00F40E06 /* lucy.png */,
 				9F30DEA21E8EC79E00F40E06 /* rsz_iho_h_mg.png */,
@@ -405,7 +432,6 @@
 				9F30DEA91E8EC79E00F40E06 /* vimeo.png */,
 				9F30DEAA1E8EC79E00F40E06 /* youtube.png */,
 				230EE8FF1E4E147100B4F9F9 /* AboutViewController.swift */,
-				F83D936C218BFC71004A5A91 /* iho-skullmark.png */,
 				9FB7C57C1E4AAA5900B88166 /* AppDelegate.swift */,
 				9F30DE7C1E8EC79E00F40E06 /* AskAnAnthropologistViewController.swift */,
 				9F30DE7D1E8EC79E00F40E06 /* BecomingHumanViewController.swift */,
@@ -415,6 +441,7 @@
 				9F36EA4E1EA01D380041582B /* CreditsViewController.swift */,
 				230EE9011E4E147100B4F9F9 /* DonationController.swift */,
 				230EE9021E4E147100B4F9F9 /* DonationWebController.swift */,
+				F8B1F1CF219243260030BCF9 /* ENewsWebController.swift */,
 				9F30DE831E8EC79E00F40E06 /* Events.swift */,
 				9F30DE841E8EC79E00F40E06 /* EventsDetailViewController.swift */,
 				9F30DE851E8EC79E00F40E06 /* EventsViewController.swift */,
@@ -437,6 +464,15 @@
 				9F30DEA31E8EC79E00F40E06 /* Science.swift */,
 				9F30DEA71E8EC79E00F40E06 /* TravelViewController.swift */,
 				9FB7C57E1E4AAA5900B88166 /* ViewController.swift */,
+				F8B1F1DD219256660030BCF9 /* WebViewAskAnthroController.swift */,
+				F8B1F1DB219255DC0030BCF9 /* WebViewBecomingHumanController.swift */,
+				F8B1F1D921924F9C0030BCF9 /* WebViewBlogNotesController.swift */,
+				F8B1F1E7219266780030BCF9 /* WebViewContactUsController.swift */,
+				F8B1F1D521924C9C0030BCF9 /* WebViewEventsController.swift */,
+				F8B1F1D321924C4C0030BCF9 /* WebViewMediaController.swift */,
+				F8B1F1D1219247800030BCF9 /* WebViewNewsController.swift */,
+				F8B1F1D721924D4C0030BCF9 /* WebViewTravelMoreController.swift */,
+				F8B1F1E5219265F10030BCF9 /* WebViewWebsiteController.swift */,
 				9FB7C5861E4AAA5900B88166 /* Assets.xcassets */,
 				9FB7C5831E4AAA5900B88166 /* IHO_ASU.xcdatamodeld */,
 				9FB7C5881E4AAA5900B88166 /* LaunchScreen.storyboard */,
@@ -618,6 +654,7 @@
 				230EE9071E4E147100B4F9F9 /* ASU IHO vertical.jpg in Resources */,
 				F8AA1A9B2187EE2F00867C8D /* Roboto-BoldItalic.ttf in Resources */,
 				9F36EA531EA01D380041582B /* news.json in Resources */,
+				F8B1F1E221925C7A0030BCF9 /* location_pin.png in Resources */,
 				F8AA1A7A2187EE2F00867C8D /* Roboto-Italic.ttf in Resources */,
 				9FB7C58A1E4AAA5900B88166 /* LaunchScreen.storyboard in Resources */,
 				9FB7C5871E4AAA5900B88166 /* Assets.xcassets in Resources */,
@@ -630,11 +667,12 @@
 				F81D6F61217900A800AA11A7 /* trvl_learn.jpg in Resources */,
 				9F30DED21E8EC79E00F40E06 /* rsz_iho_h_mg.png in Resources */,
 				F8AA1A922187EE2F00867C8D /* RobotoCondensed-Bold.ttf in Resources */,
-				F8B1F1CA21911F120030BCF9 /* location_maps.png in Resources */,
 				9FB7C5821E4AAA5900B88166 /* Main.storyboard in Resources */,
 				F8AA1A862187EE2F00867C8D /* Roboto-Thin.ttf in Resources */,
 				9FFC3B741EA840FF004A0597 /* IHO_Gallery_main.jpg in Resources */,
+				F8B1F1EA21926DD90030BCF9 /* location-map.png in Resources */,
 				F8AA1AA2218ADF1A00867C8D /* becomingHuman.jpg in Resources */,
+				F8B1F1E4219263CB0030BCF9 /* contact-us.png in Resources */,
 				9FFC3B731EA840FF004A0597 /* ASU-IHO-About.jpg in Resources */,
 				9F30DECA1E8EC79E00F40E06 /* lucy.png in Resources */,
 				9F30DED81E8EC79E00F40E06 /* twitter.png in Resources */,
@@ -706,6 +744,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F30DECB1E8EC79E00F40E06 /* LucyViewController.swift in Sources */,
+				F8B1F1E8219266780030BCF9 /* WebViewContactUsController.swift in Sources */,
 				9F30DEAD1E8EC79E00F40E06 /* BecomingHumanViewController.swift in Sources */,
 				9F87E3691E4D3FAC0030F231 /* NewsEventsViewController.swift in Sources */,
 				9F30DED71E8EC79E00F40E06 /* TravelViewController.swift in Sources */,
@@ -719,25 +758,34 @@
 				9FB7C57D1E4AAA5900B88166 /* AppDelegate.swift in Sources */,
 				9FB7C5851E4AAA5900B88166 /* IHO_ASU.xcdatamodeld in Sources */,
 				9F87E3671E4D3DAE0030F231 /* ConnectViewController.swift in Sources */,
+				F8B1F1DA21924F9C0030BCF9 /* WebViewBlogNotesController.swift in Sources */,
 				9FFC3B6E1EA7F581004A0597 /* LecturerGalleryViewController.swift in Sources */,
 				9F30DEB51E8EC79E00F40E06 /* EventsViewController.swift in Sources */,
+				F8B1F1DC219255DC0030BCF9 /* WebViewBecomingHumanController.swift in Sources */,
 				230EE9081E4E147100B4F9F9 /* DonationController.swift in Sources */,
 				9F36EA511EA01D380041582B /* Cache.swift in Sources */,
 				9F30DED01E8EC79E00F40E06 /* NewsViewController.swift in Sources */,
 				9F30DEAF1E8EC79E00F40E06 /* ConnectInfoViewController.swift in Sources */,
+				F8B1F1D421924C4C0030BCF9 /* WebViewMediaController.swift in Sources */,
 				9F30DEC41E8EC79E00F40E06 /* LecturerDetailViewController.swift in Sources */,
+				F8B1F1D2219247800030BCF9 /* WebViewNewsController.swift in Sources */,
+				F8B1F1D621924C9C0030BCF9 /* WebViewEventsController.swift in Sources */,
 				9F30DED31E8EC79E00F40E06 /* Science.swift in Sources */,
 				9F30DEBB1E8EC79E00F40E06 /* Image.swift in Sources */,
 				9F30DEB71E8EC79E00F40E06 /* FeaturedNewsViewController.swift in Sources */,
 				9F30DEAC1E8EC79E00F40E06 /* AskAnAnthropologistViewController.swift in Sources */,
 				9F30DECD1E8EC79E00F40E06 /* News.swift in Sources */,
 				9F30DEB41E8EC79E00F40E06 /* EventsDetailViewController.swift in Sources */,
+				F8B1F1D821924D4C0030BCF9 /* WebViewTravelMoreController.swift in Sources */,
+				F8B1F1DE219256660030BCF9 /* WebViewAskAnthroController.swift in Sources */,
 				9F30DEC51E8EC79E00F40E06 /* LecturerListViewController.swift in Sources */,
 				230EE9061E4E147100B4F9F9 /* AboutViewController.swift in Sources */,
 				9F87E36B1E4D40740030F231 /* FieldViewController.swift in Sources */,
+				F8B1F1E6219265F10030BCF9 /* WebViewWebsiteController.swift in Sources */,
 				9F36EA521EA01D380041582B /* CreditsViewController.swift in Sources */,
 				9F36EA541EA01D380041582B /* Reachability.swift in Sources */,
 				9F30DEC31E8EC79E00F40E06 /* Lecturer.swift in Sources */,
+				F8B1F1D0219243260030BCF9 /* ENewsWebController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -114,20 +114,6 @@ class ConnectViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
     
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.tableView.deselectRow(at: self.tableView.indexPathForSelectedRow!, animated: true)
-        if indexPath.section == 3 {
-            let url = URL(string: "https://iho.asu.edu/subscribe")!
-            
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            } else {
-                UIApplication.shared.openURL(url)
-            }
-        }
-    }
-    
 }
 
 
