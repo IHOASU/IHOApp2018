@@ -72,7 +72,9 @@
                 android:maxLines="2"
                 android:text="                                                                                                                 "
                 android:textAlignment="center"
-                android:textSize="15dp" />
+                android:textSize="15dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -86,6 +88,8 @@
                     android:layout_height="190dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
                     android:background="@android:color/white"
                     android:focusable="true"
                     android:src="@drawable/trvl_learn" />
@@ -107,8 +111,8 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/background_light"
                 android:gravity="fill_horizontal"
-                android:paddingLeft="12dp"
-                android:paddingRight="12dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
                 android:text="IHO’s travel program is different from any other travel experience. This is not just travel—it is immersion in the span of human history, hosted by IHO and ASU scientists who add a richer understanding of your travel destination. At the same time, our travel adventures are designed for fun, excitement, and comfort and take advantage of the best accommodations and sailing vessels available in the industry. We partner with top travel providers who are specialists in exotic areas of the world. Plus, tour leaders, such as Bill Kimbel and Don Johanson, have been accompanying our travelers since the 1980s to Ethiopia, France, Galápagos, Madagascar, South Africa, and Tanzania, as well as being seasoned world travelers themselves. From years of experience, we understand the balance between a great travel experience and a rich learning program. In fact, our trips are so unique and engaging that we have many satisfied repeat travelers."
                 android:textSize="17dp" />
 
@@ -118,7 +122,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
-                android:textSize="15dp" />
+                android:textSize="15dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"/>
 
             <Button
                 android:id="@+id/trvlbtn"
