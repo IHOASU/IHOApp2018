@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Dixith",
+      "email": "dkurra@asu.edu",
+      "password": "dkurra"
+    },
+    {
+      "id": 2,
+      "name": "Julie Russ",
+      "email": "jruss@asu.edu",
+      "password": "jruss"
+    }
+  ]
+}
