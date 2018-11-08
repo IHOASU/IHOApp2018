@@ -59,9 +59,9 @@ class ConnectInfoViewController: UITableViewController {
         
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         
-        contactButton.layer.cornerRadius = 15
-        officialButton.layer.cornerRadius = 15
-        locationButton.layer.cornerRadius = 15
+        contactButton.layer.cornerRadius = 0
+        officialButton.layer.cornerRadius = 0
+        locationButton.layer.cornerRadius = 0
         
         //Button style
         
