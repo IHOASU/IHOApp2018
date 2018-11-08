@@ -50,7 +50,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:visibility="visible"
-        android:padding="@dimen/activity_horizontal_margin"
         android:id="@+id/anthropologistLayout"
         android:background="@drawable/border"
         android:layout_below="@+id/customConnectBackButtonll">
@@ -69,6 +68,7 @@
                 android:id="@+id/imageView"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/anthropologist"
+                android:layout_margin="17dp"
                 />
         </RelativeLayout>
         <TextView
@@ -77,22 +77,26 @@
             android:id="@+id/textView2"
             android:textSize="10dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
             android:background="@android:color/white"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/askananthropologist"
-            android:textSize="16dp"
+            android:textSize="17dp"
             android:autoLink="web"
             android:linksClickable="true"
+            android:layout_margin="17dp"
             android:layout_gravity="left"
             android:paddingRight="12dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView"
-            android:textSize="16dp"
-            android:layout_gravity="center_horizontal" />
+            android:textSize="17dp"
+            android:layout_gravity="center_horizontal"
+            />
         <Button
             android:id="@+id/visitAskAnAnthropologist"
             android:layout_width="match_parent"
