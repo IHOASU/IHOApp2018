@@ -62,11 +62,11 @@ class LecturerListViewController: UITableViewController {
                             if let lecturerFromJSON = myJSON as? [[String: AnyObject]]{
                                 for lecturer in lecturerFromJSON{
                                     let lecturerObject = Lecturer()
-                                    if let title = lecturer["title"] as? String,let bio = lecturer["bio"] as? String,let id = lecturer["id"] as? String,let image = lecturer["image"] as? String, let link = lecturer["link"] as? String, let name = lecturer["name"] as? String, let email = lecturer["email"] as? String, let order = lecturer["order"] as? Double{
+                                    if let title = lecturer["title"] as? String,let bio = lecturer["bio"] as? String,let id = lecturer["id"] as? String,let imageUrl = lecturer["imageUrl"] as? String, let link = lecturer["link"] as? String, let name = lecturer["name"] as? String, let email = lecturer["email"] as? String, let order = lecturer["order"] as? Double{
                                         lecturerObject.id = id
                                         lecturerObject.title = title
                                         lecturerObject.bio = bio
-                                        lecturerObject.image = image
+                                        lecturerObject.imageUrl = imageUrl
                                         lecturerObject.link = link
                                         lecturerObject.name = name
                                         lecturerObject.email = email
@@ -103,11 +103,11 @@ class LecturerListViewController: UITableViewController {
                     if let lecturerFromJSON = myJSON as? [[String: AnyObject]]{
                         for lecturer in lecturerFromJSON{
                             let lecturerObject = Lecturer()
-                            if let title = lecturer["title"] as? String,let bio = lecturer["bio"] as? String,let id = lecturer["id"] as? String,let image = lecturer["image"] as? String, let link = lecturer["link"] as? String, let name = lecturer["name"] as? String, let email = lecturer["email"] as? String, let order = lecturer["order"] as? Double{
+                            if let title = lecturer["title"] as? String,let bio = lecturer["bio"] as? String,let id = lecturer["id"] as? String,let imageUrl = lecturer["imageUrl"] as? String, let link = lecturer["link"] as? String, let name = lecturer["name"] as? String, let email = lecturer["email"] as? String, let order = lecturer["order"] as? Double{
                                 lecturerObject.id = id
                                 lecturerObject.title = title
                                 lecturerObject.bio = bio
-                                lecturerObject.image = image
+                                lecturerObject.imageUrl = imageUrl
                                 lecturerObject.link = link
                                 lecturerObject.name = name
                                 lecturerObject.email = email
@@ -187,7 +187,7 @@ class LecturerListViewController: UITableViewController {
             viewController.newsTitle = lecturerObjectToBeSend.title
             viewController.newsBio = lecturerObjectToBeSend.bio
             viewController.newsId = lecturerObjectToBeSend.id
-            viewController.newsImage = lecturerObjectToBeSend.image
+            viewController.newsImage = lecturerObjectToBeSend.imageUrl
             viewController.newsLink = lecturerObjectToBeSend.link
             viewController.newsName = lecturerObjectToBeSend.name
             viewController.newsEmail = lecturerObjectToBeSend.email

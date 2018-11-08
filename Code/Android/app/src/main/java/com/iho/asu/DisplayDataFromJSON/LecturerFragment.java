@@ -42,6 +42,7 @@ import static com.iho.asu.Constants.IHOConstants.LECTURER_EMAIL;
 import static com.iho.asu.Constants.IHOConstants.LECTURER_ID;
 import static com.iho.asu.Constants.IHOConstants.LECTURER_IDS;
 import static com.iho.asu.Constants.IHOConstants.LECTURER_IMAGE;
+import static com.iho.asu.Constants.IHOConstants.LECTURER_IMAGE_URL;
 import static com.iho.asu.Constants.IHOConstants.LECTURER_LINK;
 import static com.iho.asu.Constants.IHOConstants.LECTURER_NAME;
 import static com.iho.asu.Constants.IHOConstants.LECTURER_ORDER;
@@ -95,7 +96,7 @@ public class LecturerFragment extends ListFragment {
             Lecturer lecturer = lecturers.get(name);
             i.putExtra(FragmentFieldsMapping.KEY_LECTURER_NAME.getColumnName(), name);
             i.putExtra(FragmentFieldsMapping.KEY_LECTURER_BIO.getColumnName(),lecturer.getBio());
-            i.putExtra(FragmentFieldsMapping.KEY_LECTURER_IMAGE.getColumnName(),lecturer.getImg());
+            i.putExtra(FragmentFieldsMapping.KEY_LECTURER_IMAGE_URL.getColumnName(), lecturer.getImageUrl());
             i.putExtra(FragmentFieldsMapping.KEY_LECTURER_EMAIL.getColumnName(),lecturer.getEmail());
             i.putExtra(FragmentFieldsMapping.KEY_LECTURE_TITLE.getColumnName(),lecturer.getTitle());
             i.putExtra(FragmentFieldsMapping.KEY_LECTURER_LINK.getColumnName(),lecturer.getLink());
@@ -135,7 +136,8 @@ public class LecturerFragment extends ListFragment {
             Files.write(jsonArray.toString().getBytes(), file);
 
             Log.i(TAG, "parseJSONResult");
-            String id = null, title = null, name = null, bio = null, link = null, image = null, email = null, order = null;
+            String id = null, title = null, name = null, bio = null, link = null, email = null, order = null;
+            String imageUrl = null;
             JSONCache.lecturers.clear();
             JSONCache.lecturerIds.clear();
             JSONCache.lecturerNames.clear();
@@ -163,8 +165,8 @@ public class LecturerFragment extends ListFragment {
                     link = lecturer.getString(LECTURER_LINK);
                 }
 
-                if (!lecturer.isNull(LECTURER_IMAGE)) {
-                    image = lecturer.getString(LECTURER_IMAGE);
+                if (!lecturer.isNull(LECTURER_IMAGE_URL)) {
+                    imageUrl = lecturer.getString(LECTURER_IMAGE_URL);
                 }
 
                 if (!lecturer.isNull(LECTURER_EMAIL)) {
@@ -184,7 +186,7 @@ public class LecturerFragment extends ListFragment {
                 l.setId(id);
                 l.setTitle(title);
                 l.setBio(bio);
-                l.setImg(Base64.decode(image, Base64.DEFAULT));
+                l.setImageUrl(imageUrl);
                 l.setLink(link);
                 l.setEmail(email);
                 l.setName(name);
@@ -202,7 +204,7 @@ public class LecturerFragment extends ListFragment {
                 lecturerIds.add(lect.getId());
             }
 
-            ArrayAdapter adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, lecturerNames);
+            ArrayAdapter adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, lecturerNames);
             this.setListAdapter(adapter);
             adapter.notifyDataSetChanged();
 
@@ -353,7 +355,6 @@ public class LecturerFragment extends ListFragment {
             Lecturer[] lecturerArray = gson.fromJson(contents, Lecturer[].class);
             List<Lecturer> lecturerList = new ArrayList<>();
             for (Lecturer lecturer: lecturerArray) {
-                lecturer.setImg(Base64.decode(lecturer.getImage(), Base64.DEFAULT));
                 lecturer.setTitle(lecturer.getTitle().replace("\\n","\n"));
                 Log.i(TAG,lecturer.toString());
 

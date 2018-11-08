@@ -17,16 +17,16 @@ open class Lecturer{
     var name: String
     var id: String
     var bio: String
-    var image: String
+    var imageUrl: String
     var link: String
     var email: String
     var lecOrder: Double
     
-    init(title: String, id: String,bio: String,image: String,link: String,name: String,email: String,lecOrder: Double){
+    init(title: String, id: String,bio: String,imageUrl: String,link: String,name: String,email: String,lecOrder: Double){
         self.title = title
         self.id = id
         self.bio = bio
-        self.image = image
+        self.imageUrl = imageUrl
         self.link = link
         self.name = name
         self.email = email
@@ -36,7 +36,7 @@ open class Lecturer{
         self.title = "unknown"
         self.id = "unknown"
         self.bio = "unknown"
-        self.image = "unknown"
+        self.imageUrl = "unknown"
         self.link = "unknown"
         self.name = "unknown"
         self.email = "unknown"
@@ -47,7 +47,7 @@ open class Lecturer{
         self.title = ""
         self.id = ""
         self.bio = ""
-        self.image = ""
+        self.imageUrl = ""
         self.link = ""
         self.name = ""
         self.email = ""
@@ -58,7 +58,7 @@ open class Lecturer{
                 self.title = (dict!["title"] as? String)!
                 self.id = (dict!["id"] as? String)!
                 self.bio = (dict!["bio"] as? String)!
-                self.image = (dict!["image"] as? String)!
+                self.imageUrl = (dict!["imageUrl"] as? String)!
                 self.link = (dict!["link"] as? String)!
                 self.name = (dict!["name"] as? String)!
                 self.email = (dict!["email"] as? String)!
@@ -72,7 +72,7 @@ open class Lecturer{
         self.title = dict["title"] as! String
         self.id = dict["id"] as! String
         self.bio = dict["desc"] as! String
-        self.image = dict["image"] as! String
+        self.imageUrl = dict["imageUrl"] as! String
         self.link = dict["link"] as! String
     self.name = dict["name"] as! String
         self.email = dict["email"] as! String
@@ -81,7 +81,7 @@ open class Lecturer{
     
     func toJsonString () ->String{
         var jsonStr = "";
-        let dict = ["title": title,"id": id,"bio": bio, "image": image, "link": link, "name": name, "email": email]
+        let dict = ["title": title,"id": id,"bio": bio, "imageUrl": imageUrl, "link": link, "name": name, "email": email]
         do {
             let jsonData = try JSONSerialization.data(withJSONObject: dict, options: JSONSerialization.WritingOptions.prettyPrinted)
             jsonStr = NSString(data: jsonData, encoding: String.Encoding.utf8.rawValue)! as String

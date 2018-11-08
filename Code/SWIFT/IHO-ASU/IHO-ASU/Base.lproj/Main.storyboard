@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z1m-dx-aeW">
+
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
+
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1044,7 +1048,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="6" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="290" translatesAutoresizingMaskIntoConstraints="NO" id="iVO-AP-2Bg">
-                                <rect key="frame" x="40" y="194" width="295" height="114"/>
+                                <rect key="frame" x="40" y="194" width="295" height="141"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="295" id="gku-bX-Hxx"/>
                                     <constraint firstAttribute="height" constant="161" id="paY-yN-Gcd"/>
@@ -1055,7 +1059,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwp-lI-alz">
-                                <rect key="frame" x="87" y="392" width="201" height="30"/>
+                                <rect key="frame" x="87" y="419" width="201" height="30"/>
                                 <color key="backgroundColor" red="0.0037125688977539539" green="0.17571765184402466" blue="0.35848188400268555" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="201" id="FtZ-kB-cWm"/>
@@ -1440,7 +1444,7 @@
         <scene sceneID="yqe-qx-pXC">
             <objects>
                 <viewController title="Donation" id="pkK-07-KNm" customClass="DonationController" customModule="IHO_ASU" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bZ5-ru-Uvd">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="bZ5-ru-Uvd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1454,7 +1458,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ark-5A-YT7">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ark-5A-YT7">
                                 <rect key="frame" x="0.0" y="201" width="375" height="395"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -1564,6 +1568,7 @@ If you would like to send donation by check, please make your donation payable t
                             </imageView>
                             <webView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="ZHq-XI-Azy">
                                 <rect key="frame" x="20" y="287" width="339" height="201"/>
+
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1571,9 +1576,13 @@ If you would like to send donation by check, please make your donation payable t
                                     <constraint firstAttribute="height" constant="201" id="be8-zF-BfC"/>
                                 </constraints>
                             </webView>
+
+
+
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SD-oF-ywV">
                                 <rect key="frame" x="0.0" y="510" width="375" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+
                                 <color key="backgroundColor" red="0.0037125688980000002" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
                                 <state key="normal" title="Visit AskAnAnthropologist">
