@@ -55,7 +55,11 @@ server.post('/auth/login', function(req, res) {
 })
 
 server.use(/^(?!\/auth).*$/,  (req, res, next) => {
-    if (req.headers.authorization === undefined || req.headers.authorization.split(' ')[0] !== 'Bearer') {
+    if(req.method == 'GET' || req.method == "HEAD") {
+        next();
+        return;
+    }
+    if (req.headers.authorization === undefined || req.headers.authorization.split(' ')[0] !== 'ASUIHO') {
         const status = 401
         const message = 'Authorization required'
         res.status(status).json({status, message})
