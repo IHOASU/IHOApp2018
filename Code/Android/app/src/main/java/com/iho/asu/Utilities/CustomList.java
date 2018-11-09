@@ -56,7 +56,7 @@ public class CustomList extends ArrayAdapter<String>{
         bMap = BitmapFactory.decodeByteArray(imageTile, 0, imageTile.length);
         imageView.setImageBitmap(bMap);
 
-        Glide.with(context).load(i.getStringExtra(IHOConstants.galleryImageLink)).into(imageView);
+        //Glide.with(context).load(i.getStringExtra(IHOConstants.galleryImageLink)).into(imageView);
         return rowView;
     }
 }
