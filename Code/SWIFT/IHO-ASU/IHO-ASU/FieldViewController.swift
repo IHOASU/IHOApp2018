@@ -59,23 +59,5 @@ class FieldViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.tableView.deselectRow(at: self.tableView.indexPathForSelectedRow!, animated: true)
-        
-        if indexPath.section == 3 {
-            
-            
-            let url = URL(string: "https://asuiho.wordpress.com")!
-            
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            } else {
-                UIApplication.shared.openURL(url)
-            }
-            
-        }
-    }
-
 
 }

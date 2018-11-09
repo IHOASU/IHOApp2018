@@ -21,23 +21,9 @@ import UIKit
 
 class TravelViewControlller: UITableViewController {
     @IBOutlet var travelTableView: UITableView!
-    @IBAction func travelMoreLink(_ sender: Any) {
-        
-        newsLink = "https://iho.asu.edu/outreach/travel"
-        
-        let url = URL(string: newsLink!)!
-        
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.openURL(url)
-        }
-        
-    }
     @IBOutlet weak var nTitle: UILabel!
     @IBOutlet weak var nDesc: UILabel!
     @IBOutlet weak var nImage: UIImageView!
-    @IBOutlet weak var travelMoreButton: UIButton!
     
     var newsTitle: String?
     var newsDesc: String?

@@ -5,8 +5,8 @@ package com.iho.asu.Constants;
  */
 
 public class IHOConstants {
-    public static final String BASE_URL = "http://107.170.239.62/";
-//     public static final String BASE_URL = "http://10.0.2.2:3000/";
+//    public static final String BASE_URL = "http://107.170.239.62/";
+     public static final String BASE_URL = "http://10.0.2.2:3000/";
 
     //public static final String BASE_URL = "http://ihomobileapp.com/";
 
@@ -56,6 +56,7 @@ public class IHOConstants {
 
     public static final String LECTURER_TITLE = "title";
     public static final String LECTURER_IMAGE = "image";
+    public static final String LECTURER_IMAGE_URL = "imageUrl";
     public static final String LECTURER_ID = "id";
     public static final String LECTURER_LINK = "link";
     public static final String LECTURER_BIO = "bio";

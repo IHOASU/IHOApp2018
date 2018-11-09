@@ -76,4 +76,6 @@ img.socialMediaLogo{
     white-space : normal !important;
 }​
 
-
+html {
+    -webkit-text-size-adjust: none; /* Never autoresize text */
+}
