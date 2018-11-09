@@ -163,8 +163,4 @@ public class ViewActivity extends Activity implements View.OnClickListener {
     public void onStart(){
         super.onStart();
     }
-
-
-
-
 }

@@ -1,9 +1,20 @@
 package edu.asu.msse.gnayak2.bl;
 
-import java.awt.CardLayout;
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.Image;
+import edu.asu.msse.gnayak2.delegates.GalleryDelegate;
+import edu.asu.msse.gnayak2.delegates.LecturesDelegate;
+import edu.asu.msse.gnayak2.library.LecturesGalleryLibrary;
+import edu.asu.msse.gnayak2.models.GalleryModel;
+import edu.asu.msse.gnayak2.models.Lecture;
+import edu.asu.msse.gnayak2.networking.HTTPConnectionHelper;
+import net.miginfocom.swing.MigLayout;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import javax.imageio.ImageIO;
+import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
@@ -13,35 +24,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Base64;
 import java.util.Set;
-
-import javax.imageio.ImageIO;
-import javax.swing.DefaultListModel;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JList;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import javax.swing.ListCellRenderer;
-import javax.swing.SwingConstants;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import edu.asu.msse.gnayak2.delegates.GalleryDelegate;
-import edu.asu.msse.gnayak2.delegates.LecturesDelegate;
-import edu.asu.msse.gnayak2.library.LecturesGalleryLibrary;
-import edu.asu.msse.gnayak2.models.GalleryModel;
-import edu.asu.msse.gnayak2.models.Lecture;
-import edu.asu.msse.gnayak2.networking.HTTPConnectionHelper;
-import net.miginfocom.swing.MigLayout;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -50,8 +32,7 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	private JPanel containerPanel;
 	private JPanel mainPanel;
 	private JPanel galleryPanel;
-	private JButton galleryBackButton;
-	
+
 	private CardLayout cardLayout;
 	
 	private JButton viewGalleryButton;
@@ -81,6 +62,10 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	private JButton btnSubmit;
 	private JButton addButton;
 	private JButton browseButton;
+	private JLabel lblImageUrl;
+	private JTextField tfImageUrl;
+
+
 	private JTextField imageFileButton;
 	LecturesDelegate lectureDelegate;
 	String filename;
@@ -140,11 +125,15 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 		lblOrder = new JLabel("Order");
 		lblTitle = new JLabel("Title");
 		lbldesc = new JLabel("Description");
+		lblImageUrl = new JLabel("Image Url from DropBox");
 	//	imageLabel = new JLabel("Image Label");
 		tfLink = new JTextField("http://",120);
+
+
 		browseButton = new JButton("Browse");
 		imageFileButton = new JTextField("",120);
 		tfDesc = new JTextField("",120);
+		tfImageUrl = new JTextField("",120);
 		tfEmail = new JTextField("",120);
 		tfOrder = new JTextField("",120);
 		scrollPane = new JScrollPane(taDescription);
@@ -167,10 +156,13 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 		mainPanel.add(lblEmail);
 		mainPanel.add(tfEmail, "wrap");
 		mainPanel.add(lblOrder);
-
 		mainPanel.add(tfOrder,"wrap");
 		mainPanel.add(lbldesc);
-		mainPanel.add(scrollPane,"wrap");	
+		mainPanel.add(scrollPane,"wrap");
+
+		mainPanel.add(lblImageUrl);
+		mainPanel.add(tfImageUrl, "wrap");
+
 		mainPanel.add(browseButton);
 		mainPanel.add(imageFileButton, "wrap");
        // mainPanel.add(imageLabel, "wrap");
@@ -183,7 +175,7 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	
 	public void initializeGalleryLayout() {
 		galleryPanel = new JPanel();
-		galleryBackButton = new JButton("Back");
+		JButton galleryBackButton = new JButton("Back");
 		viewGalleryButton = new JButton("View");
 		deleteGalleryButton = new JButton("Delete");
 		
@@ -432,13 +424,29 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 				 {
 					 if(flag==1){
 						 int ord = Integer.parseInt(tfOrder.getText());
-						 Lecture newLecture = new Lecture(tfName.getText(), taDescription.getText(),tfLink.getText(),tfDesc.getText(),encodedImage,tfEmail.getText(),ord);
+						 Lecture newLecture = new Lecture(
+						 			tfName.getText(),
+								 taDescription.getText(),
+								 tfLink.getText(),
+								 tfDesc.getText(),
+								 encodedImage,
+								 convertToStaticDropBoxUrl(tfImageUrl.getText().trim()),
+								 tfEmail.getText(),
+								 ord);
 						 lectureDelegate.addLecture(newLecture);
 					 }
 
 					 else {
 						 int ord = Integer.parseInt(tfOrder.getText());
-						 Lecture newLecture = new Lecture(tfName.getText(), taDescription.getText(),tfLink.getText(),tfDesc.getText(),imageFileButton.getText(),tfEmail.getText(),ord);
+						 Lecture newLecture = new Lecture(
+						 		tfName.getText(),
+								 taDescription.getText(),
+								 tfLink.getText(),
+								 tfDesc.getText(),
+								 imageFileButton.getText(),
+								 convertToStaticDropBoxUrl(tfImageUrl.getText().trim()),
+								 tfEmail.getText(),
+								 ord);
 						 lectureDelegate.addLecture(newLecture);
 					 }
 					 // delete old lecture
@@ -472,6 +480,13 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 				}
 			});
 	}
+
+	//https://www.dropbox.com/s/d0duvt4a5lq17yl/boyd.jpg?dl=0 is converted to
+	//https://dl.dropboxusercontent.com/s/d0duvt4a5lq17yl/boyd.jpg
+	private String convertToStaticDropBoxUrl(String urlWithMetaData) {
+		return urlWithMetaData.replace("www.dropbox.com", "dl.dropboxusercontent.com").replace("?dl=0", "");
+	}
+
 	public class ImageListRenderer extends JLabel implements ListCellRenderer<GalleryModel> {
 		 
 	    public ImageListRenderer() {

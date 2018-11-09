@@ -38,11 +38,13 @@ class LecturerDetailViewController: UITableViewController, MFMailComposeViewCont
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
+            //mail.delegate = self as! UINavigationControllerDelegate
             mail.setToRecipients([newsEmail!])
             mail.setSubject("Ask a question")
             mail.setMessageBody("<p>Enter your question here</p>" ,isHTML: true)
-            present(mail, animated: true)
+            present(mail, animated: true, completion: nil)
         } else {
+            print("Error in mail compose")
             // show failure alert
         }
     }
@@ -72,9 +74,9 @@ class LecturerDetailViewController: UITableViewController, MFMailComposeViewCont
         
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         
-        buttonReadMore.layer.cornerRadius = 15
-        gallery.layer.cornerRadius = 15
-        lecEmail.layer.cornerRadius = 15
+        buttonReadMore.layer.cornerRadius = 0
+        gallery.layer.cornerRadius = 0
+        lecEmail.layer.cornerRadius = 0
         
         if(newsName != nil){
             nTitle.text = newsName
@@ -95,11 +97,31 @@ class LecturerDetailViewController: UITableViewController, MFMailComposeViewCont
         
         if (newsImage != nil)
         {
-            //base64 string to NSData
-            let decodedData = NSData(base64Encoded: newsImage!, options: NSData.Base64DecodingOptions(rawValue: 0))
+//            //base64 string to NSData
+//            let decodedData = NSData(base64Encoded: newsImage!, options: NSData.Base64DecodingOptions(rawValue: 0))
+//
+//            //NSData to UIImage
+//            nImage.image = UIImage(data: decodedData! as Data)
             
-            //NSData to UIImage
-            nImage.image = UIImage(data: decodedData! as Data)
+            // now newsImage contains the imageUrl
+            
+            let imageUrl:URL = URL(string: newsImage!)!
+            
+            print(imageUrl)
+            
+            // Start background thread so that image loading does not make app unresponsive
+            DispatchQueue.global(qos: .userInitiated).async {
+                
+                let imageData:NSData = NSData(contentsOf: imageUrl)!
+                let imageView = UIImageView(frame: CGRect(x:0, y:0, width:200, height:200))
+                imageView.center = self.view.center
+                
+                // When from background thread, UI needs to be updated on main_queue
+                DispatchQueue.main.async {
+                    let image = UIImage(data: imageData as Data)
+                    self.nImage.image = image
+                }
+            }
         }
         
         //toolbar
@@ -137,6 +159,16 @@ class LecturerDetailViewController: UITableViewController, MFMailComposeViewCont
             viewController.lecEmail  = self.newsEmail!
             }
         }
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
     }
     
 }
