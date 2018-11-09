@@ -69,6 +69,8 @@ public class IHOConstants {
     public static final String SCIENCE_ORDER = "order";
     public static final String SCIENCE_TIMESTAMP = "timestamp";
 
+    public static final String galleryImageLink = "https://dl.dropboxusercontent.com/s/jgagogtxpg13k7c/lucy-hand.jpg?dl=0";
+
 
 
 }

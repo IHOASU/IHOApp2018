@@ -59,7 +59,6 @@
             android:layout_height="match_parent"
             android:layout_weight="1.30"
             android:orientation="vertical"
-            android:padding="@dimen/activity_horizontal_margin"
             android:weightSum="1">
 
             <TextView
@@ -67,43 +66,57 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textSize="30dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
                 android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"/>
             <ImageView
                 android:id="@+id/image"
                 android:layout_width="600dp"
                 android:layout_height="400dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
                 android:layout_marginTop="5dp"
                 android:layout_weight="1.32"
                 android:layout_gravity="center_horizontal"></ImageView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"/>
             <TextView
                 android:id="@+id/title"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:textSize="15dp" />
+                android:textSize="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"/>
             <TextView
                 android:id="@+id/bio"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15dp" />
+                android:textSize="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"/>
             <Button
                 android:id="@+id/lectureLink"
                 android:layout_width="match_parent"
@@ -120,7 +133,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:textSize="15dp" />
+                android:textSize="17dp" />
 
             <Button
                 android:id="@+id/emailButton"
@@ -138,7 +151,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:textSize="15dp" />
+                android:textSize="17dp" />
 
             <Button
                 android:id="@+id/viewGallery"

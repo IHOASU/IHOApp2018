@@ -94,7 +94,7 @@
                 android:maxLines="2"
                 android:text="                                                                                                                 "
                 android:textAlignment="center"
-                android:textSize="15dp" />
+                android:textSize="17dp" />
 
             <TextView
                 android:id="@+id/editText"
@@ -117,7 +117,7 @@
                 android:maxLines="2"
                 android:text="                                                                                                                 "
                 android:textAlignment="center"
-                android:textSize="15dp" />
+                android:textSize="17dp" />
             <Button
                 android:id="@+id/trvlbtn"
                 android:layout_width="match_parent"
