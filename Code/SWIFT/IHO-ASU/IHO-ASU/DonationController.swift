@@ -20,7 +20,9 @@ import UIKit
 
 
 class DonationController: UIViewController {
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden=false
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
@@ -59,6 +61,7 @@ class DonationController: UIViewController {
         self.navigationController?.setToolbarHidden(false, animated: false)
     }
 
+    
 
     
 

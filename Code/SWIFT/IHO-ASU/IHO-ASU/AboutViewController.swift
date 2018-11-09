@@ -20,9 +20,16 @@ import UIKit
 
 class AboutViewController: UIViewController , UIWebViewDelegate {
 
+    @IBOutlet weak var contactText: UITextView!
     @IBAction func mapIt(_ sender: Any) {
         
-        UIApplication.shared.openURL(URL(string: "https://maps.google.com/maps?q=951+South+Cady+Mall,+Tempe,+AZ&hl=en&ll=33.420231,-111.930749&spn=0.011158,0.014999&sll=33.41972,-111.934757&sspn=0.002933,0.002591&oq=951+South+Cady+Mall&hnear=951+S+Cady+Mall,+Tempe,+Maricopa,+Arizona+85281&t=m&z=16")!)
+        let url = URL(string: "https://maps.google.com/maps?q=951+South+Cady+Mall,+Tempe,+AZ&hl=en&ll=33.420231,-111.930749&spn=0.011158,0.014999&sll=33.41972,-111.934757&sspn=0.002933,0.002591&oq=951+South+Cady+Mall&hnear=951+S+Cady+Mall,+Tempe,+Maricopa,+Arizona+85281&t=m&z=16")!
+        
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
     }
     @IBOutlet weak var aboutView: UIWebView!
     
@@ -30,10 +37,11 @@ class AboutViewController: UIViewController , UIWebViewDelegate {
         
         super.viewDidLoad()
         aboutView.scrollView.isScrollEnabled = false
-        self.aboutView.delegate = self
+        aboutView.delegate = self
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationItem.title = "About"
         aboutView.loadRequest(URLRequest(url: URL(fileURLWithPath: Bundle.main.path(forResource: "About", ofType: "html")!)))
+
         
         //toolbar
         let label = UILabel(frame: CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(350), height: CGFloat(21)))
@@ -55,6 +63,11 @@ class AboutViewController: UIViewController , UIWebViewDelegate {
         
         return true
         
+    }
+    
+    func webViewDidFinishLoad(aboutView: UIWebView) {
+        aboutView.frame.size.height = 1
+        aboutView.frame.size = aboutView.sizeThatFits(CGSize.zero)
     }
 
     override func didReceiveMemoryWarning() {

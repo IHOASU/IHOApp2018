@@ -14,12 +14,18 @@
  # Revised On       :   16 October 2018
  #
  # Version          :   1.1
- #*****************************************************************************************************************/
+ #*****************************************************************************************************************
+# Revised By       :   Masters SE Team-3 (app version 3)
+#
+# Revised On       :   19 October 2018
+#
+# Version          :   1.2
+#*****************************************************************************************************************/
 
 import UIKit
 import MessageUI
 
-class ConnectViewController: UITableViewController, MFMailComposeViewControllerDelegate {
+class ConnectViewController: UITableViewController {
     @IBAction func twitter(_ sender: Any) {
         
         let url = URL(string: "https://twitter.com/HumanOriginsASU")!
@@ -50,7 +56,7 @@ class ConnectViewController: UITableViewController, MFMailComposeViewControllerD
     }
     
     @IBAction func youtube(_ sender: Any) {
-        
+
         let url = URL(string: "http://www.youtube.com/user/LucyASUIHO")!
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
@@ -108,26 +114,6 @@ class ConnectViewController: UITableViewController, MFMailComposeViewControllerD
         super.didReceiveMemoryWarning()
     }
     
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.tableView.deselectRow(at: self.tableView.indexPathForSelectedRow!, animated: true)
-        if indexPath.section == 3 {
-            if MFMailComposeViewController.canSendMail() {
-                let mail = MFMailComposeViewController()
-                mail.mailComposeDelegate = self
-                mail.setToRecipients(["iho@asu.edu"])
-                mail.setSubject("ENews Subscription")
-                mail.setMessageBody("<p>Sign me up for E News!</p>", isHTML: true)
-                
-                present(mail, animated: true)
-            }
-        }
-    }
-    
-    
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        controller.dismiss(animated: true)
-    }
 }
 
 

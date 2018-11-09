@@ -32,7 +32,7 @@ class LucyViewController: UIViewController {
         htmlpath = Bundle.main.path(forResource: "lucy", ofType: "html")
         var html = try? String(contentsOfFile: htmlpath!, encoding: String.Encoding.utf8)
         var baseURL = URL(fileURLWithPath: "\(Bundle.main.bundlePath)")
-        self.lucyLogo.scalesPageToFit = false
+        self.lucyLogo.scalesPageToFit = true
         self.lucyLogo.loadHTMLString(html!, baseURL: baseURL)
         self.lucyLogo.scrollView.isScrollEnabled = true
         
