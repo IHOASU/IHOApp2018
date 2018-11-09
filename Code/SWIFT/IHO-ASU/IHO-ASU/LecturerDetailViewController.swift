@@ -23,17 +23,6 @@ import UIKit
 
 class LecturerDetailViewController: UITableViewController, MFMailComposeViewControllerDelegate {
     
-    
-    @IBAction func linkReadMore(_ sender: Any) {
-        let url = URL(string: newsLink!)!
-        
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.openURL(url)
-        }
-        
-    }
     @IBAction func lEmail(_ sender: Any) {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
@@ -158,6 +147,11 @@ class LecturerDetailViewController: UITableViewController, MFMailComposeViewCont
             if(newsEmail != nil){
             viewController.lecEmail  = self.newsEmail!
             }
+        }
+        
+        if segue.identifier == "LecturerDetails" {
+            let viewController:WebViewLecturerDetailController = segue.destination as! WebViewLecturerDetailController
+            viewController.newsLinkString = newsLink!
         }
     }
     

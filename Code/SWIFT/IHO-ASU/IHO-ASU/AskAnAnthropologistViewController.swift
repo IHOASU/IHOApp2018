@@ -20,18 +20,6 @@ import UIKit
 
 class AskAnAnthropologistViewController: UIViewController, UITextViewDelegate, UIWebViewDelegate {
     @IBOutlet weak var askButton: UIButton!
-
-    @IBAction func visitAnthropologist(_ sender: Any) {
-        
-        
-        let url = URL(string: "https://askananthropologist.asu.edu/")!
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.openURL(url)
-        }
-    }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

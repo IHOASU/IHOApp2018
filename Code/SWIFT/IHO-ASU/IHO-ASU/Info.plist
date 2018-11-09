@@ -28,9 +28,9 @@
 		<true/>
 	</dict>
 	<key>ServerNewsNamesURLString</key>
-	<string>http://localhost:3000/newsnames</string>
+	<string>http://107.170.239.62:80/newsnames</string>
 	<key>ServerNewsURLString</key>
-	<string>http://localhost:3000/news</string>
+	<string>http://107.170.239.62:80/news</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

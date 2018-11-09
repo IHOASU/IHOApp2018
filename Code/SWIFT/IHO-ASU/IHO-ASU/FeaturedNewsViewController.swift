@@ -21,17 +21,7 @@ import UIKit
 
 class FeaturedNewsViewController: UITableViewController {
     @IBOutlet var featuredNewsTableView: UITableView!
-    @IBAction func readMoreLink(_ sender: Any) {
 
-        let url = URL(string: newsLink!)!
-
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.openURL(url)
-        }
-
-    }
     @IBOutlet weak var nTitle: UILabel!
     @IBOutlet weak var nDesc: UILabel!
     @IBOutlet weak var nImage: UIImageView!
@@ -100,7 +90,10 @@ class FeaturedNewsViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var webViewFNewsController = segue.destination as! WebViewFeaturedNewsController
+        webViewFNewsController.newsLinkString = newsLink!
+    }
     
 }
-
