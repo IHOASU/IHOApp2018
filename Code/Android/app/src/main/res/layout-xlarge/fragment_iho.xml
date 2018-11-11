@@ -49,7 +49,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="@dimen/activity_horizontal_margin"
         android:id="@+id/iholayout"
         android:baselineAligned="false"
         android:background="@drawable/border"
@@ -74,6 +73,7 @@
             android:layout_height="wrap_content"
             android:text="Location"
             android:id="@+id/textView"
+            android:padding="@dimen/activity_horizontal_margin"
             android:textSize="26dp"
             android:textStyle="bold" />
         <TextView
@@ -84,6 +84,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
             android:text="@string/locationInfo"
             android:textIsSelectable="false"
             android:textSize="22dp" />
@@ -93,7 +94,7 @@
             android:textIsSelectable="false"
             android:textSize="10dp" />
         <Button
-            android:layout_width="195dp"
+            android:layout_width="fill_parent"
             android:layout_height="45dp"
             android:text="IHO Location Link"
             android:id="@+id/linkToLocation"
@@ -114,6 +115,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Contact"
+
+            android:padding="@dimen/activity_horizontal_margin"
             android:id="@+id/textView2"
             android:textSize="26dp"
             android:textStyle="bold" />
@@ -127,6 +130,7 @@
             android:layout_height="80dp"
             android:text="Phone 480.727.6580 \nFax 480.727.6570 \nEmail iho@asu.edu\n"
             android:textIsSelectable="false"
+            android:padding="@dimen/activity_horizontal_margin"
             android:textSize="22dp" />
 
         <TextView
@@ -135,7 +139,7 @@
             android:textIsSelectable="false"
             android:textSize="10dp" />
         <Button
-            android:layout_width="195dp"
+            android:layout_width="fill_parent"
             android:layout_height="45dp"
             android:textIsSelectable="false"
             android:id="@+id/linkToContact"

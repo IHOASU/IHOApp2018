@@ -87,7 +87,7 @@
 
             <Button
                 android:id="@+id/galleryBtn"
-                android:layout_width="270dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/shape"

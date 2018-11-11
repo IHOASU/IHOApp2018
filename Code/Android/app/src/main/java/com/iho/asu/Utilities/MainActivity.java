@@ -183,16 +183,9 @@ public class MainActivity extends Activity implements OnClickListener{
                 fragmentTransaction.commit();
                 break;
             case R.id.connect3:
-//                fragment = new Connect(R.layout.fragment_sign_news);
-//                fragmentTransaction.replace(R.id.main_layout, fragment);
-//                fragmentTransaction.commit();
-//                break;
-                Intent email = new Intent(Intent.ACTION_SEND);
-                email.setData(Uri.parse("mailto:"));
-                email.setType("text/plain");
-                email.putExtra(Intent.EXTRA_EMAIL, new String[]{ "iho@asu.edu"});
-                email.putExtra(Intent.EXTRA_SUBJECT, "IHO E-News Subscription");
-                startActivity(Intent.createChooser(email, "Choose an Email Client:"));
+                uri = Uri.parse("https://iho.asu.edu/subscribe");
+                intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
                 break;
             case R.id.connect4:
                 fragment = new Connect();
@@ -289,10 +282,9 @@ public class MainActivity extends Activity implements OnClickListener{
                 fragmentTransaction.commit();
                 break;
             case R.id.ne2:
-                fragmentTransaction.remove(fragment);
-                fragment = new EventsFragment();
-                fragmentTransaction.replace(R.id.main_layout, fragment);
-                fragmentTransaction.commit();
+                uri = Uri.parse("https://iho.asu.edu/events");
+                intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
                 break;
             case R.id.ne3:
                 fragmentTransaction.remove(fragment);

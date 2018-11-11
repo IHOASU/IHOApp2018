@@ -14,6 +14,12 @@
  # Revised On       :   16 October 2018
  #
  # Version          :   1.1
+ #*****************************************************************************************************************
+ # Revised By       :   Masters SE Team-3 (app version 3)
+ #
+ # Revised On       :   3 November 2018
+ #
+ # Version          :   1.2
  #*****************************************************************************************************************/
 
 import UIKit
@@ -39,13 +45,13 @@ class GalleryViewController: UIViewController {
 
     }
     @IBOutlet weak var clickButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
         self.navigationItem.title = "Gallery"
-        clickButton.layer.cornerRadius = 15
         
         //toolbar
         let label = UILabel(frame: CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(350), height: CGFloat(21)))

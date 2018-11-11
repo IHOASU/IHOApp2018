@@ -23,26 +23,17 @@ import UIKit
 
 class LecturerDetailViewController: UITableViewController, MFMailComposeViewControllerDelegate {
     
-    
-    @IBAction func linkReadMore(_ sender: Any) {
-        let url = URL(string: newsLink!)!
-        
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.openURL(url)
-        }
-        
-    }
     @IBAction func lEmail(_ sender: Any) {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
+            //mail.delegate = self as! UINavigationControllerDelegate
             mail.setToRecipients([newsEmail!])
             mail.setSubject("Ask a question")
             mail.setMessageBody("<p>Enter your question here</p>" ,isHTML: true)
-            present(mail, animated: true)
+            present(mail, animated: true, completion: nil)
         } else {
+            print("Error in mail compose")
             // show failure alert
         }
     }
@@ -72,9 +63,9 @@ class LecturerDetailViewController: UITableViewController, MFMailComposeViewCont
         
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         
-        buttonReadMore.layer.cornerRadius = 15
-        gallery.layer.cornerRadius = 15
-        lecEmail.layer.cornerRadius = 15
+        buttonReadMore.layer.cornerRadius = 0
+        gallery.layer.cornerRadius = 0
+        lecEmail.layer.cornerRadius = 0
         
         if(newsName != nil){
             nTitle.text = newsName
@@ -157,6 +148,21 @@ class LecturerDetailViewController: UITableViewController, MFMailComposeViewCont
             viewController.lecEmail  = self.newsEmail!
             }
         }
+        
+        if segue.identifier == "LecturerDetails" {
+            let viewController:WebViewLecturerDetailController = segue.destination as! WebViewLecturerDetailController
+            viewController.newsLinkString = newsLink!
+        }
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
     }
     
 }

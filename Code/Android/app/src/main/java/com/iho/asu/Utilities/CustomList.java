@@ -6,6 +6,7 @@ package com.iho.asu.Utilities;
  */
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
@@ -15,6 +16,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestListener;
+import com.bumptech.glide.request.target.Target;
+
+import com.iho.asu.Constants.IHOConstants;
 import com.iho.asu.R;
 
 import java.util.ArrayList;
@@ -43,11 +49,14 @@ public class CustomList extends ArrayAdapter<String>{
         ImageView imageView = (ImageView) rowView.findViewById(R.id.img);
         txtTitle.setText(title.get(position));
         byte[] imageTile = imageId.get(position);
+        Intent i = new Intent();
         if (imageView != null) {
             imageView.setImageBitmap(null);
         }
         bMap = BitmapFactory.decodeByteArray(imageTile, 0, imageTile.length);
         imageView.setImageBitmap(bMap);
+
+        //Glide.with(context).load(i.getStringExtra(IHOConstants.galleryImageLink)).into(imageView);
         return rowView;
     }
 }

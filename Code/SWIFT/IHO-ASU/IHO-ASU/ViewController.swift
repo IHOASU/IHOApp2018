@@ -20,8 +20,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var skullLogo: UIWebView!
-    
     @IBOutlet weak var donate: UIButton!
     @IBOutlet weak var about: UIButton!
     @IBOutlet weak var gallery: UIButton!
@@ -36,12 +34,12 @@ class ViewController: UIViewController {
         UINavigationBar.appearance().barTintColor = UIColor(red: CGFloat((255.0 / 255.0)), green: CGFloat((255.0 / 255.0)), blue: CGFloat((255.0 / 255.0)), alpha: CGFloat(1))
         
         // button sytle
-        news.layer.cornerRadius = 15
-        about.layer.cornerRadius = 15
-        donate.layer.cornerRadius = 15
-        gallery.layer.cornerRadius = 15
-        connect.layer.cornerRadius = 15
-        field.layer.cornerRadius = 15
+        news.layer.cornerRadius = 0
+        about.layer.cornerRadius = 0
+        donate.layer.cornerRadius = 0
+        gallery.layer.cornerRadius = 0
+        connect.layer.cornerRadius = 0
+        field.layer.cornerRadius = 0
         
         // ASU LOGO at navigation bar
         self.navigationController?.navigationBar.frame.size.height=50;
@@ -52,8 +50,6 @@ class ViewController: UIViewController {
         htmlpath = Bundle.main.path(forResource: "skull", ofType: "html")
         var html = try? String(contentsOfFile: htmlpath!, encoding: String.Encoding.utf8)
         var baseURL = URL(fileURLWithPath: "\(Bundle.main.bundlePath)")
-        self.skullLogo.loadHTMLString(html!, baseURL: baseURL)
-        skullLogo.scrollView.isScrollEnabled = false
         
         //toolbar
         let label = UILabel(frame: CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(200), height: CGFloat(21)))
@@ -101,10 +97,7 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    
-    
-    
-    
+
+
 }
 

@@ -50,5 +50,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/customLecturerGalleryBackbuttonll"
-        android:background="@android:color/background_dark"></ListView>
+        android:background="#e9e9e9"></ListView>
 </RelativeLayout>
