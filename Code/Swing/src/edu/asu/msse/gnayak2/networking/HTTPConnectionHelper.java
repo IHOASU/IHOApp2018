@@ -46,7 +46,7 @@ public String sendGet(String section) throws Exception {
 
 
 // HTTP POST request
-	public void post(String section, JSONObject object)  throws Exception {
+	public JSONObject post(String section, JSONObject object)  throws Exception {
 
 		String url = HTTPConstants.url + section;
 		URL obj = new URL(url);
@@ -84,6 +84,11 @@ public String sendGet(String section) throws Exception {
 		//print result
 		System.out.println(response.toString());
 
+
+		JSONObject jsonObject = new JSONObject(response.toString());
+		jsonObject.put("httpCode", responseCode);
+
+		return jsonObject;
 	}
 	
 	public void delete(String section)  throws Exception {
@@ -153,5 +158,5 @@ public String sendGet(String section) throws Exception {
 		//print result
 		System.out.println(response.toString());
 	}
-	
+
 }
