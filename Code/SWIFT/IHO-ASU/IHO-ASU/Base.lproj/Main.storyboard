@@ -1089,7 +1089,6 @@
                                                     <color key="titleShadowColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="becomingHuman:" destination="jVw-S6-Api" eventType="touchUpInside" id="stz-IY-RNs"/>
                                                     <segue destination="BOc-2G-qAn" kind="show" id="hCE-P1-2cA"/>
                                                 </connections>
                                             </button>
@@ -1129,9 +1128,6 @@
                         <viewLayoutGuide key="safeArea" id="do3-QD-nc3"/>
                     </view>
                     <size key="freeformSize" width="375" height="812"/>
-                    <connections>
-                        <outlet property="beacomingButton" destination="Wwp-lI-alz" id="Nj4-r7-yPn"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9LX-SX-ECc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1507,23 +1503,23 @@ Email	: iho@asu.edu</string>
                                 <rect key="frame" x="0.0" y="88" width="280" height="1029"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AC9-NL-toq" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="970.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="980.66666666666663"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ASU-IHO-About.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0ay-an-aoj">
-                                                <rect key="frame" x="0.0" y="5" width="280" height="80"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ASU-IHO-About.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0ay-an-aoj">
+                                                <rect key="frame" x="0.0" y="5" width="280" height="90"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="VoK-iU-DYi"/>
+                                                    <constraint firstAttribute="height" constant="90" id="VoK-iU-DYi"/>
                                                 </constraints>
                                             </imageView>
                                             <webView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="kdQ-z1-R8d" userLabel="aboutView">
-                                                <rect key="frame" x="0.0" y="95" width="280" height="450"/>
+                                                <rect key="frame" x="0.0" y="105" width="280" height="450"/>
                                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="450" id="raO-LK-egx"/>
                                                 </constraints>
                                             </webView>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zD-cf-dcm" userLabel="location">
-                                                <rect key="frame" x="249" y="685.33333333333337" width="120" height="130"/>
+                                                <rect key="frame" x="249" y="695.33333333333337" width="120" height="130"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="130" id="f3u-rb-QAX"/>
                                                     <constraint firstAttribute="width" constant="120" id="jCN-er-3Ie"/>
@@ -1839,8 +1835,7 @@ Aimed primarily at the middle school level, the articles and activities are chal
                                                     <color key="titleShadowColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="visitAnthropologist:" destination="AUD-I6-Pnl" eventType="touchUpInside" id="i9R-pu-VYO"/>
-                                                    <segue destination="WP4-Bh-AT4" kind="show" id="0VI-Qz-epQ"/>
+                                                    <segue destination="WP4-Bh-AT4" kind="show" id="z3A-pP-IfY"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1879,9 +1874,6 @@ Aimed primarily at the middle school level, the articles and activities are chal
                         <viewLayoutGuide key="safeArea" id="O2s-D3-NaY"/>
                     </view>
                     <size key="freeformSize" width="375" height="812"/>
-                    <connections>
-                        <outlet property="askButton" destination="G7V-Ox-m5N" id="y8O-3V-Lv1"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APg-4l-GPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
