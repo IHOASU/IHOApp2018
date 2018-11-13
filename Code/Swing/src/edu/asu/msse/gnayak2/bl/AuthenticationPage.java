@@ -35,6 +35,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import static edu.asu.msse.gnayak2.networking.HTTPConstants.authSection;
+
 public class AuthenticationPage {
 
 	private JFrame frame;
@@ -129,7 +131,7 @@ public class AuthenticationPage {
 
 		JSONObject responseObject = null;
 		try {
-			responseObject = helper.post("auth/login",
+			responseObject = helper.post(authSection,
                     constructAuthRequest(typedUserName, String.valueOf(typedPassword)));
 		} catch (Exception e) {
 			e.printStackTrace();

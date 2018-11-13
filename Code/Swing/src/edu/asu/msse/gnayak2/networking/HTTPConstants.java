@@ -5,4 +5,6 @@ package edu.asu.msse.gnayak2.networking;
  */
 public class HTTPConstants {
     public static final String url = "http://localhost:3000/";
+    public static final String authSection = "auth/login";
+    public static final String bearer = "ASUIHO ";
 }

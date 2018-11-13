@@ -1,11 +1,14 @@
 package edu.asu.msse.gnayak2.bl;
 
-/**
- * Created by dixith on 11/11/18.
- */
+import static edu.asu.msse.gnayak2.networking.HTTPConstants.bearer;
+
 public class AuthenticationServer {
-    String accessToken = null;
-    public void cacheAccessCode(String accessTokenToBeCached) {
-        accessToken = accessTokenToBeCached;
+    private static String accessToken = null;
+    public static void cacheAccessCode(String accessTokenToBeCached) {
+        accessToken = bearer + accessTokenToBeCached;
+    }
+
+    public static String getAccessToken() {
+        return accessToken;
     }
 }
