@@ -58,11 +58,9 @@
             android:id="@+id/linearLayout"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/customFNBackbutton"
-
             android:background="#f4f4f4"
             android:paddingLeft="16dp"
             android:paddingRight="16dp">
-
 
             <WebView
                 android:layout_width="wrap_content"

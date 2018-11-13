@@ -86,7 +86,7 @@
 
             <Button
                 android:id="@+id/galleryBtn"
-                android:layout_width="374dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:background="@drawable/shape"
                 android:text="View Image Gallery"

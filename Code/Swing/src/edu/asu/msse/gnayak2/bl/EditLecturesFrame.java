@@ -61,7 +61,6 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	private Lecture lecture;
 	private JButton btnSubmit;
 	private JButton addButton;
-	private JButton browseButton;
 	private JLabel lblImageUrl;
 	private JTextField tfImageUrl;
 
@@ -130,7 +129,6 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 		tfLink = new JTextField("http://",120);
 
 
-		browseButton = new JButton("Browse");
 		imageFileButton = new JTextField("",120);
 		tfDesc = new JTextField("",120);
 		tfImageUrl = new JTextField("",120);
@@ -162,12 +160,6 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 
 		mainPanel.add(lblImageUrl);
 		mainPanel.add(tfImageUrl, "wrap");
-
-		mainPanel.add(browseButton);
-		mainPanel.add(imageFileButton, "wrap");
-       // mainPanel.add(imageLabel, "wrap");
-		mainPanel.add(galleryButton,"wrap");
-	
 		mainPanel.add(btnSubmit, "wrap");
 
 		setActionListenerForButton();
@@ -463,22 +455,6 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 				 }
 			}
 		});
-		 browseButton.addActionListener(new ActionListener() {
-				
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					// TODO Auto-generated method stub
-					  JFileChooser chooser = new JFileChooser();
-					    chooser.showOpenDialog(null);
-					    File f = chooser.getSelectedFile();
-					    filename = f.getAbsolutePath();
-					    flag =1; 
-					    imageFileButton.setText(filename);
-					    
-
-					
-				}
-			});
 	}
 
 	//https://www.dropbox.com/s/d0duvt4a5lq17yl/boyd.jpg?dl=0 is converted to
