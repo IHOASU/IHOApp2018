@@ -9,6 +9,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,6 +44,9 @@ import static com.iho.asu.Constants.IHOConstants.IMAGE;
 import static com.iho.asu.Constants.IHOConstants.IMAGE_ID;
 import static com.iho.asu.Constants.IHOConstants.IMAGE_ORDER;
 import static com.iho.asu.Constants.IHOConstants.IMAGE_TITLE;
+import com.bumptech.glide.Glide;
+import android.widget.ImageView;
+
 
 public class GalleryFragment extends ListFragment {
 
@@ -78,10 +82,12 @@ public class GalleryFragment extends ListFragment {
         toast.setView(layout);
         toast.show();
 
+
         Log.i(TAG, "fetching Contents...");
         if (JSONCache.galleryIds.size() == 0) {
             //Cache Empty, Fetch  News Objects
             Log.i(TAG,"Cache Empty, Fetch  News Objects...");
+            super.onCreate(savedInstanceState);
             getGalleryJson();
         } else {
             //Cache not empty, checking if contents are modified
@@ -139,7 +145,8 @@ public class GalleryFragment extends ListFragment {
                 if (!obj.isNull(IMAGE_TITLE)) {
                     title = obj.getString(IMAGE_TITLE);
                 }
-
+                //TODO
+                // here, receive the dropbox image url instead and pass it to
                 if (!obj.isNull(IMAGE)) {
                     image = obj.getString(IMAGE);
                 }
@@ -151,6 +158,14 @@ public class GalleryFragment extends ListFragment {
                 Gallery img = new Gallery();
                 img.setId(id);
                 img.setImageCaption(title);
+                //TODO
+                //here instead of setImg, add the following:
+                // in Gallery.java add the below line
+                // public void setImageUrl(String image) {
+                //        this.image = image;
+                //    }
+                //then add the below line here
+                // img.setImageUrl(image);
                 img.setImg(Base64.decode(image, Base64.DEFAULT));
                 img.setOrder(Integer.parseInt(order));
 
@@ -313,9 +328,10 @@ public class GalleryFragment extends ListFragment {
 
             ArrayList<String> galleryTitle = new ArrayList<String>();
             ArrayList<byte[]> galleryItems = new ArrayList<byte[]>();
+            ArrayList<String> galleryUrls = new ArrayList<String>();
 
             String contents = null;
-
+            //
             if (file.length() == 0) {
                 Log.i(TAG,"File storage empty, fetching from resources...");
                 JSONResourceReader jsonResourceReader = new JSONResourceReader(getResources(), R.raw.gallery);
@@ -328,7 +344,7 @@ public class GalleryFragment extends ListFragment {
             Gson gson = new Gson();
             Gallery[] imgArray = gson.fromJson(contents, Gallery[].class);
 
-
+            //imgArray: Lcom.iho.asu.Model.Gallery;@e728fe1;
             for (Gallery img: imgArray) {
                 img.setImg(Base64.decode(img.getImage(), Base64.DEFAULT));
 
@@ -337,13 +353,16 @@ public class GalleryFragment extends ListFragment {
                 galleryMap.put(img.getId(),img);
                 galleryIds.add(img.getId());
             }
-
+            //galleryMap = 1baa870215a64b98b70c02f5d0a02845=2 Camp Hadar, Ethiopia, where scientists set up for the field season., 0a908e053bd442f49a0b19c6ab60690a=1 Welcome to the IHO Image Gallery, ebe3e7a2c8c04879a9549a03f3a82ef2=3 Finding fossils among rocks and dirt is a tedious, but potentially rewarding, experience, e9159751235341999d4ae4175100bad2=11 Long cores will be analyzed over deep time to consider how human ancestors cope with climate change., ca64d1dafc304004bb25ca589262ff4f=9 Excavations in the cave have uncovered over 50,000 years of human habitation including shells, stone tools, and evidence of fire activity., a22cbf65f4304a1f984849cc36b87158=12 Understanding primate behavior can help researchers understand how early hominins interacted with each other and their environment. , 4f40cc5bfc4d4c94b9dfdc5a346ed8e7=10 International teams drilled in five locations in Africa near important human origins discovery sites., d202417c87e740bfb420e6d31cc76f0a=8 Looking from inside the cave out to the ocean., fd6ac4f292034557b0eef65fc9e3c4bf=2 “Lucy” is the popular name for the 3.2-million-year-old fossil skeleton—Australopithecus afarensis—discovered by Donald Johanson in Hadar, Ethiopia, in 1974.}
             List<Gallery> imgList = new ArrayList<Gallery> (galleryMap.values());
+            //"imgList- array of the galleryMap values"- [2 Camp Hadar, Ethiopia, where scientists set up for the field season., 1 Welcome to the IHO Image Gallery, 3 Finding fossils among rocks and dirt is a tedious, but potentially rewarding, experience, 11 Long cores will be analyzed over deep time to consider how human ancestors cope with climate change., 9 Excavations in the cave have uncovered over 50,000 years of human habitation including shells, stone tools, and evidence of fire activity., 12 Understanding primate behavior can help researchers understand how early hominins interacted with each other and their environment. , 10 International teams drilled in five locations in Africa near important human origins discovery sites., 8 Looking from inside the cave out to the ocean., 2 “Lucy” is the popular name for the 3.2-million-year-old fossil skeleton—Australopithecus afarensis—discovered by Donald Johanson in Hadar, Ethiopia, in 1974.]
             Collections.sort(imgList,  new ImageComparator());
             for (Gallery gallery: imgList) {
                 galleryTitle.add(gallery.getImageCaption());
                 galleryItems.add(gallery.getImg());
             }
+            //galleryTitle" =  Welcome to the IHO Image Gallery, Camp Hadar, Ethiopia, where scientists set up for the field season., “Lucy” is the popular name for the 3.2-million-year-old fossil skeleton—Australopithecus afarensis—discovered by Donald Johanson in Hadar, Ethiopia, in 1974., Finding fossils among rocks and dirt is a tedious, but potentially rewarding, experience, Looking from inside the cave out to the ocean., Excavations in the cave have uncovered over 50,000 years of human habitation including shells, stone tools, and evidence of fire activity., International teams drilled in five locations in Africa near important human origins discovery sites., Long cores will be analyzed over deep time to consider how human ancestors cope with climate change., Understanding primate behavior can help researchers understand how early hominins interacted with each other and their environment. ]
+            //"galleryItems" = [[B@e728fe1, [B@7a40106, [B@9c873c7, [B@8a1df4, [B@ea7491d, [B@eef2792, [B@6ce8563, [B@252560, [B@9745a19]
 
             CustomList adapter = new
                     CustomList(this.getActivity(), galleryTitle, galleryItems);
