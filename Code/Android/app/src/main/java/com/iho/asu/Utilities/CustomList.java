@@ -48,15 +48,17 @@ public class CustomList extends ArrayAdapter<String>{
         TextView txtTitle = (TextView) rowView.findViewById(R.id.txt);
         ImageView imageView = (ImageView) rowView.findViewById(R.id.img);
         txtTitle.setText(title.get(position));
-        byte[] imageTile = imageId.get(position);
-        Intent i = new Intent();
-        if (imageView != null) {
-            imageView.setImageBitmap(null);
-        }
-        bMap = BitmapFactory.decodeByteArray(imageTile, 0, imageTile.length);
-        imageView.setImageBitmap(bMap);
+        //TODO
+        //remove below lines of code for decoding the URL
+        //byte[] imageTile = imageId.get(position);
+        //Intent i = new Intent();
+        //if (imageView != null) {
+        //    imageView.setImageBitmap(null);
+        //}
+        //bMap = BitmapFactory.decodeByteArray(imageTile, 0, imageTile.length);
+        //imageView.setImageBitmap(bMap);
 
-        //Glide.with(context).load(i.getStringExtra(IHOConstants.galleryImageLink)).into(imageView);
+        Glide.with(context).load((IHOConstants.galleryImageLink)).into(imageView);
         return rowView;
     }
 }

@@ -70,7 +70,7 @@ public class IHOConstants {
     public static final String SCIENCE_ORDER = "order";
     public static final String SCIENCE_TIMESTAMP = "timestamp";
 
-    public static final String galleryImageLink = "https://dl.dropboxusercontent.com/s/jgagogtxpg13k7c/lucy-hand.jpg?dl=0";
+    public static final String galleryImageLink = "https://dl.dropboxusercontent.com/s/0zjlo5vpz9iy7xx/lucy-hand.jpg?dl=0";
 
 
 
