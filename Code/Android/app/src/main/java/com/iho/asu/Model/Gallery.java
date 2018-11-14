@@ -13,6 +13,7 @@ public class Gallery {
     private Integer order;
     private String image;
 
+
     public void setImageCaption(String imageCaption) {
         this.imageCaption = imageCaption;
     }
