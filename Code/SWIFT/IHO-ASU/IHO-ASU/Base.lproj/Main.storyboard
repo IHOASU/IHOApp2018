@@ -180,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fyk-we-l1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6433" y="134"/>
+            <point key="canvasLocation" x="-7521" y="132"/>
         </scene>
         <!--News+Events-->
         <scene sceneID="jBj-dM-BFB">
@@ -194,11 +194,11 @@
                         <sections>
                             <tableViewSection id="hl2-qS-VqF">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="featuredNewsCell" id="TF5-Nv-ot4">
-                                        <rect key="frame" x="0.0" y="35" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="featuredNewsCell" rowHeight="45" id="TF5-Nv-ot4">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TF5-Nv-ot4" id="f6c-lp-c8K">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Featured News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpf-Jm-7dC">
@@ -220,15 +220,15 @@
                             </tableViewSection>
                             <tableViewSection id="yjC-6h-M8L">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="newsCell" textLabel="UKt-kO-c1p" style="IBUITableViewCellStyleDefault" id="Yly-rK-Qf8">
-                                        <rect key="frame" x="0.0" y="115" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="newsCell" textLabel="UKt-kO-c1p" rowHeight="45" style="IBUITableViewCellStyleDefault" id="Yly-rK-Qf8">
+                                        <rect key="frame" x="0.0" y="116" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yly-rK-Qf8" id="O8J-37-keN">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UKt-kO-c1p">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="44"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="45"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -246,15 +246,15 @@
                             </tableViewSection>
                             <tableViewSection id="sDV-Mv-0am">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="mediaCell" textLabel="ayc-oO-IUM" style="IBUITableViewCellStyleDefault" id="rTY-cK-WEg">
-                                        <rect key="frame" x="0.0" y="195" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="mediaCell" textLabel="ayc-oO-IUM" rowHeight="45" style="IBUITableViewCellStyleDefault" id="rTY-cK-WEg">
+                                        <rect key="frame" x="0.0" y="197" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rTY-cK-WEg" id="p3Q-48-c7c">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" contentMode="left" text="In the Media" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ayc-oO-IUM">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="44"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="45"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -275,11 +275,11 @@
                             </tableViewSection>
                             <tableViewSection id="tsV-f8-osf">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="eventsCell" id="yVF-e6-MVe">
-                                        <rect key="frame" x="0.0" y="275" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="eventsCell" rowHeight="45" id="yVF-e6-MVe">
+                                        <rect key="frame" x="0.0" y="278" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yVF-e6-MVe" id="9mJ-C7-p7d">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8J-jm-4N0">
@@ -301,11 +301,11 @@
                             </tableViewSection>
                             <tableViewSection id="eqb-ZI-Ke5">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="travelCell" id="aZE-Hh-0G5">
-                                        <rect key="frame" x="0.0" y="355" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="travelCell" rowHeight="45" id="aZE-Hh-0G5">
+                                        <rect key="frame" x="0.0" y="359" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aZE-Hh-0G5" id="983-bJ-t5J">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Travel + Learn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVy-ws-LWP">
@@ -335,7 +335,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L1G-QV-Sld" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5644" y="-763"/>
+            <point key="canvasLocation" x="-5644" y="-763.30049261083752"/>
         </scene>
         <!--Web View News Controller-->
         <scene sceneID="hzI-l7-HxJ">
@@ -451,15 +451,15 @@
                         <sections>
                             <tableViewSection id="zWG-QI-OZR">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="lecturerCell" textLabel="cgs-CL-ZTT" rowHeight="52" style="IBUITableViewCellStyleDefault" id="lAO-T8-FTJ">
-                                        <rect key="frame" x="0.0" y="35" width="375" height="52"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="lecturerCell" textLabel="cgs-CL-ZTT" rowHeight="45" style="IBUITableViewCellStyleDefault" id="lAO-T8-FTJ">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lAO-T8-FTJ" id="Oea-d1-kDJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="52"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Scientists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cgs-CL-ZTT">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="52"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="45"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -477,15 +477,15 @@
                             </tableViewSection>
                             <tableViewSection id="HxA-ub-hrt">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="newScienceCell" textLabel="U1Y-iW-Hyt" rowHeight="51" style="IBUITableViewCellStyleDefault" id="tfG-mB-KbF">
-                                        <rect key="frame" x="0.0" y="123" width="375" height="51"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="newScienceCell" textLabel="U1Y-iW-Hyt" rowHeight="45" style="IBUITableViewCellStyleDefault" id="tfG-mB-KbF">
+                                        <rect key="frame" x="0.0" y="116" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tfG-mB-KbF" id="VDW-uO-v4c">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="51"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="New Science" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U1Y-iW-Hyt">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="51"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="45"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -503,15 +503,15 @@
                             </tableViewSection>
                             <tableViewSection id="U5Z-6t-ArA">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="lucyCell" textLabel="g2c-Cf-9DM" rowHeight="49" style="IBUITableViewCellStyleDefault" id="e31-O9-KCO">
-                                        <rect key="frame" x="0.0" y="210" width="375" height="49"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="lucyCell" textLabel="g2c-Cf-9DM" rowHeight="45" style="IBUITableViewCellStyleDefault" id="e31-O9-KCO">
+                                        <rect key="frame" x="0.0" y="197" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e31-O9-KCO" id="tPe-9B-aii">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="49"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Who is Lucy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g2c-Cf-9DM">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="49"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="45"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -530,7 +530,7 @@
                             <tableViewSection id="2KG-kZ-hdo">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="studentBlogCell" textLabel="yhJ-nW-FCA" detailTextLabel="z5V-lw-Fpo" rowHeight="84" style="IBUITableViewCellStyleSubtitle" id="Olx-oE-gqF">
-                                        <rect key="frame" x="0.0" y="295" width="375" height="84"/>
+                                        <rect key="frame" x="0.0" y="278" width="375" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Olx-oE-gqF" id="H19-6W-bdO">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="84"/>
@@ -570,7 +570,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mSt-ev-UxX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2375" y="159"/>
+            <point key="canvasLocation" x="-2375.1999999999998" y="158.86699507389164"/>
         </scene>
         <!--Gallery View Controller-->
         <scene sceneID="4Fr-hD-4tU">
@@ -717,9 +717,10 @@
                                                 <constraint firstAttribute="height" constant="300" id="whB-zt-yNQ"/>
                                             </constraints>
                                         </imageView>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="text goes here" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIj-3o-5V8">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="text goes here" translatesAutoresizingMaskIntoConstraints="NO" id="aIj-3o-5V8">
                                             <rect key="frame" x="20" y="320" width="335" height="153.66666666666663"/>
                                             <color key="backgroundColor" white="0.92029782863849763" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -780,11 +781,12 @@
                                                 <constraint firstAttribute="height" constant="300" id="SY6-rN-kmZ"/>
                                             </constraints>
                                         </imageView>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="text goes here" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWH-ZM-0IF">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="text goes here" translatesAutoresizingMaskIntoConstraints="NO" id="aWH-ZM-0IF">
                                             <rect key="frame" x="20" y="320" width="335" height="153.66666666666663"/>
                                             <color key="backgroundColor" red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                     </subviews>
@@ -833,15 +835,15 @@
                         <sections>
                             <tableViewSection id="xzn-NZ-J1C">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ihoCell" textLabel="D0T-Wg-iBr" rowHeight="51" style="IBUITableViewCellStyleDefault" id="bn2-aW-Z0C">
-                                        <rect key="frame" x="0.0" y="35" width="375" height="51"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ihoCell" textLabel="D0T-Wg-iBr" rowHeight="45" style="IBUITableViewCellStyleDefault" id="bn2-aW-Z0C">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bn2-aW-Z0C" id="cBH-fR-saj">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="50.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="44.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Institute of Human Origins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D0T-Wg-iBr">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="50.666666666666664"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="44.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -859,15 +861,15 @@
                             </tableViewSection>
                             <tableViewSection id="SSJ-zi-l9o">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ihoCell" textLabel="Nlu-ax-Of4" rowHeight="52" style="IBUITableViewCellStyleDefault" id="5CN-UL-Rj7">
-                                        <rect key="frame" x="0.0" y="122" width="375" height="52"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ihoCell" textLabel="Nlu-ax-Of4" rowHeight="45" style="IBUITableViewCellStyleDefault" id="5CN-UL-Rj7">
+                                        <rect key="frame" x="0.0" y="116" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5CN-UL-Rj7" id="EdJ-ER-SsP">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="51.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="44.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Ask an Anthropologist!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nlu-ax-Of4">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="51.666666666666664"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="44.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -885,15 +887,15 @@
                             </tableViewSection>
                             <tableViewSection id="lRe-bg-vt8">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="becomingHumanCell" textLabel="fsp-9A-C8o" rowHeight="54" style="IBUITableViewCellStyleDefault" id="t6u-Tu-q7C">
-                                        <rect key="frame" x="0.0" y="210" width="375" height="54"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="becomingHumanCell" textLabel="fsp-9A-C8o" rowHeight="45" style="IBUITableViewCellStyleDefault" id="t6u-Tu-q7C">
+                                        <rect key="frame" x="0.0" y="197" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t6u-Tu-q7C" id="Pzu-mR-Wu2">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="53.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="44.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Becoming Human" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fsp-9A-C8o">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="53.666666666666664"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="44.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -911,15 +913,15 @@
                             </tableViewSection>
                             <tableViewSection id="KHQ-p6-mff">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="signUpCell" textLabel="Prd-4C-T4x" rowHeight="52" style="IBUITableViewCellStyleDefault" id="EYt-gh-clp">
-                                        <rect key="frame" x="0.0" y="300" width="375" height="52"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="signUpCell" textLabel="Prd-4C-T4x" rowHeight="45" style="IBUITableViewCellStyleDefault" id="EYt-gh-clp">
+                                        <rect key="frame" x="0.0" y="278" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EYt-gh-clp" id="usY-8I-5Uc">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="51.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="44.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Sign up for E-News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Prd-4C-T4x">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="51.666666666666664"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="44.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -937,7 +939,7 @@
                             <tableViewSection id="LBv-fZ-gJb">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="socialCell" rowHeight="355" id="0dO-uP-Rkp">
-                                        <rect key="frame" x="0.0" y="388" width="375" height="355"/>
+                                        <rect key="frame" x="0.0" y="359" width="375" height="355"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="0dO-uP-Rkp" id="ss5-3b-ogb">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="354.66666666666669"/>
@@ -1360,12 +1362,12 @@ Tempe, AZ 85287-4101</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUG-Vg-H1m" userLabel="locationButton">
-                                                    <rect key="frame" x="55" y="163.66666666666666" width="265" height="154.99999999999997"/>
+                                                    <rect key="frame" x="100" y="183.66666666666663" width="175" height="155"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="155" id="Uto-Pf-jbC"/>
-                                                        <constraint firstAttribute="width" constant="265" id="sFU-ek-z06"/>
+                                                        <constraint firstAttribute="width" constant="175" id="sFU-ek-z06"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button" image="location-map.png"/>
+                                                    <state key="normal" title="Button" image="location_pin.png"/>
                                                     <connections>
                                                         <action selector="mapIt:" destination="teV-9m-wTW" eventType="touchUpInside" id="niW-LR-5Ym"/>
                                                     </connections>
@@ -1380,7 +1382,7 @@ Tempe, AZ 85287-4101</string>
                                                 <constraint firstItem="iUG-Vg-H1m" firstAttribute="centerX" secondItem="6nO-nB-b13" secondAttribute="centerX" id="kMu-Xt-Mr1"/>
                                                 <constraint firstAttribute="trailing" secondItem="FMC-JR-Oey" secondAttribute="trailing" id="mHu-ji-ZN3"/>
                                                 <constraint firstItem="FMC-JR-Oey" firstAttribute="top" secondItem="6nO-nB-b13" secondAttribute="top" id="mwd-UK-zhq"/>
-                                                <constraint firstAttribute="bottom" secondItem="iUG-Vg-H1m" secondAttribute="bottom" constant="20" id="nYX-YU-3X8"/>
+                                                <constraint firstAttribute="bottom" secondItem="iUG-Vg-H1m" secondAttribute="bottom" id="nYX-YU-3X8"/>
                                                 <constraint firstItem="eG8-t6-WRf" firstAttribute="leading" secondItem="6nO-nB-b13" secondAttribute="leading" constant="20" id="qXM-EG-HgW"/>
                                                 <constraint firstItem="iUG-Vg-H1m" firstAttribute="top" secondItem="eG8-t6-WRf" secondAttribute="bottom" constant="20" id="xSl-FA-OE9"/>
                                             </constraints>
@@ -1390,11 +1392,11 @@ Tempe, AZ 85287-4101</string>
                             </tableViewSection>
                             <tableViewSection id="5cu-ed-Luc">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="330" id="AYA-bI-V5j">
-                                        <rect key="frame" x="0.0" y="492" width="375" height="330"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="231" id="AYA-bI-V5j">
+                                        <rect key="frame" x="0.0" y="492" width="375" height="231"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AYA-bI-V5j" id="otA-ze-xI9">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="329.66666666666669"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="AYA-bI-V5j" id="otA-ze-xI9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="230.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZs-jP-aUB" userLabel="contact">
@@ -1409,17 +1411,6 @@ Tempe, AZ 85287-4101</string>
                                                         <segue destination="Ulj-3Y-hdt" kind="show" id="2GA-kS-ebH"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1y-89-5Ub" userLabel="contactButton">
-                                                    <rect key="frame" x="12" y="169" width="350" height="109.99999999999997"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="110" id="dXP-jQ-93m"/>
-                                                        <constraint firstAttribute="width" constant="350" id="nTi-aI-nH7"/>
-                                                    </constraints>
-                                                    <state key="normal" title="Button" image="contact-us.png"/>
-                                                    <connections>
-                                                        <segue destination="Ulj-3Y-hdt" kind="show" id="OLG-4d-itU"/>
-                                                    </connections>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCG-4P-YIp">
                                                     <rect key="frame" x="350" y="8" width="15" height="29"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
@@ -1428,9 +1419,12 @@ Tempe, AZ 85287-4101</string>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVO-e3-dFm" userLabel="contactInfo">
                                                     <rect key="frame" x="16" y="65" width="180" height="71"/>
-                                                    <string key="text">Phone	: 480.727.6580
-Fax		: 480.727.6570
-Email	: iho@asu.edu</string>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="6KQ-Xr-TdC"/>
+                                                    </constraints>
+                                                    <string key="text">Phone	  480.727.6580
+Fax		  480.727.6570
+Email	  iho@asu.edu</string>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1438,15 +1432,13 @@ Email	: iho@asu.edu</string>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="gCG-4P-YIp" firstAttribute="centerY" secondItem="MZs-jP-aUB" secondAttribute="centerY" id="7eB-wx-NUd"/>
-                                                <constraint firstAttribute="bottom" secondItem="Q1y-89-5Ub" secondAttribute="bottom" constant="20" id="8iP-ta-6Tc"/>
+                                                <constraint firstAttribute="bottom" secondItem="BVO-e3-dFm" secondAttribute="bottom" constant="50" id="AdR-8k-zW5"/>
                                                 <constraint firstItem="BVO-e3-dFm" firstAttribute="leading" secondItem="otA-ze-xI9" secondAttribute="leading" constant="20" id="DMH-k3-DPL"/>
-                                                <constraint firstItem="Q1y-89-5Ub" firstAttribute="centerX" secondItem="otA-ze-xI9" secondAttribute="centerX" id="KU0-HP-G2d"/>
-                                                <constraint firstItem="BVO-e3-dFm" firstAttribute="top" secondItem="MZs-jP-aUB" secondAttribute="bottom" constant="5" id="LIA-Hx-qYX"/>
+                                                <constraint firstItem="BVO-e3-dFm" firstAttribute="top" secondItem="MZs-jP-aUB" secondAttribute="bottom" constant="15" id="LIA-Hx-qYX"/>
                                                 <constraint firstAttribute="trailing" secondItem="gCG-4P-YIp" secondAttribute="trailing" constant="10" id="TcP-lY-P1i"/>
                                                 <constraint firstItem="MZs-jP-aUB" firstAttribute="leading" secondItem="otA-ze-xI9" secondAttribute="leading" id="c0i-Mw-dSX"/>
                                                 <constraint firstItem="MZs-jP-aUB" firstAttribute="top" secondItem="otA-ze-xI9" secondAttribute="top" id="rcd-IL-2pA"/>
                                                 <constraint firstAttribute="trailing" secondItem="MZs-jP-aUB" secondAttribute="trailing" id="wmC-se-HiC"/>
-                                                <constraint firstItem="Q1y-89-5Ub" firstAttribute="top" secondItem="BVO-e3-dFm" secondAttribute="bottom" constant="20" id="wz6-Wa-z9n"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1489,7 +1481,7 @@ Email	: iho@asu.edu</string>
                     <color key="tintColor" red="0.011764705882352941" green="0.14117647058823529" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                 </barButtonItem>
             </objects>
-            <point key="canvasLocation" x="-7249" y="135"/>
+            <point key="canvasLocation" x="-8599" y="132"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="Ara-3W-lwh">
@@ -1547,9 +1539,10 @@ Email	: iho@asu.edu</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgs-hD-8zi" userLabel="contactText">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgs-hD-8zi" userLabel="contactText">
                                                 <rect key="frame" x="8" y="650" width="250" height="69"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="A6s-QY-wA6"/>
                                                     <constraint firstAttribute="width" constant="250" id="NZg-YU-Ylj"/>
@@ -1559,9 +1552,10 @@ iho@asu.edu</string>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJg-OT-bIr" userLabel="locationText">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJg-OT-bIr" userLabel="locationText">
                                                 <rect key="frame" x="10" y="759" width="250" height="66"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="FZU-my-hbX"/>
                                                 </constraints>
@@ -1570,9 +1564,10 @@ Social Sciences Building #103</string>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAo-nE-ib9" userLabel="mailingText">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAo-nE-ib9" userLabel="mailingText">
                                                 <rect key="frame" x="10" y="900" width="250" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="9Ux-Di-XVF"/>
                                                     <constraint firstAttribute="height" constant="100" id="tsq-46-bTC"/>
@@ -1685,9 +1680,10 @@ Tempe, AZ 85287-4101</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHI-TH-aT3">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cHI-TH-aT3">
                                                 <rect key="frame" x="0.0" y="152.66666666666669" width="375" height="666.33333333333326"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <string key="text">The Institute of Human Origins invites you to share in the excitement of discovery, the pursuit of new knowledge, and the public discussion of the enduring puzzle of how we “became human.” The study of how and where humans developed on Earth has never been more vibrant than today. We are seeking visionary partners to join our mission to advance the science of human origins and explore the ongoing challenges of our field and laboratory research.
 
 An investment in IHO helps to fund student scholarships, support research in laboratories and field sites, and meet the growing needs of our researchers and students. Please help us continue the search!
@@ -1809,6 +1805,7 @@ If you would like to send donation by check, please make your donation payable t
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="250" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bva-aM-sZS">
                                                 <rect key="frame" x="10" y="240" width="355" height="240"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="240" id="XWc-xw-Q9V"/>
                                                 </constraints>
@@ -1917,11 +1914,11 @@ Aimed primarily at the middle school level, the articles and activities are chal
             <objects>
                 <tableViewController id="LVX-Zr-YQb" customClass="FeaturedNewsViewController" customModule="IHO_ASU" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ybx-uO-FyY">
-                        <rect key="frame" x="0.0" y="0.0" width="372" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="372" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XNS-d3-hnh">
-                            <rect key="frame" x="0.0" y="670" width="372" height="45"/>
+                            <rect key="frame" x="0.0" y="747" width="372" height="45"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.0039215686269999999" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
@@ -1974,20 +1971,28 @@ Aimed primarily at the middle school level, the articles and activities are chal
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" textLabel="N7e-vt-6oz" rowHeight="341" style="IBUITableViewCellStyleDefault" id="6Bg-cW-iGw">
-                                        <rect key="frame" x="0.0" y="329" width="372" height="341"/>
+                                    <tableViewCell contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" textLabel="N7e-vt-6oz" rowHeight="418" style="IBUITableViewCellStyleDefault" id="6Bg-cW-iGw">
+                                        <rect key="frame" x="0.0" y="329" width="372" height="418"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="6Bg-cW-iGw" id="xqA-sU-8uI" customClass="UITextView">
-                                            <rect key="frame" x="0.0" y="0.0" width="372" height="340.66666666666669"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="372" height="417.66666666666669"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="N7e-vt-6oz">
-                                                    <rect key="frame" x="16" y="0.0" width="340" height="340.66666666666669"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="N7e-vt-6oz">
+                                                    <rect key="frame" x="16" y="0.0" width="340" height="417.66666666666669"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ukb-A6-csf" userLabel="NDesc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="372" height="418"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="tintColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1999,17 +2004,17 @@ Aimed primarily at the middle school level, the articles and activities are chal
                             <outlet property="delegate" destination="LVX-Zr-YQb" id="kGF-qV-rdN"/>
                         </connections>
                     </tableView>
-                    <size key="freeformSize" width="372" height="812"/>
+                    <size key="freeformSize" width="372" height="900"/>
                     <connections>
                         <outlet property="featuredNewsTableView" destination="ybx-uO-FyY" id="22o-kS-4vj"/>
-                        <outlet property="nDesc" destination="N7e-vt-6oz" id="rFH-rP-S4q"/>
+                        <outlet property="nDesc" destination="Ukb-A6-csf" id="iDV-j3-pzq"/>
                         <outlet property="nImage" destination="Q98-TT-SO5" id="1bw-es-2aY"/>
                         <outlet property="nTitle" destination="Zsf-ff-lwA" id="iXd-Um-GTe"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J0A-Pr-CZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4842" y="-2801"/>
+            <point key="canvasLocation" x="-4841.6000000000004" y="-2854.4334975369461"/>
         </scene>
         <!--Web View Featured News Controller-->
         <scene sceneID="Ir5-8q-vXe">
@@ -2104,7 +2109,7 @@ Aimed primarily at the middle school level, the articles and activities are chal
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="503.66666666666669"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XHh-2B-vA4">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XHh-2B-vA4">
                                                     <rect key="frame" x="16" y="0.0" width="343" height="503.66666666666669"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
@@ -2250,7 +2255,7 @@ Aimed primarily at the middle school level, the articles and activities are chal
             <objects>
                 <tableViewController id="rWH-Fv-tLx" customClass="LecturerDetailViewController" customModule="IHO_ASU" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="q6H-N3-YLk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="629"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="912"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -2273,83 +2278,76 @@ Aimed primarily at the middle school level, the articles and activities are chal
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="228" id="dJh-5w-6XU">
-                                        <rect key="frame" x="0.0" y="70" width="375" height="228"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="276" id="dJh-5w-6XU">
+                                        <rect key="frame" x="0.0" y="70" width="375" height="276"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="dJh-5w-6XU" id="cXt-0b-5vY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="227.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="275.66666666666669"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="28T-Ve-xdJ">
-                                                    <rect key="frame" x="43" y="8" width="304" height="212"/>
+                                                    <rect key="frame" x="27.666666666666657" y="11" width="320" height="250"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="212" id="Rjy-fA-Y0Q"/>
-                                                        <constraint firstAttribute="width" constant="304" id="Z36-Ug-4br"/>
+                                                        <constraint firstAttribute="width" constant="320" id="POW-aJ-zbs"/>
+                                                        <constraint firstAttribute="height" constant="250" id="Rjy-fA-Y0Q"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="28T-Ve-xdJ" firstAttribute="top" secondItem="cXt-0b-5vY" secondAttribute="topMargin" id="4RU-EN-jM2"/>
-                                                <constraint firstAttribute="bottom" secondItem="28T-Ve-xdJ" secondAttribute="bottom" constant="7" id="8zQ-mV-HDz"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="28T-Ve-xdJ" secondAttribute="trailing" constant="28" id="AxH-8U-adH"/>
-                                                <constraint firstItem="28T-Ve-xdJ" firstAttribute="top" secondItem="cXt-0b-5vY" secondAttribute="top" constant="8" id="Tap-ML-63g"/>
                                                 <constraint firstItem="28T-Ve-xdJ" firstAttribute="centerY" secondItem="cXt-0b-5vY" secondAttribute="centerY" id="ZP2-Cq-b6E"/>
                                                 <constraint firstItem="28T-Ve-xdJ" firstAttribute="bottom" secondItem="cXt-0b-5vY" secondAttribute="bottomMargin" id="daE-l7-8cK"/>
-                                                <constraint firstItem="28T-Ve-xdJ" firstAttribute="leading" secondItem="cXt-0b-5vY" secondAttribute="leadingMargin" constant="27" id="v2b-WP-rwq"/>
+                                                <constraint firstItem="28T-Ve-xdJ" firstAttribute="centerX" secondItem="cXt-0b-5vY" secondAttribute="centerX" id="j83-NQ-6Cg"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="228" id="Gui-yX-Ded">
-                                        <rect key="frame" x="0.0" y="298" width="375" height="228"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="375" id="Gui-yX-Ded">
+                                        <rect key="frame" x="0.0" y="346" width="375" height="375"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="Gui-yX-Ded" id="J4t-zF-17N">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="227.66666666666666"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gui-yX-Ded" id="J4t-zF-17N">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="374.66666666666669"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHb-PZ-Wc0">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="65"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" misplaced="YES" text="Title" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHb-PZ-Wc0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="65" id="Fwa-zp-6bK"/>
-                                                        <constraint firstAttribute="width" constant="345" id="R3d-zV-ym7"/>
+                                                        <constraint firstAttribute="height" constant="120" id="Fwa-zp-6bK"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Desc" lineBreakMode="wordWrap" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9z-Oc-ELT">
-                                                    <rect key="frame" x="23" y="62" width="345" height="140"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="140" id="4ln-ON-u9W"/>
-                                                        <constraint firstAttribute="width" constant="345" id="jJl-WR-fW0"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" misplaced="YES" text="Desc" lineBreakMode="wordWrap" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9z-Oc-ELT">
+                                                    <rect key="frame" x="0.0" y="128" width="375" height="226"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="YHb-PZ-Wc0" secondAttribute="trailing" constant="15" id="1iD-By-VP2"/>
-                                                <constraint firstItem="w9z-Oc-ELT" firstAttribute="top" secondItem="YHb-PZ-Wc0" secondAttribute="bottom" constant="-3" id="6nf-bi-i67"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="w9z-Oc-ELT" secondAttribute="trailing" constant="7" id="DaO-Do-aCW"/>
-                                                <constraint firstItem="w9z-Oc-ELT" firstAttribute="top" secondItem="YHb-PZ-Wc0" secondAttribute="bottom" constant="-3" id="Vo7-CE-m51"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="w9z-Oc-ELT" secondAttribute="bottom" constant="17" id="agX-ee-bQE"/>
-                                                <constraint firstItem="w9z-Oc-ELT" firstAttribute="leading" secondItem="J4t-zF-17N" secondAttribute="leadingMargin" constant="7" id="fu3-oH-G6t"/>
+                                                <constraint firstAttribute="trailing" secondItem="YHb-PZ-Wc0" secondAttribute="trailing" id="1iD-By-VP2"/>
+                                                <constraint firstItem="w9z-Oc-ELT" firstAttribute="top" secondItem="YHb-PZ-Wc0" secondAttribute="bottom" constant="10" id="6nf-bi-i67"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="w9z-Oc-ELT" secondAttribute="bottom" constant="10" id="agX-ee-bQE"/>
+                                                <constraint firstAttribute="trailing" secondItem="w9z-Oc-ELT" secondAttribute="trailing" constant="15" id="ezL-Bb-Bw7"/>
+                                                <constraint firstItem="w9z-Oc-ELT" firstAttribute="leading" secondItem="J4t-zF-17N" secondAttribute="leadingMargin" constant="10" id="fu3-oH-G6t"/>
                                                 <constraint firstItem="YHb-PZ-Wc0" firstAttribute="top" secondItem="J4t-zF-17N" secondAttribute="top" id="pB4-X5-IOP"/>
-                                                <constraint firstItem="YHb-PZ-Wc0" firstAttribute="leading" secondItem="J4t-zF-17N" secondAttribute="leading" constant="15" id="ypV-Wf-qXH"/>
+                                                <constraint firstItem="YHb-PZ-Wc0" firstAttribute="leading" secondItem="J4t-zF-17N" secondAttribute="leading" constant="10" id="ypV-Wf-qXH"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="222" id="5Ei-N1-2GD">
-                                        <rect key="frame" x="0.0" y="526" width="375" height="222"/>
+                                        <rect key="frame" x="0.0" y="721" width="375" height="222"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Ei-N1-2GD" id="ceN-ev-lL2">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="221.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NX2-YT-Gvm">
-                                                    <rect key="frame" x="0.0" y="59" width="375" height="40"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NX2-YT-Gvm">
+                                                    <rect key="frame" x="0.0" y="65" width="375" height="45"/>
                                                     <color key="backgroundColor" red="0.0039215686269999999" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="tMW-vx-0yx"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
                                                     <state key="normal" title="Ask a question">
                                                         <color key="titleShadowColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2358,10 +2356,12 @@ Aimed primarily at the middle school level, the articles and activities are chal
                                                         <action selector="lEmail:" destination="rWH-Fv-tLx" eventType="touchUpInside" id="6Su-9f-GXZ"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jl-be-reC">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jl-be-reC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                                     <color key="backgroundColor" red="0.0039215686269999999" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="2LE-6H-vkf"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
                                                     <state key="normal" title="View Gallery">
                                                         <color key="titleShadowColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2371,10 +2371,12 @@ Aimed primarily at the middle school level, the articles and activities are chal
                                                         <segue destination="Gii-Qf-P16" kind="show" identifier="LecturerGallery" id="hkT-Su-wSa"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hh-Yt-xMD">
-                                                    <rect key="frame" x="0.0" y="116" width="375" height="40"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hh-Yt-xMD">
+                                                    <rect key="frame" x="0.0" y="130" width="375" height="30"/>
                                                     <color key="backgroundColor" red="0.0039215686269999999" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="cQc-ZM-7EP"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
                                                     <state key="normal" title="Learn more about this scientist">
                                                         <color key="titleShadowColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2384,6 +2386,18 @@ Aimed primarily at the middle school level, the articles and activities are chal
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NX2-YT-Gvm" firstAttribute="leading" secondItem="ceN-ev-lL2" secondAttribute="leading" id="3pI-s9-w63"/>
+                                                <constraint firstAttribute="trailing" secondItem="8Jl-be-reC" secondAttribute="trailing" id="5z7-xQ-XwG"/>
+                                                <constraint firstItem="NX2-YT-Gvm" firstAttribute="top" secondItem="8Jl-be-reC" secondAttribute="bottom" constant="20" id="CdX-AI-qfT"/>
+                                                <constraint firstItem="5hh-Yt-xMD" firstAttribute="top" secondItem="NX2-YT-Gvm" secondAttribute="bottom" constant="20" id="Lul-3T-r1p"/>
+                                                <constraint firstItem="8Jl-be-reC" firstAttribute="leading" secondItem="ceN-ev-lL2" secondAttribute="leading" id="WBO-oI-P5r"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="5hh-Yt-xMD" secondAttribute="bottom" constant="50" id="dkq-E8-5kU"/>
+                                                <constraint firstAttribute="trailing" secondItem="5hh-Yt-xMD" secondAttribute="trailing" id="hme-VW-vRH"/>
+                                                <constraint firstItem="8Jl-be-reC" firstAttribute="top" secondItem="ceN-ev-lL2" secondAttribute="top" id="qWe-tS-C7D"/>
+                                                <constraint firstItem="5hh-Yt-xMD" firstAttribute="leading" secondItem="ceN-ev-lL2" secondAttribute="leading" id="tj1-8N-wax"/>
+                                                <constraint firstAttribute="trailing" secondItem="NX2-YT-Gvm" secondAttribute="trailing" id="uhh-sg-plm"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -2396,7 +2410,7 @@ Aimed primarily at the middle school level, the articles and activities are chal
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="717"/>
+                    <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="buttonReadMore" destination="5hh-Yt-xMD" id="mTM-jT-Ib5"/>
                         <outlet property="gallery" destination="8Jl-be-reC" id="60T-r4-WNk"/>
@@ -2409,7 +2423,7 @@ Aimed primarily at the middle school level, the articles and activities are chal
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hcO-UA-1af" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-314" y="-726"/>
+            <point key="canvasLocation" x="-314.39999999999998" y="-726.35467980295573"/>
         </scene>
         <!--Web View Lecturer Detail Controller-->
         <scene sceneID="ccO-Cd-Xd1">
@@ -2594,10 +2608,8 @@ Aimed primarily at the middle school level, the articles and activities are chal
         <image name="IHO_Gallery_main.jpg" width="349" height="299"/>
         <image name="ask_ananthropologist_v2.jpg" width="600" height="248"/>
         <image name="becomingHuman.jpg" width="1170" height="700"/>
-        <image name="contact-us.png" width="812" height="340"/>
         <image name="iho-skullmark.png" width="600" height="370"/>
         <image name="instagram.png" width="1500" height="1500"/>
-        <image name="location-map.png" width="895" height="600"/>
         <image name="location_pin.png" width="350" height="350"/>
         <image name="newLogo.jpg" width="384" height="96"/>
         <image name="trvl_learn.jpg" width="400" height="184"/>
@@ -2606,8 +2618,5 @@ Aimed primarily at the middle school level, the articles and activities are chal
         <image name="youtube-small.png" width="256" height="177"/>
         <image name="youtube.png" width="794" height="178"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="2GA-kS-ebH"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
