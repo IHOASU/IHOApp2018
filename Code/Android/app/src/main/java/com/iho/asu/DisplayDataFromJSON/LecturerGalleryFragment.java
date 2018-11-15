@@ -42,7 +42,7 @@ public class LecturerGalleryFragment extends ListFragment {
 
     private String LectKey = "";
     private ArrayList<String> galleryTitle = new ArrayList<String>();
-    private ArrayList<byte[]> galleryItems = new ArrayList<byte[]>();
+    private ArrayList<String> galleryItems = new ArrayList<String>();
 
 
     @Override
@@ -148,7 +148,7 @@ public class LecturerGalleryFragment extends ListFragment {
             Collections.sort(gallery, new ImageComparator());
             for(Gallery img: gallery) {
                 Log.i(TAG, img.toString());
-                galleryItems.add(img.getImg());
+                galleryItems.add(img.getImage());
                 galleryTitle.add(img.getImageCaption());
             }
 
