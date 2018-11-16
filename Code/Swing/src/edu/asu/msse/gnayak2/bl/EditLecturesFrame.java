@@ -93,42 +93,14 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	}
 	
 	public void setUpFrame() {
-//		galleryDelegate = this;
-//
-//		setResizable(true);
-//		setPreferredSize(new Dimension(Constants.WIDTH,Constants.HEIGHT));
-//		cardLayout = new CardLayout();
-//		containerPanel = new JPanel(cardLayout);
-//
-//		String BUTTONPANEL = "Card with JButtons";
-//		String TEXTPANEL = "Card with JTextField";
-//
-//		initializeMainPanel();
-//		initializeGalleryLayout();
-//		containerPanel.add(galleryPanel, BUTTONPANEL);
-//		containerPanel.add(mainPanel, TEXTPANEL);
-//
-////		add(galleryPanel);
-////		add(mainPanel);
-////		add(containerPanel);
-//		cardLayout.show(containerPanel, TEXTPANEL);
-//
-////		cardLayout.
-//		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-//		pack();
-//		setVisible(true);
 
-		JFrame.setDefaultLookAndFeelDecorated(true);
-		JFrame window = new JFrame("CardLayout Example");
-		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		window.setSize(300,300);
-		window.setLayout(new BorderLayout());
+		JFrame window = new JFrame("Scientist Profile");
+		window.setSize(Constants.WIDTH,Constants.HEIGHT);
 
 
 		final CardLayout cardLayout = new CardLayout();
 		final JPanel cardPanel = new JPanel(cardLayout);
 
-		// create two dummy panels (the "cards") to show
 		JPanel card1 = new JPanel();
 		card1.setBackground(Color.red);
 
@@ -137,28 +109,26 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 
 		initializeGalleryLayout();
 		initializeMainPanel();
-		cardPanel.add(galleryPanel,"RedCard");
-		cardPanel.add(mainPanel,"BlueCard");
-
+		cardPanel.add(mainPanel,"Profile");
+		cardPanel.add(galleryPanel,"Gallery");
 
 		// create two buttons
 		JPanel buttonPanel = new JPanel();
-		JButton b1 = new JButton("Profile");
-		JButton b2 = new JButton("Gallery");
-		buttonPanel.add(b1);
-		buttonPanel.add(b2);
+		JButton profileButton = new JButton("Profile");
+		galleryButton = new JButton("Gallery");
+		buttonPanel.add(profileButton);
+		buttonPanel.add(galleryButton);
 
-
-
-		b1.addActionListener(new ActionListener() {
+		profileButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
-				cardLayout.show(cardPanel, "RedCard");
+				cardLayout.show(cardPanel, "Profile");
 			}
 		});
 
-		b2.addActionListener(new ActionListener() {
+		galleryButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
-				cardLayout.show(cardPanel, "BlueCard");
+				initializeGalleryData();
+				cardLayout.show(cardPanel, "Gallery");
 			}
 		});
 
@@ -193,7 +163,6 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 		btnSubmit = new JButton("Submit");
 		galleryButton = new JButton("Gallery");
 		
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		mainPanel = new JPanel();
 		mainPanel.setLayout(new MigLayout());
 
@@ -431,16 +400,7 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	
 	
 	public void setActionListenerForButton() {
-		
-		galleryButton.addActionListener(new ActionListener() {
 
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				initializeGalleryData();
-				cardLayout.show(containerPanel, "2");
-			}
-		});
-		
 		// delete old lecture
 		btnSubmit.addActionListener(new ActionListener() {
 			@Override
