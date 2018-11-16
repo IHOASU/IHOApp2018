@@ -93,28 +93,83 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	}
 	
 	public void setUpFrame() {
-		galleryDelegate = this;
-		
-		setResizable(false);
-		setPreferredSize(new Dimension(Constants.WIDTH,Constants.HEIGHT));
-		containerPanel = new JPanel();
-		cardLayout = new CardLayout();
-		containerPanel.setLayout(cardLayout);
-		
-		initializeMainPanel();
+//		galleryDelegate = this;
+//
+//		setResizable(true);
+//		setPreferredSize(new Dimension(Constants.WIDTH,Constants.HEIGHT));
+//		cardLayout = new CardLayout();
+//		containerPanel = new JPanel(cardLayout);
+//
+//		String BUTTONPANEL = "Card with JButtons";
+//		String TEXTPANEL = "Card with JTextField";
+//
+//		initializeMainPanel();
+//		initializeGalleryLayout();
+//		containerPanel.add(galleryPanel, BUTTONPANEL);
+//		containerPanel.add(mainPanel, TEXTPANEL);
+//
+////		add(galleryPanel);
+////		add(mainPanel);
+////		add(containerPanel);
+//		cardLayout.show(containerPanel, TEXTPANEL);
+//
+////		cardLayout.
+//		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+//		pack();
+//		setVisible(true);
+
+		JFrame.setDefaultLookAndFeelDecorated(true);
+		JFrame window = new JFrame("CardLayout Example");
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.setSize(300,300);
+		window.setLayout(new BorderLayout());
+
+
+		final CardLayout cardLayout = new CardLayout();
+		final JPanel cardPanel = new JPanel(cardLayout);
+
+		// create two dummy panels (the "cards") to show
+		JPanel card1 = new JPanel();
+		card1.setBackground(Color.red);
+
+		JPanel card2 = new JPanel();
+		card2.setBackground(Color.blue);
+
 		initializeGalleryLayout();
-		containerPanel.add(mainPanel, "1");
-		containerPanel.add(galleryPanel, "2");
-		
-		cardLayout.show(containerPanel, "1");
-		
-		add(containerPanel);
-		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		pack();
-		setVisible(true);
-		
+		initializeMainPanel();
+		cardPanel.add(galleryPanel,"RedCard");
+		cardPanel.add(mainPanel,"BlueCard");
+
+
+		// create two buttons
+		JPanel buttonPanel = new JPanel();
+		JButton b1 = new JButton("Profile");
+		JButton b2 = new JButton("Gallery");
+		buttonPanel.add(b1);
+		buttonPanel.add(b2);
+
+
+
+		b1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent event) {
+				cardLayout.show(cardPanel, "RedCard");
+			}
+		});
+
+		b2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent event) {
+				cardLayout.show(cardPanel, "BlueCard");
+			}
+		});
+
+
+		// add card & button panels to the main window
+		window.add(cardPanel,BorderLayout.CENTER);
+		window.add(buttonPanel,BorderLayout.SOUTH);
+		window.setVisible(true);
 	}
-	
+		
+
 	public void initializeMainPanel() {
 		tfName = new JTextField();
 		taDescription = new JTextArea("",120,120);
@@ -170,21 +225,21 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 		JButton galleryBackButton = new JButton("Back");
 		viewGalleryButton = new JButton("View");
 		deleteGalleryButton = new JButton("Delete");
-		
+
 		btnAddGallery = new JButton("Add");
-		
+
 		galleryPanel.setLayout(new MigLayout());
 		galleryPanel.add(galleryBackButton);
 		galleryPanel.add(viewGalleryButton);
 		galleryPanel.add(deleteGalleryButton);
-		
+
 		galleryPanel.add(btnAddGallery, "wrap");
 		imageList =  new JList<>();
 		galleryPanel.add(new JScrollPane(imageList),"span,push,grow, wrap");
-		
+
 		galleryModel = new DefaultListModel<>();
 		imageList.setModel(galleryModel);
-		
+
 		imageList.setCellRenderer(new ImageListRenderer());
 		galleryBackButton.addActionListener(new ActionListener() {
 
@@ -193,8 +248,8 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 				cardLayout.show(containerPanel, "1");
 			}
 		});
-		
-       
+
+
 	    imageList.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
 
 			@Override
@@ -203,7 +258,7 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 				//System.out.println(selectedNews.getDesc());
 			}
 		});
-		
+
 		viewGalleryButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -213,7 +268,7 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 				}
 			}
 		});
-		
+
 		btnAddGallery.addActionListener(new ActionListener() {
 
 			@Override
@@ -222,7 +277,7 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 				galleryFrame.setVisible(true);
 			}
 		});
-		
+
 		deleteGalleryButton.addActionListener(new ActionListener() {
 
 			@Override
@@ -324,20 +379,20 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	
 		String order_value = Integer.toString(lecture.getOrder());
 		tfOrder.setText(order_value);
-		  BufferedImage bufferedImage = convertStringToImage(lecture.getImage());
-			ImageIcon imageIcon = null;
+//		  BufferedImage bufferedImage = convertStringToImage(lecture.getImage());
+//			ImageIcon imageIcon = null;
 			 
-	        if (bufferedImage != null) { 
-	        	 imageIcon = new ImageIcon(bufferedImage);
-	        	 Image oldImage = imageIcon.getImage(); // transform it 
-	        	 Image newImage = oldImage.getScaledInstance(80, 80,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
-	        	 imageIcon = new ImageIcon(newImage); 
-	        	 JLabel imageLabel = new JLabel(imageIcon);
-	        	 mainPanel.add(imageLabel);
-	        	 
-	        }
-	       
-	        
+//	        if (bufferedImage != null) {
+//	        	 imageIcon = new ImageIcon(bufferedImage);
+//	        	 Image oldImage = imageIcon.getImage(); // transform it
+//	        	 Image newImage = oldImage.getScaledInstance(80, 80,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way
+//	        	 imageIcon = new ImageIcon(newImage);
+//	        	 JLabel imageLabel = new JLabel(imageIcon);
+//	        	 mainPanel.add(imageLabel);
+//
+//	        }
+//
+
 	        setPreferredSize(new Dimension(180,100));
 	}
 	private BufferedImage convertStringToImage(String base64String) {

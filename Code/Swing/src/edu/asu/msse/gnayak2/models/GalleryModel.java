@@ -20,8 +20,8 @@ public class GalleryModel {
 	
 	public GalleryModel(JSONObject object) {
 		id = object.getString("id");
-	    title = object.getString("title");	
-       	image = object.getString("image");
+	    title = object.getString("title");
+		image = object.getString("image");
        	if(object.has("imageUrl")) {
 			imageUrl = object.getString("imageUrl");
 		}
