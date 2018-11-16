@@ -21,34 +21,27 @@ import UIKit
 
 class FeaturedNewsViewController: UITableViewController {
     @IBOutlet var featuredNewsTableView: UITableView!
-    @IBAction func readMoreLink(_ sender: Any) {
-        
-        let url = URL(string: newsLink!)!
-        
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.openURL(url)
-        }
 
-    }
     @IBOutlet weak var nTitle: UILabel!
-    @IBOutlet weak var nDesc: UILabel!
+    @IBOutlet weak var nDesc: UITextView!
     @IBOutlet weak var nImage: UIImageView!
-    @IBOutlet weak var readMoreButton: UIButton!
+    //@IBOutlet weak var readMoreButton: UIButton!
     var newsTitle: String?
     var newsDesc: String?
     var newsId: String?
     var newsImage: String?
     var newsLink: String?
+    var textView : UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        textView = UITextView()
+        textView.sizeThatFits(CGSize(width: textView.frame.size.width, height:textView.frame.size.height))
         
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
         self.navigationItem.title = "Featured News"
-        self.readMoreButton.layer.cornerRadius = 15
+        //self.readMoreButton.layer.cornerRadius = 15
         
         if(newsTitle != nil){
         self.nTitle.text = self.newsTitle
@@ -57,8 +50,8 @@ class FeaturedNewsViewController: UITableViewController {
         }
         if(newsDesc != nil){
         self.nDesc.text = self.newsDesc
-        self.nDesc.lineBreakMode = NSLineBreakMode.byWordWrapping
-        self.nDesc.numberOfLines = 0
+        //self.nDesc.lineBreakMode = NSLineBreakMode.byWordWrapping
+        //self.nDesc.numberOfLines = 0
         }
         
         if (self.newsImage != nil)
@@ -80,6 +73,7 @@ class FeaturedNewsViewController: UITableViewController {
         let flexible = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         self.toolbarItems = [flexible,toolbarTitle]
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -97,7 +91,9 @@ class FeaturedNewsViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var webViewFNewsController = segue.destination as! WebViewFeaturedNewsController
+        webViewFNewsController.newsLinkString = newsLink!
+    }
     
 }
-

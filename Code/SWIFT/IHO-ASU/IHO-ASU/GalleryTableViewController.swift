@@ -58,10 +58,10 @@ class GalleryTableViewController: UITableViewController {
                         if let imageFromJSON = myJSON as? [[String: AnyObject]]{
                             for imageO in imageFromJSON{
                                 let imageObject = Image()
-                                if let title = imageO["title"] as? String,let id = imageO["id"] as? String,let image = imageO["image"] as? String,let order = imageO["order"] as? Double{
+                                if let title = imageO["title"] as? String,let id = imageO["id"] as? String,let imageUrl = imageO["imageUrl"] as? String,let order = imageO["order"] as? Double{
                                     imageObject.id = id
                                     imageObject.title = title
-                                    imageObject.image = image
+                                    imageObject.imageUrl = imageUrl
                                     imageObject.order = order
                                     self.names.append(imageObject.title)
                                 }
@@ -212,10 +212,10 @@ class GalleryTableViewController: UITableViewController {
                         if let imageFromJSON = myJSON as? [[String: AnyObject]]{
                             for imageO in imageFromJSON{
                                 let imageObject = Image()
-                                if let title = imageO["title"] as? String,let id = imageO["id"] as? String,let image = imageO["image"] as? String,let order = imageO["order"] as? Double{
+                                if let title = imageO["title"] as? String,let id = imageO["id"] as? String,let imageUrl = imageO["imageUrl"] as? String,let order = imageO["order"] as? Double{
                                     imageObject.id = id
                                     imageObject.title = title
-                                    imageObject.image = image
+                                    imageObject.imageUrl = imageUrl
                                     imageObject.order = order
                                     self.names.append(imageObject.title)
                                 }
@@ -283,15 +283,36 @@ class GalleryTableViewController: UITableViewController {
         let title = self.names[(indexPath.row)]
         let imageObject = imageList[title]! as Image
         
-        if (imageObject.image != nil)
+        if (imageObject.imageUrl != nil)
         {
-            //base64 string to NSData
-            let decodedData = NSData(base64Encoded: imageObject.image, options: NSData.Base64DecodingOptions(rawValue: 0))
+//            //base64 string to NSData
+//            let decodedData = NSData(base64Encoded: imageObject.image, options: NSData.Base64DecodingOptions(rawValue: 0))
+//
+//            //NSData to UIImage
+//            cell.imageview?.image = UIImage(data: decodedData! as Data)
+//            cell.imageview?.contentMode = .scaleAspectFit
             
-            //NSData to UIImage
-            cell.imageview?.image = UIImage(data: decodedData! as Data)
-            cell.imageview?.contentMode = .scaleAspectFit
+            let imageUrl:URL = URL(string: imageObject.imageUrl)!
+            
+            print(imageUrl)
+            
+            // Start background thread so that image loading does not make app unresponsive
+            DispatchQueue.global(qos: .userInitiated).async {
+                
+                let imageData:NSData = NSData(contentsOf: imageUrl)!
+                //let imageView = UIImageView(frame: CGRect(x:0, y:0, width:200, height:200))
+                //imageView.center = self.view.center
+                
+                // When from background thread, UI needs to be updated on main_queue
+                DispatchQueue.main.async {
+                    let image = UIImage(data: imageData as Data)
+                    cell.imageview.image = image
+                    cell.imageview?.contentMode = .scaleAspectFit
+                }
+            }
+
         }
+        
         return cell
     }
     

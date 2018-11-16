@@ -21,23 +21,9 @@ import UIKit
 
 class TravelViewControlller: UITableViewController {
     @IBOutlet var travelTableView: UITableView!
-    @IBAction func travelMoreLink(_ sender: Any) {
-        
-        newsLink = "https://iho.asu.edu/outreach/travel"
-        
-        let url = URL(string: newsLink!)!
-        
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.openURL(url)
-        }
-        
-    }
     @IBOutlet weak var nTitle: UILabel!
     @IBOutlet weak var nDesc: UILabel!
     @IBOutlet weak var nImage: UIImageView!
-    @IBOutlet weak var travelMoreButton: UIButton!
     
     var newsTitle: String?
     var newsDesc: String?
@@ -56,6 +42,7 @@ class TravelViewControlller: UITableViewController {
         self.nDesc.text = "IHO’s travel program is different from any other travel experience. This is not just travel—it is immersion in the span of human history, hosted by IHO and ASU scientists who add a richer understanding of your travel destination. At the same time, our travel adventures are designed for fun, excitement, and comfort and take advantage of the best accommodations and sailing vessels available in the industry. We partner with top travel providers who are specialists in exotic areas of the world. Plus, tour leaders, such as Bill Kimbel and Don Johanson, have been accompanying our travelers since the 1980s to Ethiopia, France, Galápagos, Madagascar, South Africa, and Tanzania, as well as being seasoned world travelers themselves. From years of experience, we understand the balance between a great travel experience and a rich learning program. In fact, our trips are so unique and engaging that we have many satisfied repeat travelers."
         self.nDesc.lineBreakMode = NSLineBreakMode.byWordWrapping
         self.nDesc.numberOfLines = 0
+        
         
         if (self.newsImage != nil)
         {

@@ -167,9 +167,8 @@ class NewScienceViewController: UITableViewController {
         let title = self.names[(indexPath.row)]
         let scienceObjectToBeSend = newsList[title]! as Science
         
-        
         let url = URL(string: scienceObjectToBeSend.link)!
-        
+
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {
