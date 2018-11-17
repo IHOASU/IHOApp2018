@@ -136,7 +136,7 @@ public class LecturerGalleryFragment extends ListFragment {
                 Gallery img = new Gallery();
                 img.setId(id);
                 img.setImageCaption(title);
-                img.setImg(Base64.decode(image, Base64.DEFAULT));
+                img.setImage(image);
                 img.setOrder(Integer.parseInt(order));
 
                 //Log.i(TAG, i + ": " + img.toString());
@@ -156,7 +156,6 @@ public class LecturerGalleryFragment extends ListFragment {
                     CustomList(this.getActivity(), galleryTitle, galleryItems);
             this.setListAdapter(adapter);
             adapter.notifyDataSetChanged();
-
 
         } catch (JSONException e) {
 
