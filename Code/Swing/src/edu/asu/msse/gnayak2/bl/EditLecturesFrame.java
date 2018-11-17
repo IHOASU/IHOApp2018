@@ -94,6 +94,8 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	
 	public void setUpFrame() {
 
+		galleryDelegate = this;
+
 		JFrame window = new JFrame("Scientist Profile");
 		window.setSize(Constants.WIDTH,Constants.HEIGHT);
 
