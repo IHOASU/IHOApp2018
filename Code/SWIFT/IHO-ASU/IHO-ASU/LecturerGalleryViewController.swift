@@ -93,8 +93,6 @@ class LecturerGalleryViewController: UITableViewController {
                         }
                     }
                 }
-                
-                
             }
             task.resume()
         }
@@ -152,17 +150,32 @@ class LecturerGalleryViewController: UITableViewController {
         
         if (imageObject.image != nil)
         {
-            //base64 string to NSData
-            let decodedData = NSData(base64Encoded: imageObject.image, options: NSData.Base64DecodingOptions(rawValue: 0))
+//            //base64 string to NSData
+//            let decodedData = NSData(base64Encoded: imageObject.image, options: NSData.Base64DecodingOptions(rawValue: 0))
+//
+//            //NSData to UIImage
+//            cell.imageview?.image = UIImage(data: decodedData! as Data)
+//            cell.imageview?.contentMode = .scaleAspectFit
+
+            let image:URL = URL(string: imageObject.image)!
             
-            //NSData to UIImage
-            cell.imageview?.image = UIImage(data: decodedData! as Data)
-            cell.imageview?.contentMode = .scaleAspectFit
+            print(image)
+            
+            // Start background thread so that image loading does not make app unresponsive
+            DispatchQueue.global(qos: .userInitiated).async {
+                
+                let imageData:NSData = NSData(contentsOf: image)!
+                //let imageView = UIImageView(frame: CGRect(x:0, y:0, width:200, height:200))
+                //imageView.center = self.view.center
+                
+                // When from background thread, UI needs to be updated on main_queue
+                DispatchQueue.main.async {
+                    let image = UIImage(data: imageData as Data)
+                    cell.imageview.image = image
+                    cell.imageview?.contentMode = .scaleAspectFit
+                }
+            }
         }
-        
-        
-        
-        
         return cell
     }
     

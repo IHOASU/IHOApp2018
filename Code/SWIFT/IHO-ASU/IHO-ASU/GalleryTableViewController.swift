@@ -298,28 +298,28 @@ class GalleryTableViewController: UITableViewController {
 
             print(image)
 
-            let imageData = NSData(contentsOf: image)
-            let imageinfo = UIImage(data: imageData! as Data)
-            
-            print(imageinfo)
-            
-            cell.imageview.image = imageinfo
-            cell.imageview?.contentMode = .scaleAspectFit
-            
-//            // Start background thread so that image loading does not make app unresponsive
-//            DispatchQueue.global(qos: .userInitiated).async {
+//            let imageData = NSData(contentsOf: image)
+//            let imageinfo = UIImage(data: imageData! as Data)
 //
-//                let imageData:NSData = NSData(contentsOf: image)!
-//                //let imageView = UIImageView(frame: CGRect(x:0, y:0, width:200, height:200))
-//                //imageView.center = self.view.center
+//            print(imageinfo)
 //
-//                // When from background thread, UI needs to be updated on main_queue
-//                DispatchQueue.main.async {
-//                    let image = UIImage(data: imageData as Data)
-//                    cell.imageview.image = image
-//                    cell.imageview?.contentMode = .scaleAspectFit
-//                }
-//            }
+//            cell.imageview.image = imageinfo
+//            cell.imageview?.contentMode = .scaleAspectFit
+            
+            // Start background thread so that image loading does not make app unresponsive
+            DispatchQueue.global(qos: .userInitiated).async {
+
+                let imageData:NSData = NSData(contentsOf: image)!
+                //let imageView = UIImageView(frame: CGRect(x:0, y:0, width:200, height:200))
+                //imageView.center = self.view.center
+
+                // When from background thread, UI needs to be updated on main_queue
+                DispatchQueue.main.async {
+                    let image = UIImage(data: imageData as Data)
+                    cell.imageview.image = image
+                    cell.imageview?.contentMode = .scaleAspectFit
+                }
+            }
 
         }
         return cell
