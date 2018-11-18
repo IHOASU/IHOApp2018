@@ -350,6 +350,7 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	
 		String order_value = Integer.toString(lecture.getOrder());
 		tfOrder.setText(order_value);
+		tfImageUrl.setText(lecture.getImageUrl());
 //		  BufferedImage bufferedImage = convertStringToImage(lecture.getImage());
 //			ImageIcon imageIcon = null;
 			 
