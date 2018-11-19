@@ -18,7 +18,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
@@ -346,44 +345,14 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 		tfLink.setText(lecture.getLink());
 		tfDesc.setText(lecture.getTitle());
 		tfEmail.setText(lecture.getEmail());
-		imageFileButton.setText(lecture.getImage());
-	
+
 		String order_value = Integer.toString(lecture.getOrder());
 		tfOrder.setText(order_value);
 		tfImageUrl.setText(lecture.getImageUrl());
-//		  BufferedImage bufferedImage = convertStringToImage(lecture.getImage());
-//			ImageIcon imageIcon = null;
-			 
-//	        if (bufferedImage != null) {
-//	        	 imageIcon = new ImageIcon(bufferedImage);
-//	        	 Image oldImage = imageIcon.getImage(); // transform it
-//	        	 Image newImage = oldImage.getScaledInstance(80, 80,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way
-//	        	 imageIcon = new ImageIcon(newImage);
-//	        	 JLabel imageLabel = new JLabel(imageIcon);
-//	        	 mainPanel.add(imageLabel);
-//
-//	        }
-//
 
-	        setPreferredSize(new Dimension(180,100));
+		setPreferredSize(new Dimension(180,100));
 	}
-	private BufferedImage convertStringToImage(String base64String) {
-    	BufferedImage image = null;
-    	byte[] imageByte;
-    	imageByte = Base64.getDecoder().decode(base64String);
-    	ByteArrayInputStream bis = new ByteArrayInputStream(imageByte);
-    	try {
-			image = ImageIO.read(bis);
-			bis.close();
-			return image;
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			return null;
-		}     	
 
-    }
-	
 	public boolean validate(final String order){
 		 String ORDER_PATTERN =
 				 "^\\d+$";

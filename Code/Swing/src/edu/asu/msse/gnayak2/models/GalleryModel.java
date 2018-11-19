@@ -7,7 +7,6 @@ import java.util.UUID;
 public class GalleryModel {
 	String id;
 	String title;
-	String image;
     int order;
     String imageUrl;
 
@@ -21,10 +20,7 @@ public class GalleryModel {
 	public GalleryModel(JSONObject object) {
 		id = object.getString("id");
 	    title = object.getString("title");
-		image = object.getString("image");
-       	if(object.has("imageUrl")) {
-			imageUrl = object.getString("imageUrl");
-		}
+		imageUrl = object.getString("imageUrl");
       	order = object.getInt("order");
 	}
 
@@ -50,17 +46,6 @@ public class GalleryModel {
 
 	public void setTitle(String title) {
 		this.title = title;
-	}
-
-	
-	public String getImage()
-	{
-		return image;
-	}
-	
-	public void setImage(String image)
-	{
-		this.image = image;
 	}
 
 	
