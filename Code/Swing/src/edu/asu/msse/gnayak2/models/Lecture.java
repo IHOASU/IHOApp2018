@@ -18,7 +18,6 @@ public class Lecture {
 				   String bio,
 				   String linkMore,
 				   String title,
-				   String image,
 				   String imageUrl,
 				   String email,
 				   int order) {

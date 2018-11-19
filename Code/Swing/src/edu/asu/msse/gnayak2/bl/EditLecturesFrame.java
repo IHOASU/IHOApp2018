@@ -10,18 +10,12 @@ import net.miginfocom.swing.MigLayout;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.IOException;
-import java.util.Base64;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -67,7 +61,6 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	private JTextField imageFileButton;
 	LecturesDelegate lectureDelegate;
 	String filename;
-	String encodedImage;
 	int flag = 0;
 	
 	byte[] imageInByte;
@@ -356,18 +349,18 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	public boolean validate(final String order){
 		 String ORDER_PATTERN =
 				 "^\\d+$";
-		  pattern = Pattern.compile(ORDER_PATTERN);
-  matcher = pattern.matcher(order);
+			  pattern = Pattern.compile(ORDER_PATTERN);
+	  matcher = pattern.matcher(order);
 
-  if(matcher.matches()){
-  System.out.println("Matches");
-	 matcher.reset();
+	  if(matcher.matches()){
+	  System.out.println("Matches");
+		 matcher.reset();
 
-	 return true;
-  }else{
-	  JOptionPane.showMessageDialog(tfOrder, "Please enter an integer value for order");   
-	  return false;
-  }
+		 return true;
+	  }else{
+		  JOptionPane.showMessageDialog(tfOrder, "Please enter an integer value for order");
+		  return false;
+	  }
 }
 	
 	
@@ -377,27 +370,6 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 		btnSubmit.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if(flag==1)
-				{
-				 try{
-                      
-					 	BufferedImage originalImage =
-					                               ImageIO.read(new File(filename));
-			      	 	ByteArrayOutputStream baos = new ByteArrayOutputStream();
-			  		 	ImageIO.write( originalImage, "jpg", baos );
-					 	baos.flush();
-					 	imageInByte = baos.toByteArray();
-				
-
-			            encodedImage = Base64.getEncoder().encodeToString(imageInByte);
-					 	System.out.println("BYTE ARRAY_________"+imageInByte);
-					 	baos.close();
-                       
-                        
-			           	}catch(IOException e1){
-					 		System.out.println(e1.getMessage());
-						 	}
-				}
 				 boolean validate = validate(tfOrder.getText());
 				 if(validate)
 				 {
@@ -408,7 +380,6 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 								 taDescription.getText(),
 								 tfLink.getText(),
 								 tfDesc.getText(),
-								 encodedImage,
 								 convertToStaticDropBoxUrl(tfImageUrl.getText().trim()),
 								 tfEmail.getText(),
 								 ord);
@@ -422,7 +393,6 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 								 taDescription.getText(),
 								 tfLink.getText(),
 								 tfDesc.getText(),
-								 imageFileButton.getText(),
 								 convertToStaticDropBoxUrl(tfImageUrl.getText().trim()),
 								 tfEmail.getText(),
 								 ord);
