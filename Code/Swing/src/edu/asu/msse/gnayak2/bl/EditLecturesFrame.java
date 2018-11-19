@@ -492,17 +492,6 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	            boolean isSelected, boolean cellHasFocus) {
 	    	
 	        String code = galleryModel.getTitle();
-	        BufferedImage bufferedImage = convertStringToImage(galleryModel.getImage());
-	        ImageIcon imageIcon = null;
-	        if (bufferedImage != null) {
-	        	 imageIcon = new ImageIcon(bufferedImage);
-	        	 imageIcon = new ImageIcon(bufferedImage);
-	        	 Image oldImage = imageIcon.getImage(); // transform it 
-	        	 Image newImage = oldImage.getScaledInstance(100, 100,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
-	        	 imageIcon = new ImageIcon(newImage); 
-	        }
-	        
-	        setIcon(imageIcon);
 	        setPreferredSize(new Dimension(180,100));
 	        setText(code);
 	        setToolTipText(code);
@@ -517,23 +506,7 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	 
 	        return this;
 	    }
-	    
-	    private BufferedImage convertStringToImage(String base64String) {
-	    	BufferedImage image = null;
-	    	byte[] imageByte;
-	    	imageByte = Base64.getDecoder().decode(base64String);
-	    	ByteArrayInputStream bis = new ByteArrayInputStream(imageByte);
-	    	try {
-				image = ImageIO.read(bis);
-				bis.close();
-				return image;
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				return null;
-			}     	
 
-	    }
 	}
 	@Override
 	public void addGallery(GalleryModel gallery) {
