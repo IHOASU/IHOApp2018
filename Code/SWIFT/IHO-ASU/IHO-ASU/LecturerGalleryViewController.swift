@@ -77,7 +77,7 @@ class LecturerGalleryViewController: UITableViewController {
                                         let imageObject = Image()
                                         imageObject.title = aObject["title"] as! String
                                         imageObject.id =  aObject["id"] as! String
-                                        imageObject.image = aObject["image"] as! String
+                                        imageObject.imageUrl = aObject["imageUrl"] as! String
                                         imageObject.order = aObject["order"] as! Double
                                         self.names.append(imageObject.title)
                                         self.imageList[imageObject.title] = imageObject
@@ -148,7 +148,7 @@ class LecturerGalleryViewController: UITableViewController {
         let title = self.names[(indexPath.row)]
         let imageObject = imageList[title]! as Image
         
-        if (imageObject.image != nil)
+        if (imageObject.imageUrl != nil)
         {
 //            //base64 string to NSData
 //            let decodedData = NSData(base64Encoded: imageObject.image, options: NSData.Base64DecodingOptions(rawValue: 0))
@@ -157,7 +157,7 @@ class LecturerGalleryViewController: UITableViewController {
 //            cell.imageview?.image = UIImage(data: decodedData! as Data)
 //            cell.imageview?.contentMode = .scaleAspectFit
 
-            let image:URL = URL(string: imageObject.image)!
+            let image:URL = URL(string: imageObject.imageUrl)!
             
             print(image)
             

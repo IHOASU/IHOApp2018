@@ -58,11 +58,10 @@ class GalleryTableViewController: UITableViewController {
                         if let imageFromJSON = myJSON as? [[String: AnyObject]]{
                             for imageO in imageFromJSON{
                                 let imageObject = Image()
-                                if let title = imageO["title"] as? String,let id = imageO["id"] as? String,let image = imageO["image"] as? String, let order = imageO["order"] as? Double{
+                                if let title = imageO["title"] as? String,let id = imageO["id"] as? String,let imageUrl = imageO["imageUrl"] as? String, let order = imageO["order"] as? Double{
                                     imageObject.id = id
                                     imageObject.title = title
-                                    imageObject.image = image
-//                                    imageObject.imageUrl = imageUrl
+                                    imageObject.imageUrl = imageUrl
                                     imageObject.order = order
                                     self.names.append(imageObject.title)
                                 }
@@ -213,11 +212,10 @@ class GalleryTableViewController: UITableViewController {
                         if let imageFromJSON = myJSON as? [[String: AnyObject]]{
                             for imageO in imageFromJSON{
                                 let imageObject = Image()
-                                if let title = imageO["title"] as? String,let id = imageO["id"] as? String,let image = imageO["image"] as? String,let order = imageO["order"] as? Double{
+                                if let title = imageO["title"] as? String,let id = imageO["id"] as? String,let imageUrl = imageO["imageUrl"] as? String,let order = imageO["order"] as? Double{
                                     imageObject.id = id
                                     imageObject.title = title
-                                    imageObject.image = image
-//                                    imageObject.imageUrl = imageUrl
+                                    imageObject.imageUrl = imageUrl
                                     imageObject.order = order
                                     self.names.append(imageObject.title)
                                 }
@@ -285,7 +283,7 @@ class GalleryTableViewController: UITableViewController {
         let title = self.names[(indexPath.row)]
         let imageObject = imageList[title]! as Image
         
-        if (imageObject.image != nil)
+        if (imageObject.imageUrl != nil)
         {
 //            //base64 string to NSData
 //            let decodedData = NSData(base64Encoded: imageObject.image, options: NSData.Base64DecodingOptions(rawValue: 0))
@@ -294,7 +292,7 @@ class GalleryTableViewController: UITableViewController {
 //            cell.imageview?.image = UIImage(data: decodedData! as Data)
 //            cell.imageview?.contentMode = .scaleAspectFit
             
-            let image:URL = URL(string: imageObject.image)!
+            let image:URL = URL(string: imageObject.imageUrl)!
 
             print(image)
 
