@@ -127,7 +127,7 @@ public class GalleryFragment extends ListFragment {
             Files.write(jsonArray.toString().getBytes(), file);
 
             Log.i(TAG, "parseJSONResult");
-            String id = null, image = null, title = null, order = null;
+            String id = null, imageUrl = null, title = null, order = null;
             JSONCache.galleryMap.clear();
             JSONCache.galleryIds.clear();
 
@@ -146,7 +146,7 @@ public class GalleryFragment extends ListFragment {
                     title = obj.getString(IMAGE_TITLE);
                 }
                 if (!obj.isNull(IMAGE)) {
-                    image = obj.getString(IMAGE);
+                    imageUrl = obj.getString(IMAGE);
                 }
 
                 if (!obj.isNull(IMAGE_ORDER)) {
@@ -156,7 +156,7 @@ public class GalleryFragment extends ListFragment {
                 Gallery img = new Gallery();
                 img.setId(id);
                 img.setImageCaption(title);
-                img.setImage(image);
+                img.setImageUrl(imageUrl);
                 img.setOrder(Integer.parseInt(order));
 
                 galleryMap.put(img.getId(), img);
@@ -171,7 +171,7 @@ public class GalleryFragment extends ListFragment {
 
             for(Gallery img: gallery) {
                 Log.i(TAG, img.toString());
-                galleryItems.add(img.getImage());
+                galleryItems.add(img.getImageUrl());
                 galleryTitle.add(img.getImageCaption());
                 galleryIds.add(img.getId());
             }
@@ -294,7 +294,7 @@ public class GalleryFragment extends ListFragment {
             Collections.sort(imageList,  new ImageComparator());
             for (Gallery img: imageList) {
                 galleryTitle.add(img.getImageCaption());
-                galleryItems.add(img.getImage());
+                galleryItems.add(img.getImageUrl());
             }
 
             CustomList adapter = new
@@ -333,7 +333,7 @@ public class GalleryFragment extends ListFragment {
             Gallery[] imgArray = gson.fromJson(contents, Gallery[].class);
 
             for (Gallery img: imgArray) {
-                img.setImage(img.getImage());
+                img.setImageUrl(img.getImageUrl());
                 Log.i(TAG,img.toString());
 
                 galleryMap.put(img.getId(),img);
@@ -345,7 +345,7 @@ public class GalleryFragment extends ListFragment {
             Collections.sort(imgList,  new ImageComparator());
             for (Gallery gallery: imgList) {
                 galleryTitle.add(gallery.getImageCaption());
-                galleryItems.add(gallery.getImage());
+                galleryItems.add(gallery.getImageUrl());
             }
 
             CustomList adapter = new

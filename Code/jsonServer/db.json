@@ -441,55 +441,55 @@
   ],
   "galleryobjects": [
     {
-      "image": "https://dl.dropboxusercontent.com/s/0ib28hxc1q8p90k/08%20dcj9449.jpg?dl=0",
+      "imageUrl": "https://dl.dropboxusercontent.com/s/0ib28hxc1q8p90k/08%20dcj9449.jpg?dl=0",
       "id": "d202417c87e740bfb420e6d31cc76f0a",
       "title": "Looking from inside the cave out to the ocean.",
       "order": 8
     },
     {
-      "image": "https://dl.dropboxusercontent.com/s/xvqli5ctkyg50sk/10%20drilling-W%20Turkana%20summer%202013.jpg?dl=0/s/w4sfcr3whgekk4c/09%20DCJ%209415-resized.jpg?dl=0",
+      "imageUrl": "https://dl.dropboxusercontent.com/s/xvqli5ctkyg50sk/10%20drilling-W%20Turkana%20summer%202013.jpg?dl=0/s/w4sfcr3whgekk4c/09%20DCJ%209415-resized.jpg?dl=0",
       "id": "4f40cc5bfc4d4c94b9dfdc5a346ed8e7",
       "title": "International teams drilled in five locations in Africa near important human origins discovery sites.",
       "order": 10
     },
     {
-      "image": "https://dl.dropboxusercontent.com/s/qh2h7b7ubqnbkd2/11%20Olorg2012_DSCN12690306_JClark.jpg?dl=0",
+      "imageUrl": "https://dl.dropboxusercontent.com/s/qh2h7b7ubqnbkd2/11%20Olorg2012_DSCN12690306_JClark.jpg?dl=0",
       "id": "e9159751235341999d4ae4175100bad2",
       "title": "Long cores will be analyzed over deep time to consider how human ancestors cope with climate change.",
       "order": 11
     },
     {
-      "image": "https://dl.dropboxusercontent.com/s/w4sfcr3whgekk4c/09%20DCJ%209415-resized.jpg?dl=0",
+      "imageUrl": "https://dl.dropboxusercontent.com/s/w4sfcr3whgekk4c/09%20DCJ%209415-resized.jpg?dl=0",
       "id": "ca64d1dafc304004bb25ca589262ff4f",
       "title": "Excavations in the cave have uncovered over 50,000 years of human habitation including shells, stone tools, and evidence of fire activity.",
       "order": 9
     },
     {
-      "image": "https://dl.dropboxusercontent.com/s/iy7knruq4yj4ubr/12%20photo%201%20Abrams%20web.jpg?dl=0",
+      "imageUrl": "https://dl.dropboxusercontent.com/s/iy7knruq4yj4ubr/12%20photo%201%20Abrams%20web.jpg?dl=0",
       "id": "a22cbf65f4304a1f984849cc36b87158",
       "title": "Understanding primate behavior can help researchers understand how early hominins interacted with each other and their environment. ",
       "order": 12
     },
     {
-      "image":"https://dl.dropboxusercontent.com/s/m1o6wdcj54o7dtt/04%20Hadar%20Camp.jpg?dl=0",
+      "imageUrl":"https://dl.dropboxusercontent.com/s/m1o6wdcj54o7dtt/04%20Hadar%20Camp.jpg?dl=0",
       "id": "1baa870215a64b98b70c02f5d0a02845",
       "title": "Camp Hadar, Ethiopia, where scientists set up for the field season.",
       "order": 2
     },
     {
-      "image": "https://dl.dropboxusercontent.com/s/s0dmvrg02sos1m3/06%20hadar2009_318.JPG?dl=0",
+      "imageUrl": "https://dl.dropboxusercontent.com/s/s0dmvrg02sos1m3/06%20hadar2009_318.JPG?dl=0",
       "id": "ebe3e7a2c8c04879a9549a03f3a82ef2",
       "title": "Finding fossils among rocks and dirt is a tedious, but potentially rewarding, experience",
       "order": 3
     },
     {
-      "image":"https://dl.dropboxusercontent.com/s/0zsb3i7utqwrnus/01%20skull%20image%20w%20logo.jpg?dl=0",
+      "imageUrl":"https://dl.dropboxusercontent.com/s/0zsb3i7utqwrnus/01%20skull%20image%20w%20logo.jpg?dl=0",
       "id": "0a908e053bd442f49a0b19c6ab60690a",
       "title": "Welcome to the IHO Image Gallery",
       "order": 1
     },
     {
-      "image" : "https://dl.dropboxusercontent.com/s/72c6gpogjk2fth1/02%20LUCY%20cleaned.jpg?dl=0",
+      "imageUrl" : "https://dl.dropboxusercontent.com/s/72c6gpogjk2fth1/02%20LUCY%20cleaned.jpg?dl=0",
       "id": "fd6ac4f292034557b0eef65fc9e3c4bf",
       "title": "“Lucy” is the popular name for the 3.2-million-year-old fossil skeleton—Australopithecus afarensis—discovered by Donald Johanson in Hadar, Ethiopia, in 1974.",
       "order": 2
@@ -551,19 +551,19 @@
     {
       "imagesarray": [
         {
-          "image": "https://dl.dropboxusercontent.com/s/3g0k9fapbyyj90g/01%20hadar2009_287.JPG",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/3g0k9fapbyyj90g/01%20hadar2009_287.JPG",
           "id": "f24210c3616f49848cc13f26be2d4e06",
           "title": "Bill Kimbel leads fieldwork in Hadar, Ethiopia, to train the next generation of paleoanthropologists.",
           "order": 1
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/ahx9uv2yi4pxsjg/03%20hadar2009_472.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/ahx9uv2yi4pxsjg/03%20hadar2009_472.jpg",
           "id": "4a58d4305e974f1a953373f58d9a330d",
           "title": "Some learning techniques have to be experienced firsthand—in the field, Kimbel explains how to identify fossil material from surrounding rock and dirt.",
           "order": 3
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/udgzkr5vz1gzupq/04%20bill%20neil%20don-windfall.JPG",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/udgzkr5vz1gzupq/04%20bill%20neil%20don-windfall.JPG",
           "id": "979e00fe3db54c75a5825953f45b2ba7",
           "title": "In 2013, Neil Shubin brought a film production company to Hadar to feature IHO’s research in the “Your Inner Fish” series for PBS. Featured are Kimbel, Shubin, and Donald Johanson.",
           "order": 4
@@ -574,31 +574,31 @@
     {
       "imagesarray": [
         {
-          "image": "https://dl.dropboxusercontent.com/s/a4te42vjlgehpcy/04%20Lucy%20site%20wDon%20Pete%20Carol%202012.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/a4te42vjlgehpcy/04%20Lucy%20site%20wDon%20Pete%20Carol%202012.jpg",
           "id": "779e0fb029b74eefaae5603470d6dea1",
           "title": "A plaque has been erected identifying the site of the Lucy discovery—now more than 40 years ago. Featured are IHO Executive Board members Peter and Carol Saucier, with Johanson on an IHO trip to Ethiopia in 2012.",
           "order": 4
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/3znm093vz2ow64p/02%20DCJ-LUCY053%2015mb.tif",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/3znm093vz2ow64p/02%20DCJ-LUCY053%2015mb.tif",
           "id": "b9bc9b96d169412caac54c0d23f0891f",
           "title": "Johanson, here with the complete Lucy fossil skeleton, c.1975.",
           "order": 2
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/5ia5uwvp4tkouqm/05%20bowers%203-30%203.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/5ia5uwvp4tkouqm/05%20bowers%203-30%203.jpg",
           "id": "632c537d8a144736878b24bb764987ee",
           "title": "IHO Executive Board members Mrs. Kenneth Leventhal, Laura Roskind, Don Johanson, Bobby Kimbel, Joan Travis, and Herb Roskind at the Bower’s Museum in California with the original “Lucy” fossil bones on its final U.S. museum visit in 2014 before returning to the National Museum of Ethiopia.",
           "order": 5
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/y3fr0d0bz1xqonq/03%20DCJlecture.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/y3fr0d0bz1xqonq/03%20DCJlecture.jpg",
           "id": "ce84fb5d6bc44363bbb8bf9df43990da",
           "title": "Johanson at the Nobel Symposium in 1978 announcing a new species—Australopithecus afarensis.",
           "order": 3
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/6o1qf855obwr9q1/01%20Johanson%20%20w%20Lucy%201974.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/6o1qf855obwr9q1/01%20Johanson%20%20w%20Lucy%201974.jpg",
           "id": "cadc1784db0149ae8d658412e54a1162",
           "title": "Don Johanson discovered the fossil known as “Lucy” in Hadar, Ethiopia, in 1974. Here, he is laying out the bones in the field.",
           "order": 1
@@ -609,37 +609,37 @@
     {
       "imagesarray": [
         {
-          "image": "https://dl.dropboxusercontent.com/s/87w235oq6j9i2xp/marean.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/87w235oq6j9i2xp/marean.jpg",
           "id": "b8180bf8f28f43cba43890edf481c92c",
           "title": "Curtis Marean’s research is focused on the archaeological remains of early modern humans in caves at the tip of South Africa in Mossel Bay.",
           "order": 1
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/87w235oq6j9i2xp/marean.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/87w235oq6j9i2xp/marean.jpg",
           "id": "e764e0fe8c1a4ea6a118fae6504a9149",
           "title": "Students learn the careful excavation techniques required to ensure artifacts are preserved and recorded properly.",
           "order": 4
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/87w235oq6j9i2xp/marean.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/87w235oq6j9i2xp/marean.jpg",
           "id": "0ff79db58841441195843dee7be5a879",
           "title": "Marean is a leader in digital mapping techniques to pinpoint and identify where artifacts are uncovered during excavation.",
           "order": 2
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/87w235oq6j9i2xp/marean.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/87w235oq6j9i2xp/marean.jpg",
           "id": "4798371a0191427490aff1f6df3efd9f",
           "title": "The research site hosts a variety of international scientists but is also the classroom for students from ASU and around the world to learn about archaeology and paleontology.",
           "order": 3
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/87w235oq6j9i2xp/marean.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/87w235oq6j9i2xp/marean.jpg",
           "id": "844b3d70adb34a4fb5e2b168a83c2da4",
           "title": "Excavations have uncovered over 50,000 years of human habitation in these caves.",
           "order": 5
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/87w235oq6j9i2xp/marean.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/87w235oq6j9i2xp/marean.jpg",
           "id": "6f2ff3bd06ee4960a90760f1fe37ca3c",
           "title": "Students learn the careful excavation techniques required to ensure artifacts are preserved and recorded properly.",
           "order": 6
@@ -650,19 +650,19 @@
     {
       "imagesarray": [
         {
-          "image": "https://dl.dropboxusercontent.com/s/0yi2yfcee8h2t5k/01%20RobFiji600.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/0yi2yfcee8h2t5k/01%20RobFiji600.jpg",
           "id": "bd89a07086fd4bfa8aa3cfed0f312ece",
           "title": "Rob Boyd’s fieldwork takes him to the islands of Fiji to understand how culture influences human behavior.",
           "order": 1
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/ebbv2e84zg7hc3z/03%20IMG_4138.JPG",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/ebbv2e84zg7hc3z/03%20IMG_4138.JPG",
           "id": "dec5266f4f0049ec956c738929762923",
           "title": "Boyd camping among the rocks.",
           "order": 3
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/hb7wqzfmblpdepf/02%20IMG_1511.JPG",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/hb7wqzfmblpdepf/02%20IMG_1511.JPG",
           "id": "3a6914dd40bc4cd58c8acdca33fea33e",
           "title": "Boyd spends time out of the classroom rock climbing and hiking.",
           "order": 2
@@ -673,19 +673,19 @@
     {
       "imagesarray": [
         {
-          "image": "https://dl.dropboxusercontent.com/s/dxcnw9lnnhrcgof/01%20hadar2009_401.JPG",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/dxcnw9lnnhrcgof/01%20hadar2009_401.JPG",
           "id": "95f97334cc864d1d8c1599e79d39d045",
           "title": "Chris Campisano shares his training as a geologist with students in the field in Hadar, Ethiopia.",
           "order": 1
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/jk2ib78vxocc6kl/03%20Olorg2012_DSCN12690306_JClark.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/jk2ib78vxocc6kl/03%20Olorg2012_DSCN12690306_JClark.jpg",
           "id": "d1c6f102b54e4d9293d0e6cac7268f63",
           "title": "The scientists hope to analyze the climate across several million years to understand how climate change may correlate with how our human ancestors evolved and changed.",
           "order": 3
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/no5mt46o96dsukz/04%20Chris%20hadar2009_338.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/no5mt46o96dsukz/04%20Chris%20hadar2009_338.jpg",
           "id": "0d51b7253f3f438ebe6c630a51733fb7",
           "title": "Campisano works late into the night at the Hadar field site getting ready for the next day’s field research.",
           "order": 4
@@ -702,19 +702,19 @@
     {
       "imagesarray": [
         {
-          "image": "https://dl.dropboxusercontent.com/s/r1v1ri3qp0nu9xt/01%20Field%20Ian%203.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/r1v1ri3qp0nu9xt/01%20Field%20Ian%203.jpg",
           "id": "fbdbfb6a98094d959df1d9884ed9ead4",
           "title": "Ian Gilby is a codirector of the long-term Gombe chimpanzee database of the Jane Goodall Institute in Tanzania.",
           "order": 1
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/koksrna6z0x4knl/03%20field_ian.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/koksrna6z0x4knl/03%20field_ian.jpg",
           "id": "49dc7ff67631448d8860681db512d436",
           "title": "Gilby spends weeks in the forest observing and recording how particular male hunters influence the entire group’s hunting behavior. ",
           "order": 3
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/ig8ejzu3xxk1xw4/02%20field_ian-2.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/ig8ejzu3xxk1xw4/02%20field_ian-2.jpg",
           "id": "e1939c773dae4178980f835b9c1db9b9",
           "title": "Gilby’s research focuses on male chimpanzee cooperation and social bonds.",
           "order": 2
@@ -725,19 +725,19 @@
     {
       "imagesarray": [
         {
-          "image": "https://dl.dropboxusercontent.com/s/2kzsx2zghczzmif/03%20Paraguay%20072a.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/2kzsx2zghczzmif/03%20Paraguay%20072a.jpg",
           "id": "22655656fe064215bc07cf85e65f8c46",
           "title": "Hill at a community gathering with the Ache, a group in Paraguay that he has worked with for many years. ",
           "order": 3
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/4459lt8lrkjcwgq/02%20302.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/4459lt8lrkjcwgq/02%20302.jpg",
           "id": "b14bf4bbc2714d38ae50861ffa11b13f",
           "title": "Hill listens to a group of men before they leave for a hunt.",
           "order": 2
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/xwymejhwih26bn3/01%20DSC_0225.JPG",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/xwymejhwih26bn3/01%20DSC_0225.JPG",
           "id": "0971cbb7850a4ddfbd44d5d598bf0786",
           "title": "Kim Hill has spent many research years living with indigenous hunter-gatherer communities in South America.",
           "order": 1
@@ -748,13 +748,13 @@
     {
       "imagesarray": [
         {
-          "image": "https://dl.dropboxusercontent.com/s/uz8cvj9gpp9a50k/langergraber.jpeg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/uz8cvj9gpp9a50k/langergraber.jpeg",
           "id": "9c722f2f7bd64894ac4778d6862bbfa7",
           "title": "Kevin Langergraber follows groups of chimpanzees to observe their hunting and meat-sharing behaviors.",
           "order": 1
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/uz8cvj9gpp9a50k/langergraber.jpeg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/uz8cvj9gpp9a50k/langergraber.jpeg",
           "id": "be866897f7b74f91b3c071d08268f171",
           "title": "Langergraber is co-director of the Ngogo Chimpanzee Project. Here, he expertly captures many of his subjects in his camera lense—this is Abrams.",
           "order": 2
@@ -765,7 +765,7 @@
     {
       "imagesarray": [
         {
-          "image": "https://dl.dropboxusercontent.com/s/6cc725ryy0swaxp/mathew.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/6cc725ryy0swaxp/mathew.jpg",
           "id": "71c30428f70041eaaaf8278b2595dcf2",
           "title": "Sarah Mathew’s research focuses on evolution and human behavior, cooperation, and warfare.",
           "order": 1
@@ -776,7 +776,7 @@
     {
       "imagesarray": [
         {
-          "image": "https://dl.dropboxusercontent.com/s/zezxr9i7hxg0v66/morgan.jpeg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/zezxr9i7hxg0v66/morgan.jpeg",
           "id": "4bdf43afb20a4db9bd547ff11e3510a7",
           "title": "Tom Morgan spends his time outside of the classroom hiking and rock climbing.",
           "order": 1
@@ -787,13 +787,13 @@
     {
       "imagesarray": [
         {
-          "image": "https://dl.dropboxusercontent.com/s/n3pr32bvej40kvr/perreault.jpeg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/n3pr32bvej40kvr/perreault.jpeg",
           "id": "011f740a6c584126ab1107b9abafd960",
           "title": "Perreault, along with archaeologists from Mongolia, excavated potential sites in Darkhad Valley of northern Mongolia in search of a newly discovered ancient hominin species called Denisovans.",
           "order": 1
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/n3pr32bvej40kvr/perreault.jpeg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/n3pr32bvej40kvr/perreault.jpeg",
           "id": "8855a21239744e7791d741954d618db3",
           "title": "Charles Perreault’s research site is at cave sites in the hills of Mongolia where he is looking for evidence of the Denisovans.",
           "order": 2
@@ -804,19 +804,19 @@
     {
       "imagesarray": [
         {
-          "image": "https://dl.dropboxusercontent.com/s/qleil7d1oivffh2/03%20hadar2009_184.JPG",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/qleil7d1oivffh2/03%20hadar2009_184.JPG",
           "id": "b3c87e6a1bcd4311b7160b245461934c",
           "title": "Reed was co-leader of the team that found a jawbone dated to 2.8 million years ago, about 400,000 years earlier than previously known fossils of Homo.",
           "order": 3
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/q9apnss1lyvu66n/02%20hadar2009_219.JPG",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/q9apnss1lyvu66n/02%20hadar2009_219.JPG",
           "id": "781a4dc2e5be4693a76fd825b7cb4679",
           "title": "Reed’s research is focused on understanding the environment—the plant and animal life—that ancient human ancestors lived in.",
           "order": 2
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/jrrph0x47x6djli/01%20IMG_2175.JPG",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/jrrph0x47x6djli/01%20IMG_2175.JPG",
           "id": "ec68e402d7584d25a44f27ae9d32f73e",
           "title": "Kaye Reed was named director of the School of Human Evolution and Social Change in 2016 and ASU President’s Professor in 2014. Here, President Crow presents Reed with the award.",
           "order": 1
@@ -827,19 +827,19 @@
     {
       "imagesarray": [
         {
-          "image": "https://dl.dropboxusercontent.com/s/brw6czgu2n0omrt/03%20Gary%20laying%20down%20the%20law.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/brw6czgu2n0omrt/03%20Gary%20laying%20down%20the%20law.jpg",
           "id": "b08603ab46f44609a315184ae7fc0e35",
           "title": "Schwartz has conducted field research in South Africa and Ethiopia.",
           "order": 3
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/hfa1jvfefu5ggpx/02%20vonEbner%20lines-Pongo%20x40-3.tif",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/hfa1jvfefu5ggpx/02%20vonEbner%20lines-Pongo%20x40-3.tif",
           "id": "1984a5ed5f34442eb62fb82599c9a553",
           "title": "Developing teeth grow layers, similar to rings on a tree, which tell the story of an individual’s life history.",
           "order": 2
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/8m7gqb8vdj0dpw1/01%20IMG_2291.JPG",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/8m7gqb8vdj0dpw1/01%20IMG_2291.JPG",
           "id": "f5c5625ac6b241388ef479ac25e1e008",
           "title": "Gary Schwartz’s research analyzes modern human and ancient human ancestors’ and primate teeth to provide clues to what our ancestors ate and how they developed and grew over their life histories.",
           "order": 1
@@ -850,19 +850,19 @@
     {
       "imagesarray": [
         {
-          "image": "https://dl.dropboxusercontent.com/s/s9wfywlbp6hx39a/01%20Silk%20book%20cover%20front%20lores.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/s9wfywlbp6hx39a/01%20Silk%20book%20cover%20front%20lores.jpg",
           "id": "497af6c539af4e88a7c812ea76bba1e1",
           "title": "Joan Silk is the coauthor of The Evolution of Primate Societies.",
           "order": 1
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/02qrk18i5i30uzl/03%20JBS%20%26%20BABOON.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/02qrk18i5i30uzl/03%20JBS%20%26%20BABOON.jpg",
           "id": "8edb0ff74ffe46aa89db5019c41c7ef9",
           "title": "Silk has spent many field seasons following and understanding wild baboons in the field. ",
           "order": 3
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/bhgflsggs5fzd3s/02%20being_groomed._small.jpg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/bhgflsggs5fzd3s/02%20being_groomed._small.jpg",
           "id": "2534ab1ddfd9459cbff536923b35ca87",
           "title": "Silk’s research focuses on the prosocial behaviors of baboons. ",
           "order": 2
@@ -873,13 +873,13 @@
     {
       "imagesarray": [
         {
-          "image": "https://dl.dropboxusercontent.com/s/otjegp41m0edhpc/stone.jpeg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/otjegp41m0edhpc/stone.jpeg",
           "id": "bdd39863027e430cadf4ff1bab9eec91",
           "title": "Anne Stone runs the \"Stone Lab\" at ASU, which has a central focus of anthropological genetics.",
           "order": 1
         },
         {
-          "image": "https://dl.dropboxusercontent.com/s/otjegp41m0edhpc/stone.jpeg",
+          "imageUrl": "https://dl.dropboxusercontent.com/s/otjegp41m0edhpc/stone.jpeg",
           "id": "570f6567690c45e3a4702cf3a9a08b12",
           "title": "In the lab, undergraduate and graduate students learn cross-disciplinary research in bioarchaeological, molecular genetic, population genetic, and genomic analyses.",
           "order": 2

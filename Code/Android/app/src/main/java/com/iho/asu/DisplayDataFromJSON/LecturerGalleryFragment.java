@@ -109,7 +109,7 @@ public class LecturerGalleryFragment extends ListFragment {
         try {
 
             Log.i(TAG, "parseJSONResult");
-            String id = null, image = null, title = null, order = null;
+            String id = null, imageUrl = null, title = null, order = null;
 
 
             List<Gallery> gallery = new ArrayList<Gallery>();
@@ -126,7 +126,7 @@ public class LecturerGalleryFragment extends ListFragment {
                 }
 
                 if (!obj.isNull(IMAGE)) {
-                    image = obj.getString(IMAGE);
+                    imageUrl = obj.getString(IMAGE);
                 }
 
                 if (!obj.isNull(IMAGE_ORDER)) {
@@ -136,7 +136,7 @@ public class LecturerGalleryFragment extends ListFragment {
                 Gallery img = new Gallery();
                 img.setId(id);
                 img.setImageCaption(title);
-                img.setImage(image);
+                img.setImageUrl(imageUrl);
                 img.setOrder(Integer.parseInt(order));
 
                 //Log.i(TAG, i + ": " + img.toString());
@@ -148,7 +148,7 @@ public class LecturerGalleryFragment extends ListFragment {
             Collections.sort(gallery, new ImageComparator());
             for(Gallery img: gallery) {
                 Log.i(TAG, img.toString());
-                galleryItems.add(img.getImage());
+                galleryItems.add(img.getImageUrl());
                 galleryTitle.add(img.getImageCaption());
             }
 

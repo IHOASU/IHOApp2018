@@ -51,11 +51,11 @@ public class IHOConstants {
 
     public static final String IMAGE_TITLE = "title";
     public static final String IMAGE_ID = "id";
-    public static final String IMAGE = "image";
+    public static final String IMAGE = "imageUrl";
     public static final String IMAGE_ORDER = "order";
 
     public static final String LECTURER_TITLE = "title";
-    public static final String LECTURER_IMAGE = "image";
+    public static final String LECTURER_IMAGE = "imageUrl";
     public static final String LECTURER_IMAGE_URL = "imageUrl";
     public static final String LECTURER_ID = "id";
     public static final String LECTURER_LINK = "link";
