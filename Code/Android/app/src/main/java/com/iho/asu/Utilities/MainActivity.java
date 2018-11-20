@@ -15,10 +15,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.iho.asu.DisplayDataFromJSON.EventsFragment;
 import com.iho.asu.DisplayDataFromJSON.GalleryFragment;
 import com.iho.asu.DisplayDataFromJSON.LecturerFragment;
-import com.iho.asu.DisplayDataFromJSON.NewsFragment;
 import com.iho.asu.DisplayDataFromJSON.PerFeaturedNewsViewFragment;
 import com.iho.asu.DisplayDataFromJSON.ScienceFragment;
 import com.iho.asu.DisplayDataFromJSON.TravelFragment;
@@ -334,3 +332,4 @@ public class MainActivity extends Activity implements OnClickListener{
         }
     }
 }
+
