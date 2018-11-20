@@ -370,17 +370,6 @@
       "email": "robert.boyd.1@asu.edu",
       "order": 4,
       "imageUrl": "https://dl.dropboxusercontent.com/s/d0duvt4a5lq17yl/boyd.jpg"
-    },
-    {
-      "image": "",
-      "imageUrl": "https://dl.dropboxusercontent.com/s/d0duvt4a5lq17yl/boyd.jpg",
-      "link": "http://dixithk.com",
-      "name": "Dixith",
-      "bio": "khjk;fh",
-      "id": "a6698c316cb74dc9ba843a1ceb1f26f9",
-      "title": "Hello",
-      "email": "hello@gmail.com",
-      "order": 100
     }
   ],
   "lectureid": [
@@ -547,7 +536,7 @@
       "id": "anothername"
     }
   ],
-  "lectureimages": [
+ "lectureimages": [
     {
       "imagesarray": [
         {
@@ -894,10 +883,6 @@
     {
       "imagesarray": [],
       "id": "melissa.wilsonsayres@asu.edu"
-    },
-    {
-      "imagesarray": [],
-      "id": "hello@gmail.com"
     }
   ]
 }

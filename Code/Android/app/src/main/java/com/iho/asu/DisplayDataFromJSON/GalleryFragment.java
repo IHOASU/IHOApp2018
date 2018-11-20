@@ -9,6 +9,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,6 +44,7 @@ import static com.iho.asu.Constants.IHOConstants.IMAGE;
 import static com.iho.asu.Constants.IHOConstants.IMAGE_ID;
 import static com.iho.asu.Constants.IHOConstants.IMAGE_ORDER;
 import static com.iho.asu.Constants.IHOConstants.IMAGE_TITLE;
+
 import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 
@@ -80,10 +82,12 @@ public class GalleryFragment extends ListFragment {
         toast.setView(layout);
         toast.show();
 
+
         Log.i(TAG, "fetching Contents...");
         if (JSONCache.galleryIds.size() == 0) {
             //Cache Empty, Fetch  News Objects
             Log.i(TAG,"Cache Empty, Fetch  News Objects...");
+            super.onCreate(savedInstanceState);
             getGalleryJson();
         } else {
             //Cache not empty, checking if contents are modified
@@ -123,7 +127,7 @@ public class GalleryFragment extends ListFragment {
             Files.write(jsonArray.toString().getBytes(), file);
 
             Log.i(TAG, "parseJSONResult");
-            String id = null, image = null, title = null, order = null;
+            String id = null, imageUrl = null, title = null, order = null;
             JSONCache.galleryMap.clear();
             JSONCache.galleryIds.clear();
 
@@ -141,9 +145,8 @@ public class GalleryFragment extends ListFragment {
                 if (!obj.isNull(IMAGE_TITLE)) {
                     title = obj.getString(IMAGE_TITLE);
                 }
-
                 if (!obj.isNull(IMAGE)) {
-                    image = obj.getString(IMAGE);
+                    imageUrl = obj.getString(IMAGE);
                 }
 
                 if (!obj.isNull(IMAGE_ORDER)) {
@@ -153,10 +156,9 @@ public class GalleryFragment extends ListFragment {
                 Gallery img = new Gallery();
                 img.setId(id);
                 img.setImageCaption(title);
-                img.setImg(Base64.decode(image, Base64.DEFAULT));
+                img.setImageUrl(imageUrl);
                 img.setOrder(Integer.parseInt(order));
 
-                //Log.i(TAG, i + ": " + img.toString());
                 galleryMap.put(img.getId(), img);
 
             }
@@ -165,11 +167,11 @@ public class GalleryFragment extends ListFragment {
             Collections.sort(gallery, new ImageComparator());
 
             ArrayList<String> galleryTitle = new ArrayList<String>();
-            ArrayList<byte[]> galleryItems = new ArrayList<byte[]>();
+            ArrayList<String> galleryItems = new ArrayList<String>();
 
             for(Gallery img: gallery) {
                 Log.i(TAG, img.toString());
-                galleryItems.add(img.getImg());
+                galleryItems.add(img.getImageUrl());
                 galleryTitle.add(img.getImageCaption());
                 galleryIds.add(img.getId());
             }
@@ -285,14 +287,14 @@ public class GalleryFragment extends ListFragment {
             galleryMap.clear();
 
             ArrayList<String> galleryTitle = new ArrayList<String>();
-            ArrayList<byte[]> galleryItems = new ArrayList<byte[]>();
+            ArrayList<String> galleryItems = new ArrayList<String>();
 
             galleryMap = (HashMap<String, Gallery>) JSONCache.galleryMap.clone();
             List<Gallery> imageList = new ArrayList<Gallery> (galleryMap.values());
             Collections.sort(imageList,  new ImageComparator());
             for (Gallery img: imageList) {
                 galleryTitle.add(img.getImageCaption());
-                galleryItems.add(img.getImg());
+                galleryItems.add(img.getImageUrl());
             }
 
             CustomList adapter = new
@@ -314,10 +316,10 @@ public class GalleryFragment extends ListFragment {
             galleryMap.clear();
 
             ArrayList<String> galleryTitle = new ArrayList<String>();
-            ArrayList<byte[]> galleryItems = new ArrayList<byte[]>();
+            ArrayList<String> galleryItems = new ArrayList<String>();
 
             String contents = null;
-
+            //
             if (file.length() == 0) {
                 Log.i(TAG,"File storage empty, fetching from resources...");
                 JSONResourceReader jsonResourceReader = new JSONResourceReader(getResources(), R.raw.gallery);
@@ -330,10 +332,8 @@ public class GalleryFragment extends ListFragment {
             Gson gson = new Gson();
             Gallery[] imgArray = gson.fromJson(contents, Gallery[].class);
 
-
             for (Gallery img: imgArray) {
-                img.setImg(Base64.decode(img.getImage(), Base64.DEFAULT));
-
+                img.setImageUrl(img.getImageUrl());
                 Log.i(TAG,img.toString());
 
                 galleryMap.put(img.getId(),img);
@@ -341,10 +341,11 @@ public class GalleryFragment extends ListFragment {
             }
 
             List<Gallery> imgList = new ArrayList<Gallery> (galleryMap.values());
+
             Collections.sort(imgList,  new ImageComparator());
             for (Gallery gallery: imgList) {
                 galleryTitle.add(gallery.getImageCaption());
-                galleryItems.add(gallery.getImg());
+                galleryItems.add(gallery.getImageUrl());
             }
 
             CustomList adapter = new

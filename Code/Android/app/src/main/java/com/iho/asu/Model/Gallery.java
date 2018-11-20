@@ -11,7 +11,8 @@ public class Gallery {
     @SerializedName("title")   private String imageCaption;
     private String lectEmail;
     private Integer order;
-    private String image;
+    private String imageUrl;
+
 
     public void setImageCaption(String imageCaption) {
         this.imageCaption = imageCaption;
@@ -60,11 +61,11 @@ public class Gallery {
     }
 
 
-    public String getImage() {
-        return image;
+    public String getImageUrl() {
+        return imageUrl;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }
