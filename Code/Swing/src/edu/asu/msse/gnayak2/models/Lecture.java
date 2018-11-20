@@ -11,7 +11,6 @@ public class Lecture {
 	private String link;
 	private String title;
 	private String email;
-	private String image;
 	private String imageUrl;
 	private int order;
 
@@ -19,7 +18,6 @@ public class Lecture {
 				   String bio,
 				   String linkMore,
 				   String title,
-				   String image,
 				   String imageUrl,
 				   String email,
 				   int order) {
@@ -28,7 +26,6 @@ public class Lecture {
 		this.bio = bio;
 		link = linkMore;
 		this.title = title;
-		this.image = image;
 		this.imageUrl = imageUrl;
 		this.email = email;
 		this.order = order;
@@ -40,7 +37,6 @@ public class Lecture {
 		bio = object.getString("bio");
 		link = object.getString("link");
 		title = object.getString("title");
-//		image = object.getString("image");
 		imageUrl = object.getString("imageUrl");
 		email = object.getString("email");
 		order = object.getInt("order");
@@ -83,15 +79,6 @@ public class Lecture {
 
 	public void setEmail(String email) {
 		this.email = email;
-	}
-	public String getImage()
-	{
-		return image;
-	}
-	
-	public void setImage(String image)
-	{
-		this.image = image;
 	}
 
 	public String getBio() {

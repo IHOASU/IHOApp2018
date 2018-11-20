@@ -19,15 +19,11 @@
 import UIKit
 
 class AskAnAnthropologistViewController: UIViewController, UITextViewDelegate, UIWebViewDelegate {
-    @IBOutlet weak var askButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+    self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationItem.title = "Ask An Anthropologist"
-        
-        askButton.layer.cornerRadius = 0
 
         //toolbar
         let label = UILabel(frame: CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(350), height: CGFloat(21)))

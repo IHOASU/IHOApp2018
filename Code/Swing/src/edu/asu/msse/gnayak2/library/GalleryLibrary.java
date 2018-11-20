@@ -1,21 +1,20 @@
 package edu.asu.msse.gnayak2.library;
 
 
-import java.util.HashMap;
-import java.util.Set;
-
+import edu.asu.msse.gnayak2.models.GalleryModel;
+import edu.asu.msse.gnayak2.networking.HTTPConnectionHelper;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import edu.asu.msse.gnayak2.models.GalleryModel;
-import edu.asu.msse.gnayak2.networking.HTTPConnectionHelper;
+import java.util.HashMap;
+import java.util.Set;
 
 public class GalleryLibrary {
 	static GalleryLibrary galleryLibrary;
 	private HashMap<String, GalleryModel> galleryMap;
 	
 	private GalleryLibrary() {
-		galleryMap = new HashMap<String, GalleryModel>();
+		galleryMap = new HashMap<>();
 		HTTPConnectionHelper helper = new HTTPConnectionHelper();
 		String response = "";
 		try {
