@@ -1,34 +1,27 @@
 package edu.asu.msse.gnayak2.models;
 
-import java.util.UUID;
-
 import org.json.JSONObject;
 
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.IOException;
-import javax.imageio.ImageIO;
+import java.util.UUID;
 
 public class GalleryModel {
 	String id;
 	String title;
-	String image;
     int order;
-	public GalleryModel(String title, String image, int order) {
+    String imageUrl;
+
+	public GalleryModel(String title, int order, String imageUrl) {
 		id = UUID.randomUUID().toString().replace("-", "");
 		this.title = title;
-		this.image = image;
 		this.order = order;
-		
-		
+		this.imageUrl = imageUrl;
 	}
 	
 	public GalleryModel(JSONObject object) {
 		id = object.getString("id");
-	    title = object.getString("title");	
-       image = object.getString("image");
-      order = object.getInt("order");
+	    title = object.getString("title");
+		imageUrl = object.getString("imageUrl");
+      	order = object.getInt("order");
 	}
 
 	public String getId() {
@@ -56,18 +49,15 @@ public class GalleryModel {
 	}
 
 	
-	public String getImage()
-	{
-		return image;
-	}
-	
-	public void setImage(String image)
-	{
-		this.image = image;
-	}
-
-	
 	public String toString() {
 		return title;
+	}
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
 	}
 }

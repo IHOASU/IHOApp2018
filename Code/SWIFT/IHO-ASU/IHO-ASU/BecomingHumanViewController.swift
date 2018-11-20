@@ -20,8 +20,6 @@ import UIKit
 
 class BecomingHumanViewController: UIViewController {
 
-    @IBOutlet weak var beacomingButton: UIButton!
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]

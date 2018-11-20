@@ -26,20 +26,16 @@ package edu.asu.msse.gnayak2.bl;
  * @version January 15 2016
  */
 
-import java.awt.EventQueue;
+import edu.asu.msse.gnayak2.networking.HTTPConnectionHelper;
+import net.miginfocom.swing.MigLayout;
+import org.json.JSONObject;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Arrays;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
-
-import net.miginfocom.swing.MigLayout;
+import static edu.asu.msse.gnayak2.networking.HTTPConstants.authSection;
 
 public class AuthenticationPage {
 
@@ -115,30 +111,47 @@ public class AuthenticationPage {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				char[] typedPass = tfPassword.getPassword();
-				boolean checkPass = checkPassword(typedPass);
-				
-//				if(checkPass) {
+				String typedUserName = tfUsername.getText().trim().toLowerCase();
+				boolean checkPass = validateUser(typedUserName, typedPass);
+
+				if(checkPass) {
 					frame.dispose();
 //					frame.setVisible(false);
 					MainPage mainPage =  new MainPage();
 					mainPage.setVisible(true);
-//				} else {
-//					JOptionPane.showMessageDialog(null, "Password is incorrect");
-//				}
+				} else {
+					JOptionPane.showMessageDialog(null, "Authentication failed");
+				}
 			}
-			
 		});
 	}
 	
-	public boolean checkPassword(char[] typedPassword) {
-		boolean isCorrect = false;
-		char[] correctPass = {'d','e','f'};
-		System.out.println(String.valueOf(typedPassword));
-		if (typedPassword.length == correctPass.length){
-			isCorrect = Arrays.equals(typedPassword, correctPass);
+	public boolean validateUser(String typedUserName, char[] typedPassword) {
+		HTTPConnectionHelper helper = new HTTPConnectionHelper();
+
+		JSONObject responseObject = null;
+		try {
+			responseObject = helper.post(authSection,
+                    constructAuthRequest(typedUserName, String.valueOf(typedPassword)));
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
 		}
-		Arrays.fill(correctPass, '0');
-		return isCorrect;
+
+		if(responseObject.get("httpCode").equals(200)) {
+			AuthenticationServer authenticationServer = new AuthenticationServer();
+			authenticationServer.cacheAccessCode(responseObject.getString("accessToken"));
+			return true;
+		}
+
+		return false;
 	}
 
+	private JSONObject constructAuthRequest(String typedUserName, String typedPassword) {
+		JSONObject resultObject = new JSONObject();
+		resultObject.put("email", typedUserName);
+		resultObject.put("password", typedPassword);
+
+		return resultObject;
+	}
 }

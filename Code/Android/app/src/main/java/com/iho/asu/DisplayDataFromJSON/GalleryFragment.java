@@ -44,9 +44,9 @@ import static com.iho.asu.Constants.IHOConstants.IMAGE;
 import static com.iho.asu.Constants.IHOConstants.IMAGE_ID;
 import static com.iho.asu.Constants.IHOConstants.IMAGE_ORDER;
 import static com.iho.asu.Constants.IHOConstants.IMAGE_TITLE;
-import com.bumptech.glide.Glide;
-import android.widget.ImageView;
 
+import android.widget.ImageView;
+import com.bumptech.glide.Glide;
 
 public class GalleryFragment extends ListFragment {
 

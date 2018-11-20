@@ -1,5 +1,6 @@
 package edu.asu.msse.gnayak2.networking;
 
+import edu.asu.msse.gnayak2.bl.AuthenticationServer;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -46,7 +47,7 @@ public String sendGet(String section) throws Exception {
 
 
 // HTTP POST request
-	public void post(String section, JSONObject object)  throws Exception {
+	public JSONObject post(String section, JSONObject object)  throws Exception {
 
 		String url = HTTPConstants.url + section;
 		URL obj = new URL(url);
@@ -57,6 +58,10 @@ public String sendGet(String section) throws Exception {
 //				con.setRequestProperty("User-Agent", USER_AGENT);
 		con.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
 		con.setRequestProperty("Content-Type", "application/json ");
+
+		if(!section.equals(HTTPConstants.authSection)) {
+            con.setRequestProperty("authorization", AuthenticationServer.getAccessToken());
+        }
 		String urlParameters = object.toString();
 
 		// Send post request
@@ -84,6 +89,11 @@ public String sendGet(String section) throws Exception {
 		//print result
 		System.out.println(response.toString());
 
+
+		JSONObject jsonObject = new JSONObject(response.toString());
+		jsonObject.put("httpCode", responseCode);
+
+		return jsonObject;
 	}
 	
 	public void delete(String section)  throws Exception {
@@ -94,6 +104,7 @@ public String sendGet(String section) throws Exception {
 
 		// optional default is GET
 		con.setRequestMethod("DELETE");
+		con.setRequestProperty("authorization", AuthenticationServer.getAccessToken());
 
 		//add request header
 //				con.setRequestProperty("User-Agent", USER_AGENT);
@@ -126,6 +137,8 @@ public String sendGet(String section) throws Exception {
 //				con.setRequestProperty("User-Agent", USER_AGENT);
 		con.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
 		con.setRequestProperty("Content-Type", "application/json ");
+		con.setRequestProperty("authorization", AuthenticationServer.getAccessToken());
+
 		String urlParameters = object.toString();
 
 		// Send post request
@@ -153,5 +166,5 @@ public String sendGet(String section) throws Exception {
 		//print result
 		System.out.println(response.toString());
 	}
-	
+
 }
