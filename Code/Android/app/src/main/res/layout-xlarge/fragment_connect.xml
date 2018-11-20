@@ -135,54 +135,60 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
                 android:orientation="horizontal"
-                android:paddingLeft="50dp"
-                android:paddingTop="16dp"
+                android:padding="@dimen/activity_horizontal_margin"
                 android:visibility="visible"
-                android:weightSum="10">
-
-
+                android:weightSum="4">
 
                 <ImageButton
                     android:id="@+id/fbButton"
                     android:layout_width="0dp"
-                    android:layout_height="150dp"
+                    android:layout_height="100dp"
                     android:background="@drawable/fb"
                     android:onClick="onClick"
-                    android:layout_weight="2"/>
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="  "
-                    android:layout_weight="0.6"/>
-
+                    android:layout_weight="1"/>
 
                 <ImageButton
                     android:id="@+id/twButton"
                     android:layout_width="0dp"
-                    android:layout_height="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
                     android:background="@drawable/twitter"
                     android:onClick="onClick"
-                    android:layout_weight="2"/>
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text=" "
-                    android:layout_weight="0.6"/>
+                    android:layout_weight="1"/>
 
 
                 <ImageButton
                     android:id="@+id/instaButton"
                     android:layout_width="0dp"
-                    android:layout_height="150dp"
+                    android:layout_height="103dp"
+                    android:layout_marginLeft="10dp"
                     android:background="@drawable/insta"
                     android:onClick="onClick"
-                    android:layout_weight="2"/>
-            </LinearLayout>
+                    android:layout_weight="1"/>
 
+                <ImageButton
+                    android:id="@+id/vimeoBtn"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="103dp"
+                    android:background="@drawable/vimeo"
+                    android:onClick="onClick"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/youtubeBtn"
+                    android:layout_width="350dp"
+                    android:layout_margin="15dp"
+                    android:layout_height="103dp"
+                    android:background="@drawable/youtube"
+                    android:onClick="onClick"/>
+
+            </LinearLayout>
         </LinearLayout>
 
     </ScrollView>
