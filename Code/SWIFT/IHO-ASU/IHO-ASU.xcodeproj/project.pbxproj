@@ -91,6 +91,9 @@
 		F81D6F61217900A800AA11A7 /* trvl_learn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F81D6F60217900A700AA11A7 /* trvl_learn.jpg */; };
 		F81D6F62217900A800AA11A7 /* trvl_learn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F81D6F60217900A700AA11A7 /* trvl_learn.jpg */; };
 		F81D6F63217900A800AA11A7 /* trvl_learn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F81D6F60217900A700AA11A7 /* trvl_learn.jpg */; };
+		F81D8EFE21A5019E000D1250 /* PopUpSmallSkullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D8EFD21A5019E000D1250 /* PopUpSmallSkullViewController.swift */; };
+		F82FB5F621A51AAF008EDAC7 /* PopUpMediumSkullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82FB5F521A51AAF008EDAC7 /* PopUpMediumSkullViewController.swift */; };
+		F82FB5F821A51B13008EDAC7 /* PopUpLargeSkullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82FB5F721A51B13008EDAC7 /* PopUpLargeSkullViewController.swift */; };
 		F839A7F821950DD300EFA980 /* location_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = F839A7F721950DD200EFA980 /* location_pin.png */; };
 		F83D936D218BFC71004A5A91 /* iho-skullmark.png in Resources */ = {isa = PBXBuildFile; fileRef = F83D936C218BFC71004A5A91 /* iho-skullmark.png */; };
 		F842F5F621950F1800330495 /* location_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = F842F5F521950F1800330495 /* location_pin.png */; };
@@ -275,6 +278,9 @@
 		9FFC3B701EA840FF004A0597 /* ASU-IHO-About.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ASU-IHO-About.jpg"; sourceTree = "<group>"; };
 		9FFC3B711EA840FF004A0597 /* IHO_Gallery_main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IHO_Gallery_main.jpg; sourceTree = "<group>"; };
 		F81D6F60217900A700AA11A7 /* trvl_learn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trvl_learn.jpg; sourceTree = "<group>"; };
+		F81D8EFD21A5019E000D1250 /* PopUpSmallSkullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpSmallSkullViewController.swift; sourceTree = "<group>"; };
+		F82FB5F521A51AAF008EDAC7 /* PopUpMediumSkullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpMediumSkullViewController.swift; sourceTree = "<group>"; };
+		F82FB5F721A51B13008EDAC7 /* PopUpLargeSkullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpLargeSkullViewController.swift; sourceTree = "<group>"; };
 		F839A7F721950DD200EFA980 /* location_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_pin.png; sourceTree = "<group>"; };
 		F83D936C218BFC71004A5A91 /* iho-skullmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iho-skullmark.png"; sourceTree = "<group>"; };
 		F842F5F521950F1800330495 /* location_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_pin.png; sourceTree = "<group>"; };
@@ -488,6 +494,9 @@
 				9FB7C5831E4AAA5900B88166 /* IHO_ASU.xcdatamodeld */,
 				9FB7C5881E4AAA5900B88166 /* LaunchScreen.storyboard */,
 				9FB7C5801E4AAA5900B88166 /* Main.storyboard */,
+				F82FB5F521A51AAF008EDAC7 /* PopUpMediumSkullViewController.swift */,
+				F82FB5F721A51B13008EDAC7 /* PopUpLargeSkullViewController.swift */,
+				F81D8EFD21A5019E000D1250 /* PopUpSmallSkullViewController.swift */,
 				9F87E3631E4D35470030F231 /* Resources */,
 				F842F5F521950F1800330495 /* location_pin.png */,
 			);
@@ -761,6 +770,7 @@
 				F8B1F1E8219266780030BCF9 /* WebViewContactUsController.swift in Sources */,
 				9F30DEAD1E8EC79E00F40E06 /* BecomingHumanViewController.swift in Sources */,
 				9F87E3691E4D3FAC0030F231 /* NewsEventsViewController.swift in Sources */,
+				F82FB5F621A51AAF008EDAC7 /* PopUpMediumSkullViewController.swift in Sources */,
 				9F30DED71E8EC79E00F40E06 /* TravelViewController.swift in Sources */,
 				9F87E36D1E4D41610030F231 /* GalleryViewController.swift in Sources */,
 				230EE9091E4E147100B4F9F9 /* DonationWebController.swift in Sources */,
@@ -782,12 +792,14 @@
 				9F36EA511EA01D380041582B /* Cache.swift in Sources */,
 				9F30DED01E8EC79E00F40E06 /* NewsViewController.swift in Sources */,
 				9F30DEAF1E8EC79E00F40E06 /* ConnectInfoViewController.swift in Sources */,
+				F82FB5F821A51B13008EDAC7 /* PopUpLargeSkullViewController.swift in Sources */,
 				F8B1F1D421924C4C0030BCF9 /* WebViewMediaController.swift in Sources */,
 				9F30DEC41E8EC79E00F40E06 /* LecturerDetailViewController.swift in Sources */,
 				F8B1F1D2219247800030BCF9 /* WebViewNewsController.swift in Sources */,
 				F8B1F1D621924C9C0030BCF9 /* WebViewEventsController.swift in Sources */,
 				9F30DED31E8EC79E00F40E06 /* Science.swift in Sources */,
 				9F30DEBB1E8EC79E00F40E06 /* Image.swift in Sources */,
+				F81D8EFE21A5019E000D1250 /* PopUpSmallSkullViewController.swift in Sources */,
 				9F30DEB71E8EC79E00F40E06 /* FeaturedNewsViewController.swift in Sources */,
 				9F30DEAC1E8EC79E00F40E06 /* AskAnAnthropologistViewController.swift in Sources */,
 				9F30DECD1E8EC79E00F40E06 /* News.swift in Sources */,
