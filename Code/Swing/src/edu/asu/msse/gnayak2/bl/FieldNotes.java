@@ -160,36 +160,29 @@ public class FieldNotes extends JFrame implements LecturesDelegate, NewSciencesD
 			}
 		});
 		
-		viewLectureButton.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				if (selectedLecture != null) {
-					EditLecturesFrame editFrame = new EditLecturesFrame(selectedLecture, lectureDelegate);
-					editFrame.setVisible(true);
-				}
-			}
-		});
+		viewLectureButton.addActionListener(e -> {
+            if (selectedLecture != null) {
+                EditLecturesFrame editFrame = new EditLecturesFrame(selectedLecture, lectureDelegate);
+                editFrame.setVisible(true);
+            }
+        });
 		
-		deleteLectureButton.addActionListener(new ActionListener() {
+		deleteLectureButton.addActionListener(e -> {
+            if (selectedLecture != null) {
+                HTTPConnectionHelper helper = new HTTPConnectionHelper();
+                try {
+                    helper.delete("lectureobjects/" + selectedLecture.getId());
+                    helper.delete("lectureid/" + selectedLecture.getId());
+                    helper.delete("lectureimages/" + selectedLecture.getEmail());
+                    lectureLibrary.deleteLecture(selectedLecture.getId());
 
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				if (selectedLecture != null) {
-					HTTPConnectionHelper helper = new HTTPConnectionHelper();
-					try {
-						helper.delete("lectureobjects/" + selectedLecture.getId());
-						helper.delete("lectureid/" + selectedLecture.getId());
-						helper.delete("lectureimages/" + selectedLecture.getEmail());
-						lectureLibrary.deleteLecture(selectedLecture.getId());
-						
-						lectureModel.removeElement(selectedLecture);
-					} catch (Exception e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}
-				}
-			}
-		});
+                    lectureModel.removeElement(selectedLecture);
+                } catch (Exception e1) {
+                    // TODO Auto-generated catch block
+                    e1.printStackTrace();
+                }
+            }
+        });
 	}
 	
 	public void initializeNewSciences() {

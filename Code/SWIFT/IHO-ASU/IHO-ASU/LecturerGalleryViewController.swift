@@ -77,7 +77,7 @@ class LecturerGalleryViewController: UITableViewController {
                                         let imageObject = Image()
                                         imageObject.title = aObject["title"] as! String
                                         imageObject.id =  aObject["id"] as! String
-                                        imageObject.image = aObject["image"] as! String
+                                        imageObject.imageUrl = aObject["imageUrl"] as! String
                                         imageObject.order = aObject["order"] as! Double
                                         self.names.append(imageObject.title)
                                         self.imageList[imageObject.title] = imageObject
@@ -93,8 +93,6 @@ class LecturerGalleryViewController: UITableViewController {
                         }
                     }
                 }
-                
-                
             }
             task.resume()
         }
@@ -150,19 +148,34 @@ class LecturerGalleryViewController: UITableViewController {
         let title = self.names[(indexPath.row)]
         let imageObject = imageList[title]! as Image
         
-        if (imageObject.image != nil)
+        if (imageObject.imageUrl != nil)
         {
-            //base64 string to NSData
-            let decodedData = NSData(base64Encoded: imageObject.image, options: NSData.Base64DecodingOptions(rawValue: 0))
+//            //base64 string to NSData
+//            let decodedData = NSData(base64Encoded: imageObject.image, options: NSData.Base64DecodingOptions(rawValue: 0))
+//
+//            //NSData to UIImage
+//            cell.imageview?.image = UIImage(data: decodedData! as Data)
+//            cell.imageview?.contentMode = .scaleAspectFit
+
+            let image:URL = URL(string: imageObject.imageUrl)!
             
-            //NSData to UIImage
-            cell.imageview?.image = UIImage(data: decodedData! as Data)
-            cell.imageview?.contentMode = .scaleAspectFit
+            print(image)
+            
+            // Start background thread so that image loading does not make app unresponsive
+            DispatchQueue.global(qos: .userInitiated).async {
+                
+                let imageData:NSData = NSData(contentsOf: image)!
+                //let imageView = UIImageView(frame: CGRect(x:0, y:0, width:200, height:200))
+                //imageView.center = self.view.center
+                
+                // When from background thread, UI needs to be updated on main_queue
+                DispatchQueue.main.async {
+                    let image = UIImage(data: imageData as Data)
+                    cell.imageview.image = image
+                    cell.imageview?.contentMode = .scaleAspectFit
+                }
+            }
         }
-        
-        
-        
-        
         return cell
     }
     

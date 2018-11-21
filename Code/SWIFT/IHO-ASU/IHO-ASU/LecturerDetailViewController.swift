@@ -96,7 +96,7 @@ class LecturerDetailViewController: UITableViewController, MFMailComposeViewCont
             
             let imageUrl:URL = URL(string: newsImage!)!
             
-            print(imageUrl)
+//            print(imageUrl)
             
             // Start background thread so that image loading does not make app unresponsive
             DispatchQueue.global(qos: .userInitiated).async {

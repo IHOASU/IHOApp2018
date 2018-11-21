@@ -10,19 +10,12 @@ import net.miginfocom.swing.MigLayout;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.IOException;
-import java.util.Base64;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -68,7 +61,6 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	private JTextField imageFileButton;
 	LecturesDelegate lectureDelegate;
 	String filename;
-	String encodedImage;
 	int flag = 0;
 	
 	byte[] imageInByte;
@@ -93,28 +85,55 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	}
 	
 	public void setUpFrame() {
+
 		galleryDelegate = this;
-		
-		setResizable(false);
-		setPreferredSize(new Dimension(Constants.WIDTH,Constants.HEIGHT));
-		containerPanel = new JPanel();
-		cardLayout = new CardLayout();
-		containerPanel.setLayout(cardLayout);
-		
-		initializeMainPanel();
+
+		JFrame window = new JFrame("Scientist Profile");
+		window.setSize(Constants.WIDTH,Constants.HEIGHT);
+
+
+		final CardLayout cardLayout = new CardLayout();
+		final JPanel cardPanel = new JPanel(cardLayout);
+
+		JPanel card1 = new JPanel();
+		card1.setBackground(Color.red);
+
+		JPanel card2 = new JPanel();
+		card2.setBackground(Color.blue);
+
 		initializeGalleryLayout();
-		containerPanel.add(mainPanel, "1");
-		containerPanel.add(galleryPanel, "2");
-		
-		cardLayout.show(containerPanel, "1");
-		
-		add(containerPanel);
-		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		pack();
-		setVisible(true);
-		
+		initializeMainPanel();
+		cardPanel.add(mainPanel,"Profile");
+		cardPanel.add(galleryPanel,"Gallery");
+
+		// create two buttons
+		JPanel buttonPanel = new JPanel();
+		JButton profileButton = new JButton("Profile");
+		galleryButton = new JButton("Gallery");
+		buttonPanel.add(profileButton);
+		buttonPanel.add(galleryButton);
+
+		profileButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent event) {
+				cardLayout.show(cardPanel, "Profile");
+			}
+		});
+
+		galleryButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent event) {
+				initializeGalleryData();
+				cardLayout.show(cardPanel, "Gallery");
+			}
+		});
+
+
+		// add card & button panels to the main window
+		window.add(cardPanel,BorderLayout.CENTER);
+		window.add(buttonPanel,BorderLayout.SOUTH);
+		window.setVisible(true);
 	}
-	
+		
+
 	public void initializeMainPanel() {
 		tfName = new JTextField();
 		taDescription = new JTextArea("",120,120);
@@ -138,7 +157,6 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 		btnSubmit = new JButton("Submit");
 		galleryButton = new JButton("Gallery");
 		
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		mainPanel = new JPanel();
 		mainPanel.setLayout(new MigLayout());
 
@@ -170,21 +188,21 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 		JButton galleryBackButton = new JButton("Back");
 		viewGalleryButton = new JButton("View");
 		deleteGalleryButton = new JButton("Delete");
-		
+
 		btnAddGallery = new JButton("Add");
-		
+
 		galleryPanel.setLayout(new MigLayout());
 		galleryPanel.add(galleryBackButton);
 		galleryPanel.add(viewGalleryButton);
 		galleryPanel.add(deleteGalleryButton);
-		
+
 		galleryPanel.add(btnAddGallery, "wrap");
 		imageList =  new JList<>();
 		galleryPanel.add(new JScrollPane(imageList),"span,push,grow, wrap");
-		
+
 		galleryModel = new DefaultListModel<>();
 		imageList.setModel(galleryModel);
-		
+
 		imageList.setCellRenderer(new ImageListRenderer());
 		galleryBackButton.addActionListener(new ActionListener() {
 
@@ -193,8 +211,8 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 				cardLayout.show(containerPanel, "1");
 			}
 		});
-		
-       
+
+
 	    imageList.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
 
 			@Override
@@ -203,7 +221,7 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 				//System.out.println(selectedNews.getDesc());
 			}
 		});
-		
+
 		viewGalleryButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -213,7 +231,7 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 				}
 			}
 		});
-		
+
 		btnAddGallery.addActionListener(new ActionListener() {
 
 			@Override
@@ -222,7 +240,7 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 				galleryFrame.setVisible(true);
 			}
 		});
-		
+
 		deleteGalleryButton.addActionListener(new ActionListener() {
 
 			@Override
@@ -320,97 +338,38 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 		tfLink.setText(lecture.getLink());
 		tfDesc.setText(lecture.getTitle());
 		tfEmail.setText(lecture.getEmail());
-		imageFileButton.setText(lecture.getImage());
-	
+
 		String order_value = Integer.toString(lecture.getOrder());
 		tfOrder.setText(order_value);
-		  BufferedImage bufferedImage = convertStringToImage(lecture.getImage());
-			ImageIcon imageIcon = null;
-			 
-	        if (bufferedImage != null) { 
-	        	 imageIcon = new ImageIcon(bufferedImage);
-	        	 Image oldImage = imageIcon.getImage(); // transform it 
-	        	 Image newImage = oldImage.getScaledInstance(80, 80,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
-	        	 imageIcon = new ImageIcon(newImage); 
-	        	 JLabel imageLabel = new JLabel(imageIcon);
-	        	 mainPanel.add(imageLabel);
-	        	 
-	        }
-	       
-	        
-	        setPreferredSize(new Dimension(180,100));
-	}
-	private BufferedImage convertStringToImage(String base64String) {
-    	BufferedImage image = null;
-    	byte[] imageByte;
-    	imageByte = Base64.getDecoder().decode(base64String);
-    	ByteArrayInputStream bis = new ByteArrayInputStream(imageByte);
-    	try {
-			image = ImageIO.read(bis);
-			bis.close();
-			return image;
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			return null;
-		}     	
+		tfImageUrl.setText(lecture.getImageUrl());
 
-    }
-	
+		setPreferredSize(new Dimension(180,100));
+	}
+
 	public boolean validate(final String order){
 		 String ORDER_PATTERN =
 				 "^\\d+$";
-		  pattern = Pattern.compile(ORDER_PATTERN);
-  matcher = pattern.matcher(order);
+			  pattern = Pattern.compile(ORDER_PATTERN);
+	  matcher = pattern.matcher(order);
 
-  if(matcher.matches()){
-  System.out.println("Matches");
-	 matcher.reset();
+	  if(matcher.matches()){
+	  System.out.println("Matches");
+		 matcher.reset();
 
-	 return true;
-  }else{
-	  JOptionPane.showMessageDialog(tfOrder, "Please enter an integer value for order");   
-	  return false;
-  }
+		 return true;
+	  }else{
+		  JOptionPane.showMessageDialog(tfOrder, "Please enter an integer value for order");
+		  return false;
+	  }
 }
 	
 	
 	public void setActionListenerForButton() {
-		
-		galleryButton.addActionListener(new ActionListener() {
 
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				initializeGalleryData();
-				cardLayout.show(containerPanel, "2");
-			}
-		});
-		
 		// delete old lecture
 		btnSubmit.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if(flag==1)
-				{
-				 try{
-                      
-					 	BufferedImage originalImage =
-					                               ImageIO.read(new File(filename));
-			      	 	ByteArrayOutputStream baos = new ByteArrayOutputStream();
-			  		 	ImageIO.write( originalImage, "jpg", baos );
-					 	baos.flush();
-					 	imageInByte = baos.toByteArray();
-				
-
-			            encodedImage = Base64.getEncoder().encodeToString(imageInByte);
-					 	System.out.println("BYTE ARRAY_________"+imageInByte);
-					 	baos.close();
-                       
-                        
-			           	}catch(IOException e1){
-					 		System.out.println(e1.getMessage());
-						 	}
-				}
 				 boolean validate = validate(tfOrder.getText());
 				 if(validate)
 				 {
@@ -421,7 +380,6 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 								 taDescription.getText(),
 								 tfLink.getText(),
 								 tfDesc.getText(),
-								 encodedImage,
 								 convertToStaticDropBoxUrl(tfImageUrl.getText().trim()),
 								 tfEmail.getText(),
 								 ord);
@@ -435,7 +393,6 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 								 taDescription.getText(),
 								 tfLink.getText(),
 								 tfDesc.getText(),
-								 imageFileButton.getText(),
 								 convertToStaticDropBoxUrl(tfImageUrl.getText().trim()),
 								 tfEmail.getText(),
 								 ord);
@@ -474,17 +431,6 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	            boolean isSelected, boolean cellHasFocus) {
 	    	
 	        String code = galleryModel.getTitle();
-	        BufferedImage bufferedImage = convertStringToImage(galleryModel.getImage());
-	        ImageIcon imageIcon = null;
-	        if (bufferedImage != null) {
-	        	 imageIcon = new ImageIcon(bufferedImage);
-	        	 imageIcon = new ImageIcon(bufferedImage);
-	        	 Image oldImage = imageIcon.getImage(); // transform it 
-	        	 Image newImage = oldImage.getScaledInstance(100, 100,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
-	        	 imageIcon = new ImageIcon(newImage); 
-	        }
-	        
-	        setIcon(imageIcon);
 	        setPreferredSize(new Dimension(180,100));
 	        setText(code);
 	        setToolTipText(code);
@@ -499,23 +445,7 @@ public class EditLecturesFrame extends JFrame implements GalleryDelegate {
 	 
 	        return this;
 	    }
-	    
-	    private BufferedImage convertStringToImage(String base64String) {
-	    	BufferedImage image = null;
-	    	byte[] imageByte;
-	    	imageByte = Base64.getDecoder().decode(base64String);
-	    	ByteArrayInputStream bis = new ByteArrayInputStream(imageByte);
-	    	try {
-				image = ImageIO.read(bis);
-				bis.close();
-				return image;
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				return null;
-			}     	
 
-	    }
 	}
 	@Override
 	public void addGallery(GalleryModel gallery) {
