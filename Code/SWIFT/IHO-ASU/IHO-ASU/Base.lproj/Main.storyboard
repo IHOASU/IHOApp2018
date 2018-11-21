@@ -118,10 +118,12 @@
                                                 <rect key="frame" x="2" y="434" width="373" height="225"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="250" id="BfF-1r-Vsb"/>
+                                                    <constraint firstAttribute="width" constant="373" id="jPj-LG-0EJ"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGI-98-fdL" userLabel="smallTopSkull">
                                                 <rect key="frame" x="25" y="504" width="94" height="56"/>
+                                                <color key="backgroundColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="56" id="gXH-Hd-auJ"/>
                                                     <constraint firstAttribute="width" constant="94" id="qHw-CS-Zvx"/>
@@ -132,6 +134,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVX-Zk-7KY" userLabel="smallMiddleSkull">
                                                 <rect key="frame" x="25" y="562" width="125" height="36"/>
+                                                <color key="backgroundColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Xjw-zC-3T8"/>
                                                     <constraint firstAttribute="width" constant="125" id="zRA-Nd-Xp6"/>
@@ -142,6 +145,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSk-8a-0SI" userLabel="smallBottomSkull">
                                                 <rect key="frame" x="74" y="599" width="105" height="51"/>
+                                                <color key="backgroundColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="55" id="bQc-YU-wju"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="105" id="mLu-3f-lMx"/>
@@ -152,6 +156,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4y-97-kOY" userLabel="mediumTopSkull">
                                                 <rect key="frame" x="120" y="471" width="93" height="52"/>
+                                                <color key="backgroundColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="93" id="HP2-Ce-3Db"/>
                                                     <constraint firstAttribute="height" constant="52" id="Py1-E2-0vP"/>
@@ -162,6 +167,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fO-qB-B88" userLabel="mediumMiddleSkull">
                                                 <rect key="frame" x="151" y="522" width="91" height="79"/>
+                                                <color key="backgroundColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="HoU-fR-bMX"/>
                                                     <constraint firstAttribute="width" constant="97" id="eD5-Hl-Epb"/>
@@ -172,6 +178,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AN-xS-nfn" userLabel="mediumBottomSkull">
                                                 <rect key="frame" x="182" y="601" width="75" height="52"/>
+                                                <color key="backgroundColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="Gr5-7i-SEx"/>
                                                     <constraint firstAttribute="height" constant="60" id="l3L-4V-jNF"/>
@@ -182,6 +189,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYc-7k-RQU" userLabel="largeTopSkull">
                                                 <rect key="frame" x="215" y="449" width="117" height="66"/>
+                                                <color key="backgroundColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="66" id="79d-5O-s9r"/>
                                                     <constraint firstAttribute="width" constant="117" id="NO1-Np-9yW"/>
@@ -192,6 +200,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNa-tc-gd5" userLabel="largeMiddleSkull">
                                                 <rect key="frame" x="249" y="517" width="93" height="78"/>
+                                                <color key="backgroundColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="4UJ-Uv-y5Y"/>
                                                     <constraint firstAttribute="width" constant="93" id="fex-6R-r7u"/>
@@ -202,6 +211,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQL-zh-CIC" userLabel="largeBottomSkull">
                                                 <rect key="frame" x="257" y="596" width="85" height="48"/>
+                                                <color key="backgroundColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="2AE-Al-qWc"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="gRN-WD-tQA"/>
@@ -220,7 +230,6 @@
                                             <constraint firstItem="l8A-cr-nOS" firstAttribute="top" secondItem="vWd-fI-gPL" secondAttribute="bottom" constant="20" id="95S-jB-vfo"/>
                                             <constraint firstItem="NHS-Hd-fSW" firstAttribute="leading" secondItem="nLv-IM-Raw" secondAttribute="trailing" constant="5" id="AQV-gN-6b7"/>
                                             <constraint firstItem="NHS-Hd-fSW" firstAttribute="top" secondItem="nLv-IM-Raw" secondAttribute="top" id="ArY-tr-pip"/>
-                                            <constraint firstItem="l8A-cr-nOS" firstAttribute="leading" secondItem="VHb-XJ-8rt" secondAttribute="leading" id="Cf7-lL-R81"/>
                                             <constraint firstItem="vWd-fI-gPL" firstAttribute="leading" secondItem="VHb-XJ-8rt" secondAttribute="leading" constant="10" id="H3o-l2-5zn"/>
                                             <constraint firstItem="l8A-cr-nOS" firstAttribute="leading" secondItem="SSk-8a-0SI" secondAttribute="trailing" constant="-182" id="IvZ-IM-aan"/>
                                             <constraint firstItem="l8A-cr-nOS" firstAttribute="leading" secondItem="T4y-97-kOY" secondAttribute="trailing" constant="-211" id="JJh-Dt-6dD"/>
@@ -232,7 +241,6 @@
                                             <constraint firstItem="5fO-qB-B88" firstAttribute="top" secondItem="l8A-cr-nOS" secondAttribute="bottom" constant="-161" id="PJQ-a8-NBI"/>
                                             <constraint firstItem="l8A-cr-nOS" firstAttribute="leading" secondItem="FGI-98-fdL" secondAttribute="trailing" constant="-117" id="PZp-FF-YN3"/>
                                             <constraint firstItem="0AN-xS-nfn" firstAttribute="top" secondItem="l8A-cr-nOS" secondAttribute="bottom" constant="-80" id="Qb4-J0-dk5"/>
-                                            <constraint firstAttribute="trailing" secondItem="l8A-cr-nOS" secondAttribute="trailing" id="SRm-Es-eav"/>
                                             <constraint firstItem="vWd-fI-gPL" firstAttribute="centerX" secondItem="VHb-XJ-8rt" secondAttribute="centerX" id="WJM-9R-oEU"/>
                                             <constraint firstItem="DOI-sC-2lC" firstAttribute="trailing" secondItem="VHb-XJ-8rt" secondAttribute="trailing" id="XEE-gx-21q"/>
                                             <constraint firstItem="nLv-IM-Raw" firstAttribute="top" secondItem="DOI-sC-2lC" secondAttribute="bottom" constant="50" id="YGW-a3-mnm"/>
@@ -262,6 +270,7 @@
                                             <constraint firstAttribute="bottom" secondItem="l8A-cr-nOS" secondAttribute="bottom" constant="20" id="uQl-ns-Fgc"/>
                                             <constraint firstItem="VTl-dA-fvZ" firstAttribute="trailing" secondItem="nLv-IM-Raw" secondAttribute="trailing" id="vmV-yM-tCY"/>
                                             <constraint firstItem="hQL-zh-CIC" firstAttribute="top" secondItem="l8A-cr-nOS" secondAttribute="bottom" constant="-83" id="waI-G6-CwP"/>
+                                            <constraint firstItem="l8A-cr-nOS" firstAttribute="centerX" secondItem="VHb-XJ-8rt" secondAttribute="centerX" id="wvJ-W8-ywY"/>
                                             <constraint firstItem="Lv2-mD-Nr4" firstAttribute="height" secondItem="Zjh-05-WLb" secondAttribute="height" id="yXI-Ns-bPy"/>
                                             <constraint firstItem="Eqh-rj-7tK" firstAttribute="height" secondItem="VTl-dA-fvZ" secondAttribute="height" id="z7D-ll-oSz"/>
                                             <constraint firstItem="l8A-cr-nOS" firstAttribute="top" secondItem="dYc-7k-RQU" secondAttribute="bottom" constant="-87" id="zcO-nc-dwb"/>
@@ -862,14 +871,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Blog-Notes from the Field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yhJ-nW-FCA">
-                                                    <rect key="frame" x="15" y="6.6666666666666661" width="221" height="25.333333333333332"/>
+                                                    <rect key="frame" x="15" y="10.666666666666666" width="219" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Follow IHO faculty and students at research and field sites around the globe! Visit Now" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z5V-lw-Fpo">
-                                                    <rect key="frame" x="15" y="35.333333333333329" width="325" height="39.666666666666664"/>
+                                                    <rect key="frame" x="15" y="36.333333333333329" width="325" height="35"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1820,7 +1829,7 @@ Email	  iho@asu.edu</string>
                                 <rect key="frame" x="0.0" y="88" width="280" height="1029"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AC9-NL-toq" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="980.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="970.66666666666663"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ASU-IHO-About.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0ay-an-aoj">
                                                 <rect key="frame" x="0.0" y="5" width="280" height="90"/>
@@ -1836,7 +1845,7 @@ Email	  iho@asu.edu</string>
                                                 </constraints>
                                             </webView>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zD-cf-dcm" userLabel="location">
-                                                <rect key="frame" x="249" y="695.33333333333337" width="120" height="130"/>
+                                                <rect key="frame" x="247.66666666666663" y="690.33333333333337" width="120" height="130"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="130" id="f3u-rb-QAX"/>
                                                     <constraint firstAttribute="width" constant="120" id="jCN-er-3Ie"/>
@@ -1994,7 +2003,7 @@ Tempe, AZ 85287-4101</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="invest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2G-Mc-uwb">
-                                                <rect key="frame" x="12" y="83" width="54.666666666666657" height="26"/>
+                                                <rect key="frame" x="12" y="83" width="55" height="26"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
                                                 <color key="textColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -2006,9 +2015,12 @@ Tempe, AZ 85287-4101</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cHI-TH-aT3">
-                                                <rect key="frame" x="0.0" y="152.66666666666669" width="375" height="666.33333333333326"/>
+                                                <rect key="frame" x="0.0" y="153" width="375" height="666"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" cyan="0.0" magenta="0.20999999999999999" yellow="0.88" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="666" id="jdu-iW-gZ4"/>
+                                                </constraints>
                                                 <string key="text">The Institute of Human Origins invites you to share in the excitement of discovery, the pursuit of new knowledge, and the public discussion of the enduring puzzle of how we “became human.” The study of how and where humans developed on Earth has never been more vibrant than today. We are seeking visionary partners to join our mission to advance the science of human origins and explore the ongoing challenges of our field and laboratory research.
 
 An investment in IHO helps to fund student scholarships, support research in laboratories and field sites, and meet the growing needs of our researchers and students. Please help us continue the search!
@@ -2044,6 +2056,7 @@ If you would like to send donation by check, please make your donation payable t
                                             <constraint firstItem="2in-Pf-puv" firstAttribute="leading" secondItem="zok-LL-6tS" secondAttribute="leading" constant="10" id="bLZ-iz-I0A"/>
                                             <constraint firstAttribute="trailing" secondItem="EG0-Bv-NGq" secondAttribute="trailing" constant="15" id="fHJ-Vp-7pi"/>
                                             <constraint firstItem="2in-Pf-puv" firstAttribute="centerX" secondItem="zok-LL-6tS" secondAttribute="centerX" id="gEe-Nc-CWJ"/>
+                                            <constraint firstAttribute="height" constant="849" id="gVZ-5U-42T"/>
                                             <constraint firstItem="cHI-TH-aT3" firstAttribute="leading" secondItem="zok-LL-6tS" secondAttribute="leading" id="sZZ-Qc-A8T"/>
                                             <constraint firstItem="D2G-Mc-uwb" firstAttribute="centerY" secondItem="OXS-st-G5h" secondAttribute="centerY" id="yaS-Ms-dPD"/>
                                             <constraint firstItem="na1-S0-UPd" firstAttribute="leading" secondItem="zok-LL-6tS" secondAttribute="leading" id="zok-BC-Fqt"/>
@@ -2242,8 +2255,8 @@ Aimed primarily at the middle school level, the articles and activities are chal
                         <rect key="frame" x="0.0" y="0.0" width="372" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XNS-d3-hnh">
-                            <rect key="frame" x="0.0" y="747" width="372" height="45"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XNS-d3-hnh">
+                            <rect key="frame" x="0.0" y="747" width="369" height="45"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.0039215686269999999" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
