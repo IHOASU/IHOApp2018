@@ -117,11 +117,21 @@ public class MainActivity extends Activity implements OnClickListener{
                 intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
                 break;
-            case R.id.linkToLocation:
-                uri = Uri.parse("https://iho.asu.edu/contact-us");
+            case R.id.invest2:
+                uri = Uri.parse("https://iho.asu.edu/support-iho");
                 intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
                 break;
+            case R.id.invest3:
+                uri = Uri.parse("https://iho.asu.edu/support-iho");
+                intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+                break;
+            //case R.id.linkToLocation:
+              //  uri = Uri.parse("https://iho.asu.edu/contact-us");
+              //  intent = new Intent(Intent.ACTION_VIEW, uri);
+              //  startActivity(intent);
+              //  break;
             case R.id.linkToContact:
                 uri = Uri.parse("https://iho.asu.edu/contact-us");
                 intent = new Intent(Intent.ACTION_VIEW, uri);
