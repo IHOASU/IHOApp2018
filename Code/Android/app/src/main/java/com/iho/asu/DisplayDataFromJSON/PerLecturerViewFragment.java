@@ -31,7 +31,8 @@ import java.net.URL;
 import javax.sql.DataSource;
 
 
-public class PerLecturerViewFragment extends Fragment {
+public class
+PerLecturerViewFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

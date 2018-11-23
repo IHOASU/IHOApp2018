@@ -14,6 +14,7 @@ import com.iho.asu.R;
 
 /**
  * Created by Barathi on 5/26/2014.
+ * Edited by Rachana Kashyap on 11/18/2018
  */
 public class Lucy extends Fragment {
 
@@ -26,6 +27,9 @@ public class Lucy extends Fragment {
                 R.layout.fragment_lucy, container, false);
         WebView webView = (WebView)(v.findViewById(R.id.webView));
         WebSettings webSettings = webView.getSettings();
+        webSettings.setSupportZoom(true);
+        webSettings.setBuiltInZoomControls(true);
+        webSettings.setDisplayZoomControls(false);
         webSettings.setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("file:///android_asset/lucy.html");

@@ -43,6 +43,7 @@ class TravelViewControlller: UITableViewController {
         self.nDesc.lineBreakMode = NSLineBreakMode.byWordWrapping
         self.nDesc.numberOfLines = 0
         
+        
         if (self.newsImage != nil)
         {
             //base64 string to NSData

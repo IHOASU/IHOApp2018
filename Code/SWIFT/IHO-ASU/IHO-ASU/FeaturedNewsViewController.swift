@@ -23,9 +23,9 @@ class FeaturedNewsViewController: UITableViewController {
     @IBOutlet var featuredNewsTableView: UITableView!
 
     @IBOutlet weak var nTitle: UILabel!
-    @IBOutlet weak var nDesc: UILabel!
+    @IBOutlet weak var nDesc: UITextView!
     @IBOutlet weak var nImage: UIImageView!
-    @IBOutlet weak var readMoreButton: UIButton!
+    //@IBOutlet weak var readMoreButton: UIButton!
     var newsTitle: String?
     var newsDesc: String?
     var newsId: String?
@@ -50,8 +50,8 @@ class FeaturedNewsViewController: UITableViewController {
         }
         if(newsDesc != nil){
         self.nDesc.text = self.newsDesc
-        self.nDesc.lineBreakMode = NSLineBreakMode.byWordWrapping
-        self.nDesc.numberOfLines = 0
+        //self.nDesc.lineBreakMode = NSLineBreakMode.byWordWrapping
+        //self.nDesc.numberOfLines = 0
         }
         
         if (self.newsImage != nil)
