@@ -99,18 +99,18 @@ class LecturerDetailViewController: UITableViewController, MFMailComposeViewCont
 //            print(imageUrl)
             
             // Start background thread so that image loading does not make app unresponsive
-            DispatchQueue.global(qos: .userInitiated).async {
+//            DispatchQueue.global(qos: .userInitiated).async {
                 
                 let imageData:NSData = NSData(contentsOf: imageUrl)!
                 let imageView = UIImageView(frame: CGRect(x:0, y:0, width:200, height:200))
                 imageView.center = self.view.center
                 
                 // When from background thread, UI needs to be updated on main_queue
-                DispatchQueue.main.async {
+//                DispatchQueue.main.async {
                     let image = UIImage(data: imageData as Data)
                     self.nImage.image = image
-                }
-            }
+//                }
+//            }
         }
         
         //toolbar
