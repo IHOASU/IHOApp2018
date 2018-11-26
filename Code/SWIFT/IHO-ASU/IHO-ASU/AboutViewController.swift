@@ -18,6 +18,7 @@
 
 import UIKit
 
+// About page controller
 class AboutViewController: UIViewController , UIWebViewDelegate {
 
     @IBOutlet weak var contactText: UITextView!
@@ -62,7 +63,6 @@ class AboutViewController: UIViewController , UIWebViewDelegate {
         }
         
         return true
-        
     }
     
     func webViewDidFinishLoad(aboutView: UIWebView) {

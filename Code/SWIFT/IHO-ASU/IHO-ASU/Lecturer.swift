@@ -12,6 +12,7 @@
 
 import Foundation
 
+// Class for professor details objects
 open class Lecturer{
     var title: String
     var name: String

@@ -19,7 +19,7 @@
 import Foundation
 import UIKit
 
-
+// New Science view page controller
 class NewScienceViewController: UITableViewController {
     
     @IBOutlet var newScienceTableView: UITableView!
@@ -46,6 +46,7 @@ class NewScienceViewController: UITableViewController {
         if flag{
             let url = URL(string:urlString + "newscienceobjects" )
             
+            // getting data from Global DB json
             let task = URLSession.shared.dataTask(with: url!){ (data, response, error) in
                 if error != nil
                 {
@@ -80,12 +81,11 @@ class NewScienceViewController: UITableViewController {
                         }
                     }
                 }
-                
-                
             }
             task.resume()
             
         }else{
+            // getting data from Local json
             do {
                 if let file = Bundle.main.url(forResource: "newscience", withExtension: "json") {
                     
@@ -107,19 +107,12 @@ class NewScienceViewController: UITableViewController {
                         }
                     }
                     else {
-                        
                         print("JSON is invalid")
-                        
                     }
-                    
-                    
-                    
                 }else {
                     print("no file")
                 }
                 self.newScienceTableView.reloadData()
-                
-                
             }catch {
                 print(error.localizedDescription)
             }
@@ -162,6 +155,7 @@ class NewScienceViewController: UITableViewController {
         return self.names.count
     }
     
+    // setting data to view
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.tableView.deselectRow(at: self.tableView.indexPathForSelectedRow!, animated: true)
         let title = self.names[(indexPath.row)]
@@ -176,7 +170,7 @@ class NewScienceViewController: UITableViewController {
         }
     }
     
-    
+    // setting data to view
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = newScienceTableView.dequeueReusableCell(withIdentifier: "News Cell", for: indexPath)
         

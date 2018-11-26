@@ -26,6 +26,7 @@ class LecturerGalleryTableViewCell: UITableViewCell {
     @IBOutlet weak var textlabel: UITextView!
 }
 
+// Controller for Professor's individual gallery
 class LecturerGalleryViewController: UITableViewController {
     
     @IBOutlet var galleryTableView: UITableView!
@@ -35,8 +36,6 @@ class LecturerGalleryViewController: UITableViewController {
     var names:[String]=[String]()
     var lecEmail:String = ""
     var reachability: Reachability = Reachability();
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +49,7 @@ class LecturerGalleryViewController: UITableViewController {
         
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
+        // getting image object details
         self.navigationItem.title = "Gallery"
         let flag = reachability.connectedToNetwork();
         if flag{
@@ -138,7 +138,7 @@ class LecturerGalleryViewController: UITableViewController {
         return self.names.count
     }
     
-    
+    // Setting the data to view
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = galleryTableView.dequeueReusableCell(withIdentifier: "LecturerimageCell", for: indexPath)as! LecturerGalleryTableViewCell
         
@@ -148,37 +148,21 @@ class LecturerGalleryViewController: UITableViewController {
         let title = self.names[(indexPath.row)]
         let imageObject = imageList[title]! as Image
         
+        // Getting image data from dropbox URL
         if (imageObject.imageUrl != nil)
         {
-//            //base64 string to NSData
-//            let decodedData = NSData(base64Encoded: imageObject.image, options: NSData.Base64DecodingOptions(rawValue: 0))
-//
-//            //NSData to UIImage
-//            cell.imageview?.image = UIImage(data: decodedData! as Data)
-//            cell.imageview?.contentMode = .scaleAspectFit
 
             let image:URL = URL(string: imageObject.imageUrl)!
             
-            print(image)
+            let imageData:NSData = NSData(contentsOf: image)!
+            let image1 = UIImage(data: imageData as Data)
             
-            // Start background thread so that image loading does not make app unresponsive
-//            DispatchQueue.global(qos: .userInitiated).async {
-            
-                let imageData:NSData = NSData(contentsOf: image)!
-                //let imageView = UIImageView(frame: CGRect(x:0, y:0, width:200, height:200))
-                //imageView.center = self.view.center
-                
-                // When from background thread, UI needs to be updated on main_queue
-//                DispatchQueue.main.async {
-                    let image1 = UIImage(data: imageData as Data)
-                    cell.imageview.image = image1
-                    cell.imageview?.contentMode = .scaleAspectFit
-//                }
-//            }
+            // setting image data to view
+            cell.imageview.image = image1
+            cell.imageview?.contentMode = .scaleAspectFit
         }
         return cell
     }
-    
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {

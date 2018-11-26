@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+// News objects class
 open class News{
     var title: String
     var id: String

@@ -9,6 +9,7 @@
 
 import Foundation
 
+// Class for all event objects
 open class Events{
     var title: String
     var id: String

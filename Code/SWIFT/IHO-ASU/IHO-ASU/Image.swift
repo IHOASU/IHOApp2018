@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Class for all image objects
 open class Image{
     var title: String
     var id: String

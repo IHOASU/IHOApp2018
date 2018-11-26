@@ -24,6 +24,7 @@
 
 import UIKit
 
+// Main gallery page contorller
 class GalleryViewController: UIViewController {
     @IBAction func youtube(_ sender: Any) {
         let url = URL(string: "http://www.youtube.com/user/LucyASUIHO")!

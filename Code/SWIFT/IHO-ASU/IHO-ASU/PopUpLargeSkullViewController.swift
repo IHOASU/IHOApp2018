@@ -13,6 +13,7 @@
 import Foundation
 import UIKit
 
+// Home screen skull pop messages
 class PopUpLargeSkullViewController: UIViewController {
     
     @IBOutlet weak var popupView: UITextView!
@@ -23,7 +24,6 @@ class PopUpLargeSkullViewController: UIViewController {
         popupView.layer.cornerRadius = 10
         closeButton.layer.cornerRadius = 10
     }
-    
     
     @IBAction func closePopup(_ sender: Any) {
         dismiss(animated: true, completion:nil)

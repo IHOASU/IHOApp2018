@@ -19,6 +19,7 @@
 import UIKit
 import CoreData
 
+// Controller for professors list view
 class LecturerListViewController: UITableViewController {
     @IBOutlet var lecturerTableView: UITableView!
     
@@ -37,11 +38,11 @@ class LecturerListViewController: UITableViewController {
             }
         }
         
-        
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
         self.navigationItem.title = "Scientists"
         
+        // Getting lecturer object details from Global JSON file
         let flag = reachability.connectedToNetwork();
         if flag{
             let url = URL(string:urlString + "lectureobjects" )
@@ -91,6 +92,7 @@ class LecturerListViewController: UITableViewController {
             task.resume()
             
         }
+        // Getting lecturer object details from local JSON file
         else{
             
             do{
@@ -125,7 +127,6 @@ class LecturerListViewController: UITableViewController {
                 self.lecturerTableView.reloadData()
                 
             }
-                
             catch{
                 print(error.localizedDescription)
             }
@@ -177,6 +178,7 @@ class LecturerListViewController: UITableViewController {
         return cell
     }
     
+    // Connecting to LecturerDetailViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         NSLog("seque identifier is \(segue.identifier)")
         if segue.identifier == "LecturerDetail" {

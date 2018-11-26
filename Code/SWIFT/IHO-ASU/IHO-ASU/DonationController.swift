@@ -18,7 +18,7 @@
 
 import UIKit
 
-
+// Donation view controller
 class DonationController: UIViewController {
     
     override func viewDidLoad() {
@@ -28,7 +28,6 @@ class DonationController: UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
         self.navigationItem.title = "Donate"
-        
         
         //toolbar
         let label = UILabel(frame: CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(350), height: CGFloat(21)))
@@ -60,9 +59,4 @@ class DonationController: UIViewController {
         self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         self.navigationController?.setToolbarHidden(false, animated: false)
     }
-
-    
-
-    
-
 }

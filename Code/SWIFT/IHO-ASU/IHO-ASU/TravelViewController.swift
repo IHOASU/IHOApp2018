@@ -19,6 +19,7 @@
 import Foundation
 import UIKit
 
+// Travel + Learn page view controller
 class TravelViewControlller: UITableViewController {
     @IBOutlet var travelTableView: UITableView!
     @IBOutlet weak var nTitle: UILabel!

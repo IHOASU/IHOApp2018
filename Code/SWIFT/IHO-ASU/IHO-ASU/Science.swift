@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Science object for New science page
 open class Science{
     var title: String
     var id: String

@@ -18,6 +18,7 @@
 
 import UIKit
 
+// Connect info page controller
 class ConnectInfoViewController: UITableViewController {
 
     @IBAction func mapIt(_ sender: Any) {

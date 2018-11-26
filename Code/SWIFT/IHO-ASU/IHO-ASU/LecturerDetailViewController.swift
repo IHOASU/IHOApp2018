@@ -20,14 +20,14 @@ import Foundation
 import MessageUI
 import UIKit
 
-
+// Contoller for Displaying professor's details page
 class LecturerDetailViewController: UITableViewController, MFMailComposeViewControllerDelegate {
     
+    // Email functionality
     @IBAction func lEmail(_ sender: Any) {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
-            //mail.delegate = self as! UINavigationControllerDelegate
             mail.setToRecipients([newsEmail!])
             mail.setSubject("Ask a question")
             mail.setMessageBody("<p>Enter your question here</p>" ,isHTML: true)
@@ -86,31 +86,18 @@ class LecturerDetailViewController: UITableViewController, MFMailComposeViewCont
         
         if (newsImage != nil)
         {
-//            //base64 string to NSData
-//            let decodedData = NSData(base64Encoded: newsImage!, options: NSData.Base64DecodingOptions(rawValue: 0))
-//
-//            //NSData to UIImage
-//            nImage.image = UIImage(data: decodedData! as Data)
             
-            // now newsImage contains the imageUrl
-            
+            // getting the image URL
             let imageUrl:URL = URL(string: newsImage!)!
             
-//            print(imageUrl)
+            // getting the image data from the image URL
+            let imageData:NSData = NSData(contentsOf: imageUrl)!
+            let imageView = UIImageView(frame: CGRect(x:0, y:0, width:200, height:200))
+            imageView.center = self.view.center
             
-            // Start background thread so that image loading does not make app unresponsive
-//            DispatchQueue.global(qos: .userInitiated).async {
-                
-                let imageData:NSData = NSData(contentsOf: imageUrl)!
-                let imageView = UIImageView(frame: CGRect(x:0, y:0, width:200, height:200))
-                imageView.center = self.view.center
-                
-                // When from background thread, UI needs to be updated on main_queue
-//                DispatchQueue.main.async {
-                    let image = UIImage(data: imageData as Data)
-                    self.nImage.image = image
-//                }
-//            }
+            // setting the image to view
+            let image = UIImage(data: imageData as Data)
+            self.nImage.image = image
         }
         
         //toolbar
@@ -140,6 +127,7 @@ class LecturerDetailViewController: UITableViewController, MFMailComposeViewCont
         // Dispose of any resources that can be recreated.
     }
     
+    // connecting and sending data to LecturerGalleryControllerView
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         NSLog("seque identifier is \(segue.identifier)")
         if segue.identifier == "LecturerGallery" {
@@ -155,10 +143,12 @@ class LecturerDetailViewController: UITableViewController, MFMailComposeViewCont
         }
     }
     
+    // Mail composing controller
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         dismiss(animated: true, completion: nil)
     }
     
+    // Control returns from Email client
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
