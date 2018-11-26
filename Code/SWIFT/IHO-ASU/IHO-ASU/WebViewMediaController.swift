@@ -15,11 +15,10 @@ import Foundation
 import UIKit
 import SafariServices
 
+// New webview for scrolling and landscape orientation
 class WebViewMediaController: UIViewController {
     
-    
     @IBOutlet weak var openWeb: UIWebView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +27,6 @@ class WebViewMediaController: UIViewController {
         let request = NSURLRequest(url : url as URL)
         openWeb.loadRequest(request as URLRequest)
     }
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

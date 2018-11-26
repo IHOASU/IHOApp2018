@@ -9,11 +9,10 @@
 import UIKit
 import SafariServices
 
+// Donation view controller to accomodate scrolling and orientation
 class DonationWebController: UIViewController {
-    
 
     @IBOutlet weak var openWeb: UIWebView!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +22,6 @@ class DonationWebController: UIViewController {
         openWeb.loadRequest(request as URLRequest)
     }
     
-
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -18,6 +18,7 @@
 
 import UIKit
 
+// Becoming Human page controller
 class BecomingHumanViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -52,6 +53,4 @@ class BecomingHumanViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
 }

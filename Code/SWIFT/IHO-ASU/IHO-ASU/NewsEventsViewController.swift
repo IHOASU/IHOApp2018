@@ -25,6 +25,7 @@
 
 import UIKit
 
+// Controller for News Events view
 class NewsEventsViewController: UITableViewController {
     
     var urlString: String = ""
@@ -95,17 +96,11 @@ class NewsEventsViewController: UITableViewController {
                         }
                     }
                 }
-                
-                
             }
             task.resume()
-            
-            
-            
         }else{
             
             do {
-                
                 if let file = Bundle.main.url(forResource: "featuredNews", withExtension: "json") {
                     
                     let data = try Data(contentsOf: file)
@@ -118,37 +113,24 @@ class NewsEventsViewController: UITableViewController {
                             if let title = news["title"] as? String,let desc = news["desc"] as? String,let id = news["id"] as? String,let image = news["image"] as? String, let link = news["link"] as? String{
                                 
                                 newsObject.id = id
-                                
                                 newsObject.title = title
-                                
                                 newsObject.desc = desc
-                                
                                 newsObject.image = image
-                                
                                 newsObject.link = link
-                                
                                 self.names.append(newsObject.title)
                             }
                             self.newsList[newsObject.title] = newsObject
                         }
-                        
                     } else {
-                        
                         print("JSON is invalid")
-                        
                     }
-                    
                 } else {
                     print("no file")
                 }
-                
             } catch {
                 print(error.localizedDescription)
             }
-            
         }
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -172,7 +154,7 @@ class NewsEventsViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
     
-    
+    // connecting to FeaturedNewsViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         NSLog("seque identifier is \(segue.identifier)")
         if segue.identifier == "FeaturedNews" {

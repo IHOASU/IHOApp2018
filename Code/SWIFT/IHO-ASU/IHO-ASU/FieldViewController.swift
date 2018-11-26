@@ -18,6 +18,7 @@
 
 import UIKit
 
+// Contoller for Field notes page
 class FieldViewController: UITableViewController {
 
     override func viewDidLoad() {

@@ -19,6 +19,7 @@
 import UIKit
 import CoreData
 
+// Contoller for Events page
 class EventsViewController: UITableViewController {
     
     @IBOutlet var eventsTableView: UITableView!

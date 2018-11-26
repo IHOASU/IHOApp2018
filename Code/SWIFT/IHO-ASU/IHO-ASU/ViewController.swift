@@ -18,6 +18,7 @@
 
 import UIKit
 
+// Home screen view controller
 class ViewController: UIViewController {
     
     @IBOutlet weak var donate: UIButton!

@@ -18,6 +18,7 @@
 
 import UIKit
 
+// Credits view controller
 class CreditsViewController: UIViewController {
     
     @IBOutlet weak var creditsView: UIWebView!
@@ -60,6 +61,5 @@ class CreditsViewController: UIViewController {
         self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         self.navigationController?.setToolbarHidden(false, animated: false)
     }
-    
     
 }

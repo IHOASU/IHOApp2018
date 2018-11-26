@@ -18,6 +18,7 @@
 
 import UIKit
 
+// Ask An Anthropologist page controller
 class AskAnAnthropologistViewController: UIViewController, UITextViewDelegate, UIWebViewDelegate {
     
     override func viewDidLoad() {

@@ -26,8 +26,7 @@ class GalleryTableViewCell: UITableViewCell {
     @IBOutlet weak var textlabel: UITextView!
 }
 
-
-
+// Contoller for table inside the Main Gallery page
 class GalleryTableViewController: UITableViewController {
     @IBOutlet var galleryTableView: UITableView!
     
@@ -38,10 +37,11 @@ class GalleryTableViewController: UITableViewController {
     var reachability: Reachability = Reachability();
     let dispatch_group = DispatchGroup()
     
-
+    
     func loadImageList(){
         
-                let url = URL(string:urlString + "galleryobjects" )
+        // Getting data from Global DB json
+        let url = URL(string:urlString + "galleryobjects" )
         
         let task = URLSession.shared.dataTask(with: url!){ (data, response, error) in
             if error != nil
@@ -81,13 +81,12 @@ class GalleryTableViewController: UITableViewController {
                     }
                 }
             }
-            
-            
         }
         task.resume()
         
     }
     
+    // Loading image function
     func loadImageId(){
         
         let urlId = URL(string:urlString + "galleryid" )
@@ -100,13 +99,12 @@ class GalleryTableViewController: UITableViewController {
             }
             else
             {
-                
                 self.imageId = [];
                 
                 if let content = data
                 {
                     do{
-                        //Array
+                        // JSON Array
                         let myJSON = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
                         
                         if let newsFromJSON = myJSON as? [[String: AnyObject]]{
@@ -126,9 +124,6 @@ class GalleryTableViewController: UITableViewController {
         }
         taskUrlId.resume()
     }
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -155,8 +150,6 @@ class GalleryTableViewController: UITableViewController {
         let toolbarTitle = UIBarButtonItem(customView: label)
         let flexible = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         self.toolbarItems = [flexible,toolbarTitle]
-        
-        //self.view.backgroundColor = UIColor(red: CGFloat((233 / 255.0)), green: CGFloat((233 / 255.0)), blue: CGFloat((233 / 255.0)), alpha: CGFloat(1))
         
         let flag = reachability.connectedToNetwork();
         if flag
@@ -203,7 +196,7 @@ class GalleryTableViewController: UITableViewController {
                 self.galleryTableView.reloadData();
                 
             }else{
-                
+                // Getting image data from local json
                 do{
                     if let file = Bundle.main.url(forResource: "gallery", withExtension: "json") {
                     let data = try Data(contentsOf: file)
@@ -269,8 +262,7 @@ class GalleryTableViewController: UITableViewController {
         return self.names.count
     }
     
-    
-    
+    // Setting the table view
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = galleryTableView.dequeueReusableCell(withIdentifier: "imageCell", for: indexPath)as! GalleryTableViewCell
         
@@ -285,44 +277,15 @@ class GalleryTableViewController: UITableViewController {
         
         if (imageObject.imageUrl != nil)
         {
-//            //base64 string to NSData
-//            let decodedData = NSData(base64Encoded: imageObject.image, options: NSData.Base64DecodingOptions(rawValue: 0))
-
-            //NSData to UIImage
-//            cell.imageview?.image = UIImage(data: decodedData! as Data)
-//            cell.imageview?.contentMode = .scaleAspectFit
-            
             let image:URL = URL(string: imageObject.imageUrl)!
 
-            print(image)
-
-//            let imageData = NSData(contentsOf: image)
-//            let imageinfo = UIImage(data: imageData! as Data)
-//
-//            print(imageinfo)
-//
-//            cell.imageview.image = imageinfo
-//            cell.imageview?.contentMode = .scaleAspectFit
-            
-            // Start background thread so that image loading does not make app unresponsive
-            DispatchQueue.global(qos: .userInitiated).async {
-
-                let imageData:NSData = NSData(contentsOf: image)!
-                //let imageView = UIImageView(frame: CGRect(x:0, y:0, width:200, height:200))
-                //imageView.center = self.view.center
-
-                // When from background thread, UI needs to be updated on main_queue
-                DispatchQueue.main.async {
-                    let image = UIImage(data: imageData as Data)
-                    cell.imageview.image = image
-                    cell.imageview?.contentMode = .scaleAspectFit
-                }
-            }
-
+            let imageData:NSData = NSData(contentsOf: image)!
+            let image1 = UIImage(data: imageData as Data)
+            cell.imageview.image = image1
+            cell.imageview?.contentMode = .scaleAspectFit
         }
         return cell
     }
-    
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {

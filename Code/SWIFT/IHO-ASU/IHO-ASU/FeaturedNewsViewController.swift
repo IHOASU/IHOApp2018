@@ -19,6 +19,7 @@
 import Foundation
 import UIKit
 
+// Contoller for Featured News page
 class FeaturedNewsViewController: UITableViewController {
     @IBOutlet var featuredNewsTableView: UITableView!
 

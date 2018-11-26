@@ -19,6 +19,7 @@
 import Foundation
 import UIKit
 
+// Lucy page view controller
 class LucyViewController: UIViewController {
     
     var htmlpath: String? = nil
