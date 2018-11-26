@@ -72,6 +72,7 @@
                 android:text="To give directly to IHO online through the ASU Foundation."
                 android:textSize="18dp"
                 android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
@@ -79,6 +80,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:textSize="16dp" />
+
 
             <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/relativeLayout1"
@@ -136,7 +138,9 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:text="@string/donateInfo"
-                android:textSize="16dp" />
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
         </LinearLayout>
 
     </ScrollView>

@@ -19,6 +19,7 @@
 import UIKit
 import CoreData
 
+// News controller
 class NewsViewController: UITableViewController {
    
     @IBOutlet var newsTableView: UITableView!
@@ -34,6 +35,7 @@ class NewsViewController: UITableViewController {
         
         let url = URL(string:urlString + "newsobjects" )
         
+        // Getting data from Global DB
         var task = URLSession.shared.dataTask(with: url!){ (data, response, error) in
             if error != nil
             {
@@ -77,11 +79,9 @@ class NewsViewController: UITableViewController {
             }
         }
         task.resume()
-
-        
-        
     }
     
+    // Getting and laoding News IDs
     func loadNewsId(){
         let urlId = URL(string:urlString + "newsid" )
       
@@ -117,9 +117,6 @@ class NewsViewController: UITableViewController {
         }
         taskUrlId.resume()
     }
-
-
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -208,31 +205,19 @@ class NewsViewController: UITableViewController {
                                 let newsObject = News()
                                 
                                 if let title = news["title"] as? String,let desc = news["desc"] as? String,let id = news["id"] as? String,let image = news["image"] as? String, let link = news["link"] as? String, let date = news["date"] as? String{
-                                    
                                     newsObject.id = id
-                                    
                                     newsObject.title = title
-                                    
                                     newsObject.desc = desc
-                                    
                                     newsObject.image = image
-                                    
                                     newsObject.link = link
-                                    
                                     newsObject.newsDate = self.df.date(from: date)!
-                                    
                                     self.names.append(newsObject.title)
-                                    
                                 }
                                 self.newsList[newsObject.title] = newsObject
                             }
-                            
                         } else {
-                            
                             print("JSON is invalid")
-                            
                         }
-                        
                     } else {
                         print("no file")
                     }
@@ -285,7 +270,7 @@ class NewsViewController: UITableViewController {
         return cell
     }
  
-    
+    // Connecting to NewsDetailViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         NSLog("seque identifier is \(segue.identifier)")
         if segue.identifier == "NewsDetail" {

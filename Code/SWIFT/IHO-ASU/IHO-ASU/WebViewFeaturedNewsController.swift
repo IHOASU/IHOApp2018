@@ -15,6 +15,7 @@ import Foundation
 import UIKit
 import SafariServices
 
+// New webview for scrolling and landscape orientation
 class WebViewFeaturedNewsController: UIViewController {
     
     var newsLinkString = String ()

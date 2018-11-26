@@ -10,6 +10,7 @@ import Foundation
 
 var mainInstance = Cache()
 
+// Cache class
 open class Cache{
     
     var newsList:[String : News] = [String : News]()
@@ -18,7 +19,6 @@ open class Cache{
     var imageList:[String : Image] = [String : Image]()
     var imageNames:[String]=[String]()
     var imageId:[String]=[String]()
-    
     
     func clearNewsCache(){
         self.newsList = [:]
@@ -32,6 +32,4 @@ open class Cache{
         self.imageNames = []
         self.imageId = []
     }
-    
-    
 }

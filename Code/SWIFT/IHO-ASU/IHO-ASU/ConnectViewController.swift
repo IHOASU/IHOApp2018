@@ -25,6 +25,7 @@
 import UIKit
 import MessageUI
 
+// Connect page controller
 class ConnectViewController: UITableViewController {
     @IBAction func twitter(_ sender: Any) {
         
@@ -81,7 +82,6 @@ class ConnectViewController: UITableViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
         self.navigationItem.title = "Connect"
-        
         
         //toolbar
         let label = UILabel(frame: CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(350), height: CGFloat(21)))

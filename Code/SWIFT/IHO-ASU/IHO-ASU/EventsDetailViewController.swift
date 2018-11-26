@@ -19,6 +19,7 @@
 import Foundation
 import UIKit
 
+// Contoller for Events detail page
 class EventsDetailViewController: UITableViewController {
     @IBOutlet weak var registerButton: UIButton!
     

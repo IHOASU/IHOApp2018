@@ -103,6 +103,13 @@ public class EditGallery extends JFrame {
         }
     }
 
+
+    //https://www.dropbox.com/s/d0duvt4a5lq17yl/boyd.jpg?dl=0 is converted to
+    //https://dl.dropboxusercontent.com/s/d0duvt4a5lq17yl/boyd.jpg
+    private String convertToStaticDropBoxUrl(String urlWithMetaData) {
+        return urlWithMetaData.replace("www.dropbox.com", "dl.dropboxusercontent.com").replace("?dl=0", "");
+    }
+
     public void setActionListenerForButton() {
         btnSubmit.addActionListener(e -> {
             boolean isValid = validate(tfOrder.getText());
@@ -112,7 +119,7 @@ public class EditGallery extends JFrame {
                     GalleryModel newGallery = new GalleryModel(
                             tfTitle.getText(),
                             ord,
-                            tfImageUrl.getText().trim());
+                            convertToStaticDropBoxUrl(tfImageUrl.getText().trim()));
                     galleryDelegate.addGallery(newGallery);
                 if (gallery != null) {
                     galleryDelegate.deleteGallery(gallery);

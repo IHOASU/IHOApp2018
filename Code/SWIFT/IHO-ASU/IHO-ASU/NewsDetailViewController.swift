@@ -19,6 +19,7 @@
 import Foundation
 import UIKit
 
+// Controller for News Details view
 class NewsDetailViewController: UITableViewController {
     
     @IBAction func readMoreLink(_ sender: Any) {
