@@ -1,0 +1,31 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+version = '1.2'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+//create a single Jar with all dependencies
+task generateIHOjar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Jar File Example',
+                'Implementation-Version': version,
+                'Main-Class': 'main.java.com.asu.bl.AuthenticationPage'
+    }
+    baseName = 'IHOASU' + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+//Get dependencies from Maven central repository
+repositories {
+    mavenCentral()
+}
+
+//Project dependencies
+dependencies {
+    compile 'ch.qos.logback:logback-classic:1.1.2'
+    compile group: 'com.jgoodies', name: 'jgoodies-forms', version: '1.8.0'
+    compile group: 'com.miglayout', name: 'miglayout-swing', version: '5.0'
+    compile group: 'org.json', name: 'json', version: '20131018'
+}
