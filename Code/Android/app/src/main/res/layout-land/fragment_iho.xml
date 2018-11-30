@@ -103,16 +103,12 @@
             android:textIsSelectable="false"
             android:textSize="10dp" />
         <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="IHO Location Page"
-            android:onClick="onClick"
-            android:id="@+id/linkToLocation"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
-            android:background="@drawable/shape"
-            android:textSize="18dp"
-            android:textIsSelectable="true"/>
+            android:id="@+id/mapItBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/location"
+            android:onClick="onClick"/>
 
         <TextView
             android:layout_width="wrap_content"
