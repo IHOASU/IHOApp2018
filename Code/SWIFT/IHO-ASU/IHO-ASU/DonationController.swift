@@ -21,6 +21,15 @@ import UIKit
 // Donation view controller
 class DonationController: UIViewController {
     
+    @IBAction func donateWebView(_ sender: Any) {
+        let donateURL = URL(string: "https://iho.asu.edu/support-iho")!
+        
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(donateURL, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(donateURL)
+        }
+    }
     override func viewDidLoad() {
         
         super.viewDidLoad()

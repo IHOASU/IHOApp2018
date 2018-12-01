@@ -11,7 +11,6 @@
 		230EE9061E4E147100B4F9F9 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230EE8FF1E4E147100B4F9F9 /* AboutViewController.swift */; };
 		230EE9071E4E147100B4F9F9 /* ASU IHO vertical.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 230EE9001E4E147100B4F9F9 /* ASU IHO vertical.jpg */; };
 		230EE9081E4E147100B4F9F9 /* DonationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230EE9011E4E147100B4F9F9 /* DonationController.swift */; };
-		230EE9091E4E147100B4F9F9 /* DonationWebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230EE9021E4E147100B4F9F9 /* DonationWebController.swift */; };
 		230EE90A1E4E147100B4F9F9 /* invest.png in Resources */ = {isa = PBXBuildFile; fileRef = 230EE9031E4E147100B4F9F9 /* invest.png */; };
 		230EE90B1E4E147100B4F9F9 /* search-icon-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 230EE9041E4E147100B4F9F9 /* search-icon-64.png */; };
 		9F30DEAB1E8EC79E00F40E06 /* askananthropologist.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F30DE7B1E8EC79E00F40E06 /* askananthropologist.jpg */; };
@@ -194,7 +193,6 @@
 		230EE8FF1E4E147100B4F9F9 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		230EE9001E4E147100B4F9F9 /* ASU IHO vertical.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ASU IHO vertical.jpg"; sourceTree = "<group>"; };
 		230EE9011E4E147100B4F9F9 /* DonationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationController.swift; sourceTree = "<group>"; };
-		230EE9021E4E147100B4F9F9 /* DonationWebController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationWebController.swift; sourceTree = "<group>"; };
 		230EE9031E4E147100B4F9F9 /* invest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invest.png; sourceTree = "<group>"; };
 		230EE9041E4E147100B4F9F9 /* search-icon-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-icon-64.png"; sourceTree = "<group>"; };
 		230EE90C1E4E149800B4F9F9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -455,7 +453,6 @@
 				9F87E3661E4D3DAE0030F231 /* ConnectViewController.swift */,
 				9F36EA4E1EA01D380041582B /* CreditsViewController.swift */,
 				230EE9011E4E147100B4F9F9 /* DonationController.swift */,
-				230EE9021E4E147100B4F9F9 /* DonationWebController.swift */,
 				F8B1F1CF219243260030BCF9 /* ENewsWebController.swift */,
 				9F30DE831E8EC79E00F40E06 /* Events.swift */,
 				9F30DE841E8EC79E00F40E06 /* EventsDetailViewController.swift */,
@@ -773,7 +770,6 @@
 				F82FB5F621A51AAF008EDAC7 /* PopUpMediumSkullViewController.swift in Sources */,
 				9F30DED71E8EC79E00F40E06 /* TravelViewController.swift in Sources */,
 				9F87E36D1E4D41610030F231 /* GalleryViewController.swift in Sources */,
-				230EE9091E4E147100B4F9F9 /* DonationWebController.swift in Sources */,
 				9F30DEB31E8EC79E00F40E06 /* Events.swift in Sources */,
 				9F30DECF1E8EC79E00F40E06 /* NewsDetailViewController.swift in Sources */,
 				F872922521958C1C00C8DF2F /* WebViewFeaturedNewsController.swift in Sources */,

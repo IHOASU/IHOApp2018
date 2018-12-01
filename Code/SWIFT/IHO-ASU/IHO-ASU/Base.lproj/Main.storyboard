@@ -1990,7 +1990,7 @@ Tempe, AZ 85287-4101</string>
                                                     <constraint firstAttribute="height" constant="45" id="Lb1-Qu-iOZ"/>
                                                 </constraints>
                                                 <connections>
-                                                    <segue destination="meL-Ly-lK3" kind="show" id="2qW-Ka-5C9"/>
+                                                    <action selector="donateWebView:" destination="1Xq-YG-xWc" eventType="touchUpInside" id="xHi-2n-v98"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="invest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2G-Mc-uwb">
@@ -2079,37 +2079,6 @@ If you would like to send donation by check, please make your donation payable t
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UzO-hE-PjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3068" y="1013"/>
-        </scene>
-        <!--Donation Web Controller-->
-        <scene sceneID="m4F-0E-TbV">
-            <objects>
-                <viewController id="meL-Ly-lK3" customClass="DonationWebController" customModule="IHO_ASU" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sKE-WT-CLy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView opaque="NO" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wdy-40-VdB">
-                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Xuf-jm-a4U" firstAttribute="bottom" secondItem="wdy-40-VdB" secondAttribute="bottom" id="5xu-VF-bTK"/>
-                            <constraint firstItem="Xuf-jm-a4U" firstAttribute="trailing" secondItem="wdy-40-VdB" secondAttribute="trailing" id="Vuo-CQ-y3U"/>
-                            <constraint firstItem="wdy-40-VdB" firstAttribute="leading" secondItem="Xuf-jm-a4U" secondAttribute="leading" id="fd9-b9-B4F"/>
-                            <constraint firstItem="wdy-40-VdB" firstAttribute="top" secondItem="Xuf-jm-a4U" secondAttribute="top" id="xrl-Ny-HC9"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Xuf-jm-a4U"/>
-                    </view>
-                    <size key="freeformSize" width="375" height="812"/>
-                    <connections>
-                        <outlet property="openWeb" destination="wdy-40-VdB" id="9VX-Et-DXA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0sa-I9-syz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2738" y="2164"/>
         </scene>
         <!--Ask An Anthropologist View Controller-->
         <scene sceneID="sck-Zy-vrk">
@@ -2247,7 +2216,7 @@ Aimed primarily at the middle school level, the articles and activities are chal
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XNS-d3-hnh">
-                            <rect key="frame" x="0.0" y="747" width="372" height="45"/>
+                            <rect key="frame" x="0.0" y="747" width="369" height="45"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.0039215686269999999" green="0.17571765180000001" blue="0.35848188399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
