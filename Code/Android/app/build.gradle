@@ -11,8 +11,8 @@ android {
     }
     signingConfigs {
         ihoKey {
-            keyAlias 'IHOASU'
-            storeFile file('androidIHO.jks')
+            keyAlias 'key0'
+            storeFile file('../keys/androidIHO_2018.jks')
             keyPassword 'ihoasu'
             storePassword 'ihoasu'
         }
