@@ -582,7 +582,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = "Sweta Singhal";
+				ORGANIZATIONNAME = "ASU IHO";
 				TargetAttributes = {
 					9FB7C5781E4AAA5900B88166 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -982,7 +982,7 @@
 				DEVELOPMENT_TEAM = LH63ZPT659;
 				INFOPLIST_FILE = "IHO-ASU/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.asu.iho;
+				PRODUCT_BUNDLE_IDENTIFIER = "ASU.IHO.IHO-ASU";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "33d8ade8-cd89-42c6-8a50-899e7a2b2d39";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -999,7 +999,7 @@
 				DEVELOPMENT_TEAM = LH63ZPT659;
 				INFOPLIST_FILE = "IHO-ASU/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.asu.iho;
+				PRODUCT_BUNDLE_IDENTIFIER = "ASU.IHO.IHO-ASU";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "33d8ade8-cd89-42c6-8a50-899e7a2b2d39";
 				PROVISIONING_PROFILE_SPECIFIER = "";
