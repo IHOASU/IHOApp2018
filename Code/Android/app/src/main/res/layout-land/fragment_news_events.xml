@@ -67,24 +67,6 @@
                 android:id="@+id/textView"
                 android:textStyle="bold"
                 android:textSize="20dp" />
-            <Button
-                android:id="@+id/ne1"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:background="@drawable/shape"
-                android:text="News                                                                                                 >"
-                android:textColor="@android:color/background_light"
-                android:onClick="onClick"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="\n"
-                android:id="@+id/textView5"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:clickable="false" />
 
             <Button
                 android:id="@+id/ne4"
@@ -100,7 +82,45 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="\n"
+                android:id="@+id/textView5"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:clickable="false" />
+
+            <Button
+                android:id="@+id/ne1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shape"
+                android:text="News                                                                                                 >"
+                android:textColor="@android:color/background_light"
+                android:onClick="onClick"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\n"
                 android:id="@+id/textView4"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:clickable="false" />
+
+            <Button
+                android:id="@+id/ne5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shape"
+                android:onClick="onClick"
+                android:text="In the Media                                                                                         >"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\n"
+                android:id="@+id/textView2"
                 android:textStyle="bold"
                 android:textSize="20dp" />
             <Button
@@ -117,7 +137,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="\n"
-                android:id="@+id/textView2"
+                android:id="@+id/textView7"
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:clickable="false" />
