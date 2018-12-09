@@ -23,7 +23,7 @@
         android:layout_height="15dp"
         android:id="@+id/textView"
         android:layout_below="@+id/customGalleryBackButton"
-        android:background="@android:color/background_dark"
+        android:background="#e9e9e9"
         />
     <TableRow
         android:id="@+id/tableRow2"
@@ -35,7 +35,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:textSize="16dp"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/black" />
     </TableRow>
     <TextView
         android:layout_width="565dp"
